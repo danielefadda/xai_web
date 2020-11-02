@@ -1,0 +1,88 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow
+        .container.pt-lg-8.pb-lg-6.pt-md-7.pb-md-5.pt-5.pb-4
+          .row  
+            .col-lg-6
+              h2.my-3 Testimonials
+              p.lead.mb-3 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+      //testiminials images
+      .bg-half
+        .container.mb-lg-6.mb-md-5.mb-4
+          .testimonials-1
+            .row
+              .col-12.d-lg-none
+                img(src="assets/images/14.jpg" alt="project")
+              .col-lg-6
+              .pt-lg-10.pb-lg-6
+                .col-lg-6.offset-lg-6.bg-black
+                  .px-lg-6.py-lg-6.px-md-5.py-md-6.px-4.py-5.mt-lg-5
+                    .mt-lg-4
+                      i.fas.fa-quote-left.display-3.text-gray-500.margin.mb-lg-3
+                      p.h4.mt-4.mb-lg-5.mb-md-4.mb-4.text-white.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi.
+                      cite.h5.font-normal.text-white Michael D. Wilson - Tozee chef
+
+      .container.mb-lg-6.mb-md-5.mb-4
+        .testimonials-2
+          .row
+            .col-12.d-lg-none
+              img(src="assets/images/15.jpg" alt="project")
+            .col-lg-6
+            .pt-lg-10.pb-lg-6
+              .col-lg-6.bg-yellow
+                .px-lg-6.py-lg-6.px-md-5.py-md-6.px-4.py-5.mt-lg-5
+                  .mt-lg-4
+                    i.fas.fa-quote-left.display-3.text-gray-500.margin.mb-lg-3
+                    p.h4.mt-4.mb-lg-5.mb-md-4.mb-4.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi.
+                    cite.h5.font-normal Shantel R. Horace - Founder of Bala​
+
+      .container.mb-lg-6.mb-md-5.mb-4
+        .testimonials-3
+          .row
+            .col-12.d-lg-none
+              img(src="assets/images/16.jpg" alt="project")
+            .col-lg-6
+            .pt-lg-10.pb-lg-6
+              .col-lg-6.offset-lg-6.bg-black
+                .px-lg-6.py-lg-6.px-md-5.py-md-6.px-4.py-5.mt-lg-5
+                  .mt-lg-4
+                    i.fas.fa-quote-left.display-3.text-gray-500.margin.mb-lg-3
+                    p.h4.mt-4.mb-lg-5.mb-md-4.mb-4.text-white.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi.
+                    cite.h5.font-normal.text-white Nancy L. Morgan - CEO of Jati​
+
+      .container.mb-lg-9.mb-md-7.mb-6
+        .testimonials-4
+          .row
+            .col-12.d-lg-none
+              img(src="assets/images/17.jpg" alt="project")
+            .col-lg-6
+            .pt-lg-10.pb-lg-6
+              .col-lg-6.bg-yellow
+                .px-lg-6.py-lg-6.px-md-5.py-md-6.px-4.py-5.mt-lg-5
+                  .mt-lg-4
+                    i.fas.fa-quote-left.display-3.text-gray-500.margin.mb-lg-3
+                    p.h4.mt-4.mb-lg-5.mb-md-4.mb-4.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi.
+                    cite.h5.font-normal Manuel N. Sawyer - Contractor​
+
+      //Subscription form
+      .container.my-lg-9.my-md-7.my-6
+        .bg-yellow
+          .row.py-lg-8.py-md-6.py-6.px-lg-0.px-md-0.px-4
+            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
+              .text-center
+                h2.mb-4 keep up with the latest from tozee
+                p.mb-lg-5.mb-md-4.mb-4.mt-1.px-lg-5 Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                
+                form
+                  .form-group.row.gx-lg-2
+                    .col-md-9
+                      input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+                    .col-md-3.mt-2.mt-md-0
+                      a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE
+

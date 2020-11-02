@@ -1,0 +1,197 @@
+//- page title
+mixin pagetitle(data)
+  // Page Title
+  .page-main-title
+    .container
+      .row.align-items-center
+        .col-lg-6
+          if data.title
+            h2.mb-4.entry-title= data.title
+          else
+            h2.entry-title Page Title
+          if data.description
+            p= data.description
+          else
+            p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+
+  // End Page Title
+
+mixin entryMetaTop(author, categories, date, commentCount, isEdit=false )
+  .entry-meta-top
+    if author
+      span.entry-author
+        i.far.fa-user
+        = author
+    if date
+      span.entry-meta-date 
+        i.far.fa-clock
+        = date
+    if commentCount
+      span.entry-comment-count
+        a(href="/blog-single-post.html#comments")
+          i.far.fa-comment-alt
+          = commentCount
+    if isEdit
+      span.entry-comment-count
+        a(href="/blog-single-post.html#comments")
+          i.far.fa-edit
+          | Edit
+
+//- Blog
+mixin blog(style, column, isReadMore=false, ...items)
+  // Blog
+  div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+            if item.category
+              span.entry-meta-category
+                a(href='blog-three-col.html')= item.category
+          .entry-content-wrapper
+            header.entry-header
+              //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit) 
+              h2.entry-title
+                a(href='blog-single-post.html')= item.title
+            if item.content
+              .entry-content
+                p= item.content
+              if isReadMore
+                footer.entry-footer
+                  a.entry-read-more(href='blog-single-post.html') Read More
+                    i.fas.fa-long-arrow-alt-right.ml-1
+
+//- Blog card style
+mixin blogcard(style, column, isReadMore=false, ...items)
+  // Blog
+  div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+            if item.category
+              span.entry-meta-category
+                a(href='blog-three-col.html')= item.category
+          .entry-content1-wrapper
+            header.entry-header
+              +entryMetaTop(item.author, item.date, item.commentCount, item.isEdit) 
+              h2.entry-title1
+                a(href='blog-single-post.html')= item.title
+            if item.content
+              .entry-content
+                p= item.content
+              if isReadMore
+                footer.entry-footer
+                  a.entry-read-more(href='blog-single-post.html') Read More
+                    i.fas.fa-long-arrow-alt-right.ml-1
+  // End Blog
+
+//- Blog list style
+mixin blogList(style, column,isReadMore=false, ...items)
+  // Blog
+  div.row.blog-post.blog-list-style(class=style)
+    each item in items
+      div(class=column)
+        article
+          .entry-media
+            img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+          .entry-content-wrapper
+            h5.entry-title
+              a(href='blog-single-post.html')= item.title
+            span.entry-meta-category
+              a(href='blog-three-col.html')= item.category
+              span.post-meta-date= item.date
+            if item.content
+              .entry-content
+                p= item.content
+              if isReadMore
+                a.entry-read-more(href='blog-single-post.html') Read More
+                  i.fas.fa-long-arrow-alt-right.ml-1
+  // End Blog
+
+//- Shop - Products
+mixin shop(isProductsFilter=true, style, column, ...items)
+  // Products
+  if isProductsFilter
+    .shop-item-toolbar.d-md-flex.justify-content-between.align-items-center
+      .item-result-count.mb-3.mb-md-0 Showing 1-12 of 18
+      .items-ordering
+        select.form-control.orderby(name='orderby')
+          option(value='menu_order' selected='selected') Default sorting
+          option(value='popularity') Sort by popularity
+          option(value='rating') Sort by average rating
+          option(value='date') Sort by newness
+          option(value='price') Sort by price: low to high
+          option(value='price-desc') Sort by price: high to low
+  div.row.products(class=style)
+    each item in items
+      div.product(class=column)
+        .product-img-wrapper
+          img(src=item.image, alt="Product image")
+        .product-content-wrapper
+          .d-flex
+            .mr-auto
+              h2.product-title
+                a(href='shop-single-product.html')= item.title
+              span.price
+                span.amount
+                  span.currencySymbol $
+                    = item.price
+            a.btn-underline.mt-auto(href='shop-single-product.html') Add to cart 
+  // End Products
+
+//- pagination
+mixin pagination
+  // Pagination
+  nav.pagination-holder
+    ul.pagination
+      li.page-item.active
+        a.page-link(href='#') 1
+      li.page-item
+        a.page-link(href='#') 2
+      li.page-item
+        a.page-link(href='#') 3
+      li.page-item
+        a.page-link(href='#') 4
+      li.page-item
+        a.page-link(href='#' aria-label='Next')
+          span >
+          span.sr-only Next
+  // End Pagination
+
+
+//- portfolio entry meta
+mixin entryMetaProject(author, categories, date, commentCount, isEdit=false )
+  .entry-meta-top
+    if categories
+      span.entry-meta-category
+        i.fas.fa-folder
+        a(href='blog-three-col.html')= categories
+
+
+//- portfolio
+mixin portfolio(style, column, isReadMore=false, ...items)
+  // Portfolio
+  div.row.portfolio(class=style)
+    each item in items
+      div(class=column)
+        article
+          figure.entry-media
+            if item.image
+              .pr-5
+                img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+          .entry-content-wrapper
+            header.entry-header
+              .entry-meta-top
+                span.entry-meta-category
+                  a(href='blog-three-col.html')= item.category
+              h2.entry-title.pr-3
+                a(href='portfolio-single-project.html')= item.title
+            if item.content
+              .entry-content.pr-3
+                p= item.content
+  // End Portfolio

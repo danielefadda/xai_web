@@ -1,0 +1,21 @@
+.heme-carousel {
+  .carousel-item {
+    min-height: 666px;
+    background: $black;
+    background: linear-gradient(90deg,  $black 66.66%, rgba(35,35,35,1) 66.6666666%);
+
+    .heme-carousel-caption {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      color: #fff;
+      @include media-breakpoint-up(lg) { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

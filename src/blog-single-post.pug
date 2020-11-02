@@ -1,0 +1,108 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-4.font-weight-bold 18 new roads schemes a step closer to delivery
+                +entryMetaTop('News', 'Finance', 'April 13, 2020', '', false)
+      //featured image
+      .bg-half
+        .container
+          .single-post-featured-img
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum. 
+            p.mt-4 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+        .row.mt-5
+          .col-lg-10.offset-lg-1.mb-5.mb-lg-0
+            img(src='assets/images/blog/b1.jpg' alt='Card image cap')
+              
+        .row.justify-content-lg-center
+          .col-lg-8    
+            blockquote.mt-lg-5
+              p Donec ac nunc quis nisl aliquet hendrerit. Pellentesque ultricies, felis id iaculis feugiat, mauris nunc viverra lectus, quis egestas felis nisi non ante. Donec bibendum magna vitae eros lacinia ornare. Nullam cursus sollicitudin lacus. Maecenas congue.
+              cite — Someone famous in Source Title
+            p Suspendisse viverra massa eget nibh ultricies mollis. Donec sed lorem tincidunt, ultrices ligula ut, euismod sem. Mauris nec tincidunt diam. Donec varius magna vitae velit consectetur efficitur. Sed rutrum aliquet ligula.
+            ul
+              li Lorem ipsum dolor sit amet
+              li Consectetur adipiscing elit
+              li Nulla volutpat aliquam velit 
+                ul
+                  li Phasellus iaculis neque varius 
+                  li Purus sodales ultricies libero
+                    ul 
+                      li Phasellus iaculis neque ornare enim
+                      li Purus sodales ultricies nisl aliquet
+                      li Eget porttitor lorem libero sodales
+              li Faucibus porta lacus fringilla vel
+              li Aenean sit amet erat nunc
+            p Praesent blandit nibh ac justo auctor pretium. Maecenas mauris metus, vulputate ac volutpat sit amet, facilisis quis odio. Nam ut commodo neque. Cras pellentesque nisi, id laoreet nibh. Aliquam in ante elit.
+
+            footer.entry-footer
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Opinion
+                  li
+                    a(href='#' rel='tag') Travel
+                  li
+                    a(href='#' rel='tag') Design
+              // Post Author
+              .entry-author-container
+                .row
+                  .col-md-3
+                    img.rounded-circle.avatar.mb-3.avatar-200.photo(alt='Amjad Ali' src='https://2.gravatar.com/avatar/ebedfdbd2e457405c93b6d8e25ed3361?s=200&d=mm&r=g' srcset='https://2.gravatar.com/avatar/ebedfdbd2e457405c93b6d8e25ed3361?s=400&d=mm&r=g 2x' height='200' width='200')
+                  .col-md-9
+                    small.caps Written by
+                    h5.mb-2
+                      a(href='http://localhost/wordpress/dabba/author/station/' title='Posts by Amjad Ali' rel='author') Amjad Ali
+                    p
+                      | Suspendisse viverra massa eget nibh ultricies mollis. Donec sed lorem tincidunt, ultrices ligula ut, euismod sem. Mauris nec diam. Donec varius magna vitae velit consectetur efficitur.
+                    ul.list-inline.mb-0
+                      li.list-inline-item
+                        a(href='http://www.amjadalii.com')
+                          i.fa.fa-link
+                      li.list-inline-item
+                        a(href='http://www.amjadalii.com')
+                          i.fab.fa-instagram
+                      li.list-inline-item
+                        a(href='http://www.amjadalii.com')
+                          i.fab.fa-twitter
+                      li.list-inline-item
+                        a(href='http://www.amjadalii.com')
+                          i.fab.fa-medium-m
+              // Post navigation
+              .navigation.post-navigation
+                .row.align-items-center.text-center.nav-links
+                  .col-lg-6.mb-4.mb-lg-0.text-lg-left
+                    .nav-previous
+                      .nav-subtitle  Previous Post 
+                      .nav-title
+                        a(href='blog-single-post.html')
+                          i.fas.fa-long-arrow-alt-left.fa-lg.mr-1
+                          | Sellentesque tristiue neque
+                  .col-lg-6.text-lg-right
+                    .nav-next
+                      .nav-subtitle Next Post
+                      .nav-title
+                        a(href='blog-single-post.html') 
+                          | Aliquam lobortis urna libero
+                          i.fas.fa-long-arrow-alt-right.fa-lg.ml-1
+
+      .container
+        .row.justify-content-lg-center
+          .col-lg-8
+            //- Comments Area
+            include includes/comments-area
+

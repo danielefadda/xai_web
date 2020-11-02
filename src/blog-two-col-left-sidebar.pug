@@ -1,0 +1,77 @@
+extends includes/layout
+include includes/mixin
+
+block content
+    //- Page title
+    article.entry
+
+    .entry-content
+        .bg-yellow
+            .pt-lg-7.pb-lg-7.pt-md-6.pb-md-6.pt-5.pb-5
+                .container
+                    .row  
+                        .col-lg-6
+                            h2.my-3 Two Col Left Sidebar
+                            p.lead.mb-3 Duis auctor eros ac urna dictum, eget rhoncus ex fringilla. Vestibulum in ex massa. Sed accumsan tortor libero. Phasellus gravida nibh vel odio semper vitae.
+
+        .container.mt-8
+            .row.large-gutters
+                .col-lg-8.order-lg-2.mb-7
+                    +blogcard(
+                        'large-gutters gy-5',
+                        'col-lg-6',
+                        false,
+                        {
+                        image:'assets/images/blog/b1.jpg',
+                        title:'18 New Roads Schemes A Step Closer To Delivery',  
+                        category:'Photography',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b2.jpg',
+                        title:'What Today’s Renters Truly Want In The Building',
+                        category:'Humour',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b3.jpg',
+                        title:'Should I Sell or Rent My Newly constructed House?',
+                        category:'Photography',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b4.jpg',
+                        title:'How to pick right Construction Company for House',  
+                        category:'Photography',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b5.jpg',
+                        title:'Grow Revenue With Interior Architecture Upgrades',
+                        category:'Humour',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b6.jpg',
+                        title:'How to Invest in Real Estate And Construction',
+                        category:'Photography',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b7.jpg',
+                        title:'How to Set Great Goals for Real Estate As Landlord',  
+                        category:'Interior',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        },
+                        {
+                        image:'assets/images/blog/b8.jpg',
+                        title:'What Is Wholesaling Real Estate of City',
+                        category:'Humour',
+                        content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+                        }
+                    )
+                    .text-center.align-items-center.mt-5
+                        a.btn.btn-outline-black(href='#') Load More
+                .col-lg-4.order-lg-1.mb-7
+                    //- Sidebar
+                    include includes/sidebar

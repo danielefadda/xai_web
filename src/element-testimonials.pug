@@ -1,0 +1,43 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Testimonials', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .container.px-0.mb-lg-6.mb-md-5.mb-4
+              .testimonials-1
+                .row
+                  .col-12.d-lg-none
+                    img(src="assets/images/14.jpg" alt="project")
+                  .col-lg-6
+                  .pt-lg-8.pb-lg-6
+                    .col-lg-6.offset-lg-6.bg-black
+                      .px-lg-5.pb-lg-6.px-md-4.py-md-5.px-4.py-5
+                        i.fas.fa-quote-left.display-3.text-gray-500.margin
+                        p.h5.my-4.text-white.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi totam rerum volup tatem et neque pariatur.
+                        cite.h5.font-normal.text-white Michael D. Wilson - Tozee chef
+            .container.px-0.mb-lg-6.mb-md-5.mb-4
+              .testimonials-2
+                .row
+                  .col-12.d-lg-none
+                    img(src="assets/images/15.jpg" alt="project")
+                  .col-lg-6
+                  .pt-lg-8.pb-lg-6
+                    .col-lg-6.bg-yellow
+                      .px-lg-5.pb-lg-6.px-md-4.py-md-5.px-4.py-5
+                        i.fas.fa-quote-left.display-3.text-gray-500.margin
+                        p.h5.my-4.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi totam rerum volup tatem et neque pariatur.
+                        cite.h5.font-normal Michael D. Wilson - Tozee chef

@@ -1,0 +1,28 @@
+
+/* Topbar */
+
+.top_header {
+    background: #3d404f;
+}
+
+.top_header_nav {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.top_header .top_header_nav li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.top_header .top_header_nav li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.top_header .list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}

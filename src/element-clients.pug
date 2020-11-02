@@ -1,0 +1,83 @@
+extends includes/layout
+include includes/mixin
+
+block content
+    //- Page title
+    +pagetitle({title:'Partner', description:''})
+    // Our Partner
+    .container
+      .row.large-gutters
+        .col-lg-4.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-8.mb-7
+        .col-md-6.offset-md-3
+          .text-center(data-aos='fade-zoom-in')
+            h2.mb-15px Our Partner
+            
+            p
+              | Quisque congue accumsan ante id condimentum. Aliquam lorem nisl,
+              | bibendum et sollicitudin
+              | ut, viverra vitae ligula. In hac habitasse platea dictumst.
+      .row.large-gutters.align-items-center
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/16.png', alt='Prime', width='965', height='409')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/15.png', alt='Prime', width='685', height='368')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/2.png', alt='Prime', width='632', height='368')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/13.png', alt='Prime', width='771', height='317')
+      .row.mt_20.large-gutters.align-items-center
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/4.png', alt='Prime', width='1058', height='377')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/5.png', alt='Prime', width='1302', height='367')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/9.png', alt='Prime', width='950', height='206')
+        .col-md-3
+          a(href='#')
+            img.p-5(src='assets/images/clients/11.png', alt='Prime', width='728', height='209')
+    
+    // Partner Slider
+    .container.mb-70px
+      .row.mb-40px
+        .col-md-6.offset-md-3
+          .text-center(data-aos='fade-zoom-in')
+            h2.mb-15px Slider
+            p
+              | Quisque congue accumsan ante id condimentum. Aliquam lorem nisl, ut, viverra vitae ligula. In hac habitasse platea dictumst.
+      .row.no-gutters
+        .col-12
+          ul.slider-call(data-flickity='{ "contain": true, "prevNextButtons": false }')
+            li
+              a(href='#')
+                img(src='assets/images/clients/01.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/02.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/03.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/04.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/05.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/06.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/07.png', alt='Prime')
+            li
+              a(href='#')
+                img(src='assets/images/clients/08.png', alt='Prime')

@@ -1,0 +1,65 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5  
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Call to Action', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            
+            .d-flex.justify-content-between.align-items-center.bg-yellow.px-5.py-5.mb-5
+              div
+                h3.mb-2 Get a free quite
+                p.mb-0
+                  | Donec porta maximus eros vitae dapibus accumsan. 
+                  br 
+                  | Phasellus gravida nibh vel odio semper vitae.
+                  br
+                  | Donec porta maximus eros vitae dapibus accumsan.
+              a.btn.btn-outline-black(type='button') Contact us
+            
+            .d-flex.justify-content-between.align-items-center.bg-gray-500.px-5.py-5.mb-5
+              div
+                h3.mb-2 Get a free quite
+                p.mb-0
+                  | Donec porta maximus eros vitae dapibus accumsan. 
+                  br 
+                  | Phasellus gravida nibh vel odio semper vitae.
+                  br
+                  | Donec porta maximus eros vitae dapibus accumsan.
+              a.btn.btn-outline-black(type='button') Contact us
+            
+            .d-flex.justify-content-between.align-items-center.bg-black.all-text-white.px-5.py-5.mb-5
+              .text-white
+                div
+                  h3.mb-2 Get a free quite
+                  p.mb-0
+                    | Donec porta maximus eros vitae dapibus accumsan. 
+                    br 
+                    | Phasellus gravida nibh vel odio semper vitae.
+                    br
+                    | Donec porta maximus eros vitae dapibus accumsan.
+              a.btn.btn-outline-primary(type='button') Contact us
+            
+            .bg-yellow
+              .py-lg-7.py-5.px-4
+                .row
+                  .col-lg-10.offset-lg-1.text-center
+                    .mt-lg-3.mt-3
+                      h2 Let’s build something great together.
+                    .mt-lg-4.mt-3  
+                      p.lead Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua sed diam nonumy accusam et justo duo.
+                    .mt-lg-5.mt-4
+                      a.btn.btn-outline-black.rounded-0(href='#') Contact Us
+            

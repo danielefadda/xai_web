@@ -1,0 +1,246 @@
+// home bg
+.home-1 {
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 75vh;
+}
+
+// services
+.service-1 {
+  background-image: url("../images/10.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.service-2 {
+  background-image: url("../images/11.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.service-3 {
+  background-image: url("../images/12.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.service-4 {
+  background-image: url("../images/13.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+//testiminials
+.testimonials-1 {
+  background-image: url("../images/14.jpg");
+  background-size: 75%;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.testimonials-2 {
+  background-image: url("../images/15.jpg");
+  background-size: 75%;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.testimonials-3 {
+  background-image: url("../images/16.jpg");
+  background-size: 75%;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.testimonials-4 {
+  background-image: url("../images/17.jpg");
+  background-size: 75%;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+// single project
+.project-featured-img {
+  background-image: url("../images/29.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  @include media-breakpoint-up(md){
+  min-height: 75vh;
+  }
+  @include media-breakpoint-up(lg){
+    min-height: 90vh;
+  }
+}
+// post
+.single-post-featured-img {
+  background-image: url("../images/13.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+}
+
+//slider image
+.slider-one-img {
+  background-image: url("../images/blog/b1.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 50vh;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 60vh;
+  }
+}
+
+.slider-two-img {
+  background-image: url("../images/blog/b2.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 50vh;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 60vh;
+  }
+}
+
+.slider-three-img {
+  background-image: url("../images/blog/b3.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 50vh;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 60vh;
+  }
+}
+.slider-four-img {
+  background-image: url("../images/blog/b4.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 50vh;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 60vh;
+  }
+}
+
+//back gorund color plans
+.twenty-percent-bg-yellow {
+  background-color: transparent;
+  background: linear-gradient(180deg, $yellow 80%, $white 80%);
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(180deg, $yellow 75%, $white 75%);
+  }
+}
+
+.seventy-five-percent-bg-yellow {
+  background-color: transparent;
+  background: linear-gradient(180deg, $yellow 100%, $white 100%);
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(90deg, $yellow 75%, $white 75%);
+  }
+}
+
+.seventy-five-1-percent-bg-yellow {
+  background-color: transparent;
+  background: linear-gradient(180deg, $yellow 85%, $white 85%);
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(180deg, $yellow 75%, $white 75%);
+  }
+}
+
+.seventy-percent-bg-yellow {
+  background-color: transparent;
+  background: linear-gradient(90deg, $yellow 100%, $white 100%);
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(90deg, $yellow 66.66%, $white 66.66%);
+  }
+}
+
+.bg-half {
+  background-color: transparent;
+  background: linear-gradient(180deg, $yellow 50%, $white 50%);
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(180deg, $yellow 50%, $white 50%);
+  }
+}
+
+.bg-twenty {
+  background-color: transparent;
+  background: linear-gradient(180deg, $yellow 11%, $white 11%);
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(180deg, $yellow 11%, $white 11%);
+  }
+}
+
+.custom-font {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-bottom: solid 2px $black;
+    width: calc(100% - 50px);
+    display: block;
+    position: absolute;
+    bottom: -30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 80px;
+    line-height: 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      border-bottom: solid 2px $black;
+      width: calc(100% - 50px);
+      display: block;
+      position: absolute;
+      bottom: -30px;
+    }
+  }
+}
+
+.custom-icon {
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 35px;
+}
+.margin {
+  @include media-breakpoint-up(lg) {
+    margin-top: -32px;
+  }
+}
+
+.title-404 {
+  @include media-breakpoint-up(lg){
+  color: $black;
+  font-size: 280px;
+  font-weight: 600;
+  line-height: 310px;
+  }
+  color: $black;
+  font-size: 175px;
+  font-weight: 600;
+  line-height: 210px;
+  width: 100%;
+
+}
+
+.nav-pills .nav-link.active {
+  color: $black;
+}

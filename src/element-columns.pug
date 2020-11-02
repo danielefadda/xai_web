@@ -1,0 +1,86 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Columns', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.mb-5
+              .col-sm-12
+                .bg-yellow.px-5.py-5
+                  h3.mb-4 One Column
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    | ut labore et dolore magna aliqua.
+                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    | commodo
+                    | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat
+                    | nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    | deserunt
+                    | mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate nulla
+                    | pariatur.
+            .row.mb-5.gx-lg-5
+              .col-sm-6
+                .bg-yellow.px-5.py-5
+                  h3.mb-4 Two Columns
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    | ut labore et dolore magna aliqua.
+                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    | commodo
+                    | consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    | nulla pariatur.
+              .col-sm-6
+                .bg-black.px-5.py-5
+                  .text-white
+                    h3.mb-4 Two Columns
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      | ut labore et dolore magna aliqua.
+                      | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      | commodo
+                      | consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      | nulla pariatur.
+            // end of row
+            .row.mb-5.gx-lg-5
+              .col-sm-4
+                .bg-black.px-3.py-3.text-center
+                  .text-white
+                    h5 Three Columns 
+              .col-sm-4
+                .bg-black.px-3.py-3.text-center
+                  .text-white
+                    h5 Three Columns
+
+              .col-sm-4
+                .bg-black.px-3.py-3.text-center
+                  .text-white
+                    h5 Three Columns
+
+            // end of row
+            .row.mb-5.gx-lg-5
+              .col-md-3
+                .bg-yellow.px-3.py-3.text-center
+                  h5 Four Columns
+              .col-md-3
+                .bg-yellow.px-3.py-3.text-center
+                  h5 Four Columns
+              .col-md-3
+                .bg-yellow.px-3.py-3.text-center
+                  h5 Four Columns
+              .col-md-3
+                .bg-yellow.px-3.py-3.text-center
+                  h5 Four Columns

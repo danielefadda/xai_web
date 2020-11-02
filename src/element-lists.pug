@@ -1,0 +1,58 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Accordions', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-md-6.mb-4
+                ul.smiple-list
+                  li Lorem ipsum dolor sit amet
+                  li
+                    | Quis nostrud exerci tation
+                  li
+                    | Ut wisi enim ad minim veniam
+                  li
+                    | Aliquam erat volutpat
+                  li
+                    | Tincidunt ut laoreet dolore
+                  li
+                    | Sed diam nonummy nibh
+                  li
+                    | Consectetuer adipiscing elit
+              .col-md-6.mb-4
+                ul.list-unstyled
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Lorem ipsum dolor sit amet
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Quis nostrud exerci tation
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Ut wisi enim ad minim veniam
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Aliquam erat volutpat
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Tincidunt ut laoreet dolore
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Sed diam nonummy nibh
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Consectetuer adipiscing elit

@@ -1,0 +1,126 @@
+.widget {
+  margin-bottom: $spacer * 4;
+
+  .widget-title {
+    @include font-size(16px);
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    margin-bottom: $spacer;
+    color: $gray-500;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  ol,
+  ul {
+    padding-inline-start: $spacer * 1.25;
+  }
+}
+.widget_pages,
+.widget_recent_comments,
+.widget_meta,
+.widget_recent_entries,
+.widget_archive,
+.widget_categories,
+.widget_product_categories {
+  ul {
+
+    li {
+      width: 100%;
+      a {
+        display: inline-block;
+        padding: $spacer / 2 0;
+      }
+    }
+  }
+  > ul {
+    list-style: none;
+    > li {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: solid 1px $gray-500;
+        border-radius: 50px;
+        margin-left: -1.25rem;
+        margin-right: 10px;
+      } 
+    }
+  }
+}
+.widget_recent_comments {
+  li {
+    margin-bottom: $spacer;
+  }
+}
+.widget_nav_menu {
+  ul {
+    padding-left: 0;
+    li {
+      width: 100%;
+      list-style: none;
+
+      padding: $spacer * 0.6 0;
+      a {
+        display: inline-block;
+      }
+    }
+    .current-menu-item {
+      a {
+        
+        padding: $spacer * 0.4 $spacer * 2;
+        margin-left: -$spacer * 2;
+        border-radius: 50px;
+        min-width: 130px;
+      }
+    }
+  } 
+}
+
+
+// widget_rss
+.widget_rss {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-bottom: $spacer * 2;
+      margin-bottom: $spacer * 2;
+
+      &:not(:last-child) {
+        border-bottom: solid 1px $border-color;
+      }
+
+      a.rsswidget {
+        @include font-size($h6-font-size * 1.2);
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        margin-bottom: $spacer * 0.5;
+        display: block;
+      }
+
+      .rss-date {
+        color: $gray-500;
+        @include font-size($small-font-size);
+        margin-bottom: $spacer * 0.5;
+        display: block;
+      }
+    }
+  }
+}
+
+// search form
+.search-form {
+  .form-control,
+  .btn {
+		border-color: $input-border-color;
+  }
+  .input-group .form-control {
+    border-color: $input-border-color;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+  }
+}

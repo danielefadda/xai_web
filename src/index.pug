@@ -1,0 +1,170 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+
+    .entry-content
+      // head
+      .twenty-percent-bg-yellow
+        .container.py-lg-8.py-md-8.py-5
+          .row.gx-lg-5.mt-lg-3
+            .col-lg-6.col-md-8
+              h1.text-black.mb-4 XAI
+              h2.text-black.mb-4 Justifying AI decision making
+              p.mb-5 Artificial intelligence’s (AI) Black Box combined with machine learning (ML) is widely being used in automated decision-making. It is helping to manage data and quickly process decisions but these automated decisions can involve biases from collected data or be unfair. Furthermore, they can’t be explained nor transparent, depriving clients of the right to an explanation. The EU-funded XAI project aims to produce meaningful explanations for AI/ML systems. The research focuses on how to design transparency in ML models, how to produce controlled black-box explanations, how to reveal used data and algorithms, unfairness and causal relationships in processes. The project will also formulate ethical and legal standards for AI.
+                |
+                |
+              div.pb-md-2
+                a.btn.btn-outline-black(href="page-about-us.html") ABOUT US
+            .col-lg-6
+              .mt-lg-0.mt-md-5.mt-5
+                img(src="assets/images/1.jpg" alt="burger")
+
+      .container
+        .row.mb-2
+          .col-lg-4.col-md-6
+            .pr-lg-5
+              h2 Working with leading corporates around the world
+        //numberings
+        .row
+          .col-lg-6.col-md-10
+            div.pr-lg-4
+              p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+
+        .row.mt-lg-6.mb-lg-9.mt-md-5.mb-md-8.mb-5
+          .col-lg-3.col-md-6.mt-lg-0.mt-md-0.mt-4
+            .col-4
+              .custom-font 35
+            h5.mt-6 Years of services
+          .col-lg-3.col-md-6.mt-lg-0.mt-md-0.mt-5
+            .col-4
+              .custom-font 120
+            h5.mt-6 Civil and rail projects
+          .col-lg-3.col-md-6.mt-lg-0.mt-5
+            .col-4
+              .custom-font 350
+            h5.mt-6 Commercial building
+          .col-lg-3.col-md-6.mt-lg-0.mt-5
+            .col-4
+              .custom-font 8630
+            h5.mt-6 Residential building
+
+      // working arround the world
+      .bg-yellow
+        .container.py-lg-9.py-md-7.py-6
+          .row.gx-lg-5
+            .col-lg-6
+              img(src="assets/images/2.jpg" alt="burger")
+            .col-lg-6.pr-lg-7.my-auto.mt-md-6.mt-5
+              h2 Working around the world
+              p.mt-3 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, consetetur sadipscing elitr.
+              .row.mt-lg-6.mt-md-5.mt-5.gx-lg-5.gx-lg-8
+                .col-lg-2.mb-3.mb-lg-0
+                  i.h3.fas.fa-tv.btn-outline-black-1.py-3.px-3
+                .col-lg-10
+                  h5 Virtual design and construction
+                  p.mt-3 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
+              .row.mt-lg-5.mt-md-5.mt-4.gx-lg-5.gx-lg-8
+                .col-lg-2.mb-3.mb-lg-0
+                  i.h3.fas.fa-city.btn-outline-black-1.py-3.px-3
+                .col-lg-10
+                  h5 Office Build-outs and Expansion
+                  p.mt-3 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
+              .row.mt-lg-5.mt-md-5.mt-4.gx-lg-5.gx-lg-8
+                .col-lg-2.mb-3.mb-lg-0
+                  i.h3.fas.fa-door-open.btn-outline-black-1.py-3.px-3
+                .col-lg-10
+                  h5 Construction Management
+                  p.mt-3.mb-0 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
+
+      // portfoio
+      .container.mt-lg-9.mt-md-7.mt-6
+        h2.mb-lg-5.mb-md-4.mb-3 Portfolio
+
+        .portfolio-list
+          article.portfolio-item
+            .entry-media
+              img(src="assets/images/3.jpg" alt="project")
+            .entry-content-wrapper
+              .entry-title
+                a(href="portfolio-single-project.html") Depot Hall of West Sector, UK
+          article.portfolio-item
+            .entry-media
+              img(src="assets/images/4.jpg" alt="project")
+            .entry-content-wrapper
+              .entry-title
+                a(href="portfolio-single-project.html") Building Design and Construction
+          article.portfolio-item
+            .entry-media
+              img(src="assets/images/5.jpg" alt="project")
+            .entry-content-wrapper
+              .entry-title
+                a(href="portfolio-single-project.html") Modern House Exterior Architecture
+
+      // button
+      .container-fluid.px-0.mb-lg-9.mb-md-7.mb-6
+        .text-center
+          a.btn.btn-outline-black(href="portfolio.html") SEE All PROJECTS
+
+      // qoute block
+      .container.mb-lg-9.mb-md-7.mb-5
+        .seventy-five-percent-bg-yellow
+          .row
+            .col-lg-5.py-lg-7.order-lg-1
+              img(src="assets/images/6.jpg" alt="project")
+            .col-lg-7.px-lg-6.py-lg-7.px-md-6.py-md-6.px-5.py-5
+              i.custom-icon.fas.fa-quote-left.mb-4
+              div.pr-lg-4
+                p.lead.mt-2.mt-lg-3.mb-lg-5.mb-md-4.mb-4 Adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor is voluptates a tenetur sit. Qui asperiores excepturi perspiciatis totam rerum volup tatem et neque pariatur. Vivamus interdum porta turpis at ornare Fugiat qui illum sequi ea qui eos fugit mauris, porta in purus sit amet
+              h5 Michael D. Wilson - CEO of New City
+
+
+      // blog
+      .container.my-lg-9.my-md-7.my-6
+        h2.mb-lg-5.mb-md-4.mb-3 Blog
+        +blog(
+          'card-post-style',
+          'col-lg-4 col-12',
+          false,
+          {
+          image:'assets/images/blog/b1.jpg',
+          title:'18 New Roads Schemes A Step Closer To Delivery',
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b2.jpg',
+          title:'What Today’s Renters Truly Want In The Building',
+          category:'Humour',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b3.jpg',
+          title:'Should I Sell or Rent My Newly constructed House?',
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          }
+        )
+        .text-center.align-items-center
+          a.btn.btn-outline-black.rounded-0(href='blog.html') MORE POSTS
+
+      //Subscription form
+      .container.my-lg-9.my-md-7.my-6
+        .bg-yellow
+          .row.py-lg-8.py-md-6.py-6.px-lg-0.px-md-0.px-4
+            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
+              .text-center
+                h2.mb-4 keep up with the latest from tozee
+                div.px-lg-5
+                  p.mb-5.mt-1 Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+
+                form
+                  .form-group.row.gx-lg-2
+                    .col-md-9
+                      input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+                    .col-md-3.mt-2.mt-md-0
+                      a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE
+
+

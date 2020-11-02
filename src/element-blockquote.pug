@@ -1,0 +1,29 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Blockquote', description:''})
+    // blockquote
+    .container
+      .row.large-gutters
+        .col-lg-3.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-9.mb-7
+          blockquote
+            .border-left.pl-lg-3
+              p I am not interested in the past, except as the road to the future. Over the years I have learned that what is important in a dress is the woman who is wearing it. It's sometimes said that I'm rebellious and I do things to push people's buttons, but I just like the challenge.
+              cite — Someone famous in Source Title
+
+            .border.border-left-0.border-right-0.mt-lg-6.mt-md-4.mt-4
+              .py-lg-5.py-md-4.py-4
+                p.lead.text-center I am not interested in the past, except as the road to the future. Over the years I have learned that what is important in a dress is the woman who is wearing it. It’s sometimes said that I’m rebellious and I do things to push people’s buttons, but I just like the challenge.
+

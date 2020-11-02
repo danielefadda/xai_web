@@ -1,0 +1,48 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Accordions', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            #accordionExample.accordion
+              .card.border-0
+                #headingOne.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | Q: What size construction project can tozee manage?
+
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite  
+                    .card-body.mt-2
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      p sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+              .card.border-0.mt-lg-5.mt-4
+                #headingTwo.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Q: What size construction project can tozee manage?
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      p sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+              .card.border-0.mt-lg-5.mt-4
+                #headingThree.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    | Q: What size construction project can tozee manage?
+                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      p sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.

@@ -1,0 +1,111 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Pricing Table', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-md-6
+                .pricing-table-item.bg-yellow.px-5.py-5
+                  h4.pricing-table__title Basic Plan
+                  .pricing-table__price
+                    span.pricing-table__currency $
+                    h5.pricing-table__amount 560
+
+                  ul.pricing-table__features
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Ut wisi enim ad minim
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Tincidunt ut laoreet
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Sed diam nonummy nibh
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Consectetuer adipiscing
+
+                  .wp-block-button
+                    a.pricing-table__button.btn.btn-outline-black(href='#') Book Now
+
+              .col-md-6
+                .pricing-table-item.bg-black.px-5.py-5
+                  .text-white
+                    h4.pricing-table__title Premium Plan
+                    .pricing-table__price
+                      span.pricing-table__currency $
+                      h5.pricing-table__amount 790
+                    ul.pricing-table__features
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Ut wisi enim ad minim
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Tincidunt ut laoreet
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Sed diam nonummy nibh
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Consectetuer adipiscing
+                    .wp-block-button
+                      a.pricing-table__button.btn.btn-outline-yellow(href='#') Book Now
+
+              .col-md-6
+                .pricing-table-item.bg-yellow.px-5.py-5
+                  h4.pricing-table__title Enterprise Plan
+                  .pricing-table__price
+                    span.pricing-table__currency $
+                    h5.pricing-table__amount 930
+                  ul.pricing-table__features
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Ut wisi enim ad minim
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Tincidunt ut laoreet
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Sed diam nonummy nibh
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Consectetuer adipiscing
+                  .wp-block-button
+                    a.pricing-table__button.btn.btn-outline-black(href='#') Book Now
+
+              .col-md-6
+                .pricing-table-item.bg-black.px-5.py-5
+                  .text-white
+                    h4.pricing-table__title Premier Plan
+                    .pricing-table__price
+                      span.pricing-table__currency $
+                      h5.pricing-table__amount 1590
+                    ul.pricing-table__features
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Ut wisi enim ad minim
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Tincidunt ut laoreet
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Sed diam nonummy nibh
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Consectetuer adipiscing
+                    .wp-block-button
+                      a.pricing-table__button.btn.btn-outline-yellow(href='#') Book Now

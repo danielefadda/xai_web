@@ -1,0 +1,275 @@
+@import "node_modules/bootstrap/scss/functions";
+
+// Websites languages direction
+$language-direction: ltr; // set value 'rtl' for right to left languages
+$language-opposite-direction: rtl; // set value 'ltr' for right to left languages
+$language-start-direction: left; // set value 'right' for right to left languages
+$language-end-direction: right; // set value 'left' for right to left languages
+$language-transform-direction: 1; // set value '-1' for right to left languages
+
+//Alert color
+$dark: #111;
+$blue: #341fff;
+$light-blue: #1da1f2;
+$dark-blue: #0000FF;
+$prime: #0000FF;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primery:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+//using color
+$yellow: #FFF301;
+$black: #000000;
+$grayphite: #EDEDED;
+$gray-500:#999999;
+
+$primary:$yellow;
+$christine: #DC5711;
+$yellow: #FFF301;
+$white: #ffffff;
+
+//Theme Colors
+$theme-colors: (
+  "primery":$primery,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "christine": $christine,
+  "yellow": $yellow,
+  "white":$white,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+  "primary":$primary,
+  );
+$accent-background-color: $white;
+//merge
+$colors: ();
+$colors: map-merge((
+  "primary":$primary,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "christine": $christine,
+  "yellow": $yellow,
+  "white":$white,
+  
+    ),
+    
+  $colors);
+
+// Set
+// The
+// Customize
+// Options
+
+$enable-responsive-font-sizes: true;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (0: 0,
+  1: ($spacer * 0.25,
+  ),
+  //4px
+  2: ($spacer * 0.5,
+  ),
+  //8px
+  3: ($spacer * 1,
+  ),
+  //16px
+  4: ($spacer * 1.5,
+  ),
+  //24px
+  5: ($spacer * 3,
+  ),
+  //48px
+  6: ($spacer * 4,
+  ),
+  //64px
+  7: ($spacer * 5,
+  ),
+  //80px
+  8: ($spacer * 6.25,
+  ),
+  //100px
+  9: ($spacer * 7.5,
+  ),
+  //120px
+  10: ($spacer * 9.375,
+  ) //150px,
+);
+
+// This
+// stylelint
+// Body
+
+$body-color: $black;
+
+// Settings
+
+// Links
+$link-color: $black;
+$link-decoration: none;
+
+// Paragraphs
+//
+// Style
+// Grid containers
+
+$small-screen: 540px;
+$medium-screen: 720px;
+$large-screen: 960px;
+$extra-large-screen: 1320px;
+
+$container-max-widths: (sm: $small-screen,
+  md: $medium-screen,
+  lg: $large-screen,
+  xl: $extra-large-screen,
+);
+
+// adapting
+// Grid
+//
+// Define
+// Grid
+//
+// Set
+// Components
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace;
+$font-family-base: 'Poppins';
+
+
+$headings-font-family: 'Poppins';
+$headings-font-weight: 700;
+
+// Assumes
+// Tables
+//
+// Customizes
+// Buttons
+//
+// Shared
+// Buttons + Forms
+
+$input-btn-font-family: $headings-font-family;
+$btn-font-weight: $headings-font-weight;
+
+// Forms
+$input-border-color: $black;
+$input-box-shadow: 0;
+$input-bg: transparent;
+$input-color: $black;
+$input-border-radius:0;
+$input-btn-padding-y:0.65rem;
+$input-btn-padding-x:1.9rem;
+$input-btn-border-width: 2px;
+$btn-active-box-shadow: 0;
+$btn-border-radius:0;
+$btn-font-size: 16px;
+$input-focus-border-color: $black;
+$input-focus-box-shadow: 0;
+
+// Extra
+// In
+
+// Used
+// For
+// Form
+// stylelint
+// Z
+// Warning
+// of
+// Navs
+// Navbar
+$navbar-padding-y: 0;
+$navbar-toggler-focus-width:0;
+// Compute
+// Dropdowns
+$dropdown-font-size: 14;
+$dropdown-link-hover-bg: $yellow;
+$dropdown-link-active-color:  none;
+$dropdown-link-active-bg:  none;
+$dropdown-box-shadow:   0;
+$dropdown-item-padding-x: 2.0rem;
+// Pagination
+
+$pagination-padding-x: 0.93rem;
+
+
+// Jumbotron
+// Cards
+// Tooltips
+// Form
+// Popovers
+// Toasts
+// Badges
+// Use
+// customizing
+// Modals
+// Padding
+// Keep
+// Alerts
+// Define
+// Progress
+// List
+// Image
+// Figures
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+
+$breadcrumb-divider: quote(">");
+
+// Carousel
+// Define
+// Spinners
+// Close
+// Code
+// Utilities
+//Printing
+
+$caret-width: 0.21em;
+
+@import "node_modules/bootstrap/scss/variables";

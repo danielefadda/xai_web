@@ -1,0 +1,16 @@
+.countdown {
+    .countdown_value {
+        @include font-size($h1-font-size);
+        font-weight: $headings-font-weight;
+        display: inline-block;
+        line-height: 1.4;
+        text-align: center;
+        &:not(:last-child) {
+            padding-right: $spacer * 2;
+        }
+        .countdown_lable {
+            @include font-size($h6-font-size);
+            display: block;
+        }
+    }
+}

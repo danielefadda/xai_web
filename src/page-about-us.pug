@@ -1,0 +1,86 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry.mb-7
+    .entry-content
+      //about us top
+      .bg-yellow
+        .container.py-lg-8.py-md-7.py-5.mb-lg-9.mb-md-7.mb-5 
+          .row.gx-lg-0
+            .col-lg-6
+              h2.my-3 About Tozee
+              .pr-lg-5
+                p.lead.mt-3 Nullam augue lorem, varius eget nibh sit amet, consetetur sadipscing, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. eat vero accusam et justo duo dolores et ea rebum.
+                p.lead Fusce sollicitudin eu sapien sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                
+            .col-lg-6.mt-lg-0.mt-md-5.mt-5
+              .bg-black
+                .px-lg-6.pt-lg-0.pb-lg-6.px-md-4.py-md-5.px-4.py-5
+                  i.fas.fa-quote-left.display-3.text-gray-500.margin.mb-3
+                  .mb-lg-5.mb-md-4.mb-4
+                    p.h5.mt-lg-4.mt-3.text-white.font-weight-normal.lh-base adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor voluptates tenetur sit. Qui asperiores excepturi totam rerum volup tatem et neque pariatur.
+                  cite.h5.font-normal.text-yellow Michael D. Wilson - Tozee chef
+
+      // mission and vision
+      .container.mb-lg-9.mb-md-7.mb-5
+        .seventy-percent-bg-yellow
+          .row.gx-lg-0
+            .col-lg-6.py-lg-6.px-lg-6.py-md-5.px-md-5.py-5.px-4
+              div.px-lg-0.px-md-0.px-2
+                h1.mb-3 Mission
+                p.lead.mb-3 diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consetetur.
+                p.lead.mb-0 sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.
+            .col-lg-6.pt-lg-10.pb-lg-7.mt-lg-5
+              .bg-black  
+                .py-lg-6.px-lg-6.py-md-5.px-md-5.py-5.px-4
+                  h1.text-yellow.mb-3 Vision
+                  p.lead.text-white.mb-0 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consetetur. dolore magna aliquyam erat, sed diam voluptua. accusam et justo duo
+
+      //values
+      .container.mb-lg-9.mb-md-7.mb-5
+        .row.gx-lg-5
+          .col-lg-6
+            img(src="assets/images/36.jpg" alt="burger")
+          .col-lg-6.my-auto
+            div.mt-5
+              h2.font-weight-bold.mb-lg-3.mb-4 Our Values
+              .mt-lg-1.mt-1
+                p.pr-lg-5 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, consetetur sadipscing elitr.
+
+            div.mt-5
+              h5.mb-lg-3.mb-3 Collaborative
+              .mt-lg-1.mt-1
+                p Consetetur Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Accusamjusto Duo Et.
+
+            div.mt-5
+              h5.mb-lg-3.mb-3 Trusted
+              .mt-lg-1.mt-1
+                p Consetetur Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Accusamjusto Duo Et.
+
+            div.mt-5
+              h5.mb-lg-3.mb-3 Motivation
+              .mt-lg-1.mt-1
+                p Consetetur Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Accusamjusto Duo Et.
+
+            div.mt-5
+              h5.mb-lg-3.mb-3 Focused
+              .mt-lg-1.mt-1
+                p Consetetur Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Accusamjusto Duo Et.
+
+      //Subscription form
+      .container.my-lg-9.my-md-7.my-6
+        .bg-yellow
+          .row.py-lg-8.py-md-6.py-5.px-lg-0.px-md-0.px-4
+            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
+              .text-center
+                h2.mb-4 keep up with the latest from tozee
+                p.mb-5.mt-1.px-lg-5 Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                
+                form
+                  .form-group.row.gx-lg-2
+                    .col-md-9
+                      input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+                    .col-md-3.mt-2.mt-md-0
+                      a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE

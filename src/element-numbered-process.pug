@@ -1,0 +1,50 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Numbered Process', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .text-center
+              h2.mb-4 How It's Work 
+              p
+                | Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere
+                | me doming
+                | vulputate velit esse molestie possim. Ut wisi enim ad placerat facer possim assum minim
+                | veniam,
+                | quis nostrud exerci tation ullamcorper.
+            .row.mt-6.text-center
+              .col-md-6.mb-4
+                .bg-black.px-5.py-5
+                  .text-white
+                    h1.mb-3 1
+                    h4.mb-3 Merkstrategie
+                    p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+              .col-md-6.mb-4
+                .bg-yellow.px-5.py-5
+                  h1.mb-3 2
+                  h4.mb-3 Visual Design
+                  p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+              .col-md-6.mb-4
+                .bg-yellow.px-5.py-5
+                  h1.mb-3 3
+                  h4.mb-3 Pixel Perfect
+                  p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+              .col-md-6.mb-4
+                .bg-black.px-5.py-5
+                  .text-white
+                    h1.mb-3 4
+                    h4.mb-3 Development
+                    p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.

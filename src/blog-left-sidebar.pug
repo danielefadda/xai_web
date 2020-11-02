@@ -1,0 +1,59 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  //- Page title
+  article.entry
+
+    .entry-content
+      .bg-yellow
+        .pt-lg-7.pb-lg-7.pt-md-6.pb-md-6.pt-5.pb-5
+          .container
+            .row  
+              .col-lg-6
+                h2.my-3 Blog Left Sidebar
+                p.lead.mb-3 Duis auctor eros ac urna dictum, eget rhoncus ex fringilla. Vestibulum in ex massa. Sed accumsan tortor libero. Phasellus gravida nibh vel odio semper vitae.
+
+      .container.mt-8
+        .row.large-gutters
+          .col-lg-8.order-lg-2.mb-7
+            +blogcard(
+              'gy-5',
+              'col-md-12 col-lg-12',
+              true,
+              {
+              image:'assets/images/blog/b1.jpg',
+              title:'18 New Roads Schemes A Step Closer To Delivery',  
+              category:'Photography',
+              author:'Amjad Ali',
+              date:'March 22, 2020',
+              commentCount:'2',
+              isEdit:true,
+              content:'Aenean eu dictum nulla. Etiam faucibus augue odio. Sed pharetra hendrerit nunc, venenatis aliquet turpis congue in. Morbi interdum nibh nec mauris consectetur lacinia. Sed id condimentum eros, a eleifend nunc. Aenean nisl arcu, finibus ut porta sit amet, interdum nec mi. Suspendisse potenti. '
+              },
+              {
+              image:'assets/images/blog/b2.jpg',
+              title:'What Today’s Renters Truly Want In The Building',
+              category:'Humour',
+              author:'Amjad Ali',
+              date:'March 22, 2020',
+              commentCount:'2',
+              isEdit:true,
+              content:'Aenean eu dictum nulla. Etiam faucibus augue odio. Sed pharetra hendrerit nunc, venenatis aliquet turpis congue in. Morbi interdum nibh nec mauris consectetur lacinia. Sed id condimentum eros, a eleifend nunc. Aenean nisl arcu, finibus ut porta sit amet, interdum nec mi. Suspendisse potenti. '
+              },
+              {
+              image:'assets/images/blog/b3.jpg',
+              title:'Should I Sell or Rent My Newly constructed House?',
+              category:'Photography',
+              author:'Amjad Ali',
+              date:'March 22, 2020',
+              commentCount:'2',
+              isEdit:true,
+              content:'Aenean eu dictum nulla. Etiam faucibus augue odio. Sed pharetra hendrerit nunc, venenatis aliquet turpis congue in. Morbi interdum nibh nec mauris consectetur lacinia. Sed id condimentum eros, a eleifend nunc. Aenean nisl arcu, finibus ut porta sit amet, interdum nec mi. Suspendisse potenti. '
+              }
+            )
+            .text-center.align-items-center.mt-5
+              a.btn.btn-outline-black(href='#') Load More
+          .col-lg-4.order-lg-1.mb-7
+            //- Sidebar
+            include includes/sidebar

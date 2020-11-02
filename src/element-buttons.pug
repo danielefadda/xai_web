@@ -1,0 +1,36 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+  .entry-content
+    //- Page title
+    .bg-yellow.mb-lg-9.mb-md-7.mb-5
+      .py-lg-8.py-md-7.py-5
+        .container.px-0
+          .row
+            .col-lg-10
+              +pagetitle({title:'Buttons', description:''})
+    .container
+      .row.large-gutters
+        .col-lg-3.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-9.my-7
+          .row  
+            .col-lg-4
+              a.btn.btn-outline-yellow(href="") VIEW MORE
+            .col-lg-4
+              a.btn.btn-outline-black(href="") SUBSCRIBE
+            .col-lg-4
+              a.btn.btn-yellow(href="") READ MORE
+          .row.mt-lg-5.mt-md-4.mt-4  
+            .col-lg-4
+              a.btn.btn-black.text-yellow(href="") CONTACT US
+            .col-lg-4
+              a.btn.btn-outline-yellow(href="") SUBSCRIBE
+            .col-lg-4
+              a.btn.btn-yellow.text-white(href="") CONTACT US
+          .row.mt-lg-5.mt-md-4.mt-4  
+            .col-lg-4
+              a.btn.btn-black.text-white(href="") READ MORE

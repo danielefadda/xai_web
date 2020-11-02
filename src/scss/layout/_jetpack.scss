@@ -1,0 +1,29 @@
+/* =Infinity Styles
+-------------------------------------------------------------- */
+
+.infinite-loader {
+  color: #000;
+  display: block;
+  height: 28px;
+  text-indent: -9999px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#infinite-handle {
+  text-align: center;
+  margin: 0 auto;
+
+  span {
+    background: initial;
+    border-radius: initial;
+    color: initial;
+    cursor: pointer;
+    font-size: initial;
+    padding: initial;
+
+  }
+}

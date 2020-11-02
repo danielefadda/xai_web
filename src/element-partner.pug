@@ -1,0 +1,63 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Partners', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .col-6.mb-5
+              h2.mb-3 Our Partners
+              p
+                | Quisque congue accumsan ante id condimentum. Aliquam lorem nisl, bibendum et sollicitudin
+                | ut, viverra vitae ligula. In hac habitasse platea dictumst.
+
+            .row.gx-lg-5.gy-5.mb-5
+              .col-lg-6
+                .bg-yellow
+                  .text-center.align-items-center
+                    .px-lg-4.py-lg-5.px-4.py-5
+                      .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
+                        img(src="assets/images/logo/3.png" alt="Meeting")
+                      .mt-lg-4.mt-5 
+                        h4 Construction Partner
+                      .px-lg-2.mt-lg-3.px-2.mt-3
+                        p Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.
+
+              .col-lg-6
+                .bg-yellow
+                  .text-center.align-items-center
+                    .px-lg-4.py-lg-5.px-4.py-5
+                      .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
+                        img(src="assets/images/logo/2.png" alt="Meeting")
+                      .mt-lg-4.mt-5
+                        h4 Bank Partner
+                      .px-lg-2.mt-lg-3.px-2.mt-3
+                        p Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.
+
+            .row
+              .col-6
+                h2.mb-3 In Carousel
+                p
+                  | Quisque congue accumsan ante id condimentum. Aliquam lorem nisl, bibendum et sollicitudin ut, viverra vitae ligula. In hac habitasse platea dictumst.
+              .slider-call.popup-gallery.pt-5(data-flickity='{ "contain": true, "prevNextButtons": false }')
+                img.px-3.w-25(src='assets/images/3.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/4.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/5.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/8.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/blog/b1.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/blog/b2.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/blog/b3.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/blog/b4.jpg' alt='Partner Logo')
+                img.px-3.w-25(src='assets/images/blog/b5.jpg' alt='Partner Logo')

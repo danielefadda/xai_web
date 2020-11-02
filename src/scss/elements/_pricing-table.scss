@@ -1,0 +1,27 @@
+.pricing-table-item {
+    margin-bottom: $spacer * 2;
+    padding: $spacer * 3 $spacer * 3;
+    .pricing-table__title {
+        margin-bottom: $spacer / 4;
+        font-size: $h5-font-size;
+    }
+    .pricing-table__price {
+        margin-bottom: $spacer;
+        font-weight: $headings-font-weight;
+        font-family: $headings-font-family;
+        .pricing-table__amount {
+            @include font-size(60px);
+        }
+     }
+    .pricing-table__price * {
+        display: inline;
+        font-size: $h5-font-size;
+        color: $gray-500;
+        font-family: $font-family-base;
+    }
+    .pricing-table__features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 $spacer * 2 0;
+    }
+}

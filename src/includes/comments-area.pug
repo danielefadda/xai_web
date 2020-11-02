@@ -1,0 +1,59 @@
+// Comments Area
+.comments.comments-area.container-small.mt-4(id="comments")
+  h2.comments-title.h6 One Reply to “Hello world!”
+  ol.comment-list
+    li#comment-1.comment.even.thread-even.depth-1
+      article#div-comment-1.comment-body
+        footer.comment-meta
+          .comment-author.vcard
+            img.avatar(alt='profile pic', src='assets/images/profile-pic.jpg',  height='100', width='100')
+            b.fn
+              a.url(href='https://www.energeticthemes.com/', rel='external nofollow') Anushey Malik
+            span.says says:
+          // .comment-author
+          .comment-metadata
+            a(href='#')
+              time(datetime='2018-07-29T21:45:09+00:00')
+                | July 29, 2019 at 9:45 pm
+          // .comment-metadata
+          // .comment-meta
+          .comment-content
+            p Aliquam in ante elit. Praesent blandit nibh ac justo auctor pretium. Maecenas mauris metus, vulputate ac volutpat sit amet, facilisis quis odio. Nam ut commodo neque. Suspendisse viverra massa eget nibh.
+          // .comment-content
+          .reply
+            a.comment-reply-link(href='#') Reply
+      // .comment-body
+      // #comment-##
+  #respond.comment-respond
+    h3#reply-title.comment-reply-title Leave a comment
+    form#commentform.comment-form(action='#', method='post', novalidate='')
+      
+      p.comment-notes
+        span#email-notes Your email address will not be published.
+        |  Required fields are marked 
+        span.required *
+      
+      p.comment-form-comment.form-group
+        label(for='comment') Comment
+        textarea#comment.form-control(name='comment', cols='45', rows='5', required='required')
+      
+      p.comment-form-author.form-group
+        label(for='author')
+          | Name 
+          span.required *
+        input#author.form-control(name='author', type='text', value='', size='30', maxlength='245', required='required')
+      
+      p.comment-form-email.form-group
+        label(for='email')
+          | Email 
+          span.required *
+        input#email.form-control(name='email', type='email', value='', size='30', maxlength='100', aria-describedby='email-notes', required='required')
+      
+      p.comment-form-url.form-group
+        label(for='url') Website
+        input#url.form-control(type='url', name='url', size='30', maxlength='200', value='')
+      
+      p.form-submit
+        a.btn.btn-outline-black(href='#') Submit
+  // #respond
+// End Comments Area

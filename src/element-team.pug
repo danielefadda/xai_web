@@ -1,0 +1,58 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Accordions', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.gx-lg-5.gy-5
+              .col-lg-6
+                .member-image
+                  img(src="assets/images/25.jpg" alt="team")
+                .member-content.bg-yellow
+                  .member-text
+                    h5.member-name Reda McClain
+                    .member-tag
+                      span.member-role founder and chairman
+                    p Quisque sollicitudin lacinia sapien, eu tincidunt nunc accumsan laoreet. Curabitur feugiat posuere odio nec tincidunt.
+                    ul.list-unstyled.list-inlinetrue.mb-7.mb-md-0
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-facebook
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-instagram
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-twitter
+              .col-lg-6
+                .member-image
+                  img(src="assets/images/24.jpg" alt="team")
+                .member-content.bg-yellow
+                  .member-text
+                    h5.member-name Reda McClain
+                    .member-tag
+                      span.member-role founder and chairman
+                    p Quisque sollicitudin lacinia sapien, eu tincidunt nunc accumsan laoreet. Curabitur feugiat posuere odio nec tincidunt.
+                    ul.list-unstyled.list-inlinetrue.mb-7.mb-md-0
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-facebook
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-instagram
+                      li.list-inline-item
+                        a.btn.btn-team(href='#')
+                          i.fab.fa-twitter

@@ -1,0 +1,32 @@
+
+// Columns gutters
+@media (min-width: 576px) {
+	.large-gutters {
+		margin-right: -25px;
+		margin-left: -25px;
+	}
+
+	.large-gutters>.col,
+	.large-gutters>[class*='col-'] {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+}
+
+// Columns gutters
+@media (min-width: 576px) {
+	.xl-gutters {
+		margin-right: -60px;
+		margin-left: -60px;
+	}
+
+	.xl-gutters>.col,
+	.xl-gutters>[class*='col-'] {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}
+
+.wp-caption-text {
+	@include font-size($font-size-sm)
+}

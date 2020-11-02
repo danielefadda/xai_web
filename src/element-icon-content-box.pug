@@ -1,0 +1,52 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Icon Box', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.text-center.gx-lg-5
+              .col-md-6.mb-4
+                .bg-yellow.px-5.py-5
+                  i.far.fa-heart.fa-2x.mb-3
+                  h5.mb-3 Made With Love
+                  p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+              .col-md-6.mb-4
+                .bg-black.px-5.py-5
+                  .text-white
+                    i.fab.fa-angellist.fa-2x.mb-3
+                    h5.mb-3 Easy to Customize
+                    p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+
+            hr.mt-4.mb-5
+
+            .row.gx-lg-5
+              .col-lg-6.align-items-center.mb-lg-.mb-md-5.mb-4
+                .bg-black
+                  .px-lg-4.py-lg-6.px-md-5.px-4.py-6
+                    .text-white
+                      div
+                        span.icon
+                          i.h-large.display-5.fas.fa-money-check-alt.mb-lg-4.mb-4
+                        h4.text-capitalize.mb-4.pr-2 pre-construction design and estimating
+                        p.pr-3 Quisque sollicitudin lacinia sapien, eu tincidunt nunc ata accumsan laoreet. curabitur feugiat posuere odio nec tincidunt. aliquyam erat nunc sede diam is voluptua 
+              .col-lg-6.mb-lg-0.mb-md-5.mb-4
+                .bg-yellow
+                  .px-lg-4.py-lg-6.px-md-5.px-4.py-6
+                    div
+                      span.icon
+                        i.pr-5.h-large.display-5.fas.fa-puzzle-piece.mb-lg-4.mb-4
+                      h4.text-capitalize.mb-4.pr-5 cost estimation and project scheduling
+                      p.pr-3 Quisque sollicitudin lacinia sapien, eu tincidunt nunc ata accumsan laoreet. curabitur feugiat posuere odio nec tincidunt. aliquyam erat nunc sede diam is voluptua 

@@ -1,0 +1,24 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  //- Page title
+  +pagetitle({title:'Animation', description:''})
+  .container.mt-100px.mb-30px
+    .row.mb-80px
+      .col-md-8.offset-md-2
+        .text-center
+          p.lead AOS Plugin is being used for animation. You learn hou to use it from 
+            a.stronge(href="https://github.com/michalsnik/aos") Here
+  .container.mt-80px.text-center
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='fade-up', data-aos-once="false") fade-up
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='fade-down', data-aos-once="false") fade-down
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='fade-right', data-aos-once="false") fade-right
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='fade-left', data-aos-once="false") fade-left
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='zoom-in', data-aos-once="false") zoom-in
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='zoom-out', data-aos-once="false") zoom-out
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='slide-up', data-aos-once="false") slide-up
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='flip-up', data-aos-once="false") flip-up
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='flip-down', data-aos-once="false") flip-down
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='flip-right', data-aos-once="false") flip-right
+    .p-50px.mb-150px.mx-auto.w-25.primary-bg-color(data-aos='flip-left', data-aos-once="false") flip-left

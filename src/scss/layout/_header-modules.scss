@@ -1,0 +1,94 @@
+.navbar {
+
+    .nav-modules {
+        padding: 0;
+        margin: 0;
+
+        .nav-item-search {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            .navbar-search-bar {
+                input {
+
+                    border-width: 1px;
+                    border-radius: 0;
+                    padding: 30px 0 30px 30px;
+                    border-right: none;
+                    background: $white;
+                    width: 100%;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+
+                    @include media-breakpoint-up(lg) {
+
+                        width: 320px;
+                        border-top: none;
+                        border-bottom: none;
+                    }
+
+
+                }
+
+                .btn {
+                    border-left: none;
+                    background: $white;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    padding: 15px 30px 15px 0;
+                    @include font-size($font-size-sm)
+                }
+
+                @include media-breakpoint-down(md) {
+                    padding-top: $spacer / 1.5;
+                    padding-bottom: $spacer / 1.5;
+                }
+            }
+
+        }
+
+        .navbar-nav .nav-item-search:not(:last-child) {
+            margin-#{$language-end-direction}: $spacer * 1.5;
+
+        }
+
+        .btn-link {
+            @include font-size(18px);
+            font-weight: bold;
+            font-family: $headings-font-family;
+            color: $christine;
+        }
+
+        .nav-item-social-nav {
+
+
+            &:not(:last-child) {
+                margin-#{$language-end-direction}: $spacer * 1.2;
+                padding-#{$language-end-direction}: $spacer * 1.2;
+                border-#{$language-end-direction}: solid 1px $border-color;
+            }
+
+            a:not(:last-child) {
+                margin-#{$language-end-direction}: $spacer;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-top: $spacer / 1.5;
+                padding-bottom: $spacer / 1.5;
+
+                a:not(:last-child) {
+                    margin-#{$language-end-direction}: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .nav-item-account {
+        i {
+            @include font-size($font-size-base * 1.191);
+            padding-right: 5px;
+        }
+    }
+}

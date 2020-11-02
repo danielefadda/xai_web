@@ -1,0 +1,77 @@
+.site-header {
+
+  .navbar-collapse {
+    @include media-breakpoint-down(lg) {
+    margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      background-color: $white;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .dropdown-item {
+        padding-right: 20px;
+        padding-left: 20px;
+      }  
+    }
+  }
+  .navbar {
+    background-color: $yellow;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    .navbar-brand {
+      width: 89px;
+    }
+    .nav-item {
+      font-family: $headings-font-family;
+      color: $black;
+      &.active{
+        color: black;
+      }
+      @include font-size(16px);
+      font-weight: 500;
+      margin-right: 14px;
+      margin-left: 14px;
+
+      .nav-link {
+        @include media-breakpoint-up(lg) {
+          position: relative;
+
+          &.active,
+          &:hover {
+            color: black;
+            &::before {
+              content: "";
+              border-bottom: solid 2px $black;
+              width: calc(100% - 15px);
+              display: block;
+              position: absolute;
+              bottom: 2px;
+              z-index: 1;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+.btn-outline-black-header {
+  border: solid;
+  border-width: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-bottom-area {
+  border-bottom: solid 1px #707070;
+}
+
+// Header modules
+@import "_header-modules.scss";

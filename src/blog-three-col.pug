@@ -1,0 +1,94 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  //- Page title
+  article.entry
+
+    .entry-content
+      .bg-yellow
+        .pt-lg-7.pb-lg-7.pt-md-6.pb-md-6.pt-5.pb-5
+          .container
+            .row  
+              .col-lg-6
+                h2.my-3 Blog Three Col
+                p.lead.mb-3 Duis auctor eros ac urna dictum, eget rhoncus ex fringilla. Vestibulum in ex massa. Sed accumsan tortor libero. Phasellus gravida nibh vel odio semper vitae.
+
+      .container.mt-8.mb-7
+        +blogcard(
+          'gx-5 gy-5',
+          'col-md-6 col-lg-4',
+          false,
+          {
+          image:'assets/images/blog/b1.jpg',
+          title:'18 New Roads Schemes A Step Closer To Delivery',  
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b2.jpg',
+          title:'What Today’s Renters Truly Want In The Building',
+          category:'Humour',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b3.jpg',
+          title:'Should I Sell or Rent My Newly constructed House?',
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b4.jpg',
+          title:'How to pick right Construction Company for House',  
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b5.jpg',
+          title:'Grow Revenue With Interior Architecture Upgrades',
+          category:'Humour',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b6.jpg',
+          title:'How to Invest in Real Estate And Construction',
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b7.jpg',
+          title:'How to Set Great Goals for Real Estate As Landlord',  
+          category:'Interior',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b8.jpg',
+          title:'What Is Wholesaling Real Estate of City',
+          category:'Humour',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          },
+          {
+          image:'assets/images/blog/b9.jpg',
+          title:'Is There Still A Market For Value-Add',
+          category:'Photography',
+          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          }
+        )
+        .text-center.align-items-center.mt-5
+          a.btn.btn-outline-black(href='#') Load More
+
+        //Subscription form
+        .container.my-lg-9.my-md-7.my-6
+          .bg-yellow
+            .row.py-lg-8.py-md-6.py-5.px-lg-0.px-md-0.px-4
+              .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
+                .text-center
+                  h2.mb-4 keep up with the latest from tozee
+                  p.mb-5.mt-1.px-lg-5 Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+
+                  form
+                    .form-group.row.gx-lg-2
+                      .col-md-9
+                        input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+                      .col-md-3.mt-2.mt-md-0
+                        a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE

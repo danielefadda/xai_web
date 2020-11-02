@@ -1,0 +1,37 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Tabs', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            ul.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a.nav-link.active(href='#ideas' role='tab' data-toggle='tab') Ideas
+              li.nav-item
+                a.nav-link(href='#code-quality' role='tab' data-toggle='tab') Code Quality
+              li.nav-item
+                a.nav-link(href='#visual-design' role='tab' data-toggle='tab') Visual Design
+              li.nav-item
+                a.nav-link(href='#experience' role='tab' data-toggle='tab') Experience
+            .tab-content.mt-3
+              #ideas.tab-pane.fade.show.active(role='tabpanel')
+                p Experience ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
+              #code-quality.tab-pane.fade(role='tabpanel')
+                p Experience ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
+              #visual-design.tab-pane.fade(role='tabpanel')
+                p Experience ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
+              #experience.tab-pane.fade(role='tabpanel')
+                p Experience ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.

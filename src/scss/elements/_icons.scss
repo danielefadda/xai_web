@@ -1,0 +1,22 @@
+.round-icon-list {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        @include font-size(18px);
+        border-radius: 50px;
+        text-align: center;
+        a {
+            i {
+                color: $black;
+            }
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

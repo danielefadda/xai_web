@@ -1,0 +1,104 @@
+.shop-item-toolbar {
+    margin-bottom: $spacer * 2.5;
+}
+
+/* Products */
+
+/**
+ * Products
+ */
+.products {
+
+    .product {
+        list-style: none;
+
+        .product-content-wrapper {
+            background: #FDE9AE;
+            padding: 30px;
+
+            .product-title {
+                @include font-size($h4-font-size);
+                margin-bottom: 20px;
+            }
+
+            .price {
+                @include font-size($h4-font-size);
+                font-family: $headings-font-family;
+                font-weight: bold;
+                color: $christine;
+            }
+
+        }
+
+    }
+}
+
+.products-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+        display: inline-block;
+
+        text-align: center;
+        margin-bottom: 40px;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 60px;
+
+            &:not(:last-child) {
+                margin-right: 100px;
+            }
+        }
+
+        a {
+
+            i {
+                display: block;
+                @include font-size(45px);
+                margin-bottom: 8px;
+            }
+
+            span {
+                @include font-size(20px);
+                font-family: $headings-font-family;
+                font-weight: $headings-font-weight;
+                position: relative;
+                z-index: 1;
+
+            }
+
+
+        }
+
+        &.active,
+        &:hover {
+            span {
+                &::after {
+                    content: "";
+                    height: 12px;
+                    width: 100%;
+                    background-color: $yellow;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+}

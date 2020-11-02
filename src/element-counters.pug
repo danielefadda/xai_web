@@ -1,0 +1,36 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-yellow.mb-lg-9.mb-md-7.mb-5
+        .py-lg-8.py-md-7.py-5
+          .container.px-0
+            .row
+              .col-lg-10
+                +pagetitle({title:'Counters', description:''})
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='1969', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Happy Partner
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='2308', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Projects Finished
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='3548', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Coups of Coffee
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='9048', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Working Hours
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.

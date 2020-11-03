@@ -1923,3 +1923,20 @@ body.has-no-comments .comment-respond {
 .nav-pills .nav-link.active {
   color: #000000;
 }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 1px #707070;
+  z-index: 100000;
+}
+
+.entry-content {
+  margin-top: 100px;
+}
+
+.line-numbers-box {
+  min-height: 290px;
+}

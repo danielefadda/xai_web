@@ -1,13 +1,13 @@
 // Navbar
 .site-header.header-bottom-area
-  nav.navbar.navbar-expand-lg.navbar-light.sticky
+  nav.navbar.navbar-expand-lg.navbar-light
     .container
       a.navbar-brand(href='index.html')
         img.site-logo(src='assets/images/logo.png', alt='Logo')
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarNavDropdown.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto
+        ul.navbar-nav.mx-auto
           //- Homes
           li.nav-item
             a.nav-link(href='index.html') Home
@@ -47,9 +47,19 @@
               a.dropdown-item(href='blog-card-three-col.html') Card Three Col
               a.dropdown-item(href='blog-card-two-col-right-sidebar.html') Card two Col Right Sidebar
               a.dropdown-item(href='blog-card-two-col-left-sidebar.html') Card two Col Left Sidebar
-              a.dropdown-item(href='blog-single-post-gallery.html') Single Gallary Post
+              a.dropdown-item(href='blog-single-post-gallery.html') Single Gallary Post 
               a.dropdown-item(href='blog-single-post-video.html') Single Video Post
               a.dropdown-item(href='blog-single-post-audio.html') Single Audio Post
           li.nav-item
             a.nav-link(href='element-accordions.html') Element
+        ul.nav-modules.list-unstyled.d-md-flex.align-items-center.mx-3.mx-lg-0
+          // Social nav
+          li.mr-lg-3.my-3.my-lg-0
+            a.text-black(href='page-contact.html') +19 855 518 386
+          li
+            a.btn.btn-outline-black-header.text-black(href='#')  EN
+
+    
+          
+
 // End Navbar

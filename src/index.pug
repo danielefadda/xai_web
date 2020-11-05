@@ -6,7 +6,7 @@ block content
   article.entry
     .entry-content
       .twenty-percent-bg-yellow
-        .container.py-lg-4.py-md-4.py-5
+        .container.pt-lg-4.pt-md-4.pt-4.pb-6
           .row.gx-lg-5.mt-lg-3
             .col-lg-6.col-md-8
               h1.text-black.mb-4 XAI
@@ -15,19 +15,17 @@ block content
               p.lead.mb-5 XAI project focuses on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-to-global framework for black box explanation, articulated along three lines: a) #[strong the language for expressing]; b) the #[strong inference of local explanations]; c), the #[strong bottom-up generalization of many local explanations into simple global ones]
                 |
                 |
-            .col-lg-6.pt-lg-2.pb-lg-7.mt-lg-5
+            .col-lg-6.pt-lg-2.pb-lg-7.mt-lg-8
               .bg-black
                 .py-lg-6.px-lg-6.py-md-5.px-md-5.py-5.px-4
-                  h4.text-yellow.mb-3 Principal Investigator
+                  h4.text-yellow.mb-3 Project Information
                   div.lead.text-white
-                    p.mb-0 #[em Fosca Giannotti, ISTI-CNR]
-                    p.mb-0 Area della Ricerca CNR
-                    p.mb-0 via Moruzzi 1
-                    p.mb-0 56124 Pisa, Italy
-                    br
-                    p.mb-0 Phone: +39 050 621 2999
-                    p.mb-0 Email: fosca.giannotti@isti.cnr.it
-                    p.mb-0 Web: kdd.isti.cnr.it/people/giannotti-fosca
+                    p.mb-0 Grant agreement ID: #[em 834756]
+                    p.mb-0 Call: #[em ERC-2018-ADG]
+                    p.mb-0 Total cost: #[em 2 500 000€]
+                    p.mb-4 EU Contribution: #[em 2 500 000€]
+                    p.mb-0 Principal investigator: #[em Fosca Giannotti]
+                    p.mb-0 Email: #[em fosca.giannotti @ isti.cnr.it]
 
       .container.mb-4
         .row.justify-content-lg-center
@@ -36,241 +34,122 @@ block content
             p.mt-4 This project will also develop: (1) an explanation infrastructure for benchmarking, equipped with platforms for the users' assessment of the explanations; (2) an ethical-legal framework, in compliance with the provisions of the GDPR; and (3) a repertoire of case studies in explanation-by-design, mainly focused on health and fraud detection applications.
             |
             div.pb-md-2.mt-4
-              a.btn.btn-outline-black(href="page-about-us.html") MORE ON THE PROJECT
-        .row.justify-content-lg-center
-          .col-lg-8
-            blockquote.mt-lg-5
-              p Donec ac nunc quis nisl aliquet hendrerit. Pellentesque ultricies, felis id iaculis feugiat, mauris nunc viverra lectus, quis egestas felis nisi non ante. Donec bibendum magna vitae eros lacinia ornare. Nullam cursus sollicitudin lacus. Maecenas congue.
-              cite — Someone famous in Source Title
+              a.btn.btn-outline-black(href="about.html") MORE ON THE PROJECT
+
     // PARTNERS SECTION
     .entry-content
       .bg-yellow
-        .container.py-lg-5.mb-lg-2.py-md-7.mb-md-5.py-5.mb-2
+        .container.py-lg-5.py-md-7.py-5
           .row
             .col-lg-6
-              h2.my-3 Partners​
-              p.lead.mb-3 Consetetur lorem ipsum dolor sit amet, sadipscing elitr,
-
-      .container.mt-lg-3.mt-3.mb-lg-9.mb-md-7.mb-6
-        .row.gx-lg-5.gy-5.mb-5
-          .col-lg-4
-            .text-center.align-items-center
-              .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
-                img(src="assets/images/logo/2.png" alt="Meeting")
-              .bg-grayphite
-                .px-lg-4.py-lg-3.px-4.py-3
-                  .mt-lg-4.mt-5
-                    h4 CNR
-                  .px-lg-2.mt-lg-4.px-2.mt-3
-                    p National Research Council #[br] - #[em Pisa (Italy)] -
-          .col-lg-4
-            .text-center.align-items-center
-              .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
-                img(src="assets/images/logo/2.png" alt="Meeting")
-              .bg-grayphite
-                .px-lg-4.py-lg-3.px-4.py-3
+              h1.my-3 Partners​
+              //- p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr,
+    .entry-content.mt-5
+      .bg-grayphite
+        .container.mb-lg-1.mb-md-1.mb-1
+          .row.gx-lg-5.gy-5
+            .col-lg-4
+              .text-center.align-items-center
+                .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
+                  img(src="assets/images/logo_cnr.jpg" alt="CNR").rounded-circle
+                  .px-lg-4.px-4
+                    .mt-lg-4.mt-5
+                      h4 CNR
+                    .px-lg-4.px-4
+                      p National Research Council
+            .col-lg-4
+              .text-center.align-items-center
+                .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
+                  img(src="assets/images/logo_unipi.jpg" alt="Unipi").rounded-circle
+                  .px-lg-4.px-4
                   .mt-lg-4.mt-5
                     h4 University of Pisa
-                  .px-lg-2.mt-lg-4.px-2.mt-3
-                    p Department of Computer Science #[br] - #[em Pisa (Italy)] -
-          .col-lg-4
-            .text-center.align-items-center
-              .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
-                img(src="assets/images/logo/3.png" alt="Meeting")
-              .bg-grayphite
-                  .px-lg-4.py-lg-3.px-4.py-3
+                  .px-lg-4.px-4
+                    p Department of Computer Science
+            .col-lg-4
+              .text-center.align-items-center
+                .px-lg-5.mt-lg-4.px-5.mt-4.mb-5
+                  img(src="assets/images/logo_normale.jpg" alt="Normale").rounded-circle
+                  .px-lg-4.px-4
                     .mt-lg-4.mt-5
                       h4 Scuola Normale Superiore
-                    .px-lg-2.mt-lg-4.px-2.mt-3
-                      p - #[em Pisa (Italy)] -
     //- Research lines title
-    .entry-content
+    .entry-content.mt-0
       .twenty-percent-bg-yellow
         .container.px-3.py-5
           .row
             .col-lg-6.col-md-6.ml-lg-4.p-lg-4.bg-black.text-white
               .pr-lg-5
-                h2.text-yellow 5 XAI research lines
+                h1.text-yellow The 5 XAI #[br] research lines
                 div
-                  p.text-white Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+                  //- p.text-white Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
     //- 5 research lines
     .entry-content
       .container
         .row.mt-6.text-center.justify-content-center
-          .col-lg-8
+          .col-lg-6
             .row
               .col-md-6.mb-4
                 .bg-yellow.px-5.py-4.line-numbers-box
                   h1.mb-3 1
                   h4.mb-3 Local-to-global paradigm for explanation by design
-                  p Research manager #[br]#[em Mario Rossi]
+                  //- p Research manager #[br]#[em Mario Rossi]
               .col-md-6.mb-4
                 .bg-black.px-5.py-4.line-numbers-box
                   .text-white
                     h1.mb-3 2
                     h4.mb-3 From statistical to causal and mechanistic, physical explanations
-                    p Research manager #[br]#[em Mario Rossi]
+                    //- p Research manager #[br]#[em Mario Rossi]
               .col-md-6.mb-4
-                .bg-grayphite.pt-5.pb-2.py-4.line-numbers-box
-                  h1.mb-3 3
-                  h4.mb-3 XAI #[br] platform
-                  p Research manager #[br]#[em Mario Rossi]
+                .bg-grayphite.px-5.py-4.line-numbers-box
+                  .text-black
+                    h1.mb-3 3
+                    h4.mb-3 XAI #[br] platform
+                    //- p Research manager #[br]#[em Mario Rossi]
               .col-md-6.mb-4
                 .bg-yellow.px-5.py-4.line-numbers-box
-                  h1.mb-3 4
-                  h4.mb-3 Ethical/legal framework for explanation
-                  p Research manager #[br]#[em Mario Rossi]
+                  .text-black
+                    h1.mb-3 4
+                    h4.mb-3 Ethical/legal framework for explanation
+                    //- p Research manager #[br]#[em Mario Rossi]
               .col-md-12.mb-4
                 .bg-black.px-5.pt-4.pb-1.line-numbers-box.text-white
-                  h1.mb-3 5
-                  h4.mb-3 Case#[br]studies
-                  p Research manager #[br]#[em Mario Rossi]
+                  .text-white
+                    h1.mb-3 5
+                    h4.mb-3 Case#[br]studies
+                    //- p Research manager #[br]#[em Mario Rossi]
 
-
-
-      //- Numbers section
-      .container
-        .row.mb-2
-          .col-lg-4.col-md-6
-            .pr-lg-5
-              h2 Working with leading corporates around the world
-        .row
-          .col-lg-6.col-md-10
-            div.pr-lg-4
-              p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
-        //numberings
-        .row.mt-lg-6.mb-lg-9.mt-md-5.mb-md-8.mb-5
-          .col-lg-3.col-md-6.mt-lg-0.mt-md-0.mt-4
-            .col-4
-              .custom-font 35
-            h5.mt-6 Years of services
-          .col-lg-3.col-md-6.mt-lg-0.mt-md-0.mt-5
-            .col-4
-              .custom-font 120
-            h5.mt-6 Civil and rail projects
-          .col-lg-3.col-md-6.mt-lg-0.mt-5
-            .col-4
-              .custom-font 350
-            h5.mt-6 Commercial building
-          .col-lg-3.col-md-6.mt-lg-0.mt-5
-            .col-4
-              .custom-font 8630
-            h5.mt-6 Residential building
-
-      // working arround the world
+    .entry-content
+      // head blog
       .bg-yellow
-        .container.py-lg-9.py-md-7.py-6
-          .row.gx-lg-6
-            .col-lg-6
-              img(src="assets/images/2.jpg" alt="burger")
-            .col-lg-6.pr-lg-7.my-auto.mt-md-6.mt-5
-              h2 Working around the world
-              p.mt-3 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, consetetur sadipscing elitr.
-              .row.mt-lg-6.mt-md-5.mt-5.gx-lg-5.gx-lg-8
-                .col-lg-2.mb-3.mb-lg-0
-                  i.h3.fas.fa-tv.btn-outline-black-1.py-3.px-3
-                .col-lg-10
-                  h5 Virtual design and construction
-                  p.mt-3 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
-              .row.mt-lg-5.mt-md-5.mt-4.gx-lg-5.gx-lg-8
-                .col-lg-2.mb-3.mb-lg-0
-                  i.h3.fas.fa-city.btn-outline-black-1.py-3.px-3
-                .col-lg-10
-                  h5 Office Build-outs and Expansion
-                  p.mt-3 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
-              .row.mt-lg-5.mt-md-5.mt-4.gx-lg-5.gx-lg-8
-                .col-lg-2.mb-3.mb-lg-0
-                  i.h3.fas.fa-door-open.btn-outline-black-1.py-3.px-3
-                .col-lg-10
-                  h5 Construction Management
-                  p.mt-3.mb-0 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore com generate.
-
-      // portfoio
-      .container.mt-lg-9.mt-md-7.mt-6
-        h2.mb-lg-5.mb-md-4.mb-3 Portfolio
-
-        .portfolio-list
-          article.portfolio-item
-            .entry-media
-              img(src="assets/images/3.jpg" alt="project")
-            .entry-content-wrapper
-              .entry-title
-                a(href="portfolio-single-project.html") Depot Hall of West Sector, UK
-          article.portfolio-item
-            .entry-media
-              img(src="assets/images/4.jpg" alt="project")
-            .entry-content-wrapper
-              .entry-title
-                a(href="portfolio-single-project.html") Building Design and Construction
-          article.portfolio-item
-            .entry-media
-              img(src="assets/images/5.jpg" alt="project")
-            .entry-content-wrapper
-              .entry-title
-                a(href="portfolio-single-project.html") Modern House Exterior Architecture
-
-      // button
-      .container-fluid.px-0.mb-lg-9.mb-md-7.mb-6
-        .text-center
-          a.btn.btn-outline-black(href="portfolio.html") SEE All PROJECTS
-
-      // qoute block
-      .container.mb-lg-9.mb-md-7.mb-5
-        .seventy-five-percent-bg-yellow
+        .container.pt-lg-5.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
           .row
-            .col-lg-5.py-lg-7.order-lg-1
-              img(src="assets/images/6.jpg" alt="project")
-            .col-lg-7.px-lg-6.py-lg-7.px-md-6.py-md-6.px-5.py-5
-              i.custom-icon.fas.fa-quote-left.mb-4
-              div.pr-lg-4
-                p.lead.mt-2.mt-lg-3.mb-lg-5.mb-md-4.mb-4 Adipisci qui natus expedita aut eum aut. Et ut repellendus ea quis autem reprehenderit volu ptatem. Amet totam dolor is voluptates a tenetur sit. Qui asperiores excepturi perspiciatis totam rerum volup tatem et neque pariatur. Vivamus interdum porta turpis at ornare Fugiat qui illum sequi ea qui eos fugit mauris, porta in purus sit amet
-              h5 Michael D. Wilson - CEO of New City
-
-
+            .col-lg-6
+              h1.my-3 Events
+              p.lead and news (coming soon)
       // blog
       .container.my-lg-9.my-md-7.my-6
-        h2.mb-lg-5.mb-md-4.mb-3 News / events
+        h2.mb-lg-5.mb-md-4.mb-3
         +blog(
           'card-post-style',
           'col-lg-4 col-12',
           false,
           {
-          image:'assets/images/blog/b1.jpg',
-          title:'18 New Roads Schemes A Step Closer To Delivery',
-          category:'News',
-          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          image:'assets/images/p_Guidotti1.jpg',
+          title:'Explaining Explanation Methods Speaker: Riccardo Guidotti',
+          category:'Webinar',
+          content:'30 October 2020 h. 11.00 CET'
           },
           {
           image:'assets/images/blog/b2.jpg',
-          title:'What Today’s Renters Truly Want In The Building',
-          category:'News',
-          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+          title:'Next event',
+          category:'Coming soon',
+          content:'stay tuned'
           },
           {
           image:'assets/images/blog/b3.jpg',
-          title:'Should I Sell or Rent My Newly constructed House?',
-          category:'Event',
-          content:'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem'
+            title: 'Next event',
+            category: 'Coming soon',
+            content: 'stay tuned'
           }
         )
-        .text-center.align-items-center
-          a.btn.btn-outline-black.rounded-0(href='blog.html') MORE POSTS
-
-      //Subscription form
-      .container.my-lg-9.my-md-7.my-6
-        .bg-yellow
-          .row.py-lg-8.py-md-6.py-6.px-lg-0.px-md-0.px-4
-            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
-              .text-center
-                h2.mb-4 keep up with the latest from Xai
-                div.px-lg-5
-                  p.mb-5.mt-1 Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-
-                form
-                  .form-group.row.gx-lg-2
-                    .col-md-9
-                      input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
-                    .col-md-3.mt-2.mt-md-0
-                      a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE
-
-

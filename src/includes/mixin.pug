@@ -23,7 +23,7 @@ mixin entryMetaTop(author, categories, date, commentCount, isEdit=false )
         i.far.fa-user
         = author
     if date
-      span.entry-meta-date 
+      span.entry-meta-date
         i.far.fa-clock
         = date
     if commentCount
@@ -49,18 +49,18 @@ mixin blog(style, column, isReadMore=false, ...items)
               img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
             if item.category
               span.entry-meta-category
-                a(href='blog-three-col.html')= item.category
+                a(href='#')= item.category
           .entry-content-wrapper
             header.entry-header
-              //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit) 
+              //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit)
               h2.entry-title
-                a(href='blog-single-post.html')= item.title
+                a(href='#')= item.title
             if item.content
               .entry-content
                 p= item.content
               if isReadMore
                 footer.entry-footer
-                  a.entry-read-more(href='blog-single-post.html') Read More
+                  a.entry-read-more(href='#') Read More
                     i.fas.fa-long-arrow-alt-right.ml-1
 
 //- Blog card style
@@ -78,7 +78,7 @@ mixin blogcard(style, column, isReadMore=false, ...items)
                 a(href='blog-three-col.html')= item.category
           .entry-content1-wrapper
             header.entry-header
-              +entryMetaTop(item.author, item.date, item.commentCount, item.isEdit) 
+              +entryMetaTop(item.author, item.date, item.commentCount, item.isEdit)
               h2.entry-title1
                 a(href='blog-single-post.html')= item.title
             if item.content
@@ -141,7 +141,7 @@ mixin shop(isProductsFilter=true, style, column, ...items)
                 span.amount
                   span.currencySymbol $
                     = item.price
-            a.btn-underline.mt-auto(href='shop-single-product.html') Add to cart 
+            a.btn-underline.mt-auto(href='shop-single-product.html') Add to cart
   // End Products
 
 //- pagination

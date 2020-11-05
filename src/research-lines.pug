@@ -1,0 +1,105 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+    // header
+    .entry-content
+      // head main
+      .bg-yellow
+        .container.pt-lg-8.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
+          .row
+            .col-lg-6
+              h1.my-3 Research lines
+              //- p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      .bg-half
+        // 5 LINES Section
+        // Line 1
+        .container.mb-lg-6.mb-md-5.mb-4
+          .row
+            .col-lg-4
+              .bg-grayphite
+                .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                  .text-black.pr-lg-4.text-center
+                    h1.display-1.mb-1.font-weight-bolder 1
+                    h5 LINE
+            .col-lg-8
+              .bg-black
+                .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                  .text-white.pr-lg-4.lead
+                    h2.mb-4 Local to global
+                    p.mb-4 This is the core scientific/technical activity of the project.  The main objective is to understand how to construct meaningful explanations. The framework works under three assumptions.
+                    p.mb-4 Logic explanation; Local explanations; Explanation composition
+                    p.mb-4 The research program will articulate the local-first explanation framework along different dimensions: the variety of data sources (relational, text, images, ...), the variety of learning problems (binary classification, multi-label classification, regression, scoring, ranking, ...), the variety of languages for expressing meaningful explanations.
+      // LINE 2
+      .container.mb-lg-6.mb-md-5.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.display-1.mb-1.font-weight-bolder 2
+                  h5 LINE
+          .col-lg-8
+            .bg-yellow
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.lead
+                  h2.mb-4 From statistical to causal and mechanistic, physical explanations
+                  p.mb-4 This is the core scientific/technical activity of the project.  The main objective is to understand how to construct meaningful explanations. The framework works under three assumptions.
+                  p.mb-4 Logic explanation; Local explanations; Explanation composition
+                  p.mb-4 The research program will articulate the local-first explanation framework along different dimensions: the variety of data sources (relational, text, images, ...), the variety of learning problems (binary classification, multi-label classification, regression, scoring, ranking, ...), the variety of languages for expressing meaningful explanations.
+
+      //- Line 3
+      .container.mb-lg-6.mb-md-5.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.display-1.mb-1.font-weight-bolder 3
+                  h5 LINE
+          .col-lg-8
+            .bg-black
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-white.pr-lg-4.lead
+                  h2.mb-4 XAI Platform
+                  p.mb-4 This activity aims to establish the infrastructure for sharing experimental datasets and explanation algorithms with the research community, creating a common ground for researchers working on explanation of black boxes from different domains. A dedicated exploratory (i.e., a virtual research environment) of the H2020 RI So-BigData will be activated, so that a variety of relevant resources: data, methods, experimental workflows, platforms and literature will be managed through the SoBigData e-infrastructure services and made available to the research community through a variety of regulated access policies.
+                  p.mb-4 All resources, provided they are not prohibited by specific legal/ethical constraints, will be registered and described within a findable catalogue.
+      // LINE 4
+      .container.mb-lg-6.mb-md-5.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.display-1.mb-1.font-weight-bolder 4
+                  h5 LINE
+          .col-lg-8
+            .bg-yellow
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.lead
+                  h2.mb-4 Ethical/legal framework for explanation
+                  p.mb-4 The project has a strong ethical motivation. It aims to empower users against undesired, possibly illegal, effects of black-box automated decision-making systems which may harm them, exploit their vulnerabilities, and violate their rights and freedom. This activity covers the interdependencies and feedback among technical, ethical and legal aspects of the research program, and will be pursued in collaboration with scientists from a range of disciplines, including ethical and legal, that already enthusiastically agreed, such as the legal scholar Giovanni Comande (Scuola Sant'Anna Pisa) and the ethical philosopher Jeroen Van Den Hoven (TU Delft).
+
+
+
+      //- Line 5
+      .container.mb-lg-6.mb-md-5.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.display-1.mb-1.font-weight-bolder 5
+                  h5 LINE
+          .col-lg-8
+            .bg-black
+              .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                .text-white.pr-lg-4.lead
+                  h2.mb-4 Case studies
+                  p.mb-4 The activity aims at validating the approach and the framework involving real users on many case studies relying both on “in house" big data sources, made available through SoBigData.eu, and on challenges put forward by our industrial and institutional partners and by the scientific community at large. Planned cases include:
+                  h5.mb-4 1. Health
+                  p.mb-4 Study the challenging explanation problems in the medical domain, aiming at systems such as DoctorAI, based on a multi-label Recurrent Neural Network trained on patients' Electronic Health Records. The objective is to devise explanations for "extreme" multi-label classification, also delivering causal explanations.
+                  h5.mb-4 2. Fiscal fraud detection
+                  p.mb-4 Validate the expressiveness of the explanations in the context of Fiscal Fraud detection systems, developed during the long lasting collaboration with the Italian Revenue Agency.

@@ -200,15 +200,14 @@ mixin portfolio(style, column, isReadMore=false, ...items)
 
 //- peoplecard
 mixin peoplecard(firstName,lastName,role,affiliation)
-  .col-lg-2
-    .member-image
-      img(src='assets/images/p_'+ lastName + '.jpg' alt=firstName + " " + lastName).card-img
-    .member-content.bg-yellow
-      .member-text.px-3.py-3
-        h5.member-name #{firstName} #{lastName}
-        hr
-        .member-tag
-          span.member-role #{role}
-        hr
-        p.mb-0 #{affiliation}
+  .member-image
+    img(src='assets/images/p_'+ lastName + '.jpg' alt=firstName + " " + lastName).card-img
+  .member-content.bg-yellow
+    .member-text.px-3.py-3
+      h5.member-name #{firstName} #{lastName}
+      hr
+      .member-tag
+        span.member-role #{role}
+      hr
+      p.mb-0 #{affiliation}
   // End People Card

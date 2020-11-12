@@ -15,4 +15,5 @@ block content
             .container.mt-lg-4.mt-md-2.mt-2.mb-10
                 .row.gx-lg-3.gy-3
                     each persona in people
-                        +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation)
+                        .col-lg-2.col-md-4.col-sm-6
+                            +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation)

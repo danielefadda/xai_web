@@ -245,7 +245,6 @@
   color: $black;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
@@ -260,4 +259,15 @@
 
 .line-numbers-box {
   min-height: 290px;
+}
+
+
+// people
+.member-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+.member-image img{
+  object-fit: cover;
+  height: 300px;
 }

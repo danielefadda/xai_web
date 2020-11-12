@@ -1924,7 +1924,6 @@ body.has-no-comments .comment-respond {
   color: #000000;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
@@ -1939,4 +1938,16 @@ body.has-no-comments .comment-respond {
 
 .line-numbers-box {
   min-height: 290px;
+}
+
+.member-image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.member-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
 }

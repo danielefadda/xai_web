@@ -1,0 +1,13 @@
+[
+  { 'firstName': 'James',
+    'lastName': 'Hibbard',
+    'role': 'Researcher',
+    'affiliation': 'ISTI - CNR Pisa'
+  },
+  {
+    'firstName': 'Oscar',
+    'lastName': 'Giannino',
+    'role': 'Hipster',
+    'affiliation': 'Fare per bo'
+  }
+]

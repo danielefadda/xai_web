@@ -1,0 +1,48 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold - TAILOR -
+                  br
+                  | Foundations of Trustworthy AI - Integrating Learning, Optimization and Reasoning
+                +metaTop('News', 'Workshop', 'September 5, 2019')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/tailor.jpg' alt='TAILOR 2019')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            h3 TAILOR is one of four AI networks in the H2020 program ICT-48 Towards a vibrant European network of AI excellence centres.
+            p.lead The purpose of TAILOR is to build the capacity of providing the scientific foundations for Trustworthy AI in Europe by developing a network of research excellence centres leveraging and combining learning, optimization and reasoning:
+            | Throughout this document (starting with its title), learning will mean Machine Learning techniques, starting with the highly successful and today prominent Deep Learning, but also including other approaches like Bayesian Networks, Support Vector Machines, and Decision Trees; optimization will mean continuous, discrete and combinatorial optimization, and their hybrids, and include techniques like convex optimization and gradient methods, constraint programming, heuristics and meta-heuristics, deterministic and stochastic approaches; and reasoning will subsume deductive, inductive, and abductive reasoning, monotonic and non-monotonic reasoning, and include techniques like statistical relational learning, as well as probabilistic and inductive programming.
+            | TAILOR will create a network of research excellence centres across all of Europe on the Foundations of Trustworthy AI based on four powerful instruments (a strategic roadmap committee, basic research program to address grand challenges, a connectivity fund for active dissemination to the larger AI community, and network collaboration activities promoting research exchanges, training materials and events, and joint PhD supervision.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="TAILOR" href='https://liu.se/en/research/tailor' target='_blank')
+              .bg-yellow.px-5.py-5
+                p.text-decoration-underline link
+                h5.mb-3 TAILOR
+                | Foundations of Trustworthy AI - Integrating Learning, Optimization and Reasoning
+
+          footer.entry-footer.mb-10
+            // Entry Meta Bottom
+            .entry-meta-bottom
+              ul.entry-tags
+                li.tags-icon
+                  i.fas.fa-tags
+                li
+                  a(href='#' rel='tag') Webinar
+                li
+                  a(href='#' rel='tag') Xai
+                li
+                  a(href='#' rel='tag') Tutorial

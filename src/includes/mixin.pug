@@ -16,16 +16,20 @@ mixin pagetitle(data)
 
   // End Page Title
 
-mixin entryMetaTop(author, categories, date, commentCount, isEdit=false )
+mixin entryMetaTop(author, categories, date,time, commentCount, isEdit=false )
   .entry-meta-top
     if author
       span.entry-author
-        i.far.fa-user
+        i.far.fa-bell
         = author
     if date
       span.entry-meta-date
-        i.far.fa-clock
+        i.far.fa-calendar
         = date
+    if time
+      span.entry-meta-time
+        i.far.fa-clock
+        = time
     if commentCount
       span.entry-comment-count
         a(href="/blog-single-post.html#comments")
@@ -38,30 +42,35 @@ mixin entryMetaTop(author, categories, date, commentCount, isEdit=false )
           | Edit
 
 //- Blog
-mixin blog(style, column, isReadMore=false, ...items)
+mixin blog(style, column, isReadMore=false, news)
   // Blog
   div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
-    each item in items
+    each item in news
       div(class=column)
-        article
-          figure.entry-media
-            if item.image
-              img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
-            if item.category
-              span.entry-meta-category
-                a(href='#')= item.category
-          .entry-content-wrapper
-            header.entry-header
-              //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit)
-              h2.entry-title
-                a(href='#')= item.title
-            if item.content
-              .entry-content
-                p= item.content
-              if isReadMore
-                footer.entry-footer
-                  a.entry-read-more(href='#') Read More
-                    i.fas.fa-long-arrow-alt-right.ml-1
+        a(href=item.link)
+          article
+            figure.entry-media
+              if item.image
+                img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+              if item.category
+                span.entry-meta-category
+                  | #{item.category}
+            .entry-content-wrapper
+              header.entry-header
+                //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit)
+                h2.entry-title
+                  a(href=item.link)= item.title
+              if item.date
+                .entry-content.mt-2
+                  p.fas.fa-calendar
+                  span.text-gray-500= ' '+item.date
+              if item.content
+                .entry-content.mt-2
+                  p= item.content
+                if isReadMore
+                  footer.entry-footer
+                    a.entry-read-more(href='#') Read More
+                      i.fas.fa-long-arrow-alt-right.ml-1
 
 //- Blog card style
 mixin blogcard(style, column, isReadMore=false, ...items)
@@ -179,6 +188,7 @@ mixin portfolio(style, column, isReadMore=false, ...items)
   div.row.portfolio(class=style)
     each item in items
       div(class=column)
+        a(title="Explaining Explanation Methods" href='https://youtu.be/VY1-wXt4OE8' target='_blank')
         article
           figure.entry-media
             if item.image
@@ -211,3 +221,19 @@ mixin peoplecard(firstName,lastName,role,affiliation)
       hr
       p.mb-0 #{affiliation}
   // End People Card
+
+//- Single article
+mixin metaTop(author, categories, date,time, commentCount, isEdit=false )
+  .entry-meta-top
+    if author
+      span.entry-author
+        i.far.fa-bell
+        = author
+    if date
+      span.entry-meta-date
+        i.far.fa-calendar
+        = date
+    if time
+      span.entry-meta-time
+        i.far.fa-clock
+        = time

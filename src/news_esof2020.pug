@@ -1,0 +1,49 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold - ESOF2020 -
+                  br
+                  | Artificial Intelligence
+                  br
+                  | a blessing or a threat for society?
+                +metaTop('News', 'Webinar', 'September 6, 2020','4:15 - 5:45 p.m.')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/esof.png' alt='Esof 2020')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead Recent advances in Artificial Intelligence (AI) have the potential to revolutionise the way we live as single individuals and as members of society. Remarkable progresses are accounted in emulating the capabilities of human beings and, to some extent, empowering them. While we see clear benefits from the evolution of machines by acquiring basic human capabilities like human speech or vision, the picture is more blurred when considering acquiring also desirable intellectual features of the humans in society: ethical behaviour, accountability of actions, and fairness.
+            p.lead In this session, we will first see how AI-empowered machines can exhibit emotional intelligence when interacting verbally, recognizing age, sex, and emotions of a speaker. Following, we will address one of the main threats to the practical use of machine learning in our societies: the presence of bias in the data used to train models, which could then make incorrect or disproportionately correct decisions, or reinforce the injustices reflected in their training data. We will then consider what it is needed for the AI to be fully accepted in our societies, entering the fascinating field of AI and ethics, learning how machines that are ethical and accountable for responsibility in their actions can be developed. The last presentation will suggest how we can resist to the idea of AI as a black-box, by defining methods that can make machines more transparent, socially correct, and immune to biases of any kind.
+            p.lead The proposed talks will provide a set of unique contributions whose interactions may be crucial to properly develop and accept AI in modern and future societies. Time will be devoted to discuss the different standpoints among the speakers and the audience.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="Esof 2020" href='https://www.esof.eu/en/programme/programme-event-list-all-events/event-information/artificial-intelligence-a-blessing-or-a-threat-for-society-918.html' target='_blank')
+              .bg-yellow.px-5.py-5
+                p.text-decoration-underline link
+                h5.mb-3 Artificial Intelligence
+                | A blessing or a threat for society?
+
+          footer.entry-footer.mb-10
+            // Entry Meta Bottom
+            .entry-meta-bottom
+              ul.entry-tags
+                li.tags-icon
+                  i.fas.fa-tags
+                li
+                  a(href='#' rel='tag') Webinar
+                li
+                  a(href='#' rel='tag') Xai
+                li
+                  a(href='#' rel='tag') Tutorial

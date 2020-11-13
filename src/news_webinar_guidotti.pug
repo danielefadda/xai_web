@@ -1,0 +1,46 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Explaining Explanation Methods
+                  br
+                  | Speaker: Riccardo Guidotti
+                +metaTop('News', 'Webinar', 'October 30, 2020','h.11.00 CET')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/p_Guidotti.jpg' alt='Riccardo Guidotti')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            h4 Abstract
+            p.lead The most effective Artificial Intelligence (AI) systems exploit complex machine learning models to fulfil their tasks due to their high performance. Unfortunately, the most effective machine learning models use for their decision processes a logic not understandable from humans that makes them real black-box models. The lack of transparency on how AI systems make decisions is a clear limitation in their adoption in safety-critical and socially sensitive contexts. Consequently, since the applications in which AI are employed are various, research in eXplainable AI (XAI) has recently caught much attention, with specific distinct requirements for different types of explanations for different users. In this webinar, we briefly present the existing explanation problems, the main strategies adopted to solve them, and the most common types of explanations are illustrated with references to state-of-the-art explanation methods able to retrieve them. A short tutorial shows how to employ existing explanation libraries on tabular datasets.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="Explaining Explanation Methods" href='https://youtu.be/VY1-wXt4OE8' target='_blank')
+              .bg-yellow.px-5.py-5
+                i.far.fa-2x.fa-file-video
+                h5.mb-3 Video availlable on SoBigData channel
+                | Explaining Explanation Methods
+
+          footer.entry-footer.mb-10
+            // Entry Meta Bottom
+            .entry-meta-bottom
+              ul.entry-tags
+                li.tags-icon
+                  i.fas.fa-tags
+                li
+                  a(href='#' rel='tag') Webinar
+                li
+                  a(href='#' rel='tag') Xai
+                li
+                  a(href='#' rel='tag') Tutorial

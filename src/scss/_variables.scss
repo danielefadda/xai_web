@@ -42,14 +42,14 @@ $light:         $gray-100;
 $dark:          $gray-800;
 
 //using color
-$yellow: #FFF301;
+$yellow: #F5DF4D;
 $black: #000000;
 $grayphite: #EDEDED;
 $gray-500:#999999;
 
 $primary:$yellow;
 $christine: #DC5711;
-$yellow: #FFF301;
+$yellow: #F5DF4D;
 $white: #ffffff;
 
 //Theme Colors
@@ -81,9 +81,9 @@ $colors: map-merge((
   "christine": $christine,
   "yellow": $yellow,
   "white":$white,
-  
+
     ),
-    
+
   $colors);
 
 // Set

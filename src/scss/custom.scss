@@ -258,10 +258,12 @@
 }
 
 .line-numbers-box {
-  min-height: 290px;
+  min-height: 320px;
 }
 
-
+.line-numbers-box-half {
+  min-height: 200px;
+}
 // people
 .member-image {
   max-width: 100%;
@@ -270,4 +272,11 @@
 .member-image img{
   object-fit: cover;
   height: 300px;
+}
+
+
+// post
+.blog-post .entry-media img {
+  position: relative;
+  width: 100%
 }

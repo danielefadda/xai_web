@@ -107,7 +107,7 @@ img {
 }
 
 .site-header .navbar .navbar-brand {
-  width: 89px;
+  width: 150px;
 }
 
 .site-header .navbar .nav-item {
@@ -361,7 +361,7 @@ img {
 .blog-post .entry-media .entry-meta-category {
   position: absolute;
   padding: 5px 15px;
-  background-color: #FFF301;
+  background-color: #F5DF4D;
   border-radius: 2px;
   z-index: 1;
   top: 30px;
@@ -611,7 +611,7 @@ p.has-drop-cap:not(:focus):first-letter {
 .portfolio-list .portfolio-item .entry-content-wrapper {
   right: 0px;
   padding: 25px 20px 20px 20px;
-  background-color: #FFF301;
+  background-color: #F5DF4D;
 }
 
 .portfolio-list .portfolio-item .entry-content-wrapper .entry-title {
@@ -633,7 +633,7 @@ p.has-drop-cap:not(:focus):first-letter {
     right: 0px;
     bottom: 60px;
     padding: 35px 30px 30px 35px;
-    background-color: #FFF301;
+    background-color: #F5DF4D;
   }
   .portfolio-list .portfolio-item .entry-content-wrapper .entry-title {
     font-size: 20px;
@@ -650,7 +650,7 @@ p.has-drop-cap:not(:focus):first-letter {
     right: 0px;
     bottom: 100px;
     padding: 45px 40px 40px 45px;
-    background-color: #FFF301;
+    background-color: #F5DF4D;
   }
   .portfolio-list .portfolio-item .entry-content-wrapper .entry-title {
     font-size: 32px;
@@ -805,7 +805,7 @@ p.has-drop-cap:not(:focus):first-letter {
   content: "";
   height: 12px;
   width: 100%;
-  background-color: #FFF301;
+  background-color: #F5DF4D;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -978,6 +978,10 @@ p.has-drop-cap:not(:focus):first-letter {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.member-content {
+  min-height: 200px;
+}
+
 .member-content .member-text {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -1766,91 +1770,91 @@ body.has-no-comments .comment-respond {
 
 .twenty-percent-bg-yellow {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #FFF301), color-stop(80%, #ffffff));
-  background: -webkit-linear-gradient(top, #FFF301 80%, #ffffff 80%);
-  background: linear-gradient(180deg, #FFF301 80%, #ffffff 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #F5DF4D), color-stop(80%, #ffffff));
+  background: -webkit-linear-gradient(top, #F5DF4D 80%, #ffffff 80%);
+  background: linear-gradient(180deg, #F5DF4D 80%, #ffffff 80%);
 }
 
 @media (min-width: 992px) {
   .twenty-percent-bg-yellow {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #FFF301), color-stop(75%, #ffffff));
-    background: -webkit-linear-gradient(top, #FFF301 75%, #ffffff 75%);
-    background: linear-gradient(180deg, #FFF301 75%, #ffffff 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #F5DF4D), color-stop(75%, #ffffff));
+    background: -webkit-linear-gradient(top, #F5DF4D 75%, #ffffff 75%);
+    background: linear-gradient(180deg, #F5DF4D 75%, #ffffff 75%);
   }
 }
 
 .seventy-five-percent-bg-yellow {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #FFF301), to(#ffffff));
-  background: -webkit-linear-gradient(top, #FFF301 100%, #ffffff 100%);
-  background: linear-gradient(180deg, #FFF301 100%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #F5DF4D), to(#ffffff));
+  background: -webkit-linear-gradient(top, #F5DF4D 100%, #ffffff 100%);
+  background: linear-gradient(180deg, #F5DF4D 100%, #ffffff 100%);
 }
 
 @media (min-width: 992px) {
   .seventy-five-percent-bg-yellow {
-    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #FFF301), color-stop(75%, #ffffff));
-    background: -webkit-linear-gradient(left, #FFF301 75%, #ffffff 75%);
-    background: linear-gradient(90deg, #FFF301 75%, #ffffff 75%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #F5DF4D), color-stop(75%, #ffffff));
+    background: -webkit-linear-gradient(left, #F5DF4D 75%, #ffffff 75%);
+    background: linear-gradient(90deg, #F5DF4D 75%, #ffffff 75%);
   }
 }
 
 .seventy-five-1-percent-bg-yellow {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #FFF301), color-stop(85%, #ffffff));
-  background: -webkit-linear-gradient(top, #FFF301 85%, #ffffff 85%);
-  background: linear-gradient(180deg, #FFF301 85%, #ffffff 85%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #F5DF4D), color-stop(85%, #ffffff));
+  background: -webkit-linear-gradient(top, #F5DF4D 85%, #ffffff 85%);
+  background: linear-gradient(180deg, #F5DF4D 85%, #ffffff 85%);
 }
 
 @media (min-width: 992px) {
   .seventy-five-1-percent-bg-yellow {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #FFF301), color-stop(75%, #ffffff));
-    background: -webkit-linear-gradient(top, #FFF301 75%, #ffffff 75%);
-    background: linear-gradient(180deg, #FFF301 75%, #ffffff 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #F5DF4D), color-stop(75%, #ffffff));
+    background: -webkit-linear-gradient(top, #F5DF4D 75%, #ffffff 75%);
+    background: linear-gradient(180deg, #F5DF4D 75%, #ffffff 75%);
   }
 }
 
 .seventy-percent-bg-yellow {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #FFF301), to(#ffffff));
-  background: -webkit-linear-gradient(left, #FFF301 100%, #ffffff 100%);
-  background: linear-gradient(90deg, #FFF301 100%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #F5DF4D), to(#ffffff));
+  background: -webkit-linear-gradient(left, #F5DF4D 100%, #ffffff 100%);
+  background: linear-gradient(90deg, #F5DF4D 100%, #ffffff 100%);
 }
 
 @media (min-width: 992px) {
   .seventy-percent-bg-yellow {
-    background: -webkit-gradient(linear, left top, right top, color-stop(66.66%, #FFF301), color-stop(66.66%, #ffffff));
-    background: -webkit-linear-gradient(left, #FFF301 66.66%, #ffffff 66.66%);
-    background: linear-gradient(90deg, #FFF301 66.66%, #ffffff 66.66%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(66.66%, #F5DF4D), color-stop(66.66%, #ffffff));
+    background: -webkit-linear-gradient(left, #F5DF4D 66.66%, #ffffff 66.66%);
+    background: linear-gradient(90deg, #F5DF4D 66.66%, #ffffff 66.66%);
   }
 }
 
 .bg-half {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFF301), color-stop(50%, #ffffff));
-  background: -webkit-linear-gradient(top, #FFF301 50%, #ffffff 50%);
-  background: linear-gradient(180deg, #FFF301 50%, #ffffff 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F5DF4D), color-stop(50%, #ffffff));
+  background: -webkit-linear-gradient(top, #F5DF4D 50%, #ffffff 50%);
+  background: linear-gradient(180deg, #F5DF4D 50%, #ffffff 50%);
 }
 
 @media (min-width: 992px) {
   .bg-half {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFF301), color-stop(50%, #ffffff));
-    background: -webkit-linear-gradient(top, #FFF301 50%, #ffffff 50%);
-    background: linear-gradient(180deg, #FFF301 50%, #ffffff 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F5DF4D), color-stop(50%, #ffffff));
+    background: -webkit-linear-gradient(top, #F5DF4D 50%, #ffffff 50%);
+    background: linear-gradient(180deg, #F5DF4D 50%, #ffffff 50%);
   }
 }
 
 .bg-twenty {
   background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #FFF301), color-stop(11%, #ffffff));
-  background: -webkit-linear-gradient(top, #FFF301 11%, #ffffff 11%);
-  background: linear-gradient(180deg, #FFF301 11%, #ffffff 11%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #F5DF4D), color-stop(11%, #ffffff));
+  background: -webkit-linear-gradient(top, #F5DF4D 11%, #ffffff 11%);
+  background: linear-gradient(180deg, #F5DF4D 11%, #ffffff 11%);
 }
 
 @media (min-width: 992px) {
   .bg-twenty {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #FFF301), color-stop(11%, #ffffff));
-    background: -webkit-linear-gradient(top, #FFF301 11%, #ffffff 11%);
-    background: linear-gradient(180deg, #FFF301 11%, #ffffff 11%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #F5DF4D), color-stop(11%, #ffffff));
+    background: -webkit-linear-gradient(top, #F5DF4D 11%, #ffffff 11%);
+    background: linear-gradient(180deg, #F5DF4D 11%, #ffffff 11%);
   }
 }
 
@@ -1937,7 +1941,11 @@ body.has-no-comments .comment-respond {
 }
 
 .line-numbers-box {
-  min-height: 290px;
+  min-height: 320px;
+}
+
+.line-numbers-box-half {
+  min-height: 200px;
 }
 
 .member-image {
@@ -1950,4 +1958,9 @@ body.has-no-comments .comment-respond {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
+}
+
+.blog-post .entry-media img {
+  position: relative;
+  width: 100%;
 }

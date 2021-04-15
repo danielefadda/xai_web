@@ -15,9 +15,9 @@ block content
       // calendar
       .container.mt-lg-5.mt-3.mb-lg-5.mb-md-5.mb-3
         .row.mb-5
-          .col-lg-2
+          .col-lg-2.mb-sm-2
             a(href='#')
-              .bg-yellow.h-250
+              .bg-yellow.h-100
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
@@ -25,9 +25,9 @@ block content
                       h3.text-uppercase dates
                     .px-lg-2.mt-lg-4.px-2.mt-3
                       p our guests
-          .col-lg-2
-            a(href='#')
-              .bg-gray-500.text-white.h-250
+          .col-lg-2.mb-sm-2
+            a(href='#cynthia')
+              .bg-gray-500.text-white.h-100
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
@@ -35,9 +35,9 @@ block content
                       h3.text-uppercase April
                     .px-lg-2.mt-lg-4.px-2.mt-3
                       p Cynthia Rudin
-          .col-lg-2
+          .col-lg-2.mb-sm-2
             a(href='#')
-              .bg-gray-500.text-white.h-250
+              .bg-gray-500.text-white.h-100
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
@@ -45,9 +45,9 @@ block content
                       h3.text-uppercase May
                     .px-lg-2.mt-lg-4.px-2.mt-3
                       p -To be defined-
-          .col-lg-2
+          .col-lg-2.mb-sm-2
             a(href='#')
-              .bg-gray-500.text-white.h-250
+              .bg-gray-500.text-white.h-100
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
@@ -55,9 +55,9 @@ block content
                       h3.text-uppercase June
                     .px-lg-2.mt-lg-4.px-2.mt-3
                       p Ruth Byrne
-          .col-lg-2
-            a(href='#')
-              .bg-gray-500.text-white.h-250
+          .col-lg-2.mb-sm-2
+            a(href='#lecue')
+              .bg-gray-500.text-white.h-100
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
@@ -65,21 +65,14 @@ block content
                       h3.text-uppercase July
                     .px-lg-2.mt-lg-4.px-2.mt-3
                       p Freddy Lecue
-          .col-lg-2
-            .bg-grayphite.text-grayphite(style='height:241px')
-              //.text-center.align-items-center
-              //  .px-lg-4.py-lg-2.px-4.py-2
-              //    .mt-lg-4.mt-5
-              //      h1.display-1 ?
-              //      h3.text-uppercase date
-              //    .px-lg-2.mt-lg-4.px-2.mt-3
-              //      p TBD
+          .col-lg-2.d-none.d-lg-block
+            .bg-grayphite.h-100
 
 
       // seminars
       .container.mt-lg-5.mt-md-6.mt-5
-        hr
-        .row
+        hr#cynthia
+        .row.pt-9
           .col-lg-8
             img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_01_rudin.png" alt="Cynthia Rudin")
             #accordionExample.accordion
@@ -103,6 +96,7 @@ block content
               .card.border-0.mt-lg-5.mt-4
 
           .col-lg-4
+            h2 Cynthia Rudin
             p.text-gray-500 Apr 20, 5.00pm - 6.30pm CEST
             h5 Interpretable Neural Networks for Computer Vision: Clinical Decisions that are Computer-Aided, not Automated
             hr
@@ -116,8 +110,8 @@ block content
               i.m-2.fab.fa-2x.fa-twitter
               | follow on twitter
         // Rudin
-        hr
-        .row
+        #lecue
+        .row.pt-9.pb-sm-10
           .col-lg-8
             img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_02_Lecue.png" alt="Freddy Lecue")
             #accordionExample.accordion
@@ -141,6 +135,7 @@ block content
               .card.border-0.mt-lg-5.mt-4
 
           .col-lg-4
+            h2 Freddy Lecue
             p.text-gray-500 July 13, 5.00pm - 6.30pm CEST
             h5 The role of Knowledge Graph (tbd)
             hr
@@ -156,15 +151,4 @@ block content
 
 
 
-      //// center box
-      //.container.mb-lg-9.mb-7
-      //  .bg-yellow
-      //    .py-lg-7.py-5.px-4
-      //      .row
-      //        .col-lg-8.offset-lg-2.text-center
-      //          .mt-lg-3.mt-3
-      //            h2 Call to action
-      //          .mt-lg-4.mt-3
-      //            p.lead Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua sed diam nonumy accusam et justo duo.
-      //          .mt-lg-5.mt-4
-      //            a.btn.btn-outline-black.rounded-0(href='page-contact.html') CONTACT US
+

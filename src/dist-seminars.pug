@@ -75,21 +75,21 @@ block content
         .row.pt-9
           .col-lg-8
             img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_01_rudin.png" alt="Cynthia Rudin")
-            #accordionExample.accordion
+            #accordionCynthia.accordion
               .card.border-0
                 #headingOne.card-header.bg-yellow
-                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOneCynthia' aria-expanded='false' aria-controls='collapseOne')
                     | About this talk
-                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                #collapseOneCynthia.collapse(aria-labelledby='headingOne' data-parent='#accordionCynthia')
                   .py-lg-2.px-lg-2.bg-grayphite
                     .card-body.mt-2
                       p Let us consider a difficult computer vision challenge. Would you want an algorithm to determine whether you should get a biopsy, based on an xray? That's usually a decision made by a radiologist, based on years of training. We know that algorithms haven't worked perfectly for a multitude of other computer vision applications, and biopsy decisions are harder than just about any other application of computer vision that we typically consider. The interesting question is whether it is possible that an algorithm could be a true partner to a physician, rather than making the decision on its own. To do this, at the very least, we would need an interpretable neural network that is as accurate as its black box counterparts.
                       p This talk will discuss two approaches to interpretable neural networks: (1) case-based reasoning, where parts of images are compared to other parts of prototypical images for each class, and (2) neural disentanglement, using a technique called concept whitening. The case-based reasoning technique is strictly better than saliency maps, and the concept whitening technique provides a strict advantage over the posthoc use of concept vectors.
               .card.border-0.mt-lg-5.mt-4
-                #headingTwo.card-header.bg-yellow
-                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                #headingTwoCynthia.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwoCynthia' aria-expanded='false' aria-controls='collapseTwo')
                     | Cynthia Rudin - short bio
-                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                #collapseTwoCynthia.collapse(aria-labelledby='headingTwoCynthia' data-parent='#accordionCynthia')
                   .py-lg-2.px-lg-2.bg-grayphite
                     .card-body.mt-2
                       p Cynthia Rudin is a professor of computer science, electrical and computer engineering, and statistical science at Duke University, and directs the Prediction Analysis Lab, whose main focus is in interpretable machine learning. She is also an associate director of the Statistical and Applied Mathematical Sciences Institute (SAMSI). Previously, Prof. Rudin held positions at MIT, Columbia, and NYU. She holds an undergraduate degree from the University at Buffalo, and a PhD from Princeton University.
@@ -117,9 +117,9 @@ block content
             #accordionExample.accordion
               .card.border-0
                 #headingOne.card-header.bg-yellow
-                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
                     | About this talk (tbd)
-                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
                   .py-lg-2.px-lg-2.bg-grayphite
                     .card-body.mt-2
                       p As artificial intelligence has become tightly intervened in the society having tangible consequences and influence, calls for explainability and interpretability of these systems has also become increasingly prevalent. Explainable AI (XAI) attempts to alleviate concerns of transparency, trust and ethics in AI by making them accountable, interpretable and explainable to humans. This workshop aims to encapsulate these concepts under the umbrella of Explainable Agency and bring together researchers and practitioners working in different facets of explainable AI from diverse backgrounds to share challenges, new directions and recent research in the field. We especially welcome research from fields including but not limited to artificial intelligence, human-computer interaction, human-robot interaction, cognitive science, human factors and philosophy.

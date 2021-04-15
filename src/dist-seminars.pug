@@ -31,10 +31,10 @@ block content
                 .text-center.align-items-center
                   .px-lg-4.py-lg-2.px-4.py-2
                     .mt-lg-4.mt-5
-                      h1.display-1 20
+                      h1.display-1 22
                       h3.text-uppercase April
                     .px-lg-2.mt-lg-4.px-2.mt-3
-                      p Cinthya Rudin
+                      p Cynthia Rudin
           .col-lg-2
             a(href='#')
               .bg-gray-500.text-white
@@ -44,7 +44,7 @@ block content
                       h1.display-1 25
                       h3.text-uppercase May
                     .px-lg-2.mt-lg-4.px-2.mt-3
-                      p ???
+                      p -To be defined-
           .col-lg-2
             a(href='#')
               .bg-gray-500.text-white
@@ -64,7 +64,7 @@ block content
                       h1.display-1 22
                       h3.text-uppercase June
                     .px-lg-2.mt-lg-4.px-2.mt-3
-                      p ???
+                      p -To be defined-
           .col-lg-2
             a(href='#')
               .bg-gray-500.text-white
@@ -74,55 +74,86 @@ block content
                       h1.display-1 13
                       h3.text-uppercase July
                     .px-lg-2.mt-lg-4.px-2.mt-3
-                      p ???
+                      p -To be defined-
 
 
       // seminars
       .container.mt-lg-5.mt-md-6.mt-5
-        // Rudin
+        hr
         .row
           .col-lg-8
-            img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_01_rudin.png" alt="Cinthia Rudin")
+            img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_01_rudin.png" alt="Cynthia Rudin")
+            #accordionExample.accordion
+              .card.border-0
+                #headingOne.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                    | About this talk
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Let us consider a difficult computer vision challenge. Would you want an algorithm to determine whether you should get a biopsy, based on an xray? That's usually a decision made by a radiologist, based on years of training. We know that algorithms haven't worked perfectly for a multitude of other computer vision applications, and biopsy decisions are harder than just about any other application of computer vision that we typically consider. The interesting question is whether it is possible that an algorithm could be a true partner to a physician, rather than making the decision on its own. To do this, at the very least, we would need an interpretable neural network that is as accurate as its black box counterparts.
+                      p This talk will discuss two approaches to interpretable neural networks: (1) case-based reasoning, where parts of images are compared to other parts of prototypical images for each class, and (2) neural disentanglement, using a technique called concept whitening. The case-based reasoning technique is strictly better than saliency maps, and the concept whitening technique provides a strict advantage over the posthoc use of concept vectors.
+              .card.border-0.mt-lg-5.mt-4
+                #headingTwo.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Cynthia Rudin - short bio
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Cynthia Rudin is a professor of computer science, electrical and computer engineering, and statistical science at Duke University, and directs the Prediction Analysis Lab, whose main focus is in interpretable machine learning. She is also an associate director of the Statistical and Applied Mathematical Sciences Institute (SAMSI). Previously, Prof. Rudin held positions at MIT, Columbia, and NYU. She holds an undergraduate degree from the University at Buffalo, and a PhD from Princeton University.
+              .card.border-0.mt-lg-5.mt-4
+
           .col-lg-4
-            p.text-gray-500 Apr 20, 5.00pm - 6.30 CEST
-            h5 Clinical decision making and interpretable deep neural networks
+            p.text-gray-500 Apr 22, 5.00pm - 6.30pm CEST
+            h5 Interpretable Neural Networks for Computer Vision: Clinical Decisions that are Computer-Aided, not Automated
             hr
-            p Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            p The talk will face the topic of clinical decision-making and interpretable deep neural networks. The main question is whether it is possible that an algorithm could be a true partner to a physician, rather than making the decision on its own. Two approaches will be discussed 1) case-based reasoning and 2) neural disentanglement, covering the advantages of a technique called concept whitening.
             hr
             ul.list-unstyled
-              li #[strong Speaker] Cinthyia Rudin
               li #[strong Chair] -  Fosca Giannotti
-              li #[strong Discussants]  - ???, ???, ???
+              li #[strong Discussants]  - Riccardo Guidotti, Luca Pappalardo, Cecilia Panigutti
             hr
-            a(href='#')
-              i.m-2.fab.fa-2x.fa-youtube(aria-hidden='true')
-              | live on youtube
-            br
-            a(href='#')
+            a(href='https://twitter.com/cynthiarudin' target='_blank')
               i.m-2.fab.fa-2x.fa-twitter
               | follow on twitter
         // Rudin
+        hr
         .row
-           .col-lg-8
-             img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_02_Lecue.png" alt="Freddy Lecue")
-           .col-lg-4
-             p.text-gray-500 Jun 15, 5.00pm - 6.30 CEST
-             h5 This is a good title
-             hr
-             p Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-             hr
-             ul.list-unstyled
-               li #[strong Speaker] Freddy Lecue
-               li #[strong Chair] -  Fosca Giannotti
-               li #[strong Discussants]  - ???, ???, ???
-             hr
-             a(href='#')
-               i.m-2.fab.fa-2x.fa-youtube(aria-hidden='true')
-               | live on youtube
-             br
-             a(href='#')
-               i.m-2.fab.fa-2x.fa-twitter
-               | follow on twitter
+          .col-lg-8
+            img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_02_lecue.png" alt="Freddy Lecue")
+            #accordionExample.accordion
+              .card.border-0
+                #headingOne.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                    | About this talk (tbd)
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p As artificial intelligence has become tightly intervened in the society having tangible consequences and influence, calls for explainability and interpretability of these systems has also become increasingly prevalent. Explainable AI (XAI) attempts to alleviate concerns of transparency, trust and ethics in AI by making them accountable, interpretable and explainable to humans. This workshop aims to encapsulate these concepts under the umbrella of Explainable Agency and bring together researchers and practitioners working in different facets of explainable AI from diverse backgrounds to share challenges, new directions and recent research in the field. We especially welcome research from fields including but not limited to artificial intelligence, human-computer interaction, human-robot interaction, cognitive science, human factors and philosophy.
+              .card.border-0.mt-lg-5.mt-4
+                #headingTwo.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Freddy Lecue - short bio
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Dr Freddy Lecue (PhD 2008, Habilitation 2015) is the Chief Artificial Intelligence (AI) Scientist at CortAIx (Centre of Research & Technology in Artificial Intelligence eXpertise) @Thales in Montreal, Canada. He is also a research associate at Inria, in WIMMICS, Sophia Antipolis - France.
+                      p His research area is at the frontier of intelligent / learning / reasoning systems, and Internet of Things.
+              .card.border-0.mt-lg-5.mt-4
+
+          .col-lg-4
+            p.text-gray-500 Apr 22, 5.00pm - 6.30pm CEST
+            h5 The role of Knowledge Graph (tbd)
+            hr
+            p Explainable AI (XAI) attempts to alleviate concerns of transparency, trust and ethics in AI by making them accountable, interpretable and explainable to humans. This seminars aims to encapsulate these concepts under the umbrella of Explainable Agency and bring together researchers and practitioners working in different facets of explainable AI from diverse backgrounds to share challenges, new directions and recent research in the field.
+            hr
+            ul.list-unstyled
+              li #[strong Chair] -  Fosca Giannotti
+              //- li #[strong Discussants]  - Riccardo Guidotti, Luca Pappalardo, Cecilia Panigutti
+            hr
+            a(href='https://twitter.com/freddylecue' target='_blank')
+              i.m-2.fab.fa-2x.fa-twitter
+              | follow on twitter
 
 
 

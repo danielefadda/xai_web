@@ -116,31 +116,38 @@ block content
           .col-lg-8
             img.img-fluid.mb-lg-5.mb-md-5.mb-4(src="assets/images/seminars/seminar_02_prez.png" alt="Przemek Biecek")
             #accordionExample.accordion
-              .card.border-0.mt-2
+              .card.border-0
+                #headingOne.card-header.bg-yellow
+                  a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | More on this talk
+                #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .py-lg-2.px-lg-2.bg-grayphite
+                    .card-body.mt-2
+                      p Explanatory Model Analysis Explore, Explain and Examine Predictive Models is a set of methods and tools designed to build better predictive models and to monitor their behaviour in a changing environment. Today, the true bottleneck in predictive modelling is neither the lack of data, nor the lack of computational power, nor inadequate algorithms, nor the lack of flexible models. It is the lack of tools for model exploration (extraction of relationships learned by the model), model explanation (understanding the key factors influencing model decisions) and model examination (identification of model weaknesses and evaluation of model's performance). This book presents a collection of model agnostic methods that may be used for any black-box model together with real-world applications to classification and regression problems.
+              .card.border-0.mt-lg-5.mt-4
                 #headingTwo.card-header.bg-yellow
                   a.h5.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-4.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
                     | Przemyslaw Biecek - short bio
                 #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
                   .py-lg-2.px-lg-2.bg-grayphite
                     .card-body.mt-2
-                      p Dr Biecek is interested in methodology (explainable artificial intelligence) and applications (computational medicine/biology) of machine learning. He works as associate professor at Warsaw University of Technology. His background is in mathematical statistics and software engineering. He leads group MI2DataLab of mathematicians and computer scientists that love to play with data
+                      p Associate professor at Warsaw University of Technology and the University of Warsaw. Interested in model visualisation, explanatory model analysis, predictive modelling and applications in healthcare. Graduated in software engineering and mathematical statistics. In 2016, he formed the research group MI2DataLab which develops methods and tools for predictive model analysis. Member of the ResponsibleAI group in the GPAI initiative.
               .card.border-0.mt-lg-5.mt-4
 
           .col-lg-4
             h2 Przemyslaw Biecek
             p.text-gray-500 May 25, 5.00pm - 6.30pm CEST
-            h5 Explanatory Model Analysis
+            h5 Trust, but verify. How explainable artificial intelligence can be used to validate predictive models.
             hr
-            p Explanatory Model Analysis Explore, Explain and Examine Predictive Models is a set of methods and tools designed to build better predictive models and to monitor their behaviour in a changing environment. Today, the true bottleneck in predictive modelling is neither the lack of data, nor the lack of computational power, nor inadequate algorithms, nor the lack of flexible models.
-            p It is the lack of tools for model exploration (extraction of relationships learned by the model), model explanation (understanding the key factors influencing model decisions) and model examination (identification of model weaknesses and evaluation of model's performance). This book presents a collection of model agnostic methods that may be used for any black-box model together with real-world applications to classification and regression problems.
+            p The talk will have three parts. In the first I will show how vulnerable XAI methods are to attacks, and why we should approach explanations with a great deal of scepticism. In the second I will show that many of the XAI methods can be used effectively for model exploration, I will talk about Explanatory Model Analysis and the Rashomon perspective. In the third, I will talk about the grammar for interactive model explanation and the advantages from a fast feedback loop in human-model interaction.
             //hr
             //ul.list-unstyled
             //  li #[strong Chair] -  Fosca Giannotti
             //  //- li #[strong Discussants]  - Riccardo Guidotti, Luca Pappalardo, Cecilia Panigutti
-            //hr
-            //a(href='https://twitter.com/freddylecue' target='_blank')
-            //  i.m-2.fab.fa-2x.fa-twitter
-            //  | follow on twitter
+            hr
+            a(href='https://twitter.com/smarterpoland?s=20' target='_blank')
+              i.m-2.fab.fa-2x.fa-twitter
+              | follow on twitter
         // Byrne SECTION
         #byrne
         .row.pt-9.pb-sm-10

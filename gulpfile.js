@@ -125,6 +125,7 @@ var gulpif = require('gulp-if');
 var cache = require('gulp-cache');
 var gutil = require('gulp-util');
 var responsive = require('gulp-responsive');
+var run = require('gulp-run');
 
 function clearCache(done) {
 	cache.clearAll();
@@ -132,6 +133,11 @@ function clearCache(done) {
 }
 
 gulp.task(clearCache);
+
+gulp.task("python-updt", function(done){
+	return run("python src/includes/pubblications_to_html.py").exec();
+	done();
+});
 
 gulp.task('browser-sync', function (done) {
 	browserSync.init({
@@ -405,7 +411,7 @@ gulp.task('build_notice', function () {
 });
 
 
-gulp.task('default', gulp.series('clearCache', 'pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'browser-sync', function (done) {
+gulp.task('default', gulp.series('clearCache','python-updt','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'browser-sync', function (done) {
 	gulp.watch(projectPHPWatchFiles, gulp.parallel(reload));
 	gulp.watch(pugWatchFiles, gulp.parallel('pug'));
 	gulp.watch(styleWatchFiles, gulp.parallel('styles', 'bootstrap-styles'));
@@ -416,7 +422,7 @@ gulp.task('default', gulp.series('clearCache', 'pug', 'styles', 'bootstrap-style
 	done();
 }));
 
-gulp.task('build-process', gulp.series('clearCache', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'pug', 'variables', 'copy', function (done) {
+gulp.task('build-process', gulp.series('clearCache','python-updt', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'pug', 'variables', 'copy', function (done) {
 	done();
 }));
 

@@ -411,7 +411,7 @@ gulp.task('build_notice', function () {
 });
 
 
-gulp.task('default', gulp.series('clearCache','python-updt','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'browser-sync', function (done) {
+gulp.task('default', gulp.series('clearCache','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'browser-sync', function (done) { //ho rimosso provvisoriamente la chiamata a 'images-lqip' che era dopo 'images'
 	gulp.watch(projectPHPWatchFiles, gulp.parallel(reload));
 	gulp.watch(pugWatchFiles, gulp.parallel('pug'));
 	gulp.watch(styleWatchFiles, gulp.parallel('styles', 'bootstrap-styles'));
@@ -422,7 +422,18 @@ gulp.task('default', gulp.series('clearCache','python-updt','pug', 'styles', 'bo
 	done();
 }));
 
-gulp.task('build-process', gulp.series('clearCache','python-updt', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip', 'pug', 'variables', 'copy', function (done) {
+gulp.task('defaultPY', gulp.series('clearCache','python-updt','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'browser-sync', function (done) { //ho rimosso provvisoriamente la chiamata a 'images-lqip' che era dopo 'images'
+	gulp.watch(projectPHPWatchFiles, gulp.parallel(reload));
+	gulp.watch(pugWatchFiles, gulp.parallel('pug'));
+	gulp.watch(styleWatchFiles, gulp.parallel('styles', 'bootstrap-styles'));
+	gulp.watch(jsWatchFiles, gulp.parallel('scripts'));
+	gulp.watch(imagesWatchFiles, gulp.parallel('images'));
+
+	gulp.watch(htmlWatchFiles).on("change", reload);
+	done();
+}));
+
+gulp.task('build-process', gulp.series('clearCache','python-updt', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip',  'pug', 'variables', 'copy', function (done) {
 	done();
 }));
 

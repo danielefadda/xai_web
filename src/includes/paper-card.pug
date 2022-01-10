@@ -1,0 +1,44 @@
+// card1
+.row.mt-4.justify-content-center
+    .col-lg-1.text-right
+        h4 1.
+    .col-lg-2.pl-0
+        img(src='assets/images/pubblications/pubblication_demo_img.jpg ' alt="immagine" style='width:100%;').mr-3
+        //ol
+        //  include includes/paper-list
+    .col-lg-6.bg-yellow.p-3
+        #accordionExample.accordion
+        | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.] #[em Guidotti, R., Monreale, A., Matwin, S., & Pedreschi, D. (2019, September)].
+        br
+        | In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 189-205). Springer, Cham.
+        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+            div.bg-yellow
+                hr
+                small We present an approach to explain the decisions of black box models for image classification. While using the black box to label images, our explanation method exploits the latent feature space learned through an adversarial autoencoder. The proposed method first generates exemplar images in the latent feature space and learns a decision tree classifier. Then, it selects and decodes exemplars respecting local decision rules. Finally, it visualizes them in a manner that shows to the user how the exemplars can be modified to either stay within their class, or to become counter-factuals by “morphing” into another class. Since we focus on black box decision systems for image classification, the explanation obtained from the exemplars also provides a saliency map highlighting the areas of the image that contribute to its classification, and areas of the image that push it into another class. We present the results of an experimental evaluation on three datasets and two black box models. Besides providing the most useful and interpretable explanations, we show that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability.
+    .col-lg-2.pl-3
+        a.btn.btn-outline-black.d-block(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo') ABSTRACT
+        a.btn.mt-1.btn-outline-black(href="about.html") Cite
+// card 2
+.row.mt-4.justify-content-center
+    .col-lg-1.text-right
+        h4 2.
+    .col-lg-8.bg-yellow.p-3
+        | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.]
+        br
+        | #[em Guidotti, R., Monreale, A., Matwin, S., & Pedreschi, D. (2019, September)].
+        br
+        | In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 189-205). Springer, Cham.
+        #collapseAbs.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+            div.bg-yellow
+                hr
+                p ABSTRACT
+                small We present an approach to explain the decisions of black box models for image classification. While using the black box to label images, our explanation method exploits the latent feature space learned through an adversarial autoencoder. The proposed method first generates exemplar images in the latent feature space and learns a decision tree classifier. Then, it selects and decodes exemplars respecting local decision rules. Finally, it visualizes them in a manner that shows to the user how the exemplars can be modified to either stay within their class, or to become counter-factuals by “morphing” into another class. Since we focus on black box decision systems for image classification, the explanation obtained from the exemplars also provides a saliency map highlighting the areas of the image that contribute to its classification, and areas of the image that push it into another class. We present the results of an experimental evaluation on three datasets and two black box models. Besides providing the most useful and interpretable explanations, we show that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability.
+    .col-lg-2.pl-3
+        p.my-1
+            a.btn-mini.px-2.btn-black.small(href='https://doi.org/10.3389/frai.2021.699448', target="_blank") Resource Link
+        p.mb-1.mt-0
+            a.btn-mini.px-2.btn-black.small(href="about.html") BibTeX
+        p.my-1
+            a.btn-mini.px-2.btn-black.small(href='#' data-toggle='collapse' data-target='#collapseAbs' aria-expanded='true' aria-controls='collapseAbs') Abstract
+        p.my-1
+            small RL #[strong 3 ▪ 4 ▪ 5]

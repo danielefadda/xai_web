@@ -8,12 +8,63 @@ block content
             .seventy-five-1-percent-bg-yellow
                 .container.pt-lg-8.pt-md-7.pt-5.pb-lg-10
                     .row.gx-lg-5.gx-md-5.gy-5
-                        .col-lg-12.col-md-12
+                        .col-lg-4.col-md-4
                             h1.my-3 Our Team
-
+                        .col-lg-2.mb-2.mb-lg-0
+                            a(href='#projectLeader')
+                                .bg-black.text-white.h-100
+                                    .text-center.align-items-center
+                                        .px-lg-4.py-lg-2.px-4.py-2
+                                            .mt-lg-4.mt-5
+                                                h3.text-uppercase 1.
+                                                h5.text-uppercase Project Leader
+                        .col-lg-2.mb-2.mb-lg-0
+                            a(href='#core')
+                                .bg-black.text-white.h-100
+                                    .text-center.align-items-center
+                                        .px-lg-4.py-lg-2.px-4.py-2
+                                            .mt-lg-4.mt-5
+                                                h3.text-uppercase 2.
+                                                h5.text-uppercase Research Line Leader
+                        .col-lg-2.mb-2.mb-lg-0
+                            a(href='#advisory')
+                                .bg-black.text-white.h-100
+                                    .text-center.align-items-center
+                                        .px-lg-4.py-lg-2.px-4.py-2
+                                            .mt-lg-4.mt-5
+                                                h3.text-uppercase 3.
+                                                h5.text-uppercase Advisory Board
+                        .col-lg-2.mb-2.mb-lg-0
+                            a(href='#associates')
+                                .bg-black.text-white.h-100
+                                    .text-center.align-items-center
+                                        .px-lg-4.py-lg-2.px-4.py-2
+                                            .mt-lg-4.mt-5.mb-4
+                                                h3.text-uppercase 4.
+                                                h5.text-uppercase Associates
             // teame cards
-            .container.mt-lg-4.mt-md-2.mt-2.mb-10
-                .row.gx-lg-3.gy-3
+            .container.mb-10
+                .row.gx-lg-3.gy-3.mt-lg-4.mt-md-2.mt-2.mb-5
+                    h1#projectLeader Project leaders
                     each persona in people
-                        .col-lg-2.col-md-4.col-sm-6
-                            +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation)
+                        if persona.type == 'pl'
+                            .col-lg-2.col-md-4.col-sm-6
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                .row.gx-lg-3.gy-3.mt-lg-4.mt-md-2.mt-2.mb-5
+                    h1#core Research line leaders
+                    each persona in people
+                        if persona.type=='core'
+                            .col-lg-2.col-md-4.col-sm-6
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader)
+                .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
+                    h1#advisory Advisory board
+                    each persona in people
+                        if persona.type == 'advisory'
+                            .col-lg-2.col-md-4.col-sm-6
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
+                    h1#associates Associates
+                    each persona in people
+                        if persona.type == 'associate'
+                            .col-lg-2.col-md-4.col-sm-6
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)

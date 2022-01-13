@@ -5,12 +5,14 @@ block content
 
   article.entry
     .entry-content
-    .bg-yellow
-      .container.pt-lg-8.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
-        .row
-          .col-lg-6
-            h1.my-3 Resources
-            //- p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    //title
+    .seventy-five-1-percent-bg-yellow
+        .container.pt-lg-8.pt-md-7.pt-5.pb-lg-10
+            .row.gx-lg-5.gx-md-5.gy-5
+                .col-lg-6.col-md-6
+                    h1.my-3 Resources
+                    div
+                      p All the #[a(href="#publications") #[strong publications]] and the #[a(href="#thesis") #[strong thesis]] of the XAI Project
     .entry-content.mt-6
       //- Publications title
       .container
@@ -19,7 +21,7 @@ block content
             .bg-grayphite
               .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
                 .text-black.pr-lg-4.text-center
-                  h1.mb-1.font-weight-bolder Publications
+                  h1.mb-1.font-weight-bolder#publications Publications
 
       //- Publications cards
       .container
@@ -34,7 +36,7 @@ block content
             .bg-grayphite
               .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
                 .text-black.pr-lg-4.text-center
-                  h1.mb-1.font-weight-bolder Thesis
+                  h1.mb-1.font-weight-bolder#thesis Thesis
       .container
         .row.justify-content-lg-center
           .col-lg-10

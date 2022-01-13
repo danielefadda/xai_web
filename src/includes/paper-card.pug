@@ -3,12 +3,20 @@
     .col-lg-1.text-right
         h4 1.
     .col-lg-2.pl-0
-        img(src='assets/images/pubblications/pubblication_demo_img.jpg ' alt="immagine" style='width:100%;').mr-3
-        //ol
-        //  include includes/paper-list
+        img(src='assets/images/pubblications/pubblication_demo_img.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#exampleModalCenter' type='button').mr-3
+        #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+            .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small Black Box Explanation by Learning Image Exemplars in the Latent Feature Space
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/pubblications/pubblication_1.jpg ' alt="immagine" )
+
     .col-lg-6.bg-yellow.p-3
         #accordionExample.accordion
-        | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.] #[em Guidotti, R., Monreale, A., Matwin, S., & Pedreschi, D. (2019, September)].
+        | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.] #[em Gguidotti, R., Monreale, A., Matwin, S., & Pedreschi, D. (2019, September)].
         br
         | In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 189-205). Springer, Cham.
         #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')

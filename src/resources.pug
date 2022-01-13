@@ -11,17 +11,32 @@ block content
           .col-lg-6
             h1.my-3 Resources
             //- p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    .entry-content
+    .entry-content.mt-6
+      //- Publications title
       .container
         .row
-          .col-lg-10
-            h1 Publications
-        include includes/paper-cards
-      .container.mb-4.mt-6
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.mb-1.font-weight-bolder Publications
+
+      //- Publications cards
+      .container
         .row
-          .col-12
-            h2 Thesis
+          //-include includes/paper-card
+          include includes/paper-cards
+    .entry-content.mt-6.mb-7
+      //- Publications title
+      .container.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.mb-1.font-weight-bolder Thesis
+      .container
         .row.justify-content-lg-center
-          .col-lg-6
+          .col-lg-10
             ol
               include includes/thesis-list

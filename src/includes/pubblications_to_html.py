@@ -21,8 +21,8 @@ sheet_names = ['papers','dataset','algorithms','masterThesis','phdThesis']
 
 
 # Function to convert text to pug file
-def write_html(string,filename='filename',extension='pug'):
-    Html_file= open(f"{filename}.{extension}","w")
+def write_html(string,filename='filename',path='src/includes/',extension='pug'):
+    Html_file= open(f"{path}{filename}.{extension}","w")
     Html_file.write(string)
     Html_file.close()
 
@@ -43,6 +43,7 @@ cards=''
 for i, row in papers.iterrows():
     authors= row['Authors']
     abstract= row['abstract']
+
     researchLine= row['Research line']
     if isinstance(researchLine, str):
         researchLine=researchLine.replace(",", "▪")

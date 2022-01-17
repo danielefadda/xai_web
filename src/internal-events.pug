@@ -1,0 +1,35 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      // Hero
+      .bg-yellow
+        .container.pt-lg-8.pt-md-7.pt-5.pb-lg-6.pb-md-5.pb-3
+          .row
+            .col-lg-6
+              h2.my-3 Internal Events
+              p.lead.mb-1 The following calendar is available for all participants in the project. Consult it periodically or subscribe to the calendar and you will not miss any appointment
+      // let's work
+      .container.mt-lg-8.mb-lg-8.mt-7.mb-6
+        .row
+          .col-lg-12
+            iframe(style="border: 0", width="100%", height="600", border="0", scrolling="no", src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FRome&showTz=0&showCalendars=0&showTabs=1&showPrint=0&showDate=0&showNav=1&showTitle=0&src=ODg4MWY0amUzOG9vNHJiajhxczJjcjA1bG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688")
+
+      //Subscription form
+      .container.my-lg-9.my-md-7.my-6
+        .bg-yellow
+          .row.py-lg-8.py-md-6.py-6.px-lg-0.px-md-0.px-4
+            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0
+              .text-center
+                h2.mb-4 keep up with the latest from Xai
+                p.mb-5.mt-1.px-lg-5 Newsletter coming soon
+
+                form
+                  .form-group.row.gx-lg-2
+                    .col-md-9
+                      input#form_email.form-control(type='text' name='lname' placeholder='Email', required)
+                    .col-md-3.mt-2.mt-md-0
+                      a.btn.btn-outline-black.d-block.btn-top-0.rounded-0(href='#') SUBSCRIBE

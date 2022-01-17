@@ -53,7 +53,7 @@ for i, row in papers.iterrows():
         rlString=''
 
     pubYearString = row['Year of publication']
-    pubblicationYear =  '.' if pubYearString!=pubYearString else str(int(pubYearString))
+    publicationYear =  '.' if pubYearString!=pubYearString else str(int(pubYearString))
     title=row['Title of the scientific publication'].strip('.')
 
     container=row['container']
@@ -70,6 +70,11 @@ for i, row in papers.iterrows():
     DOI=row['DOI']
     doiLink=row['doi link']
     image= row['image file']
+    imageSize= row['image size']
+    if imageSize=='big':
+        modalSize='.modal-lg'
+    else:
+        modalSize=''
 
     if isinstance(DOI, str):
         #Doi to bibtex
@@ -109,7 +114,7 @@ for i, row in papers.iterrows():
         externalButton= ''
 
     ##### string composition for pug file:
-    ptOne=f'''.row.mt-4.justify-content-center
+    ptOne=f'''.row.mt-5.justify-content-center
     .col-lg-1.text-right
         h4 {i+1}.'''
 
@@ -117,16 +122,16 @@ for i, row in papers.iterrows():
     if row['summary image']=='YES':
         ptTwo=f'''
     .col-lg-2.pl-0
-        img(src='assets/images/pubblications/{image} ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-{p.number_to_words(i)}' type='button').mr-3
+        img(src='assets/images/publications/{image} ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-{p.number_to_words(i)}' type='button').mr-3.border.border-secondary
         #modal-{p.number_to_words(i)}.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-{p.number_to_words(i)}-Title' aria-hidden='true')
-            .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+            .modal-dialog{modalSize}.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
                         p.small {title}
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                             span(aria-hidden='true') &times;
                     .modal-body
-                        img(src='assets/images/pubblications/{image} ' alt="immagine" )
+                        img(src='assets/images/publications/{image} ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3'''
     else:
         ptTwo=f'''
@@ -136,7 +141,7 @@ for i, row in papers.iterrows():
         #accordion-{p.number_to_words(i)}.accordion
         | #[strong {title}]
         br
-        | #[em {authors}] ({pubblicationYear}){container}{journal}
+        | #[em {authors}] ({publicationYear}){container}{journal}
         #collapse-{p.number_to_words(i)}.collapse(aria-labelledby='heading-{p.number_to_words(i)}' data-parent='#accordion-{p.number_to_words(i)}')
             div.bg-yellow
                 hr

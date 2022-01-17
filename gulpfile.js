@@ -135,7 +135,7 @@ function clearCache(done) {
 gulp.task(clearCache);
 
 gulp.task("python-updt", function(done){
-	return run("python src/includes/pubblications_to_html.py").exec();
+	return run("python src/includes/publications_to_html.py").exec();
 	done();
 });
 

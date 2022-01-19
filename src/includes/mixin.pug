@@ -220,7 +220,7 @@ mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchL
       h5.member-name
         | #{firstName}
         br
-        | #{lastName}
+        | #{lastName.replace(/_/g, "")}
       hr
       .member-tag
         span.member-role #{role}

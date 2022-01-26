@@ -34,6 +34,7 @@ url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sh
 papers = pd.read_csv(url,header=0)
 papers.columns
 # Visualization order of the papers (featured before then year of publication)
+papers=papers.iloc[::-1] #reverse all
 papers=papers.sort_values(by=['featured','Year of publication'], ascending = False).reset_index(drop=True)
 
 
@@ -122,7 +123,7 @@ for i, row in papers.iterrows():
     if row['summary image']=='YES':
         ptTwo=f'''
     .col-lg-2.pl-0
-        img(src='assets/images/publications/{image} ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-{p.number_to_words(i)}' type='button').mr-3.border.border-secondary
+        img(src='assets/images/publications/{image} ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-{p.number_to_words(i)}' type='button').mr-3.border.border-secondary.bwc-image
         #modal-{p.number_to_words(i)}.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-{p.number_to_words(i)}-Title' aria-hidden='true')
             .modal-dialog{modalSize}.modal-dialog-centered(role='document')
                 .modal-content

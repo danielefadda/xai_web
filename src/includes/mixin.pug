@@ -47,7 +47,7 @@ mixin blog(style, column, isReadMore=false, news)
   div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
     each item in news
       div(class=column)
-        a(href=item.link)
+        a(href=item.link target='_blank')
           article
             figure.entry-media
               if item.image

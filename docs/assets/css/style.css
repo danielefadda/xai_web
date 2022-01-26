@@ -1964,3 +1964,17 @@ body.has-no-comments .comment-respond {
   position: relative;
   width: 100%;
 }
+
+.bwc-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.bwc-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+}

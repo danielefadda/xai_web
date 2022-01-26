@@ -34,6 +34,29 @@ block content
             div.pb-md-2.mt-4
               a.btn.btn-outline-black(href="about.html") MORE ON THE PROJECT
 
+
+    // Last News SECTION
+    .entry-content#news
+      // head blog
+      .bg-yellow
+        .container.pt-lg-5.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
+          .row
+            .col-lg-6
+              h1.my-3 Last News
+              p.lead Events, tutorials, round tables, conferences and more...
+      // blog
+      .container.my-lg-9.my-md-7.my-6
+        h2.mb-lg-5.mb-md-4.mb-3
+        +blogLast(
+          'card-post-style',
+          'col-lg-4 col-12',
+          false,
+          news
+        )
+        |
+        div.pb-md-2.mt-4.text-center
+          a.btn.btn-outline-black(href="news.html") READ ALL NEWS
+
     // PARTNERS SECTION
     .entry-content
       .bg-yellow
@@ -116,21 +139,3 @@ block content
                     h1.mb-3 5
                     h4.mb-3 Ethical/legal framework #[br] for explanation
                     //- p Research manager #[br]#[em Mario Rossi]
-
-    .entry-content#news
-      // head blog
-      .bg-yellow
-        .container.pt-lg-5.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
-          .row
-            .col-lg-6
-              h1.my-3 News
-              p.lead Events, tutorials, round tables, conferences and more...
-      // blog
-      .container.my-lg-9.my-md-7.my-6
-        h2.mb-lg-5.mb-md-4.mb-3
-        +blog(
-          'card-post-style',
-          'col-lg-4 col-12',
-          false,
-          news
-        )

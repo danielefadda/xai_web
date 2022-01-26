@@ -42,10 +42,41 @@ mixin entryMetaTop(author, categories, date,time, commentCount, isEdit=false )
           | Edit
 
 //- Blog
+mixin blogLast(style, column, isReadMore=false, news)
+  // Blog
+  div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
+    each item, index in news
+      if index<3
+        div(class=column)
+          a(href=item.link target='_blank')
+            article
+              figure.entry-media
+                if item.image
+                  img.lozad(src=item.image.replace(".jpg", "-lqip.jpg"), data-src=item.image, alt='Entry Image')
+                if item.category
+                  span.entry-meta-category
+                    | #{item.category}
+              .entry-content-wrapper
+                header.entry-header
+                  //+entryMetaTop(item.author, item.date, item.commentCount, item.isEdit)
+                  h2.entry-title
+                    a(href=item.link)= item.title
+                if item.date
+                  .entry-content.mt-2
+                    p.fas.fa-calendar
+                    span.text-gray-500= ' '+item.date
+                if item.content
+                  .entry-content.mt-2
+                    p= item.content
+                  if isReadMore
+                    footer.entry-footer
+                      a.entry-read-more(href='#') Read More
+                        i.fas.fa-long-arrow-alt-right.ml-1
+
 mixin blog(style, column, isReadMore=false, news)
   // Blog
   div.row.gx-lg-5.gx-lg-3.blog-post(class=style)
-    each item in news
+    each item, index in news
       div(class=column)
         a(href=item.link target='_blank')
           article
@@ -71,7 +102,6 @@ mixin blog(style, column, isReadMore=false, news)
                   footer.entry-footer
                     a.entry-read-more(href='#') Read More
                       i.fas.fa-long-arrow-alt-right.ml-1
-
 //- Blog card style
 mixin blogcard(style, column, isReadMore=false, ...items)
   // Blog

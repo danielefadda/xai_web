@@ -2,7 +2,27 @@ extends includes/layout
 include includes/mixin
 
 block content
+
   article.entry
+    .entry-content#news
+      // head blog
+      .bg-yellow
+        .container.pt-lg-5.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
+          .row
+            .col-lg-6
+              h1.my-3 News
+              p.lead Events, tutorials, round tables, conferences and more...
+      // blog
+      .container.my-lg-9.my-md-7.my-6
+        h2.mb-lg-5.mb-md-4.mb-3
+        +blog(
+          'card-post-style',
+          'col-lg-4 col-12',
+          false,
+          news
+        )
+  // Internal events
+  //- article.entry
     .entry-content
       //- Page title
       // Hero
@@ -18,8 +38,8 @@ block content
           .col-lg-12
             iframe(style="border: 0", width="100%", height="600", border="0", scrolling="no", src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FRome&showTz=0&showCalendars=0&showTabs=1&showPrint=0&showDate=0&showNav=1&showTitle=0&src=ODg4MWY0amUzOG9vNHJiajhxczJjcjA1bG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688")
 
-      //Subscription form
-      //- .container.my-lg-9.my-md-7.my-6
+      //- Subscription form
+      //-.container.my-lg-9.my-md-7.my-6
         .bg-yellow
           .row.py-lg-8.py-md-6.py-6.px-lg-0.px-md-0.px-4
             .col-lg-6.offset-lg-3.col-md-10.offset-md-1.px-0

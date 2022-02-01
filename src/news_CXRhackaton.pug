@@ -1,0 +1,55 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Covid CXR Hackaton
+                h3 Artificial Intelligence for Covid-19 prognosis: aiming at accuracy and explainability
+                +metaTop('Hackaton', 'Dubai', 'February 1, 2022')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/cxrHackaton_big.png' alt='cxr Hackaton')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead Launched during the Dubai Expo 2020, the Hackaton aims at designing effective solutions based on machine learning and data science supporting the medical doctor to formulate a Covid-19 prognosis from early chest X-ray images and clinical data collected during triage.
+            br
+            | A prize will be awarded for the approach with the highest level of explainability.
+            p A team of three XAI PhD students is joining the competition:
+            ul
+              li Giovanni Camarda
+              li Eleonora Cappuccio
+              li Andrea Rafanelli
+            br
+            p.lead.mt-3 Important Dates
+            ul
+              li Jan. 27 – Registration opens
+              li Feb. 01 – Hackathon opening event at Dubai EXPO
+              li Feb. 15 – Results submission opens
+              li Mar. 01 – Final day for results submission
+              li Mar. 03 – Final day for the submission of the solution description (max 2 pages)
+              li Mar. 10 – Hackathon closing event with announcement of winners and prizes
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="CXR Hackaton website" href='https://ai4covid-hackathon.it/' target='_blank')
+              .bg-yellow.px-5.py-5
+                h5.mb-3 More info availlable on Covid CXR Hackaton website
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Hackaton
+                  li
+                    a(href='#' rel='tag') Dubai

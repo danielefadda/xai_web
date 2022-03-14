@@ -1,0 +1,42 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Expo Dubai Forum
+                h3 High-level forum on the EU vision for trustworthy AI in the world. The event will be hosted at the Pavilion Italia
+                +metaTop('Forum', 'Dubai', 'March 15-16, 2022 13:30 – 15:00 CET')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/dubaiExpo_big.jpg' alt='Dubai Expo Forum')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead Fosca Giannotti will participate in the High-Level Forum on EU Vision for TrustworthyAI.
+
+            p.lead This key event is organised by EU Commission in the frame of @InTouchAIeu to bring European AI Excellence & Trust approaches to the world ExpoDubai. The discussion will focus on the EU efforts to promote Trustworthy AI at a global level and will feature high-level representatives and experts from Europe and all around the world.
+
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="High-level forum on the EU vision link" href='https://excellenceandtrust.intouchai.eu/whats-happening/#high-level-forum-vision' target='_blank')
+              .bg-yellow.px-5.py-5
+                h5.mb-3 Register and join!
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Forum
+                  li
+                    a(href='#' rel='tag') Giannotti

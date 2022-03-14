@@ -1,0 +1,42 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Digital Tomorrow Podcast
+                h3 Fosca Giannotti is the new guest of the podcast by Registro.it, which investigates the future of digital
+                +metaTop('Podcast', 'Dubai', 'February 16, 2022')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/digital_tomorrow_big.png' alt='digital tomorrow')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead "Digital Tomorrow" is the new podcast by Registro.it, which investigates the future of digital with Pepe Moder and many experts, ready to give their point of view on future changes. The podcast covers the main technology trends and evolutions, from the Internet of Things to blockchain, from 5G to artificial intelligence. The podcast is available on the Registro website and on the main listening platforms - Spotify, Apple Podcasts, Google Podcasts.
+
+            p.lead The eighth episode of Digital Tomorrow focuses on data mining.
+            p.lead In this episode Pepe Moder discusses the topic with Fosca Giannotti, and Mirko Lalli.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="Digital Tomorrow podcast link" href='https://www.nic.it/en/dt/episode-8-data-mining' target='_blank')
+              .bg-yellow.px-5.py-5
+                h5.mb-3 More info availlable on Registro.it website
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Podcast
+                  li
+                    a(href='#' rel='tag') Giannotti

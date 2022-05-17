@@ -1,0 +1,513 @@
+
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 1.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-zero.accordion
+        | #[strong A Survey of Methods for Explaining Black Box Models]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco, Giannotti Fosca, Pedreschi Dino] (2022) - ACM Computing Surveys. In ACM computing surveys (CSUR), 51(5), 1-42.
+        #collapse-zero.collapse(aria-labelledby='heading-zero' data-parent='#accordion-zero')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In recent years, many accurate decision support systems have been constructed as black boxes, that is as systems that hide their internal logic to the user. This lack of explanation constitutes both a practical and an ethical issue. The literature reports many approaches aimed at overcoming this crucial weakness, sometimes at the cost of sacrificing accuracy for interpretability. The applications in which black box decision systems can be used are various, and each approach is typically developed to provide a solution for a specific problem and, as a consequence, it explicitly or implicitly delineates its own definition of interpretability and explanation. The aim of this article is to provide a classification of the main problems addressed in the literature with respect to the notion of explanation and the type of black box system. Given a problem definition, a black box type, and a desired explanation, this survey should help the researcher to find the proposals more useful for his own work. The proposed classification of approaches to open black box models should also be useful for putting the many research open questions in perspective.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-zero' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1145/3236009', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 3.
+    .col-lg-2.pl-0
+        img(src='assets/images/publications/02_glocalX.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-two' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-two.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-two-Title' aria-hidden='true')
+            .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small GLocalX - From Local to Global Explanations of Black Box AI Models
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/publications/02_glocalX.jpg ' alt="immagine" )
+    .col-lg-6.bg-yellow.p-3
+        #accordion-two.accordion
+        | #[strong GLocalX - From Local to Global Explanations of Black Box AI Models]
+        br
+        | #[em Setzu Mattia, Guidotti Riccardo, Monreale Anna, Turini Franco, Pedreschi Dino, Giannotti Fosca] (2021) - Artificial Intelligence. In Artificial Intelligence
+        #collapse-two.collapse(aria-labelledby='heading-two' data-parent='#accordion-two')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Artificial Intelligence (AI) has come to prominence as one of the major components of our society, with applications in most aspects of our lives. In this field, complex and highly nonlinear machine learning models such as ensemble models, deep neural networks, and Support Vector Machines have consistently shown remarkable accuracy in solving complex tasks. Although accurate, AI models often are “black boxes” which we are not able to understand. Relying on these models has a multifaceted impact and raises significant concerns about their transparency. Applications in sensitive and critical domains are a strong motivational factor in trying to understand the behavior of black boxes. We propose to address this issue by providing an interpretable layer on top of black box models by aggregating “local” explanations. We present GLocalX, a “local-first” model agnostic explanation method. Starting from local explanations expressed in form of local decision rules, GLocalX iteratively generalizes them into global explanations by hierarchically aggregating them. Our goal is to learn accurate yet simple interpretable models to emulate the given black box, and, if possible, replace it entirely. We validate GLocalX in a set of experiments in standard and constrained settings with limited or no access to either data or local explanations. Experiments show that GLocalX is able to accurately emulate several models with simple and small models, reaching state-of-the-art performance against natively global solutions. Our findings show how it is often possible to achieve a high level of both accuracy and comprehensibility of classification models, even in complex domains with high-dimensional data, without necessarily trading one property for the other. This is a key requirement for a trustworthy AI, necessary for adoption in high-stakes decision making applications.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-two' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.artint.2021.103457', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪4]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 4.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-three.accordion
+        | #[strong Local Rule-Based Explanations of Black Box Decision Systems]
+        br
+        | #[em Riccardo Guidotti, Anna Monreale, Salvatore Ruggieri, Dino Pedreschi, Franco Turini, Fosca Giannotti] (2018) - Arxive preprint
+        #collapse-three.collapse(aria-labelledby='heading-three' data-parent='#accordion-three')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The recent years have witnessed the rise of accurate but obscure decision systems which hide the logic of their internal decision processes to the users. The lack of explanations for the decisions of black box systems is a key  ethical issue, and a limitation to the adoption of achine learning components  in socially sensitive and safety-critical contexts. Therefore, we need  explanations that reveals the reasons why a predictor takes a certain decision.  In this paper we focus on the problem of black box outcome explanation, i.e.,  explaining the reasons of the decision taken on a specific instance. We propose  LORE, an agnostic method able to provide interpretable and faithful  explanations. LORE first leans a local interpretable predictor on a synthetic  neighborhood generated by a genetic algorithm. Then it derives from the logic of the local interpretable predictor a meaningful explanation consisting of: a  decision rule, which explains the reasons of the decision; and a set of  counterfactual rules, suggesting the changes in the instance's features that lead to a different outcome. Wide experiments show that LORE outperforms existing methods and baselines both in the quality of explanations and in the accuracy in mimicking the black box.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-three' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1805.10820', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 5.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-four.accordion
+        | #[strong TriplEx: Triple Extraction for Explanation]
+        br
+        | #[em Mattia Setzu, Anna Monreale, Pasquale Minervini] (2022) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small nan
+    .col-lg-2.pl-3
+        
+        
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 9.
+    .col-lg-2.pl-0
+        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-eight' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-eight.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-eight-Title' aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" )
+    .col-lg-6.bg-yellow.p-3
+        #accordion-eight.accordion
+        | #[strong Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Giannotti Fosca] (2021) - Explainable AI Within the Digital Transformation and Cyber Physical Systems (pp. 9-31)
+        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small This book presents Explainable Artificial Intelligence (XAI), which aims at producing explainable models that enable human users to understand and appropriately trust the obtained results. The authors discuss the challenges involved in making machine learning-based AI explainable. Firstly, that the explanations must be adapted to different stakeholders (end-users, policy makers, industries, utilities etc.) with different levels of technical knowledge (managers, engineers, technicians, etc.) in different application domains. Secondly, that it is important to develop an evaluation framework and standards in order to measure the effectiveness of the provided explanations at the human and the technical levels. This book gathers research contributions aiming at the development and/or the use of XAI techniques in order to address the aforementioned challenges in different applications such as healthcare, finance, cybersecurity, and document summarization. It allows highlighting the benefits and requirements of using explainable models in different application domains in order to provide guidance to readers to select the most adapted models to their specified problem and conditions. Includes recent developments of the use of Explainable Artificial Intelligence (XAI) in order to address the challenges of digital transition and cyber-physical systems; Provides a textual scientific description of the use of XAI in order to address the challenges of digital transition and cyber-physical systems; Presents examples and case studies in order to increase transparency and understanding of the methodological concepts.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-030-76409-8', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪5]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 10.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-nine.accordion
+        | #[strong Matrix Profile-Based Interpretable Time Series Classifier]
+        br
+        | #[em Guidotti Riccardo, D’Onofrio Matteo] (2021) - Frontiers in Artificial Intelligence
+        #collapse-nine.collapse(aria-labelledby='heading-nine' data-parent='#accordion-nine')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Time series classification (TSC) is a pervasive and transversal problem in various fields ranging from disease diagnosis to anomaly detection in finance. Unfortunately, the most effective models used by Artificial Intelligence (AI) systems for TSC are not interpretable and hide the logic of the decision process, making them unusable in sensitive domains. Recent research is focusing on explanation methods to pair with the obscure classifier to recover this weakness. However, a TSC approach that is transparent by design and is simultaneously efficient and effective is even more preferable. To this aim, we propose an interpretable TSC method based on the patterns, which is possible to extract from the Matrix Profile (MP) of the time series in the training set. A smart design of the classification procedure allows obtaining an efficient and effective transparent classifier modeled as a decision tree that expresses the reasons for the classification as the presence of discriminative subsequences. Quantitative and qualitative experimentation shows that the proposed method overcomes the state-of-the-art interpretable approaches.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.3389/frai.2021.699448', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 11.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-ten.accordion
+        | #[strong Helping Your Docker Images to Spread Based on Explainable Models]
+        br
+        | #[em Guidotti Riccardo, Soldani Jacopo, Neri Davide, Brogi Antonio, Pedreschi Dino] (2021) - Machine Learning and Knowledge Discovery in Databases. In In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 205-221). Springer, Cham.
+        #collapse-ten.collapse(aria-labelledby='heading-ten' data-parent='#accordion-ten')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Docker is on the rise in today’s enterprise IT. It permits shipping applications inside portable containers, which run from so-called Docker images. Docker images are distributed in public registries, which also monitor their popularity. The popularity of an image impacts on its actual usage, and hence on the potential revenues for its developers. In this paper, we present a solution based on interpretable decision tree and regression trees for estimating the popularity of a given Docker image, and for understanding how to improve an image to increase its popularity. The results presented in this work can provide valuable insights to Docker developers, helping them in spreading their images. Code related to this paper is available at: https://github.com/di-unipi-socc/DockerImageMiner.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-ten' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-10997-4_13', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 12.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-eleven.accordion
+        | #[strong Designing Shapelets for Interpretable Data-Agnostic Classification]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna] (2021) - Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society
+        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Time series shapelets are discriminatory subsequences which are representative of a class, and their similarity to a time series can be used for successfully tackling the time series classification problem. The literature shows that Artificial Intelligence (AI) systems adopting classification models based on time series shapelets can be interpretable, more accurate, and significantly fast. Thus, in order to design a data-agnostic and interpretable classification approach, in this paper we first extend the notion of shapelets to different types of data, i.e., images, tabular and textual data. Then, based on this extended notion of shapelets we propose an interpretable data-agnostic classification method. Since the shapelets discovery can be time consuming, especially for data types more complex than time series, we exploit a notion of prototypes for finding candidate shapelets, and reducing both the time required to find a solution and the variance of shapelets. A wide experimentation on datasets of different types shows that the data-agnostic prototype-based shapelets returned by the proposed method empower an interpretable classification which is also fast, accurate, and stable. In addition, we show and we prove that shapelets can be at the basis of explainable AI methods.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eleven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1145/3461702.3462553', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 13.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twelve.accordion
+        | #[strong Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling]
+        br
+        | #[em Metta Carlo, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore] (2021) - 2021 IEEE Symposium on Computers and Communications (ISCC). In 2021 IEEE Symposium on Computers and Communications (ISCC)
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Explainable AI consists in developing mechanisms allowing for an interaction between decision systems and humans by making the decisions of the formers understandable. This is particularly important in sensitive contexts like in the medical domain. We propose a use case study, for skin lesion diagnosis, illustrating how it is possible to provide the practitioner with explanations on the decisions of a state of the art deep neural network classifier trained to characterize skin lesions from examples. Our framework consists of a trained classifier onto which an explanation module operates. The latter is able to offer the practitioner exemplars and counterexemplars for the classification diagnosis thus allowing the physician to interact with the automatic diagnosis system. The exemplars are generated via an adversarial autoencoder. We illustrate the behavior of the system on representative examples.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/iscc53001.2021.9631485', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 14.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirteen.accordion
+        | #[strong Ensemble of Counterfactual Explainers]
+        br
+        | #[em Riccardo Guidotti, Ruggieri Salvatore] (2021)
+        #collapse-thirteen.collapse(aria-labelledby='heading-thirteen' data-parent='#accordion-thirteen')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In eXplainable Artificial Intelligence (XAI), several counterfactual explainers have been proposed, each focusing on some desirable properties of counterfactual instances: minimality, actionability, stability, diversity, plausibility, discriminative power. We propose an ensemble of counterfactual explainers that boosts weak explainers, which provide only a subset of such properties, to a powerful method covering all of them. The ensemble runs weak explainers on a sample of instances and of features, and it combines their results by exploiting a diversity-driven selection function. The method is model-agnostic and, through a wrapping approach based on autoencoders, it is also data-agnostic
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirteen' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://pages.di.unipi.it/ruggieri/Papers/ds2021.pdf', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 16.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-fifteen.accordion
+        | #[strong Deriving a Single Interpretable Model by Merging Tree-Based Classifiers]
+        br
+        | #[em Bonsignori Valerio, Guidotti Riccardo, Monreale Anna] (2021) - Discovery Science
+        #collapse-fifteen.collapse(aria-labelledby='heading-fifteen' data-parent='#accordion-fifteen')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Decision tree classifiers have been proved to be among the most interpretable models due to their intuitive structure that illustrates decision processes in form of logical rules. Unfortunately, more complex tree-based classifiers such as oblique trees and random forests overcome the accuracy of decision trees at the cost of becoming non interpretable. In this paper, we propose a method that takes as input any tree-based classifier and returns a single decision tree able to approximate its behavior. Our proposal merges tree-based classifiers by an intensional and extensional approach and applies a post-hoc explanation strategy. Our experiments shows that the retrieved single decision tree is at least as accurate as the original tree-based model, faithful, and more interpretable.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifteen' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-88942-5_27', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪2]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 22.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-one.accordion
+        | #[strong Global Explanations with Local Scoring]
+        br
+        | #[em Setzu Mattia, Guidotti Riccardo, Monreale Anna, Turini Franco] (2021) - Machine Learning and Knowledge Discovery in Databases. In ECML PKDD 2019: Machine Learning and Knowledge Discovery in Databases
+        #collapse-twenty-one.collapse(aria-labelledby='heading-twenty-one' data-parent='#accordion-twenty-one')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Artificial Intelligence systems often adopt machine learning models encoding complex algorithms with potentially unknown behavior. As the application of these “black box” models grows, it is our responsibility to understand their inner working and formulate them in human-understandable explanations. To this end, we propose a rule-based model-agnostic explanation method that follows a local-to-global schema: it generalizes a global explanation summarizing the decision logic of a black box starting from the local explanations of single predicted instances. We define a scoring system based on a rule relevance score to extract global explanations from a set of local explanations in the form of decision rules. Experiments on several datasets and black boxes show the stability, and low complexity of the global explanations provided by the proposed solution in comparison with baselines and state-of-the-art global explainers.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-43823-4_14', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 24.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-three.accordion
+        | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino] (2021) - Machine Learning and Knowledge Discovery in Databases. In Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.
+        #collapse-twenty-three.collapse(aria-labelledby='heading-twenty-three' data-parent='#accordion-twenty-three')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small We present an approach to explain the decisions of black box models for image classification. While using the black box to label images, our explanation method exploits the latent feature space learned through an adversarial autoencoder. The proposed method first generates exemplar images in the latent feature space and learns a decision tree classifier. Then, it selects and decodes exemplars respecting local decision rules. Finally, it visualizes them in a manner that shows to the user how the exemplars can be modified to either stay within their class, or to become counter-factuals by “morphing” into another class. Since we focus on black box decision systems for image classification, the explanation obtained from the exemplars also provides a saliency map highlighting the areas of the image that contribute to its classification, and areas of the image that push it into another class. We present the results of an experimental evaluation on three datasets and two black box models. Besides providing the most useful and interpretable explanations, we show that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-46150-8_12', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪4]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 25.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-four.accordion
+        | #[strong Meaningful Explanations of Black Box AI Decision Systems]
+        br
+        | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence. In Proceedings of the AAAI Conference on Artificial Intelligence
+        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Black box AI systems for automated decision making, often based on machine learning over (big) data, map a user’s features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases inherited by the algorithms from human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We focus on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-toglobal framework for black box explanation, articulated along three lines: (i) the language for expressing explanations in terms of logic rules, with statistical and causal interpretation; (ii) the inference of local explanations for revealing the decision rationale for a specific case, by auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of many local explanations into simple global ones, with algorithms that optimize for quality and comprehensibility. We argue that the local-first approach opens the door to a wide variety of alternative solutions along different dimensions: a variety of data sources (relational, text, images, etc.), a variety of learning problems (multi-label classification, regression, scoring, ranking), a variety of languages for expressing meaningful explanations, a variety of means to audit a black box.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v33i01.33019780', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 26.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-five.accordion
+        | #[strong Evaluating local explanation methods on ground truth]
+        br
+        | #[em Riccardo Guidotti] (2021) - Artificial Intelligence. In Artificial Intelligence, 103428
+        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Evaluating local explanation methods is a difficult task due to the lack of a shared and universally accepted definition of explanation. In the literature, one of the most common ways to assess the performance of an explanation method is to measure the fidelity of the explanation with respect to the classification of a black box model adopted by an Artificial Intelligent system for making a decision. However, this kind of evaluation only measures the degree of adherence of the local explainer in reproducing the behavior of the black box classifier with respect to the final decision. Therefore, the explanation provided by the local explainer could be different in the content even though it leads to the same decision of the AI system. In this paper, we propose an approach that allows to measure to which extent the explanations returned by local explanation methods are correct with respect to a synthetic ground truth explanation. Indeed, the proposed methodology enables the generation of synthetic transparent classifiers for which the reason for the decision taken, i.e., a synthetic ground truth explanation, is available by design. Experimental results show how the proposed approach allows to easily evaluate local explanations on the ground truth and to characterize the quality of local explanation methods.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.artint.2020.103428', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 27.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-six.accordion
+        | #[strong Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars]
+        br
+        | #[em Lampridis Orestis, Guidotti Riccardo, Ruggieri Salvatore] (2021) - Discovery Science. In In International Conference on Discovery Science (pp. 357-373). Springer, Cham.
+        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small We present xspells, a model-agnostic local approach for explaining the decisions of a black box model for sentiment classification of short texts. The explanations provided consist of a set of exemplar sentences and a set of counter-exemplar sentences. The former are examples classified by the black box with the same label as the text to explain. The latter are examples classified with a different label (a form of counter-factuals). Both are close in meaning to the text to explain, and both are meaningful sentences – albeit they are synthetically generated. xspells generates neighbors of the text to explain in a latent space using Variational Autoencoders for encoding text and decoding latent instances. A decision tree is learned from randomly generated neighbors, and used to drive the selection of the exemplars and counter-exemplars. We report experiments on two datasets showing that xspells outperforms the well-known lime method in terms of quality of explanations, fidelity, and usefulness, and that is comparable to it in terms of stability.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_24', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 29.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-eight.accordion
+        | #[strong Investigating Neighborhood Generation Methods for Explanations of Obscure Image Classifiers]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Cariaggi Leonardo] (2021) - Advances in Knowledge Discovery and Data Mining. In In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 55-68). Springer, Cham.
+        #collapse-twenty-eight.collapse(aria-labelledby='heading-twenty-eight' data-parent='#accordion-twenty-eight')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Given the wide use of machine learning approaches based on opaque prediction models, understanding the reasons behind decisions of black box decision systems is nowadays a crucial topic. We address the problem of providing meaningful explanations in the widely-applied image classification tasks. In particular, we explore the impact of changing the neighborhood generation function for a local interpretable model-agnostic explanator by proposing four different variants. All the proposed methods are based on a grid-based segmentation of the images, but each of them proposes a different strategy for generating the neighborhood of the image for which an explanation is required. A deep experimentation shows both improvements and weakness of each proposed approach.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-16148-4_5', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 30.
+    .col-lg-2.pl-0
+        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-nine' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twenty-nine.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-nine-Title' aria-hidden='true')
+            .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small Explaining Any Time Series Classifier
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" )
+    .col-lg-6.bg-yellow.p-3
+        #accordion-twenty-nine.accordion
+        | #[strong Explaining Any Time Series Classifier]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Spinnato Francesco, Pedreschi Dino, Giannotti Fosca] (2020) - 2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI)
+        #collapse-twenty-nine.collapse(aria-labelledby='heading-twenty-nine' data-parent='#accordion-twenty-nine')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small We present a method to explain the decisions of black box models for time series classification. The explanation consists of factual and counterfactual shapelet-based rules revealing the reasons for the classification, and of a set of exemplars and counter-exemplars highlighting similarities and differences with the time series under analysis. The proposed method first generates exemplar and counter-exemplar time series in the latent feature space and learns a local latent decision tree classifier. Then, it selects and decodes those respecting the decision rules explaining the decision. Finally, it learns on them a shapelet-tree that reveals the parts of the time series that must, and must not, be contained for getting the returned outcome from the black box. A wide experimentation shows that the proposed method provides faithful, meaningful and interpretable explanations.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/cogmi50398.2020.00029', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 32.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirty-one.accordion
+        | #[strong Opening the black box: a primer for anti-discrimination]
+        br
+        | #[em Ruggieri Salvatore, Giannotti Fosca, Guidotti Riccardo; Monreale Anna, Pedreschi Dino, Turini Franco] (2020). In ANNUARIO DI DIRITTO COMPARATO E DI STUDI LEGISLATIVI
+        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The pervasive adoption of Artificial Intelligence (AI) models in the modern information society, requires counterbalancing the growing decision power demanded to AI models with risk assessment methodologies. In this paper, we consider the risk of discriminatory decisions and review approaches for discovering discrimination and for designing fair AI models. We highlight the tight relations between discrimination discovery and explainable AI, with the latter being a more general approach for understanding the behavior of black boxes.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://hdl.handle.net/11568/1088440', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 33.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirty-two.accordion
+        | #[strong Data-Agnostic Local Neighborhood Generation]
+        br
+        | #[em Riccardo Guidotti, Anna Monreale] (2020) - 2020 IEEE International Conference on Data Mining (ICDM). In 2020 IEEE International Conference on Data Mining (ICDM)
+        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Synthetic data generation has been widely adopted in software testing, data privacy, imbalanced learning, machine learning explanation, etc. In such contexts, it is important to generate data samples located within “local” areas surrounding specific instances. Local synthetic data can help the learning phase of predictive models, and it is fundamental for methods explaining the local behavior of obscure classifiers. The contribution of this paper is twofold. First, we introduce a method based on generative operators allowing the synthetic neighborhood generation by applying specific perturbations on a given input instance. The key factor consists in performing a data transformation that makes applicable to any type of data, i.e., data-agnostic. Second, we design a framework for evaluating the goodness of local synthetic neighborhoods exploiting both supervised and unsupervised methodologies. A deep experimentation shows the effectiveness of the proposed method.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9338395', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 34.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirty-three.accordion
+        | #[strong Explainability Methods for Natural Language Processing: Applications to Sentiment Analysis]
+        br
+        | #[em Francesco Bodria , André Panisson , Alan Perotti , Simone Piaggesi] (2020) - Discussion Paper
+        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small nan
+    .col-lg-2.pl-3
+        
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://ceur-ws.org/Vol-2646/18-paper.pdf', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 37.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirty-six.accordion
+        | #[strong The AI black box explanation problem]
+        br
+        | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino] (2019) - ERCIM News, 116, 12-13. In ERCIM News, 116, 12-13
+        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small nan
+    .col-lg-2.pl-3
+        
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://ercim-news.ercim.eu/images/stories/EN116/EN116-web.pdf#page=12', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪2▪3]
+    
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 38.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-thirty-seven.accordion
+        | #[strong Open the Black Box Data-Driven Explanation of Black Box Decision Systems]
+        br
+        | #[em Dino Pedreschi, Fosca Giannotti, Riccardo Guidotti, Anna Monreale, Luca Pappalardo, Salvatore Ruggieri, Franco Turini] (2018) - Arxive preprint
+        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Black box systems for automated decision making, often based on machine learning over (big) data, map a user's features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases hidden in the algorithms, due to human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We introduce the local-to-global framework for black box explanation, a novel approach with promising early results, which paves the road for a wide spectrum of future developments along three dimensions: (i) the language for expressing explanations in terms of highly expressive logic-based rules, with a statistical and causal interpretation; (ii) the inference of local explanations aimed at revealing the logic of the decision adopted for a specific instance by querying and auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of the many local explanations into simple global ones, with algorithms that optimize the quality and comprehensibility of explanations.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1806.09936', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    

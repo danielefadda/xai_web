@@ -139,6 +139,11 @@ gulp.task("python-updt", function(done){
 	done();
 });
 
+gulp.task("python-updt-lines", function(done){
+	return run("python src/includes/publications_to_html_lines.py").exec();
+	done();
+});
+
 gulp.task('browser-sync', function (done) {
 	browserSync.init({
 		server: {
@@ -422,7 +427,7 @@ gulp.task('default', gulp.series('clearCache','pug', 'styles', 'bootstrap-styles
 	done();
 }));
 
-gulp.task('defaultPY', gulp.series('clearCache','python-updt','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'browser-sync', function (done) { //ho rimosso provvisoriamente la chiamata a 'images-lqip' che era dopo 'images'
+gulp.task('defaultPY', gulp.series('clearCache','python-updt','python-updt-lines','pug', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'browser-sync', function (done) { //ho rimosso provvisoriamente la chiamata a 'images-lqip' che era dopo 'images'
 	gulp.watch(projectPHPWatchFiles, gulp.parallel(reload));
 	gulp.watch(pugWatchFiles, gulp.parallel('pug'));
 	gulp.watch(styleWatchFiles, gulp.parallel('styles', 'bootstrap-styles'));
@@ -433,7 +438,7 @@ gulp.task('defaultPY', gulp.series('clearCache','python-updt','pug', 'styles', '
 	done();
 }));
 
-gulp.task('build-process', gulp.series('clearCache','python-updt', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip',  'pug', 'variables', 'copy', function (done) {
+gulp.task('build-process', gulp.series('clearCache','python-updt','python-updt-lines', 'clean', 'clean_demo', 'styles', 'bootstrap-styles', 'vendor-css', 'scripts', 'fontawesome', 'icons', 'php-files', 'images', 'images-lqip',  'pug', 'variables', 'copy', function (done) {
 	done();
 }));
 

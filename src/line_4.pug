@@ -1,0 +1,74 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Case studies
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-4
+              .bg-black
+                .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
+                  .text-white.pr-lg-4.text-center
+                    h1.display-1.mb-1.font-weight-bolder 4
+                    h5 LINE
+      .container.mt-6
+        .row.justify-content-center
+          .col-lg-5
+            ul.entry-tags
+              li.tags-icon
+                i.fas.fa-tags
+              li
+                a(href='#' rel='tag') topic 1
+              li
+                a(href='#' rel='tag') topic 2
+              li
+                a(href='#' rel='tag') topic 3
+              li
+                a(href='#' rel='tag') topic 4
+        .row.justify-content-lg-center.mt-6
+          .col-lg-8
+            //h4 Abstract
+            p.lead The activity aims at validating the approach and the framework involving real users on many case studies relying both on “in house" big data sources, made available through SoBigData.eu, and on challenges put forward by our industrial and institutional partners and by the scientific community at large. Planned cases include:
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at posuere lorem. Fusce sem lacus, malesuada ut mattis et, consectetur dapibus magna. Quisque semper metus velit, vel tincidunt justo mattis in. Quisque consectetur, mauris egestas tincidunt lobortis, sem elit dictum tortor, vel egestas est erat non lectus. Maecenas sem massa, posuere quis feugiat vel, varius nec arcu. Vestibulum dictum aliquet est in volutpat. Proin imperdiet enim vel nulla volutpat, vitae molestie elit faucibus.
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at posuere lorem. Fusce sem lacus, malesuada ut mattis et, consectetur dapibus magna. Quisque semper metus velit, vel tincidunt justo mattis in. Quisque consectetur, mauris egestas tincidunt lobortis, sem elit dictum tortor, vel egestas est erat non lectus. Maecenas sem massa, posuere quis feugiat vel, varius nec arcu. Vestibulum dictum aliquet est in volutpat. Proin imperdiet enim vel nulla volutpat, vitae molestie elit faucibus.Sed justo orci, vehicula et iaculis lobortis, sagittis vitae lorem. Praesent sodales vitae orci in ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent eleifend in sem in ornare. Morbi ligula lectus, sagittis eu neque nec, aliquam efficitur justo. Vivamus finibus ligula et ultrices aliquam. Mauris quam enim, pharetra in justo a, tristique cursus enim. Nunc ut malesuada quam.
+
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5.mt-5
+        .container
+          .row
+      // image
+      .bg-half
+        .container
+          .row
+            .col-lg-4
+              .bg-black
+                .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
+                  .text-white.pr-lg-4.text-center
+                    h3.mb-1.font-weight-bolder#publications Publications
+
+      //- Publications cards
+      .container.mb-6
+        .row
+          //-include includes/paper-card
+          include includes/paper-cards-4
+    .entry-content.mt-0
+      //- People
+      .container.mb-10
+        .row.gx-lg-3.gy-3.mt-lg-4.mt-md-2.mt-2.mb-5
+          h3 Researchers working on this line
+          each persona in people
+            if persona.r4 == '1'
+              .col-lg-2.col-md-4.col-sm-6
+                +peoplecardLine(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+
+
+

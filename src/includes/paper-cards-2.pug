@@ -1,0 +1,21 @@
+.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 16.
+    .col-lg-8.bg-yellow.p-3
+        #accordion-fifteen.accordion
+        | #[strong Deriving a Single Interpretable Model by Merging Tree-Based Classifiers]
+        br
+        | #[em Bonsignori Valerio, Guidotti Riccardo, Monreale Anna] (2021) - Discovery Science
+        #collapse-fifteen.collapse(aria-labelledby='heading-fifteen' data-parent='#accordion-fifteen')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Decision tree classifiers have been proved to be among the most interpretable models due to their intuitive structure that illustrates decision processes in form of logical rules. Unfortunately, more complex tree-based classifiers such as oblique trees and random forests overcome the accuracy of decision trees at the cost of becoming non interpretable. In this paper, we propose a method that takes as input any tree-based classifier and returns a single decision tree able to approximate its behavior. Our proposal merges tree-based classifiers by an intensional and extensional approach and applies a post-hoc explanation strategy. Our experiments shows that the retrieved single decision tree is at least as accurate as the original tree-based model, faithful, and more interpretable.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifteen' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-88942-5_27', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪2]
+    

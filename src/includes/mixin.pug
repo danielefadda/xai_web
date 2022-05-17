@@ -259,6 +259,25 @@ mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchL
           hr
           p.text-uppercase R. line #[strong #{researchLine}]
   // End People Card
+//- peoplecard
+mixin peoplecardLine(firstName,lastName,role,affiliation,type,researchLine,researchLaeder)
+  .member-image
+    img(src='assets/images/p_'+ lastName + '.jpg' alt=firstName + " " + lastName).card-img
+  .member-content.bg-yellow
+    .member-text.px-3.py-3
+      h5.member-name
+        | #{firstName}
+        br
+        | #{lastName.replace(/_/g, "")}
+      hr
+      .member-tag
+        span.member-role #{role}
+      p.mb-0 #{affiliation}
+      if researchLine
+        hr
+        p.text-uppercase R. line #[strong #{researchLine}]
+  // End People Card
+
 
 //- Single article
 mixin metaTop(author, categories, date,time, commentCount, isEdit=false )

@@ -27,14 +27,13 @@ block content
                                                 h3.text-uppercase 2.
                                                 h5.text-uppercase Research Line Leader
                         .col-lg-2.mb-2.mb-lg-0
-                            a(href='#advisory')
+                            a(href='#team')
                                 .bg-black.text-white.h-100
                                     .text-center.align-items-center
                                         .px-lg-4.py-lg-2.px-4.py-2
-                                            .mt-lg-4.mt-5
+                                            .mt-lg-4.mt-5.mb-4
                                                 h3.text-uppercase 3.
-                                                h5.text-uppercase Advisory Board
-                                                p.small (coming soon)
+                                                h5.text-uppercase Team
                         .col-lg-2.mb-2.mb-lg-0
                             a(href='#associates')
                                 .bg-black.text-white.h-100
@@ -63,6 +62,13 @@ block content
                         if persona.type == 'advisory'
                             .col-lg-2.col-md-4.col-sm-6
                                 +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
+                    h1#team Team
+                    each persona in people
+                        if persona.type == 'team'
+                            .col-lg-2.col-md-4.col-sm-6
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+
                 .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
                     h1#associates Associates
                     each persona in people

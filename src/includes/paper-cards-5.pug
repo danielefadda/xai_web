@@ -1,31 +1,72 @@
-
-.row.mt-5.justify-content-center
+#MG2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 7.
+        h4 5.
+        small [MG2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-six.accordion
+        #accordion-four.accordion
+        | #[strong Investigating Debiasing Effects on Classification and Explainability]
+        br
+        | #[em Marta Marchiori Manerba, Riccardo Guidotti] (2022) - Conference on AI, Ethics, and Society (AIES 2022). In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (AIES'22)
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small During each stage of a dataset creation and development process, harmful biases can be accidentally introduced, leading to models that perpetuates marginalization and discrimination of minorities, as the role of the data used during the training is critical. We propose an evaluation framework that investigates the impact on classification and explainability of bias mitigation preprocessing techniques used to assess data imbalances concerning minorities' representativeness and mitigate the skewed distributions discovered. Our evaluation focuses on assessing fairness, explainability and performance metrics. We analyze the behavior of local model-agnostic explainers on the original and mitigated datasets to examine whether the proxy models learned by the explainability techniques to mimic the black-boxes disproportionately rely on sensitive attributes, demonstrating biases rooted in the explainers. We conduct several experiments about known biased datasets to demonstrate our proposal’s novelty and effectiveness for evaluation and bias detection purposes.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        
+        p.my-1
+                    small Research Line #[strong 1▪5]
+    #CDF2021.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 11.
+        small [CDF2021]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-ten.accordion
         | #[strong Trustworthy AI]
         br
         | #[em Chatila Raja, Dignum Virginia, Fisher Michael, Giannotti Fosca, Morik Katharina, Russell Stuart, Yeung Karen] (2022) - Reflections on Artificial Intelligence for Humanity. In Lecture Notes in Computer Science,
-        #collapse-six.collapse(aria-labelledby='heading-six' data-parent='#accordion-six')
+        #collapse-ten.collapse(aria-labelledby='heading-ten' data-parent='#accordion-ten')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Modern AI systems have become of widespread use in almost all sectors with a strong impact on our society. However, the very methods on which they rely, based on Machine Learning techniques for processing data to predict outcomes and to make decisions, are opaque, prone to bias and may produce wrong answers. Objective functions optimized in learning systems are not guaranteed to align with the values that motivated their definition. Properties such as transparency, verifiability, explainability, security, technical robustness and safety, are key to build operational governance frameworks, so that to make AI systems justifiably trustworthy and to align their development and use with human rights and values.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-six' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-ten' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-69128-8_2', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 5]
-    
-.row.mt-5.justify-content-center
+    #MG2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 9.
+        h4 13.
+        small [MG2021]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twelve.accordion
+        | #[strong FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems]
+        br
+        | #[em Marta Marchiori Manerba, Riccardo Guidotti] (2021) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021. In 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small At every stage of a supervised learning process, harmful biases can arise and be inadvertently introduced, ultimately leading to marginalization, discrimination, and abuse towards minorities. This phenomenon becomes particularly impactful in the sensitive real-world context of abusive language detection systems, where non-discrimination is difficult to assess. In addition, given the opaqueness of their internal behavior, the dynamics leading a model to a certain decision are often not clear nor accountable, and significant problems of trust could emerge. A robust value-oriented evaluation of models' fairness is therefore necessary. In this paper, we present FairShades, a model-agnostic approach for auditing the outcomes of abusive language detection systems.  Combining explainability and fairness evaluation, FairShades can identify unintended biases and sensitive categories towards which models are most discriminative. This objective is pursued through the auditing of meaningful counterfactuals generated within CheckList framework. We conduct several experiments on BERT-based models to demonstrate our proposal's novelty and effectiveness for unmasking biases. 
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9750356', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪5]
+    #GMP2021.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 15.
+        small [GMP2021]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-eight' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-eight.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-eight-Title' aria-hidden='true')
+        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-fourteen' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-fourteen.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-fourteen-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -35,32 +76,32 @@
                     .modal-body
                         img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-eight.accordion
+        #accordion-fourteen.accordion
         | #[strong Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Giannotti Fosca] (2021) - Explainable AI Within the Digital Transformation and Cyber Physical Systems (pp. 9-31)
-        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
+        #collapse-fourteen.collapse(aria-labelledby='heading-fourteen' data-parent='#accordion-fourteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small This book presents Explainable Artificial Intelligence (XAI), which aims at producing explainable models that enable human users to understand and appropriately trust the obtained results. The authors discuss the challenges involved in making machine learning-based AI explainable. Firstly, that the explanations must be adapted to different stakeholders (end-users, policy makers, industries, utilities etc.) with different levels of technical knowledge (managers, engineers, technicians, etc.) in different application domains. Secondly, that it is important to develop an evaluation framework and standards in order to measure the effectiveness of the provided explanations at the human and the technical levels. This book gathers research contributions aiming at the development and/or the use of XAI techniques in order to address the aforementioned challenges in different applications such as healthcare, finance, cybersecurity, and document summarization. It allows highlighting the benefits and requirements of using explainable models in different application domains in order to provide guidance to readers to select the most adapted models to their specified problem and conditions. Includes recent developments of the use of Explainable Artificial Intelligence (XAI) in order to address the challenges of digital transition and cyber-physical systems; Provides a textual scientific description of the use of XAI in order to address the challenges of digital transition and cyber-physical systems; Presents examples and case studies in order to increase transparency and understanding of the methodological concepts.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fourteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-030-76409-8', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪5]
-    
-.row.mt-5.justify-content-center
+    #M2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 35.
+        h4 41.
+        small [M2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-four.accordion
+        #accordion-forty.accordion
         | #[strong Rischi etico-legali dell’Intelligenza Artificiale]
         br
         | #[em Anna Monreale] (2020) - DPCE Online, [S.l.], v. 44, n. 3. In DPCE Online, [S.l.], v. 44, n. 3, oct. 2020. ISSN 2037-6677
-        #collapse-thirty-four.collapse(aria-labelledby='heading-thirty-four' data-parent='#accordion-thirty-four')
+        #collapse-forty.collapse(aria-labelledby='heading-forty' data-parent='#accordion-forty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]

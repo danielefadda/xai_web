@@ -44,6 +44,7 @@ cards=''
 for i, row in papers.iterrows():
     authors= row['Authors']
     abstract= row['abstract']
+    idAlpha= row['Id di Riccardo']
 
     researchLine= row['Research line']
     if isinstance(researchLine, str):
@@ -115,9 +116,10 @@ for i, row in papers.iterrows():
         externalButton= ''
 
     ##### string composition for pug file:
-    ptOne=f'''.row.mt-5.justify-content-center
+    ptOne=f'''#{idAlpha}.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 {i+1}.'''
+        h4 {i+1}.
+        small [{idAlpha}]'''
 
     # summary image?
     if row['summary image']=='YES':
@@ -171,6 +173,8 @@ sheet_name= sheet_names[3]
 url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
 masterThesis = pd.read_csv(url)
 masterThesis.columns
+
+masterThesis=masterThesis.sort_values(['Thesis ','Status [Ongoing] / [completed]'],ascending=[False,True]).reset_index(drop=True)
 
 bulletsThesis=''
 for i, row in masterThesis.iterrows():

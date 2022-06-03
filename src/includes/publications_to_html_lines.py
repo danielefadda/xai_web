@@ -38,16 +38,16 @@ papers=papers.iloc[::-1] #reverse all
 papers=papers.sort_values(by=['featured','Year of publication'], ascending = False).reset_index(drop=True)
 
 
-### Create Pug version for papers
+### Create Pug version for papers inside each reasearch line
 
 lines = [*range(1,6,1)]
-lines = [2]
 for line in lines:
     cards=''
     paperi = papers[papers['Research line'].str.contains(str(line), case=False, na=False)]
     for i, row in paperi.iterrows():
         authors= row['Authors']
         abstract= row['abstract']
+        idAlpha= row['Id di Riccardo']
 
         researchLine= row['Research line']
         if isinstance(researchLine, str):
@@ -101,9 +101,10 @@ for line in lines:
             externalButton= ''
 
         ##### string composition for pug file:
-        ptOne=f'''.row.mt-5.justify-content-center
+        ptOne=f'''#{idAlpha}.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 {i+1}.'''
+        h4 {i+1}.
+        small [{idAlpha}]'''
 
         # summary image?
         if row['summary image']=='YES':
@@ -143,7 +144,6 @@ for line in lines:
         card= ptOne+ptTwo+ptThree
         if row['visible on website'] == 'YES':
             cards+=card
-        break
 
     ### save pug file:
     write_html(cards, filename=f'paper-cards-{line}')

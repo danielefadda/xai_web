@@ -1960,6 +1960,10 @@ body.has-no-comments .comment-respond {
   height: 300px;
 }
 
+.member-content {
+  min-height: 275px;
+}
+
 .blog-post .entry-media img {
   position: relative;
   width: 100%;

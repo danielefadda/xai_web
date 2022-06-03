@@ -32,13 +32,16 @@
             <ul class="navbar-nav mx-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">Project details</a></li>
-              <li class="nav-item"><a class="nav-link" href="research-lines.html">Research Lines</a></li>
-              <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
-              <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-              <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="news.html">All News</a><a class="dropdown-item" href="internal-events.html">Internal Events</a></div>
+              <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" href="research-lines.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Lines</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="line_1.html">Local to global</a><a class="dropdown-item" href="line_2.html">Casual reasoning</a><a class="dropdown-item" href="line_3.html">Platform and XUI</a><a class="dropdown-item" href="line_4.html">Case studies</a><a class="dropdown-item" href="line_5.html">Ethics and legal</a></div>
               </li>
-              <li class="nav-item"><a class="bg-yellow nav-link" href="dist-seminars.html">Distinguished seminars</a></li>
+              <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+              <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" href="resources.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications and Resources</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="resources.html#publications">Publications</a><a class="dropdown-item" href="resources.html#thesis">Thesis</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="news.html">All News</a><a class="dropdown-item" href="dist-seminars.html">Distinguished seminars</a><a class="dropdown-item" href="internal-events.html">Internal Events</a></div>
+              </li>
             </ul>
           </div>
         </div>
@@ -76,22 +79,17 @@
           </div>
         </div>
         <div class="container mt-6">
-          <div class="row justify-content-center">
-            <div class="col-lg-5">
-              <ul class="entry-tags">
-                <li class="tags-icon"><i class="fas fa-tags"></i></li>
-                <li><a href="#" rel="tag">topic 1</a></li>
-                <li><a href="#" rel="tag">topic 2</a></li>
-                <li><a href="#" rel="tag">topic 3</a></li>
-                <li><a href="#" rel="tag">topic 4</a></li>
-              </ul>
-            </div>
-          </div>
           <div class="row justify-content-lg-center mt-6">
             <div class="col-lg-8">
               <!--h4 Abstract-->
-              <p class="lead">The project has a strong ethical motivation. It aims to empower users against undesired, possibly illegal, effects of black-box automated decision-making systems which may harm them, exploit their vulnerabilities, and violate their rights and freedom.</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at posuere lorem. Fusce sem lacus, malesuada ut mattis et, consectetur dapibus magna. Quisque semper metus velit, vel tincidunt justo mattis in. Quisque consectetur, mauris egestas tincidunt lobortis, sem elit dictum tortor, vel egestas est erat non lectus. Maecenas sem massa, posuere quis feugiat vel, varius nec arcu. Vestibulum dictum aliquet est in volutpat. Proin imperdiet enim vel nulla volutpat, vitae molestie elit faucibus.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at posuere lorem. Fusce sem lacus, malesuada ut mattis et, consectetur dapibus magna. Quisque semper metus velit, vel tincidunt justo mattis in. Quisque consectetur, mauris egestas tincidunt lobortis, sem elit dictum tortor, vel egestas est erat non lectus. Maecenas sem massa, posuere quis feugiat vel, varius nec arcu. Vestibulum dictum aliquet est in volutpat. Proin imperdiet enim vel nulla volutpat, vitae molestie elit faucibus.Sed justo orci, vehicula et iaculis lobortis, sagittis vitae lorem. Praesent sodales vitae orci in ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent eleifend in sem in ornare. Morbi ligula lectus, sagittis eu neque nec, aliquam efficitur justo. Vivamus finibus ligula et ultrices aliquam. Mauris quam enim, pharetra in justo a, tristique cursus enim. Nunc ut malesuada quam.
+              <p class="lead">Explainability is one of the most important ethical and legal values identified by EU regulations (GDPR, AI act). However, when we design a trustworthy AI System it is important to take into consideration also the other ethical and legal values such as privacy, fairness, safety, robustness, etc. This requires analyzing the interplay among the different values and understanding whether they are in contrast or not.</p>In this direction, the work of Line 5 has started the investigation of the interplay between explainability and privacy, and explainability and fairness under different viewpoints. In particular, the research of this line tries to answer the following questions:<br><br>
+              <ol>
+                <li>Can explanation methods, introducing a level of transparency in the whole decision process, might jeopardize individual privacy of people represented in the training data?</li>
+                <li>Can explanation methods help in understanding the reason for possible ethical risks  associated with the use of AI systems (e.g., privacy violations and biased behaviors)?</li>
+                <li>Can explanation methods be fundamental for discovering other ethical issues like unfair behavior of AI systems?</li>
+              </ol>Starting from these questions, we have scientifically contributed with the following studies.
+              Concerning the ability of explanation methods to explain some ethical risks such as privacy and biases, in [NPM2020,NPN2020] we propose EXPERT, an EXplainable Privacy ExposuRe predicTion framework. It is a tool that exploits Explainability as a tool for increasing privacy user awareness. We applied EXPERT on the privacy risk prediction and explanation of both tabular data [NPM2020] and sequential data [NPN2020]. In the first setting we considered the mobility context where for each user we have the historical movements (a spatio-temporal trajectory). In this context, EXPERT using the privacy risk exposure module extracts from human mobility data an individual mobility profile describing the mobility behavior of any user. Second, for each user it simulates a privacy attack and quantifies the associated privacy risk. Third, it uses the mobility profiles of the users with their associated privacy risks to train a ML model. For a new user, along with the prediction of risk, EXPERT also provides an explanation of the predicted risk generated by the risk explanation module. EXPERT exploits two state-of-the-art explanation techniques, i.e., SHAP [11] and LORE [GMG2019]. In the second setting  [NPN2020] the prediction phase is not based on a mobility profile but on the trajectory itself and given the absence of features we used only SHAP as an explanation method.
+              In [PPP2021] we also present FairLens, a framework able to detect and explain potential bias issues in Clinical Decision Support Systems (DSS). FairLens allows testing the clinical DSS before its deployment, i.e., before handling it to final decision-makers such as physicians and nurses. FairLens takes bias analysis a step further by explaining the reasons behind the poor model performance on specific groups; in particular,  it uses GlocalX to explain which elements in the patients’ clinical histories are influencing the misclassification.<br><br>Concerning the use of explainability as a means for discovering unfair behaviors, in [MG2021], we propose FairShades, a model-agnostic approach for auditing the outcomes of abusive language detection systems. FairShades combines explainability and fairness evaluation within a proactive pipeline to identify unintended biases and sensitive categories toward which the black box model under assessment is most discriminative. It is a task-specific approach for abusive language detection: it can be used to test the fairness of any abusive language detection system working on any textual dataset. However, its ideal application is on sentences containing protected identities, i.e., expressions referring to nationality, gender, etc., as the primary scope is to uncover biases and not explain the reasons for the prediction.
             </div>
           </div>
         </div>

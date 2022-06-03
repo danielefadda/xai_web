@@ -10,30 +10,33 @@ block content
           .row.gx-lg-5.mt-3
             .col-lg-6.col-md-8s
               h3.text-black.text-uppercase.py-lg-6.mb-0 Science and technology for the explanation of ai decision making.
-              p.lead.mb-5.mt-sm-3 XAI project focuses on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-to-global framework for black box explanation, articulated along three lines: a) #[strong the language for expressing]; b) the #[strong inference of local explanations]; c), the #[strong bottom-up generalization of many local explanations into simple global ones]
+              p.lead.mb-5.mt-sm-3 The XAI project, focuses on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems in the context of ai based decision making, aiming at empowering individual against undesired effects of automated decision making, implementing the “right of explanation”, helping people make better decisions preserving (and expand) human autonomy.
                 |
                 |
             .col-lg-6.pt-lg-2.pb-lg-7.mt-lg-8
               .bg-black
                 .py-lg-6.px-lg-6.py-md-5.px-md-5.py-5.px-4
-                  h4.text-yellow.mb-3 Project Information
-                  div.lead.text-white
-                    p.mb-0 Grant agreement ID: #[em 834756]
-                    p.mb-0 Call: #[em ERC-2018-ADG]
-                    p.mb-0 Total cost: #[em 2 500 000€]
-                    p.mb-4 EU Contribution: #[em 2 500 000€]
-                    p.mb-0 Principal investigator: #[em Fosca Giannotti]
-                    p.mb-0 Email: #[em fosca.giannotti @ sns.it]
+                  a(href='https://cordis.europa.eu/project/id/834756' target='_blank')
+                    h4.text-yellow.mb-3 Project Information
+                    div.lead.text-white
+                      p.mb-0.text-white Grant agreement ID: 834756
+                      p.mb-0 Call: #[em ERC-2018-ADG]
+                      p.mb-0 Total cost: #[em 2 500 000€]
+                      p.mb-4 EU Contribution: #[em 2 500 000€]
+                      p.mb-0 Principal investigator: #[em Fosca Giannotti]
+                      p.mb-0 Email: #[em fosca.giannotti @ sns.it]
 
       .container.mb-4
         .row.justify-content-lg-center
           .col-lg-8
-            p.lead An intertwined line of research will investigate i) causal explanation models that capture the causal relationships among the variables and the decision, and ii) mechanistic/physical models that capture the detailed data generation behavior behind specific deep learning models.
-            p.mt-4 This project aims at developing: (1) an explanation infrastructure for benchmarking, equipped with platforms for the users' assessment of the explanations; (2) an ethical-legal framework, in compliance with the provisions of the GDPR; and (3) a repertoire of case studies in explanation-by-design, mainly focused on health and fraud detection applications.
+            p.lead Black box AI systems for automated decision making, often based on ML over (big) data, map a user’s features into a class or a score without exposing the reasons why. This is problematic both for the lack of transparency and also for possible biases inherited by the algorithms from prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. The future of AI lies in enabling people to collaborate with machines, requiring good communication, trust, clarity, and understanding.
+            ol.mt-4 This project aims at developing:
+              li.mt-2 an explanation infrastructure for benchmarking, equipped with platforms for the users' assessment of the explanations;
+              li an ethical-legal framework, in compliance with the provisions of the GDPR;
+              li a repertoire of case studies in explanation-by-design, mainly focused on health and fraud detection applications.
             |
             div.pb-md-2.mt-4
               a.btn.btn-outline-black(href="about.html") MORE ON THE PROJECT
-
 
     // Last News SECTION
     .entry-content#news
@@ -104,38 +107,46 @@ block content
                 h1.text-yellow The 5 XAI #[br] research lines
                 div
                   //- p.text-white Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
-    //- 5 research lines
-    .entry-content
       .container
-        .row.mt-6.text-center.justify-content-center
+        .row.justify-content-lg-center
+          .col-lg-6
+            p.mt-4 The XAI project faces the challenge of requiring AI to be explainable and understandable in human terms and articulates its research along 5 Research Activities: #[a(href='/line_1.html') #[strong 1] algorithms to infer local explanations and their generalization to global ones (post-hoc) and algorithms that are transparent by-design]; #[a(href='/line_2.html') #[strong 2] languages for expressing explanations in terms of logic rules, with statistical and causal interpretation];  #[a(href='/line_3.html') #[strong 3] XAI watchdog platform for sharing experimental dataset and explanation algorithms; #[a(href='/line_4.html') #[strong 4]] a repertoire of case studies aimed at in involving also final users] ; #[a(href='/line_5.html') #[strong 5] a framework to study the interplay between XAI and ethical and legal dimensions.]
+    .entry-content.mt-4
+      .container
+        .row.mt-0.text-center.justify-content-center
           .col-lg-6
             .row
               .col-md-6.mb-4
-                .bg-yellow.px-5.py-5.line-numbers-box
-                  h1.mb-3 1
-                  h4.mb-3 Local-to-global paradigm for explanation by design
-                  //- p Research manager #[br]#[em Mario Rossi]
-              .col-md-6.mb-4
-                .bg-black.px-5.py-5.line-numbers-box
-                  .text-white
-                    h1.mb-3 2
-                    h4.mb-3 From statistical to causal and mechanistic, physical explanations
+                a(href='/line_1.html')
+                  .bg-yellow.px-5.py-5.line-numbers-box
+                    h1.mb-3 1
+                    h4.mb-3 Local-to-global paradigm for explanation by design
                     //- p Research manager #[br]#[em Mario Rossi]
               .col-md-6.mb-4
-                .bg-grayphite.px-5.py-5.line-numbers-box
-                  .text-black
-                    h1.mb-3 3
-                    h4.mb-3 XAI #[br] platform
-                    //- p Research manager #[br]#[em Mario Rossi]
+                a(href='/line_2.html')
+                  .bg-black.px-5.py-5.line-numbers-box
+                    .text-white
+                      h1.mb-3 2
+                      h4.mb-3 From statistical to causal and mechanistic, physical explanations
+                      //- p Research manager #[br]#[em Mario Rossi]
               .col-md-6.mb-4
-                .bg-yellow.px-5.py-5.line-numbers-box
-                  .text-black
-                    h1.mb-3 4
-                    h4.mb-3 Case#[br]studies
-                    //- p Research manager #[br]#[em Mario Rossi]
+                a(href='/line_3.html')
+                  .bg-grayphite.px-5.py-5.line-numbers-box
+                    .text-black
+                      h1.mb-3 3
+                      h4.mb-3 XAI #[br] platform
+                      //- p Research manager #[br]#[em Mario Rossi]
+              .col-md-6.mb-4
+                a(href='/line_4.html')
+                  .bg-yellow.px-5.py-5.line-numbers-box
+                    .text-black
+                      h1.mb-3 4
+                      h4.mb-3 Case#[br]studies
+                      //- p Research manager #[br]#[em Mario Rossi]
               .col-md-12.mb-4
-                .bg-black.px-5.pt-4.pb-1.line-numbers-box-half.text-white
-                  .text-white
-                    h1.mb-3 5
-                    h4.mb-3 Ethical/legal framework #[br] for explanation
-                    //- p Research manager #[br]#[em Mario Rossi]
+                a(href='/line_5.html')
+                  .bg-black.px-5.pt-4.pb-1.line-numbers-box-half.text-white
+                    .text-white
+                      h1.mb-3 5
+                      h4.mb-3 Ethical/legal framework #[br] for explanation
+                      //- p Research manager #[br]#[em Mario Rossi]

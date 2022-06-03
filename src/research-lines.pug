@@ -6,16 +6,66 @@ block content
   article.entry
     // header
     .entry-content
-      // head main
+      //title
       .bg-yellow
-        .container.pt-lg-8.pb-lg-5.pt-md-7.pb-md-5.pt-5.pb-4
-          .row
-            .col-lg-6
-              h1.my-3 Research lines
-              //- p.lead Consetetur lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      .bg-half
-        // 5 LINES Section
-        // Line 1
+        .container.pt-lg-8.pt-md-7.pt-5.pb-lg-6
+              .row.gx-lg-5.gx-md-5.gy-5
+                  .col-lg-2.mb-2.mb-lg-0
+                      a(href='#local-to-global')
+                          .bg-gray-500.text-white.h-100
+                              .text-center.align-items-center
+                                  .px-lg-4.py-lg-2.px-4.py-2
+                                      .mt-lg-4.mt-5
+                                          h3 >
+                                          h5.text-uppercase Research Lines
+                  .col-lg-2.mb-2.mb-lg-0
+                      a(href='#local-to-global')
+                          .bg-black.text-white.h-100
+                              .text-center.align-items-center
+                                  .px-lg-4.py-lg-2.px-4.py-2
+                                      .mt-lg-4.mt-5
+                                          h3.text-uppercase 1.
+                                          h5.text-uppercase Local to Global
+                  .col-lg-2.mb-2.mb-lg-0
+                      a(href='#casual-reasoning')
+                          .bg-black.text-white.h-100
+                              .text-center.align-items-center
+                                  .px-lg-4.py-lg-2.px-4.py-2
+                                      .mt-lg-4.mt-5
+                                          h3.text-uppercase 2.
+                                          h5.text-uppercase Casual Explanation
+                  .col-lg-2.mb-2.mb-lg-0
+                      a(href='#platform')
+                          .bg-black.text-white.h-100
+                              .text-center.align-items-center
+                                  .px-lg-4.py-lg-2.px-4.py-2
+                                      .mt-lg-4.mt-5.mb-4
+                                          h3.text-uppercase 3.
+                                          h5.text-uppercase Platform XUI
+                  .col-lg-2.mb-2.mb-lg-0
+                      a(href='#case-studies')
+                          .bg-black.text-white.h-100
+                              .text-center.align-items-center
+                                  .px-lg-4.py-lg-2.px-4.py-2
+                                      .mt-lg-4.mt-5.mb-4
+                                          h3.text-uppercase 4.
+                                          h5.text-uppercase Case studies
+                  .col-lg-2.mb-2.mb-lg-0
+                    a(href='#ethics')
+                      .bg-black.text-white.h-100
+                        .text-center.align-items-center
+                          .px-lg-4.py-lg-2.px-4.py-2
+                            .mt-lg-4.mt-5
+                              h3.text-uppercase 5.
+                              h5.text-uppercase Ethics Legal
+    .entry-content.mb-6
+        .container
+            .row.justify-content-lg-center
+                .col-lg-6
+                    h4 Research Lines
+                    p The XAI project faces the challenge of requiring AI to be explainable and understandable in human terms and articulates its research along 5 Research Activities: #[a(href='/line_1.html') #[strong 1] algorithms to infer local explanations and their generalization to global ones (post-hoc) and algorithms that are transparent by-design]; #[a(href='/line_2.html') #[strong 2] languages for expressing explanations in terms of logic rules, with statistical and causal interpretation];  #[a(href='/line_3.html') #[strong 3] XAI watchdog platform for sharing experimental dataset and explanation algorithms; #[a(href='/line_4.html') #[strong 4]] a repertoire of case studies aimed at in involving also final users] ; #[a(href='/line_5.html') #[strong 5] a framework to study the interplay between XAI and ethical and legal dimensions.]
+    // Line 1
+    #local-to-global.bg-half.pt-6
         .container.mb-lg-6.mb-md-5.mb-4
           .row
             .col-lg-4
@@ -30,13 +80,13 @@ block content
                 .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
                   .text-white.pr-lg-4.lead
                     h2.mb-4 Local to global
-                    p.mb-4 This is the core scientific/technical activity of the project.  The main objective is to understand how to construct meaningful explanations. The framework works under three assumptions.
-                    p.mb-4 Logic explanation; Local explanations; Explanation composition
+                    p.mb-4 This is the core scientific/technical activity of the project.  The main objective is to understand how to construct meaningful explanations.
+                    p.mb-4 Our goal was to “merge” local explanations to reach a global consensus on the reasons for the decisions taken by an AI decision support system.
                     p.mb-4 The research program will articulate the local-first explanation framework along different dimensions: the variety of data sources (relational, text, images, ...), the variety of learning problems (binary classification, multi-label classification, regression, scoring, ranking, ...), the variety of languages for expressing meaningful explanations.
                     div.pb-md-2.mt-4
                       a.btn.btn-outline-white(href="line_1.html") MORE ON THIS LINE
-      // LINE 2
-      .container.mb-lg-6.mb-md-5.mb-4
+    // LINE 2
+    #casual-reasoning.container.mb-lg-6.mb-md-5.mb-4
         .row
           .col-lg-4
             a(href='line_2.html')
@@ -50,14 +100,13 @@ block content
               .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
                 .text-black.pr-lg-4.lead
                   h2.mb-4 From statistical to causal and mechanistic, physical explanations
-                  p.mb-4 This is a complementary scientific/technical activity of the project, aimed at providing more informative explanation models that advance those of activity the #[em Research Line 1].
-                  | We combine the computational logic and non-monotonic reasoning with inter disciplinary collaborations with experts both in causal reasoning and learning, and in statistical physics of complex systems. The overall objective of this activity is not only to devise causal and physical explanation models for Machine Learning, but also to assess their usefulness in expanding the reasoning capabilities on black box models, beyond logical explanations.
+                  p.mb-4 In this research line, we aim to integrate slow thinking along three different and possibly complementary directions, namely causality, knowledge injection, and logical reasoning. Orthogonally to these directions, we aim to target slow thinking both internally to the explanation algorithm, that is, to have the explanation algorithm itself think slowly, and by design, that is, to have the black box itself thinking slowly.
                   div.pb-md-2.mt-4
                     a.btn.btn-outline-black(href="line_2.html") MORE ON THIS LINE
 
-      //- Line 3
-      .container.mb-lg-6.mb-md-5.mb-4
-        .row
+    //- Line 3
+    #platform.container.mb-lg-6.mb-md-5.mb-4
+      .row
           .col-lg-4
             a(href='line_3.html')
               .bg-grayphite
@@ -74,8 +123,8 @@ block content
                   p.mb-4 All resources, provided they are not prohibited by specific legal/ethical constraints, will be registered and described within a findable catalogue.
                   div.pb-md-2.mt-4
                     a.btn.btn-outline-white(href="line_3.html") MORE ON THIS LINE
-      //- Line 4
-      .container.mb-lg-6.mb-md-5.mb-4
+    //- Line 4
+    #case-studies.container.mb-lg-6.mb-md-5.mb-4
         .row
           .col-lg-4
             a(href='line_4.html')
@@ -89,16 +138,12 @@ block content
               .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
                 .text-black.pr-lg-4.lead
                   h2.mb-4 Case studies
-                  p.mb-4 The activity aims at validating the approach and the framework involving real users on many case studies relying both on “in house" big data sources, made available through SoBigData.eu, and on challenges put forward by our industrial and institutional partners and by the scientific community at large. Planned cases include:
-                  h5.mb-4 1. Health
-                  p.mb-4 1. Health: this use case tackles the explainability of AI systems in the medical domain with a multidisciplinary approach. The research encompasses both the development of new XAI methodologies tailored to medical problems and the validation of these techniques through user studies involving healthcare professionals.
-                  h5.mb-4 2. Fiscal fraud detection
-                  p.mb-4 Validate the expressiveness of the explanations in the context of Fiscal Fraud detection systems, developed during the long lasting collaboration with the Italian Revenue Agency.
+                  p.mb-4 This line address two main aspects: 1) the user’s decision-making process with the eXplainable AI systems used to support high stakes decision; 2) use cases to test explanation methods developed in XAI project.
                   div.pb-md-2.mt-4
                     a.btn.btn-outline-black(href="line_4.html") MORE ON THIS LINE
 
-      // LINE 4
-      .container.mb-lg-6.mb-md-5.mb-4
+    // LINE 5
+    #ethics.container.mb-lg-6.mb-md-5.mb-4
         .row
           .col-lg-4
             a(href='line_5.html')
@@ -112,6 +157,6 @@ block content
               .py-lg-7.px-lg-6.py-md-6.px-md-5.py-5.px-4
                 .text-white.pr-lg-4.lead
                   h2.mb-4 Ethical/legal framework for explanation
-                  p.mb-4 The project has a strong ethical motivation. It aims to empower users against undesired, possibly illegal, effects of black-box automated decision-making systems which may harm them, exploit their vulnerabilities, and violate their rights and freedom. This activity covers the interdependencies and feedback among technical, ethical and legal aspects of the research program, and will be pursued in collaboration with scientists from a range of disciplines, including ethical and legal. The legal scholars Giovanni Comandé (Scuola Sant'Anna Pisa) and the ethical philosopher Jeroen Van Den Hoven (TU Delft) are actively working within the project.
+                  p.mb-4 The project has a strong ethical motivation. It aims to empower users against undesired, possibly illegal, effects of black-box automated decision-making systems which may harm them, exploit their vulnerabilities, and violate their rights and freedom. This activity covers the interdependencies and feedback among technical, ethical and legal aspects of the research program, and will be pursued in collaboration with scientists from a range of disciplines, including ethical and legal.
                   div.pb-md-2.mt-4
                     a.btn.btn-outline-white(href="line_5.html") MORE ON THIS LINE

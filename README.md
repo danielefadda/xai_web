@@ -46,7 +46,7 @@
                     'lastName': 'Setzu',
                     'role': 'Phd Student',
                     'affiliation': 'University of Pisa',
-                    'type': 'associate',
+                    'type': 'team',
                     'researchLine': '1 ▪ 2'
                 },
     {...}

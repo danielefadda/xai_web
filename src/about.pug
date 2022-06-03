@@ -17,15 +17,28 @@ block content
             p.mb-5
               em Imagine that a wealthy friend of yours asks for a vacation credit card to his bank, to discover that the credit he is offered is very low. The bank teller cannot explain why. Your stubborn friend continues his quest for explanation up to the bank executives, to discover that an algorithm lowered his credit score. Why? After a long investigation, it turns out that the reason is: bad credit by the former owner of your friend’s house.
             hr
+            //- XAI-Deliverable2022_finale (la prima pagina)
             p Black box AI systems for automated decision making, often based on machine learning over (big) data, map a user's features into a class or a score without exposing the reasons why. This is problematic not only for #[strong lack of transparency], but also for possible #[strong  biases inherited by the algorithms] from human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions.
             p XAI project focuses on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-to-global framework for black box explanation, articulated along three lines:
             ol
               li The language for expressing explanations in terms of expressive logic rules, with statistical and causal interpretation;
               li The inference of local explanations for revealing the decision rationale for a specific case, by auditing the black-box in the vicinity of the target instance;
               li The bottom-up generalization of many local explanations into simple global ones, with algorithms that optimize for quality and comprehensibility.
-            p An intertwined line of research will investigate i) causal explanations, i.e., models that capture the causal relationships among the (endogenous and exogenous) variables and the decision, and ii) mechanistic/physical models that capture the detailed data generation behavior behind specific deep learning models, using the tools of statistical physics of complex systems.
-            p The project is developing:
-            ol.mb-5
-              li an explanation infrastructure for benchmarking the methods developed within and outside the project, equipped with platforms for the users' assessment of the explanations and the crowdsensing of observational decision data;
-              li an ethical-legal framework, both for compliance and impact of our developed methods on current legal standards and on the right of explanation" provisions of the GDPR; and
-              li a repertoire of case studies in explanation-by-design, with a priority in health and fraud detection applications.
+
+            h5.mt-5 Why is it important for society?
+            p Trust is crucial in the adoption of  AI/ML  technologies, due to perceived challenges to human autonomy, and the lack of knowledge about the assumptions, limitations, and capabilities of AI assistants. Building trust in AI models relies on their capacity to reveal their logic in a comprehensible, human-accessible format, allowing them to understand and validate their decision rationale and highlighting possible biases learned by the model.
+            | Understandable explanations impact not only information ethics but they are a cornerstone for accountability, safety, and industrial liability. Therefore, explainability is fundamental for boosting a vivid market of AI-based services in particular in safety-critical industries.
+            | Likewise, the use of AI systems in scientific research requires explanations not only for trust and acceptance but also for the openness and progress of scientific discovery.
+            br
+            h5.mt-5 What are the overall objectives?
+            p.mb-5 The XAI project faces the challenge of requiring AI to be explainable and understandable in human terms and articulates its research along 5 Research Lines
+            ol
+              li Algorithms to infer local explanations and their generalization to global ones (post-hoc) and algorithms that are transparent by-design;
+              li Languages for expressing explanations in terms of logic rules, with statistical and causal interpretation;
+              li XAI watchdog platform for sharing experimental dataset and explanation algorithms;
+              li A repertoire of case studies aimed at in involving also final users;
+              li A framework to study the interplay between XAI and ethical and legal dimensions.
+
+
+            div.pb-md-2.mt-4
+              a.btn.btn-outline-black(href="/research-lines.html") MORE INFO ON EACH RESEARCH LINE CAN BE FOUND HERE

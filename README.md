@@ -28,26 +28,19 @@
 ```
  people = [
                 {
-                    'firstName': 'Fosca',
-                    'lastName': 'Giannotti',
-                    'role': 'Principal Investigator',
-                    'affiliation': 'Scuola Normale',
-                    'type':'pl'
-                },{
-                    'firstName': 'Riccardo',
-                    'lastName': 'Guidotti',
-                    'role': 'Assitant Professor',
+                    'firstName': 'Salvatore',
+                    'lastName': 'Ruggieri',
+                    'role': 'Full Professor',
                     'affiliation': 'University of Pisa',
                     'type': 'core',
-                    'researchLine': '1 ▪ 3 ▪ 4 ▪ 5',
-                    'researchLeader':'1'
-                }, {
-                    'firstName': 'Mattia',
-                    'lastName': 'Setzu',
-                    'role': 'Phd Student',
-                    'affiliation': 'University of Pisa',
-                    'type': 'team',
-                    'researchLine': '1 ▪ 2'
+                    'researchLine': '1 ▪ 2',
+                    'researchLeader': '2',
+                    'r1': '1',
+                    'r2': '1',
+                    'r3': '0',
+                    'r4': '0',
+                    'r5': '0',
+                    'more': 'True'
                 },
     {...}
 ]

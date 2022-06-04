@@ -38,12 +38,13 @@ papers=papers.iloc[::-1] #reverse all
 papers=papers.sort_values(by=['featured','Year of publication'], ascending = False).reset_index(drop=True)
 
 
+lastNames= ['Setzu', 'Giannotti', 'Marchiori', 'Turini', 'Pappalardo', 'Bodria', 'Resta', 'Piaggesi',  'Pellungrini', 'Metta', 'Panigutti', 'Pedreschi', 'Fadda', 'Guidotti', 'Naretto', 'Rinzivillo', 'Beretta', 'Ruggieri', 'Spinnato', 'Monreale' ]
+
 
 ### Create Pug version for papers - people
-lines = [*range(1,6,1)]
-for line in lines:
+for name in lastNames:
     cards=''
-    paperi = papers[papers['Research line'].str.contains(str(line), case=False, na=False)]
+    paperi = papers[papers['Authors'].str.contains(str(name), case=False, na=False)]
     for i, row in paperi.iterrows():
         authors= row['Authors']
         abstract= row['abstract']
@@ -146,4 +147,4 @@ for line in lines:
             cards+=card
 
     ### save pug file:
-    write_html(cards, filename=f'paper-cards-{line}')
+    write_html(cards, path='src/includes/people/', filename=f'{name}_publications')

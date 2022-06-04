@@ -236,7 +236,22 @@ mixin portfolio(style, column, isReadMore=false, ...items)
                 p= item.content
   // End Portfolio
 
-
+//- peoplepage
+mixin peoplepage(firstName,lastName,role,affiliation,type,researchLine,researchLaeder)
+  h1.text-center
+    | #{firstName} #{lastName.replace(/_/g, "")}
+  img(src='assets/images/p_'+ lastName + '.jpg' alt=firstName + " " + lastName).card-img
+  if type == 'core'
+    hr
+    p.text-uppercase Research Line #{researchLaeder} - leader
+    hr
+  .member-content
+    .member-text.px-0.py-3
+      if researchLine
+        p.text-uppercase Involved in the research line #[strong #{researchLine}]
+      p Role: #{role}
+      p.mb-0 Affiliation: #{affiliation}
+      hr
 
 //- peoplecard
 mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchLaeder)

@@ -1,0 +1,19 @@
+extends includes/layout
+include includes/mixin
+block content
+    article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .bg-half
+          .container
+            .row
+              each persona in people
+                if persona.lastName == 'Spinnato'
+                  .col-lg-4.offset-lg-4
+                    +peoplepage(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader)
+      include includes/people/custom/Spinnato_custom
+      //- Publications cards
+      .container.mb-6
+        .row
+          //-include includes/paper-card
+          include includes/people/publications/Spinnato_publications

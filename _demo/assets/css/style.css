@@ -1964,6 +1964,10 @@ body.has-no-comments .comment-respond {
   min-height: 275px;
 }
 
+.member-content-more {
+  height: 30px;
+}
+
 .blog-post .entry-media img {
   position: relative;
   width: 100%;
@@ -1981,4 +1985,15 @@ body.has-no-comments .comment-respond {
   transition: -webkit-filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+}
+
+.more-info {
+  position: absolute;
+  padding: 5px 15px;
+  background-color: #F4DE4D;
+  border-radius: 2px;
+  z-index: 1;
+  top: 30px;
+  right: 30px;
+  font-size: 0.875rem;
 }

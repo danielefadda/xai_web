@@ -276,6 +276,9 @@
 .member-content {
   min-height: 275px
 }
+.member-content-more {
+  height: 30px
+}
 
 // post
 .blog-post .entry-media img {
@@ -295,4 +298,16 @@
   filter: none;
   -webkit-filter: grayscale(0);
   transition: filter 0.5s ease-in-out;
+}
+
+
+.more-info {
+  position: absolute;
+  padding: 5px 15px;
+  background-color: #F4DE4D;
+  border-radius: 2px;
+  z-index: 1;
+  top: 30px;
+  right: 30px;
+  font-size: 0.875rem;
 }

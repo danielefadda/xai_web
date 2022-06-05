@@ -52,23 +52,23 @@ block content
                     each persona in people
                         if persona.type == 'pl'
                             .col-lg-2.col-md-4.col-sm-6
-                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader,persona.more)
                 .row.gx-lg-3.gy-3.mt-lg-4.mt-md-2.mt-2.mb-5
                     h1#core Research line leaders
                     each persona in people
                         if persona.type=='core'
                             .col-lg-2.col-md-4.col-sm-6
-                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader)
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader,persona.more)
                 .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
                     h1#team Team
                     each persona in people
                         if persona.type == 'team'
                             .col-lg-2.col-md-4.col-sm-6
-                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader,persona.more)
 
                 .row.gx-lg-3.gy-3.mt-lg-2.mt-md-2.mt-2.mb-5
                     h1#associates Associates
                     each persona in people
                         if persona.type == 'associate'
                             .col-lg-2.col-md-4.col-sm-6
-                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine)
+                                +peoplecard(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader,persona.more)

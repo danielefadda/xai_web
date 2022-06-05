@@ -1,9 +1,7 @@
 extends includes/layout
 include includes/mixin
-
-
 block content
-  article.entry
+    article.entry
     .entry-content
       .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
         .bg-half
@@ -13,9 +11,9 @@ block content
                 if persona.lastName == 'Guidotti'
                   .col-lg-4.offset-lg-4
                     +peoplepage(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader)
-      include includes/people/guidotti_personal
+      include includes/people/custom/Guidotti_custom
       //- Publications cards
       .container.mb-6
         .row
           //-include includes/paper-card
-          include includes/people/Guidotti_publications
+          include includes/people/publications/Guidotti_publications

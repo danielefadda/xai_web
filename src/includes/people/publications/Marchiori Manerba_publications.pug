@@ -1,0 +1,42 @@
+#MG2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 5.
+        small [MG2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-four.accordion
+        | #[strong Investigating Debiasing Effects on Classification and Explainability]
+        br
+        | #[em Marta Marchiori Manerba, Guidotti Riccardo] (2022) - Conference on AI, Ethics, and Society (AIES 2022). In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (AIES'22)
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small During each stage of a dataset creation and development process, harmful biases can be accidentally introduced, leading to models that perpetuates marginalization and discrimination of minorities, as the role of the data used during the training is critical. We propose an evaluation framework that investigates the impact on classification and explainability of bias mitigation preprocessing techniques used to assess data imbalances concerning minorities' representativeness and mitigate the skewed distributions discovered. Our evaluation focuses on assessing fairness, explainability and performance metrics. We analyze the behavior of local model-agnostic explainers on the original and mitigated datasets to examine whether the proxy models learned by the explainability techniques to mimic the black-boxes disproportionately rely on sensitive attributes, demonstrating biases rooted in the explainers. We conduct several experiments about known biased datasets to demonstrate our proposal’s novelty and effectiveness for evaluation and bias detection purposes.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        
+        p.my-1
+                    small Research Line #[strong 1▪5]
+    #MG2021.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 13.
+        small [MG2021]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twelve.accordion
+        | #[strong FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems]
+        br
+        | #[em Marchiori Manerba Marta, Guidotti Riccardo] (2021) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021. In 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small At every stage of a supervised learning process, harmful biases can arise and be inadvertently introduced, ultimately leading to marginalization, discrimination, and abuse towards minorities. This phenomenon becomes particularly impactful in the sensitive real-world context of abusive language detection systems, where non-discrimination is difficult to assess. In addition, given the opaqueness of their internal behavior, the dynamics leading a model to a certain decision are often not clear nor accountable, and significant problems of trust could emerge. A robust value-oriented evaluation of models' fairness is therefore necessary. In this paper, we present FairShades, a model-agnostic approach for auditing the outcomes of abusive language detection systems.  Combining explainability and fairness evaluation, FairShades can identify unintended biases and sensitive categories towards which models are most discriminative. This objective is pursued through the auditing of meaningful counterfactuals generated within CheckList framework. We conduct several experiments on BERT-based models to demonstrate our proposal's novelty and effectiveness for unmasking biases. 
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9750356', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪5]
+    

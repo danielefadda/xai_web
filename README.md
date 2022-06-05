@@ -45,3 +45,5 @@
     {...}
 ]
 ```
+N.B. More is used to access the personal page.
+To add custom details to the personal page, use the pug file under `src/includes/people/custom`

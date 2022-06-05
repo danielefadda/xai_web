@@ -38,8 +38,44 @@ papers=papers.iloc[::-1] #reverse all
 papers=papers.sort_values(by=['featured','Year of publication'], ascending = False).reset_index(drop=True)
 
 
-lastNames= ['Setzu', 'Giannotti', 'Marchiori', 'Turini', 'Pappalardo', 'Bodria', 'Resta', 'Piaggesi',  'Pellungrini', 'Metta', 'Panigutti', 'Pedreschi', 'Fadda', 'Guidotti', 'Naretto', 'Rinzivillo', 'Beretta', 'Ruggieri', 'Spinnato', 'Monreale' ]
 
+#Step 1: get python object for people
+file = open('src/includes/_config.pug', 'r')
+Lines = file.readlines()
+
+lines = []
+pBeg=False
+for i,line in enumerate(Lines):
+    line=line.strip()
+    if 'people = [' in line:
+        pBeg = True
+        peopleStart=i
+        lines.append(line)
+        continue
+    if pBeg==True:
+        if ']' in line:
+            line=line.replace(',',"")
+            lines.append(line)
+            break
+        else:
+            lines.append(line)
+
+#open file2 in writing mode
+file2 = open('_peopleList.py', 'w')
+
+#read from file1 and write to file2
+for line in lines:
+    file2.write(line)
+
+#close file1 and file2
+file.close()
+file2.close()
+
+from _peopleList import people
+
+lastNames=[]
+for pi in people:
+    lastNames.append(pi['lastName'])
 
 ### Create Pug version for papers - people
 for name in lastNames:
@@ -147,4 +183,66 @@ for name in lastNames:
             cards+=card
 
     ### save pug file:
-    write_html(cards, path='src/includes/people/', filename=f'{name}_publications')
+    write_html(cards, path='src/includes/people/publications/', filename=f'{name}_publications')
+
+
+file = open('src/includes/_config.pug', 'r')
+Lines = file.readlines()
+
+lines = []
+pBeg=False
+for i,line in enumerate(Lines):
+    line=line.strip()
+    if 'people = [' in line:
+        pBeg = True
+        peopleStart=i
+        lines.append(line)
+        continue
+    if pBeg==True:
+        if ']' in line:
+            line=line.replace(',',"")
+            lines.append(line)
+            break
+        else:
+            lines.append(line)
+
+####Create personal pages for the required people:
+#Write main page code:
+for name in lastNames:
+    mainCode=f'''extends includes/layout
+include includes/mixin
+block content
+    article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .bg-half
+          .container
+            .row
+              each persona in people
+                if persona.lastName == '{name}'
+                  .col-lg-4.offset-lg-4
+                    +peoplepage(persona.firstName,persona.lastName,persona.role,persona.affiliation,persona.type,persona.researchLine,persona.researchLeader)
+      include includes/people/custom/{name}_custom
+      //- Publications cards
+      .container.mb-6
+        .row
+          //-include includes/paper-card
+          include includes/people/publications/{name}_publications'''
+    ### save pug file:
+    write_html(mainCode, path='src/', filename=f'people_{name}')
+
+
+#Create custom info section to insert into mainCode (if not exists)
+for name in lastNames:
+    try:
+        file = open(f'src/includes/people/custom/{name}_custom.pug', 'r')
+        print(name)
+        file.close()
+    except:
+        print(f'The file {name} does NOT exist')
+        code = f'''
+.container.mt-6
+    .row.justify-content-lg-center
+        .col-lg-8
+'''
+        write_html(code, path='src/includes/people/custom/', filename=f'{name}_custom')

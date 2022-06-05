@@ -253,8 +253,9 @@ mixin peoplepage(firstName,lastName,role,affiliation,type,researchLine,researchL
       p.mb-0 Affiliation: #{affiliation}
       hr
 
+
 //- peoplecard
-mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchLaeder)
+mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchLaeder,more)
   if type=='core'
     hr
     p.text-uppercase Research Line #[strong #{researchLaeder}]
@@ -273,11 +274,18 @@ mixin peoplecard(firstName,lastName,role,affiliation,type,researchLine,researchL
       if researchLine
           hr
           p.text-uppercase R. line #[strong #{researchLine}]
-
+  if more=='True'
+    .member-content-more.bg-black
+      a(href=`people_${lastName}.html`)
+        h5.text-white.text-center +
+  else
+    .member-content-more.bg-yellow
+      h5.text-yellow.text-center +
 
   // End People Card
+
 //- peoplecard
-mixin peoplecardLine(firstName,lastName,role,affiliation,type,researchLine,researchLaeder)
+mixin peoplecardLine(firstName,lastName,role,affiliation,type,researchLine,researchLaeder,more)
   .member-image
     img(src='assets/images/p_'+ lastName + '.jpg' alt=firstName + " " + lastName).card-img
   .member-content.bg-yellow
@@ -293,6 +301,9 @@ mixin peoplecardLine(firstName,lastName,role,affiliation,type,researchLine,resea
       if researchLine
         hr
         p.text-uppercase R. line #[strong #{researchLine}]
+  if more == 'True'
+    .member-content-more.bg-black.text-white
+      h5 +
   // End People Card
 
 

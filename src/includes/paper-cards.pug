@@ -151,16 +151,49 @@
             a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1805.10820', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
-#MG2022.row.mt-5.justify-content-center
+#G2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
         h4 5.
-        small [MG2022]
+        small [G2022]
     .col-lg-8.bg-yellow.p-3
         #accordion-four.accordion
+        | #[strong Counterfactual explanations and how to find them: literature review and benchmarking]
+        br
+        | #[em Riccardo Guidotti] (2022) - Data Mining and Knowledge Discovery. In Data Mining and Knowledge Discovery
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Interpretable machine learning aims at unveiling the reasons behind predictions returned by uninterpretable classifiers. One of the most valuable types of explanation consists of counterfactuals. A counterfactual explanation reveals what should have been different in an instance to observe a diverse outcome. For instance, a bank customer asks for a loan that is rejected. The counterfactual explanation consists of what should have been different for the customer in order to have the loan accepted. Recently, there has been an explosion of proposals for counterfactual explainers. The aim of this work is to survey the most recent explainers returning counterfactual explanations. We categorize explainers based on the approach adopted to return the counterfactuals, and we label them according to characteristics of the method and properties of the counterfactuals returned. In addition, we visually compare the explanations, and we report quantitative benchmarking assessing minimality, actionability, stability, diversity, discriminative power, and running time. The results make evident that the current state of the art does not provide a counterfactual explainer able to guarantee all these properties simultaneously.
+            p.small.pt-2 #[strong BibTex]
+            p.small.
+                @article{Guidotti_2022,
+                    doi = {10.1007/s10618-022-00831-6},
+                    url = {https://doi.org/10.1007%2Fs10618-022-00831-6},
+                    year = 2022,
+                    month = {apr},
+                    publisher = {Springer Science and Business Media {LLC}},
+                    author = {Riccardo Guidotti},
+                    title = {Counterfactual explanations and how to find them: literature review and benchmarking},
+                    journal = {Data Mining and Knowledge Discovery}
+                }
+    .col-lg-2.pl-3
+        p.my-1
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+            a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/s10618-022-00831-6', target="_blank") External Link
+        p.my-1
+                small Research Line #[strong 1]
+#MG2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 6.
+        small [MG2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-five.accordion
         | #[strong Investigating Debiasing Effects on Classification and Explainability]
         br
         | #[em Marta Marchiori Manerba, Guidotti Riccardo] (2022) - Conference on AI, Ethics, and Society (AIES 2022). In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (AIES'22)
-        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+        #collapse-five.collapse(aria-labelledby='heading-five' data-parent='#accordion-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -170,20 +203,20 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-five' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                 small Research Line #[strong 1▪5]
 #BRF2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 6.
+        h4 7.
         small [BRF2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-five.accordion
+        #accordion-six.accordion
         | #[strong Explaining Black Box with visual exploration of Latent Space]
         br
         | #[em Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino] (2022) - EUROVIS 2022
-        #collapse-five.collapse(aria-labelledby='heading-five' data-parent='#accordion-five')
+        #collapse-six.collapse(aria-labelledby='heading-six' data-parent='#accordion-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -193,20 +226,20 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-five' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-six' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                 small Research Line #[strong 3]
 #PBP2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 8.
+        h4 9.
         small [PBP2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-seven.accordion
+        #accordion-eight.accordion
         | #[strong Understanding the impact of explanations on advice-taking: a user study for AI-based clinical Decision Support Systems]
         br
         | #[em Panigutti Cecilia, Beretta Andrea, Pedreschi Dino, Giannotti Fosca] (2022) - 2022 Conference on Human Factors in Computing Systems. In Proceedings of the 2022 Conference on Human Factors in Computing Systems
-        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -225,20 +258,20 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                 small Research Line #[strong 4]
 #SMM2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 9.
+        h4 10.
         small [SMM2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eight.accordion
+        #accordion-nine.accordion
         | #[strong TriplEx: Triple Extraction for Explanation]
         br
         | #[em Setzu Mattia, Monreale Anna, Minervini Pasquale] (2022) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021
-        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
+        #collapse-nine.collapse(aria-labelledby='heading-nine' data-parent='#accordion-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -257,18 +290,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='10.1109/CogMI52975.2021.00015', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #VMG2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 10.
+        h4 11.
         small [VMG2022]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/understanding_peace.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-nine' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-nine.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-nine-Title' aria-hidden='true')
+        img(src='assets/images/publications/understanding_peace.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-ten' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-ten.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-ten-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -278,11 +311,11 @@
                     .modal-body
                         img(src='assets/images/publications/understanding_peace.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-nine.accordion
+        #accordion-ten.accordion
         | #[strong Understanding peace through the world news]
         br
         | #[em Voukelatou Vasiliki, Miliou Ioanna, Giannotti Fosca, Pappalardo Luca] (2022) - EPJ Data Science. In EPJ Data Science
-        #collapse-nine.collapse(aria-labelledby='heading-nine' data-parent='#accordion-nine')
+        #collapse-ten.collapse(aria-labelledby='heading-ten' data-parent='#accordion-ten')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -303,21 +336,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-ten' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1140/epjds/s13688-022-00315-z', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #CDF2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 11.
+        h4 12.
         small [CDF2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-ten.accordion
+        #accordion-eleven.accordion
         | #[strong Trustworthy AI]
         br
         | #[em Chatila Raja, Dignum Virginia, Fisher Michael, Giannotti Fosca, Morik Katharina, Russell Stuart, Yeung Karen] (2022) - Reflections on Artificial Intelligence for Humanity. In Lecture Notes in Computer Science,
-        #collapse-ten.collapse(aria-labelledby='heading-ten' data-parent='#accordion-ten')
+        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -336,18 +369,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-ten' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eleven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-69128-8_2', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 5]
 #PMC2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 12.
+        h4 13.
         small [PMC2022]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/Ethical Societal and Legal.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-eleven' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-eleven.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-eleven-Title' aria-hidden='true')
+        img(src='assets/images/publications/Ethical Societal and Legal.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twelve' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twelve.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twelve-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -357,11 +390,11 @@
                     .modal-body
                         img(src='assets/images/publications/Ethical Societal and Legal.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-eleven.accordion
+        #accordion-twelve.accordion
         | #[strong Ethical, societal and legal issues in deep learning for healthcare]
         br
         | #[em Panigutti Cecilia, Monreale Anna, Comandè Giovanni, Pedreschi Dino] (2022) - Deep Learning in Biology and Medicine. In Deep Learning in Biology and Medicine
-        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -379,21 +412,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eleven' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://www.worldscientific.com/worldscibooks/10.1142/q0322', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #MG2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 13.
+        h4 14.
         small [MG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twelve.accordion
+        #accordion-thirteen.accordion
         | #[strong FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems]
         br
         | #[em Marchiori Manerba Marta, Guidotti Riccardo] (2021) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021. In 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
+        #collapse-thirteen.collapse(aria-labelledby='heading-thirteen' data-parent='#accordion-thirteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -412,21 +445,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9750356', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1▪5]
 #BGG2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 14.
+        h4 15.
         small [BGG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirteen.accordion
+        #accordion-fourteen.accordion
         | #[strong Benchmarking and survey of explanation methods for black box models]
         br
         | #[em Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore] (2021)
-        #collapse-thirteen.collapse(aria-labelledby='heading-thirteen' data-parent='#accordion-thirteen')
+        #collapse-fourteen.collapse(aria-labelledby='heading-fourteen' data-parent='#accordion-fourteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -436,18 +469,18 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirteen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fourteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2102.13076', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #GMP2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 15.
+        h4 16.
         small [GMP2021]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-fourteen' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-fourteen.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-fourteen-Title' aria-hidden='true')
+        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-fifteen' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-fifteen.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-fifteen-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -457,11 +490,11 @@
                     .modal-body
                         img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-fourteen.accordion
+        #accordion-fifteen.accordion
         | #[strong Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Giannotti Fosca] (2021) - Explainable AI Within the Digital Transformation and Cyber Physical Systems (pp. 9-31)
-        #collapse-fourteen.collapse(aria-labelledby='heading-fourteen' data-parent='#accordion-fourteen')
+        #collapse-fifteen.collapse(aria-labelledby='heading-fifteen' data-parent='#accordion-fifteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -478,21 +511,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fourteen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-030-76409-8', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1▪5]
 #GD2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 16.
+        h4 17.
         small [GD2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-fifteen.accordion
+        #accordion-sixteen.accordion
         | #[strong Matrix Profile-Based Interpretable Time Series Classifier]
         br
         | #[em Guidotti Riccardo, D’Onofrio Matteo] (2021) - Frontiers in Artificial Intelligence
-        #collapse-fifteen.collapse(aria-labelledby='heading-fifteen' data-parent='#accordion-fifteen')
+        #collapse-sixteen.collapse(aria-labelledby='heading-sixteen' data-parent='#accordion-sixteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -512,54 +545,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifteen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-sixteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.3389/frai.2021.699448', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
-#GSN2021.row.mt-5.justify-content-center
-    .col-lg-1.text-right
-        h4 17.
-        small [GSN2021]
-    .col-lg-8.bg-yellow.p-3
-        #accordion-sixteen.accordion
-        | #[strong Helping Your Docker Images to Spread Based on Explainable Models]
-        br
-        | #[em Guidotti Riccardo, Soldani Jacopo, Neri Davide, Brogi Antonio, Pedreschi Dino] (2021) - Machine Learning and Knowledge Discovery in Databases. In In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 205-221). Springer, Cham.
-        #collapse-sixteen.collapse(aria-labelledby='heading-sixteen' data-parent='#accordion-sixteen')
-            div.bg-yellow
-                hr
-                p.small #[strong Abstract]
-                p.small Docker is on the rise in today’s enterprise IT. It permits shipping applications inside portable containers, which run from so-called Docker images. Docker images are distributed in public registries, which also monitor their popularity. The popularity of an image impacts on its actual usage, and hence on the potential revenues for its developers. In this paper, we present a solution based on interpretable decision tree and regression trees for estimating the popularity of a given Docker image, and for understanding how to improve an image to increase its popularity. The results presented in this work can provide valuable insights to Docker developers, helping them in spreading their images. Code related to this paper is available at: https://github.com/di-unipi-socc/DockerImageMiner.
-            p.small.pt-2 #[strong BibTex]
-            p.small.
-                @incollection{Guidotti_2019,
-                    doi = {10.1007/978-3-030-10997-4_13},
-                    url = {https://doi.org/10.1007%2F978-3-030-10997-4_13},
-                    year = 2019,
-                    publisher = {Springer International Publishing},
-                    pages = {205--221},
-                    author = {Riccardo Guidotti and Jacopo Soldani and Davide Neri and Antonio Brogi and Dino Pedreschi},
-                    title = {Helping Your Docker Images to Spread Based on Explainable Models},
-                    booktitle = {Machine Learning and Knowledge Discovery in Databases}
-                }
-    .col-lg-2.pl-3
-        p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-sixteen' aria-expanded='true' aria-controls='collapseAbs') More information
-        p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-10997-4_13', target="_blank") External Link
-        p.my-1
-                small Research Line #[strong 1]
 #GM2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 18.
+        h4 19.
         small [GM2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-seventeen.accordion
+        #accordion-eighteen.accordion
         | #[strong Designing Shapelets for Interpretable Data-Agnostic Classification]
         br
         | #[em Guidotti Riccardo, Monreale Anna] (2021) - Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society
-        #collapse-seventeen.collapse(aria-labelledby='heading-seventeen' data-parent='#accordion-seventeen')
+        #collapse-eighteen.collapse(aria-labelledby='heading-eighteen' data-parent='#accordion-eighteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -578,21 +578,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seventeen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eighteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1145/3461702.3462553', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #MGY2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 19.
+        h4 20.
         small [MGY2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eighteen.accordion
+        #accordion-nineteen.accordion
         | #[strong Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling]
         br
         | #[em Metta Carlo, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore] (2021) - 2021 IEEE Symposium on Computers and Communications (ISCC). In 2021 IEEE Symposium on Computers and Communications (ISCC)
-        #collapse-eighteen.collapse(aria-labelledby='heading-eighteen' data-parent='#accordion-eighteen')
+        #collapse-nineteen.collapse(aria-labelledby='heading-nineteen' data-parent='#accordion-nineteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -611,21 +611,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eighteen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nineteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/iscc53001.2021.9631485', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #GR2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 20.
+        h4 21.
         small [GR2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-nineteen.accordion
+        #accordion-twenty.accordion
         | #[strong Ensemble of Counterfactual Explainers]
         br
         | #[em Guidotti Riccardo, Ruggieri Salvatore] (2021)
-        #collapse-nineteen.collapse(aria-labelledby='heading-nineteen' data-parent='#accordion-nineteen')
+        #collapse-twenty.collapse(aria-labelledby='heading-twenty' data-parent='#accordion-twenty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -635,21 +635,21 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nineteen' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://pages.di.unipi.it/ruggieri/Papers/ds2021.pdf', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #BGM2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 22.
+        h4 23.
         small [BGM2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-one.accordion
+        #accordion-twenty-two.accordion
         | #[strong Deriving a Single Interpretable Model by Merging Tree-Based Classifiers]
         br
         | #[em Bonsignori Valerio, Guidotti Riccardo, Monreale Anna] (2021) - Discovery Science
-        #collapse-twenty-one.collapse(aria-labelledby='heading-twenty-one' data-parent='#accordion-twenty-one')
+        #collapse-twenty-two.collapse(aria-labelledby='heading-twenty-two' data-parent='#accordion-twenty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -668,21 +668,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-88942-5_27', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1▪2]
 #RAB2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 23.
+        h4 24.
         small [RAB2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-two.accordion
+        #accordion-twenty-three.accordion
         | #[strong Occlusion-Based Explanations in Deep Recurrent Models for Biomedical Signals]
         br
         | #[em Resta Michele, Monreale Anna, Bacciu Davide] (2021) - Entropy. In Entropy
-        #collapse-twenty-two.collapse(aria-labelledby='heading-twenty-two' data-parent='#accordion-twenty-two')
+        #collapse-twenty-three.collapse(aria-labelledby='heading-twenty-three' data-parent='#accordion-twenty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -704,21 +704,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-two' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.3390/e23081064', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #PB2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 24.
+        h4 25.
         small [PB2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-three.accordion
+        #accordion-twenty-four.accordion
         | #[strong Intelligenza artificiale in ambito diabetologico: prospettive, dalla ricerca di base alle applicazioni cliniche]
         br
         | #[em Panigutti Cecilia, Bosi Emanuele] (2021) - Il Diabete Online, Organo ufficiale della Società Italiana di Diabetologia, Medicina traslazionale: Applicazioni cliniche della ricerca di base, Vol. 33, N. 1 2021. In Il Diabete
-        #collapse-twenty-three.collapse(aria-labelledby='heading-twenty-three' data-parent='#accordion-twenty-three')
+        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -737,18 +737,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='10.30682/ildia2101f', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #PPB2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 25.
+        h4 26.
         small [PPB2021]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/FairLens.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-four' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-twenty-four.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-four-Title' aria-hidden='true')
+        img(src='assets/images/publications/FairLens.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-five' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twenty-five.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-five-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -758,11 +758,11 @@
                     .modal-body
                         img(src='assets/images/publications/FairLens.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-twenty-four.accordion
+        #accordion-twenty-five.accordion
         | #[strong FairLens: Auditing black-box clinical decision support systems]
         br
         | #[em Panigutti Cecilia, Perotti Alan, Panisson André, Bajardi Paolo, Pedreschi Dino] (2021) - Information Processing & Management. In Journal of Information Processing and Management
-        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
+        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -784,21 +784,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.ipm.2021.102657', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #NPN2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 26.
+        h4 27.
         small [NPN2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-five.accordion
+        #accordion-twenty-six.accordion
         | #[strong Prediction and Explanation of Privacy Risk on Mobility Data with Neural Networks]
         br
         | #[em Naretto Francesca, Pellungrini Roberto, Nardini Franco Maria, Giannotti Fosca] (2021) - ECML PKDD 2020 Workshops. In ECML PKDD 2020 Workshops
-        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
+        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -817,21 +817,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-65965-3_34', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #NPM2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 27.
+        h4 28.
         small [NPM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-six.accordion
+        #accordion-twenty-seven.accordion
         | #[strong Predicting and Explaining Privacy Risk Exposure in Mobility Data]
         br
         | #[em Naretto Francesca, Pellungrini Roberto, Monreale Anna, Nardini Franco Maria, Musolesi Mirco] (2021) - Discovery Science. In Discovery Science Conference
-        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
+        #collapse-twenty-seven.collapse(aria-labelledby='heading-twenty-seven' data-parent='#accordion-twenty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -850,21 +850,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_27', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #SGM2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 28.
+        h4 29.
         small [SGM2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-seven.accordion
+        #accordion-twenty-eight.accordion
         | #[strong Global Explanations with Local Scoring]
         br
         | #[em Setzu Mattia, Guidotti Riccardo, Monreale Anna, Turini Franco] (2021) - Machine Learning and Knowledge Discovery in Databases. In ECML PKDD 2019: Machine Learning and Knowledge Discovery in Databases
-        #collapse-twenty-seven.collapse(aria-labelledby='heading-twenty-seven' data-parent='#accordion-twenty-seven')
+        #collapse-twenty-eight.collapse(aria-labelledby='heading-twenty-eight' data-parent='#accordion-twenty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -883,21 +883,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-43823-4_14', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #GMM2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 29.
+        h4 30.
         small [GMM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-eight.accordion
+        #accordion-twenty-nine.accordion
         | #[strong Explaining Image Classifiers Generating Exemplars and Counter-Exemplars from Latent Representations]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence
-        #collapse-twenty-eight.collapse(aria-labelledby='heading-twenty-eight' data-parent='#accordion-twenty-eight')
+        #collapse-twenty-nine.collapse(aria-labelledby='heading-twenty-nine' data-parent='#accordion-twenty-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -919,21 +919,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v34i09.7116', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #GMM2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 30.
+        h4 31.
         small [GMM2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-nine.accordion
+        #accordion-thirty.accordion
         | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino] (2021) - Machine Learning and Knowledge Discovery in Databases. In Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.
-        #collapse-twenty-nine.collapse(aria-labelledby='heading-twenty-nine' data-parent='#accordion-twenty-nine')
+        #collapse-thirty.collapse(aria-labelledby='heading-thirty' data-parent='#accordion-thirty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -952,21 +952,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-46150-8_12', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1▪4]
 #PGG2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 31.
+        h4 32.
         small [PGG2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty.accordion
+        #accordion-thirty-one.accordion
         | #[strong Meaningful Explanations of Black Box AI Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence. In Proceedings of the AAAI Conference on Artificial Intelligence
-        #collapse-thirty.collapse(aria-labelledby='heading-thirty' data-parent='#accordion-thirty')
+        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -987,21 +987,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v33i01.33019780', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #G2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 32.
+        h4 33.
         small [G2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-one.accordion
+        #accordion-thirty-two.accordion
         | #[strong Evaluating local explanation methods on ground truth]
         br
         | #[em Guidotti Riccardo] (2021) - Artificial Intelligence. In Artificial Intelligence, 103428
-        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
+        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1022,21 +1022,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.artint.2020.103428', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #LGR2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 33.
+        h4 34.
         small [LGR2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-two.accordion
+        #accordion-thirty-three.accordion
         | #[strong Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars]
         br
         | #[em Lampridis Orestis, Guidotti Riccardo, Ruggieri Salvatore] (2021) - Discovery Science. In In International Conference on Discovery Science (pp. 357-373). Springer, Cham.
-        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
+        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1055,18 +1055,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_24', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #PGM2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 34.
+        h4 35.
         small [PGM2019]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-three' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty-three.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-three-Title' aria-hidden='true')
+        img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-four' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-thirty-four.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-four-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -1076,11 +1076,11 @@
                     .modal-body
                         img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty-three.accordion
+        #accordion-thirty-four.accordion
         | #[strong Explaining Multi-label Black-Box Classifiers for Health Applications]
         br
         | #[em Panigutti Cecilia, Guidotti Riccardo, Monreale Anna, Pedreschi Dino] (2021) - Precision Health and Medicine. In International Workshop on Health Intelligence (pp. 97-110). Springer, Cham.
-        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
+        #collapse-thirty-four.collapse(aria-labelledby='heading-thirty-four' data-parent='#accordion-thirty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1100,21 +1100,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-24409-5_9', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #GMC2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 35.
+        h4 36.
         small [GMC2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-four.accordion
+        #accordion-thirty-five.accordion
         | #[strong Investigating Neighborhood Generation Methods for Explanations of Obscure Image Classifiers]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Cariaggi Leonardo] (2021) - Advances in Knowledge Discovery and Data Mining. In In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 55-68). Springer, Cham.
-        #collapse-thirty-four.collapse(aria-labelledby='heading-thirty-four' data-parent='#accordion-thirty-four')
+        #collapse-thirty-five.collapse(aria-labelledby='heading-thirty-five' data-parent='#accordion-thirty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1133,18 +1133,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-16148-4_5', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #GMS2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 36.
+        h4 37.
         small [GMS2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-five' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty-five.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-five-Title' aria-hidden='true')
+        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-six' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-thirty-six.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-six-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -1154,11 +1154,11 @@
                     .modal-body
                         img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty-five.accordion
+        #accordion-thirty-six.accordion
         | #[strong Explaining Any Time Series Classifier]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Spinnato Francesco, Pedreschi Dino, Giannotti Fosca] (2020) - 2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-thirty-five.collapse(aria-labelledby='heading-thirty-five' data-parent='#accordion-thirty-five')
+        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1177,18 +1177,18 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/cogmi50398.2020.00029', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #PPP2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 37.
+        h4 38.
         small [PPP2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-six' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty-six.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-six-Title' aria-hidden='true')
+        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-seven' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-thirty-seven.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-seven-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -1198,11 +1198,11 @@
                     .modal-body
                         img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty-six.accordion
+        #accordion-thirty-seven.accordion
         | #[strong Doctor XAI: an ontology-based approach to black-box sequential data classification explanations]
         br
         | #[em Panigutti Cecilia, Perotti Alan, Pedreschi Dino] (2020) - FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. In FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency
-        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
+        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1221,21 +1221,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://dl.acm.org/doi/10.1145/3351095.3372855', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 4]
 #RGG2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 38.
+        h4 39.
         small [RGG2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-seven.accordion
+        #accordion-thirty-eight.accordion
         | #[strong Opening the black box: a primer for anti-discrimination]
         br
         | #[em Ruggieri Salvatore, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Turini Franco] (2020). In ANNUARIO DI DIRITTO COMPARATO E DI STUDI LEGISLATIVI
-        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
+        #collapse-thirty-eight.collapse(aria-labelledby='heading-thirty-eight' data-parent='#accordion-thirty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1245,21 +1245,21 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='http://hdl.handle.net/11568/1088440', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #GM2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 39.
+        h4 40.
         small [GM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-eight.accordion
+        #accordion-thirty-nine.accordion
         | #[strong Data-Agnostic Local Neighborhood Generation]
         br
         | #[em Guidotti Riccardo, Monreale Anna] (2020) - 2020 IEEE International Conference on Data Mining (ICDM). In 2020 IEEE International Conference on Data Mining (ICDM)
-        #collapse-thirty-eight.collapse(aria-labelledby='heading-thirty-eight' data-parent='#accordion-thirty-eight')
+        #collapse-thirty-nine.collapse(aria-labelledby='heading-thirty-nine' data-parent='#accordion-thirty-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1278,21 +1278,21 @@
                 }
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9338395', target="_blank") External Link
         p.my-1
                 small Research Line #[strong 1]
 #BPP2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 40.
+        h4 41.
         small [BPP2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-nine.accordion
+        #accordion-forty.accordion
         | #[strong Explainability Methods for Natural Language Processing: Applications to Sentiment Analysis]
         br
         | #[em Bodria Francesco, Panisson André , Perotti Alan, Piaggesi Simone ] (2020) - Discussion Paper
-        #collapse-thirty-nine.collapse(aria-labelledby='heading-thirty-nine' data-parent='#accordion-thirty-nine')
+        #collapse-forty.collapse(aria-labelledby='heading-forty' data-parent='#accordion-forty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1308,14 +1308,14 @@
                 small Research Line #[strong 1]
 #M2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 41.
+        h4 42.
         small [M2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty.accordion
+        #accordion-forty-one.accordion
         | #[strong Rischi etico-legali dell’Intelligenza Artificiale]
         br
         | #[em Monreale Anna] (2020) - DPCE Online, [S.l.], v. 44, n. 3. In DPCE Online, [S.l.], v. 44, n. 3, oct. 2020. ISSN 2037-6677
-        #collapse-forty.collapse(aria-labelledby='heading-forty' data-parent='#accordion-forty')
+        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1331,11 +1331,11 @@
                 small Research Line #[strong 5]
 #GPP2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 42.
+        h4 43.
         small [GPP2019]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/mulino_pandemia.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-one' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-forty-one.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-one-Title' aria-hidden='true')
+        img(src='assets/images/publications/mulino_pandemia.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-two' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-two.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-two-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -1345,11 +1345,11 @@
                     .modal-body
                         img(src='assets/images/publications/mulino_pandemia.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-forty-one.accordion
+        #accordion-forty-two.accordion
         | #[strong I.A. comprensibile per il supporto alle decisioni: doctor XAI]
         br
         | #[em Giannotti Fosca, Pedreschi Dino, Panigutti Cecilia] (2019) - Biopolitica, Pandemia e democrazia. Rule of law nella società digitale. In BIOPOLITICA, PANDEMIA E DEMOCRAZIA Rule of law nella società digitale
-        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
+        #collapse-forty-two.collapse(aria-labelledby='heading-forty-two' data-parent='#accordion-forty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1359,21 +1359,21 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://www.mulino.it/isbn/9788815293060#', target="_blank") External Link
         p.my-1
-                small Research Line #[strong 3]
+                small Research Line #[strong 4]
 #GMP2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 43.
+        h4 44.
         small [GMP2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-two.accordion
+        #accordion-forty-three.accordion
         | #[strong The AI black box explanation problem]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino] (2019) - ERCIM News, 116, 12-13. In ERCIM News, 116, 12-13
-        #collapse-forty-two.collapse(aria-labelledby='heading-forty-two' data-parent='#accordion-forty-two')
+        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1389,14 +1389,14 @@
                 small Research Line #[strong 1▪2▪3]
 #PGG2018.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 44.
+        h4 45.
         small [PGG2018]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-three.accordion
+        #accordion-forty-four.accordion
         | #[strong Open the Black Box Data-Driven Explanation of Black Box Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna , Pappalardo Luca , Ruggieri Salvatore , Turini Franco ] (2018) - Arxive preprint
-        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
+        #collapse-forty-four.collapse(aria-labelledby='heading-forty-four' data-parent='#accordion-forty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -1406,7 +1406,7 @@
                 BibTex not found
     .col-lg-2.pl-3
         p.my-1
-            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+            a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
             a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1806.09936', target="_blank") External Link
         p.my-1

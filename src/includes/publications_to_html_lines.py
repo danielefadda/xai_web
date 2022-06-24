@@ -101,9 +101,9 @@ for line in lines:
             externalButton= ''
 
         ##### string composition for pug file:
-        ptOne=f'''#{idAlpha}.row.mt-5.justify-content-center
+        ptOne=f'''.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 {i+1}.
+        h4#{idAlpha}.anchor {i+1}.
         small [{idAlpha}]'''
 
         # summary image?

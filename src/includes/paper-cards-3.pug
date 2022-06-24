@@ -1,6 +1,6 @@
-#GMR2018.row.mt-5.justify-content-center
+.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 1.
+        h4#GMR2018.anchor 1.
         small [GMR2018]
     .col-lg-8.bg-yellow.p-3
         #accordion-zero.accordion
@@ -19,9 +19,9 @@
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1145/3236009', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪3]
-    #BRF2022.row.mt-5.justify-content-center
+    .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 7.
+        h4#BRF2022.anchor 7.
         small [BRF2022]
     .col-lg-8.bg-yellow.p-3
         #accordion-six.accordion
@@ -39,9 +39,50 @@
         
         p.my-1
                     small Research Line #[strong 3]
-    #GMP2019.row.mt-5.justify-content-center
+    .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 44.
+        h4#PBF2022.anchor 8.
+        small [PBF2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-seven.accordion
+        | #[strong Co-design of human-centered, explainable AI for clinical decision support]
+        br
+        | #[em Panigutti Cecilia, Beretta Andrea, Fadda Daniele , Giannotti Fosca, Pedreschi Dino, Perotti Alan, Rinzivillo Salvatore] (2022). In ACM Transactions on Interactive Intelligent Systems
+        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models, and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique, and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback, with a two-fold outcome: first, we obtain evidence that explanations increase users' trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so that we can re-design a better, more human-centered explanation interface.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        
+        p.my-1
+                    small Research Line #[strong 1▪3▪4]
+    .row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4#MBG2021.anchor 22.
+        small [MBG2021]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twenty-one.accordion
+        | #[strong Explainable Deep Image Classifiers for Skin Lesion Diagnosis]
+        br
+        | #[em Metta Carlo, Beretta Andrea, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore, Giannotti Fosca] (2021) - Arxive preprint. In International Journal of Data Science and Analytics
+        #collapse-twenty-one.collapse(aria-labelledby='heading-twenty-one' data-parent='#accordion-twenty-one')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we analyze a case study on skin lesion images where we customize an existing XAI approach for explaining a deep learning model able to recognize different types of skin lesions. The explanation is formed by synthetic exemplar and counter-exemplar images of skin lesion and offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A survey conducted with domain experts, beginners and unskilled people proof that the usage of explanations increases the trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon could derive from the intrinsic characteristics of each class and, hopefully, can provide support in the resolution of the most frequent misclassifications by human experts.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2111.11863', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3▪4]
+    .row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4#GMP2019.anchor 44.
         small [GMP2019]
     .col-lg-8.bg-yellow.p-3
         #accordion-forty-three.accordion

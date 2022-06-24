@@ -97,29 +97,29 @@
           <div class="row justify-content-lg-center mt-6">
             <div class="col-lg-8">
               <!--h4 Abstract-->
-              <p class="lead">From the experience of the surveys [GMR2018, BGG2021], we developed and designed various explanation methods with a focus on local rule-based explainers. Also, our goal was to “merge” such local explanations to reach a global consensus on the reasons for the decisions taken by an AI decision support system.</p>
-              <h5 class="mt-6">1.1 Local Rule-based Explainer</h5>Our first proposal is the LOcal Rule-based Explainer (LORE) presented in [GMG2019]. LORE is a model-agnostic local explanation method that returns as an explanation a “factual rule revealing the reasons for a decision, and a set of counterfactual rules illustrating how to change the classification outcome. The first peculiarity of LORE is that it adopts a synthetic generator based on a genetic algorithm. The second peculiarity of LORE is that it adopts a decision tree as a local surrogate, thus (i) decision rules can naturally be derived from a root-leaf path in a decision tree; and, (ii) counterfactuals can be extracted by symbolic reasoning over the tree.
+              <p class="lead">From the experience of the surveys [ <a href="#GMR2018">GMR2018</a> , <a href="#BGG2021">BGG2021</a> ], we developed and designed various explanation methods with a focus on local rule-based explainers. Also, our goal was to “merge” such local explanations to reach a global consensus on the reasons for the decisions taken by an AI decision support system.</p>
+              <h5 class="mt-6">1.1 Local Rule-based Explainer</h5>Our first proposal is the LOcal Rule-based Explainer (LORE) presented in [<a href="#GMG2019">GMG2019</a>]. LORE is a model-agnostic local explanation method that returns as an explanation a “factual rule revealing the reasons for a decision, and a set of counterfactual rules illustrating how to change the classification outcome. The first peculiarity of LORE is that it adopts a synthetic generator based on a genetic algorithm. The second peculiarity of LORE is that it adopts a decision tree as a local surrogate, thus (i) decision rules can naturally be derived from a root-leaf path in a decision tree; and, (ii) counterfactuals can be extracted by symbolic reasoning over the tree.
               <div class="pb-md-2 mt-4"><a class="btn btn-outline-black" href="https://pypi.org/project/LORE-ext/" target="_blank">LINK</a></div>
               <h5 class="mt-6">1.2 Plausible Data-Agnostic Local Explanations</h5>LORE was initially designed to deal with tabular data and binary classification problems. We extended it to work on other data types and for multiclass problems. Also, we are currently working to solve some limitations of LORE related to the stability and actionability of the explanations. In line with LIME [1], our idea was to extend LORE for working on any data type. Indeed, our objective was to define a local model-agnostic and data-agnostic explanation framework to explain the decisions taken by obscure black-box classifiers on specific input instances. Therefore, our proposal would not be tied to a specific type of data or a specific type of classifier. Besides being model-agnostic, LIME is also data-agnostic. However, LIME employs conceptually different neighborhood generation strategies for tabular data, images, and texts. For images, LIME randomly replaces actual super-pixels with super-pixels containing a fixed color. For texts, it randomly removes words. Thus, both for images and text LIME “suppresses” parts of the actual information in the data. On the other hand, for tabular data, LIME assumes uniform distributions for categorical attributes and normal distributions for the continuous ones. Such limitations prevent LIME from basing the local regressor used to extract the explanation on meaningful synthetic instances. Our proposal allows overcoming these limitations by guaranteeing comparable synthetic data generation among all the different data types, ensuring meaningful synthetic instances to learn interpretable local surrogate models.
               
-              Our idea was to extend LORE [GMG2019] to overcome the limitations of existing approaches by exploiting the latent feature space learned through different types of autoencoders [2] to generate plausible synthetic instances during the neighborhood generation process. Given an instance of any type classified by a black-box, the Latent-LORE (LLORE) allows instantiating a data-specific explainer following the explanation framework structure. The explainer will be able to return a meaningful explanation for the classification reasons. LLORE-based approaches work as follows. First, they generate synthetic instances in the latent feature space using a pre-trained autoencoder (GAM, AAE, VAE, etc.). Then, they learn a latent decision tree classifier. After that, they select and decode the synthetic instances respecting the latent local decision rules observed on the decision tree. Finally, independently from the data type, they return an explanation that always consists of a set of synthetic exemplars and counter-exemplars instances illustrating, respectively, instances classified with the same label and with a different label than the instance to explain, which may be visually analyzed to understand the reasons for the classification. Additionally, a data-specific explanation can be built on the exemplars and counter-exemplars.
+              Our idea was to extend LORE [<a href="#GMG2019">GMG2019</a>] to overcome the limitations of existing approaches by exploiting the latent feature space learned through different types of autoencoders [2] to generate plausible synthetic instances during the neighborhood generation process. Given an instance of any type classified by a black-box, the Latent-LORE (LLORE) allows instantiating a data-specific explainer following the explanation framework structure. The explainer will be able to return a meaningful explanation for the classification reasons. LLORE-based approaches work as follows. First, they generate synthetic instances in the latent feature space using a pre-trained autoencoder (GAM, AAE, VAE, etc.). Then, they learn a latent decision tree classifier. After that, they select and decode the synthetic instances respecting the latent local decision rules observed on the decision tree. Finally, independently from the data type, they return an explanation that always consists of a set of synthetic exemplars and counter-exemplars instances illustrating, respectively, instances classified with the same label and with a different label than the instance to explain, which may be visually analyzed to understand the reasons for the classification. Additionally, a data-specific explanation can be built on the exemplars and counter-exemplars.
               
-              We instantiated LLORE for images [GMM2019, GMM2020], time series [GMS2020] and text [LGR2020] realizing ad-hoc logic-based explanations. A wide experimentation on datasets of different types and explaining different black-box classifiers empirically demonstrate that LLORE-based explainers overtakes existing explanation methods providing meaningful, stable, useful, and really understandable explanations. In [MGY2021, MBG2021] we employed ABELE in a case study for skin lesion diagnosis, illustrating how it is possible to provide the practitioner with explanations on the decisions of a Deep Neural Network (DNN). We have proved that after being customized and carefully trained, ABELE can produce meaningful explanations that really help practitioners. The latent space analysis suggests an interesting partitioning of images over the latent space. Still in [MGY2021, MBG2021] is reported a survey involving real experts in the health domain and common people that supports the hypothesis that explanation methods without a consistent validation are not useful.
+              We instantiated LLORE for images [<a href="#GMG2019">GMG2019</a>, <a href="#GMM2020">GMM2020</a>], time series [<a href="#GMS2020">GMS2020</a>] and text [<a href="#LGR2020">LGR2020</a>] realizing ad-hoc logic-based explanations. A wide experimentation on datasets of different types and explaining different black-box classifiers empirically demonstrate that LLORE-based explainers overtakes existing explanation methods providing meaningful, stable, useful, and really understandable explanations. In [<a href="#MGY2021">MGY2021</a>, <a href="#MBG2021">MBG2021</a>] we employed ABELE in a case study for skin lesion diagnosis, illustrating how it is possible to provide the practitioner with explanations on the decisions of a Deep Neural Network (DNN). We have proved that after being customized and carefully trained, ABELE can produce meaningful explanations that really help practitioners. The latent space analysis suggests an interesting partitioning of images over the latent space. Still in [<a href="#MGY2021">MGY2021</a>, <a href="#MBG2021">MBG2021</a>] is reported a survey involving real experts in the health domain and common people that supports the hypothesis that explanation methods without a consistent validation are not useful.
               
-              As highlighted by these works, the context of synthetic data generation for local explanation methods it is important to generate data samples located within “local” areas surrounding specific instances. The problem with generative adversarial networks and autoencoders is that they require a large quantity of data, and a not negligible training time. In addition, such generative approaches are suited only for particular types of data. In [GM2020] we overcome these drawbacks proposing DAG, a Data-Agnostic neighborhood Generation approach that, given an input instance and a (small) support set, returns a set of local realistic synthetic instances. DAG applies a data transformation that enables the generation for any type of input data. It is based on a set of generative operators inspired to genetic programming. Such operators work by applying specific vector perturbations by following a fast procedure that only requires a small set of instances to support the data generation.  A wide experimentation on different types of data (tabular data, images, time series, and texts) and against state-of-the-art local neighborhood generators shows the effectiveness of DAG in producing realistic instances independently from the nature of the data.
+              As highlighted by these works, the context of synthetic data generation for local explanation methods it is important to generate data samples located within “local” areas surrounding specific instances. The problem with generative adversarial networks and autoencoders is that they require a large quantity of data, and a not negligible training time. In addition, such generative approaches are suited only for particular types of data. In [<a href="#GM2020">GM2020</a>] we overcome these drawbacks proposing DAG, a Data-Agnostic neighborhood Generation approach that, given an input instance and a (small) support set, returns a set of local realistic synthetic instances. DAG applies a data transformation that enables the generation for any type of input data. It is based on a set of generative operators inspired to genetic programming. Such operators work by applying specific vector perturbations by following a fast procedure that only requires a small set of instances to support the data generation.  A wide experimentation on different types of data (tabular data, images, time series, and texts) and against state-of-the-art local neighborhood generators shows the effectiveness of DAG in producing realistic instances independently from the nature of the data.
               
-              <h5 class="mt-6">1.3 Local Explanation 4 Health</h5>In order to enable explainable AI systems to support medical decision-making, it is necessary to enable XAI techniques to deal with typical healthcare data characteristics. We incrementally addressed such a problem with the contributions presented in [PGM2019] and [PPP2020]. [PGM2019] presents MARLENA (Multi-lAbel RuLe-based ExplaNAtions), a model-agnostic XAI methodology to address the outcome explanation problem in the context of multi-label black box outcomes. Building on the insights we gained from the experiments carried out in [PGM2019], we developed Doctor XAI [PPP2020], a model-agnostic technique that is suitable for multi-label black box outcomes and it is also able to deal with ontologically-linked and sequential data. Two key aspects of the presented approach are that it exploited the ontology in creating the synthetic neighborhood and employed a novel encoder/decoder scheme for sequential data that preserves the interpretability of the features. The ontological perturbation allows us to create synthetic instances that consider local features interactions by perturbing the set of neighbors available in the dataset masking semantically similar features. We tested Doctor XAI in two scenarios. First, we tested the ability of Doctor XAI combined with a local-to-global approach to audit a fictional commercial black box. This resulted in a framework for auditing clinical decision support systems called FairLens [PPB2021]. FairLens first stratifies the available patient data according to demographic attributes such as age, ethnicity, gender and healthcare insurance; it then assesses the model performance on such groups highlighting the most common misclassifications. Finally, FairLens allows the expert to examine one misclassification of interest by exploiting DoctorXAI to explain which elements of the affected patients' clinical history drive the model error in the problematic group. We validate FairLens' ability to highlight bias in multilabel clinical DSSs introducing a multilabel-appropriate metric of disparity and proving its efficacy against other standard metrics. Finally in [PBF2022], we presented the collective effort of our interdisciplinary team of data scientists, human-computer interaction experts and designers to develop a human-centered, explainable AI system for clinical decision support. Using an iterative design approach that involves healthcare providers as end-users, we present the first cycle of the prototyping-testing-redesigning of DoctorXAI and its explanation-user interface. We first present the DoctorXAI concept that stems from patients data and healthcare application requirements. Then we develop the initial prototype of the explanation user interface, and perform a user study to test its perceived trustworthiness and collect healthcare providers' feedback. We finally exploit the users' feedback to co-design a more human-centered XAI user interface taking into account design principles such as progressive disclosure of information.
-              
-              
+              <h5 class="mt-6">1.3 Local Explanation 4 Health</h5>In order to enable explainable AI systems to support medical decision-making, it is necessary to enable XAI techniques to deal with typical healthcare data characteristics. We incrementally addressed such a problem with the contributions presented in [<a href="#PGM2019">PGM2019</a>] and [<a href="#PPP2020">PPP2020</a>]. [<a href="#PGM2019">PGM2019</a>] presents MARLENA (Multi-lAbel RuLe-based ExplaNAtions), a model-agnostic XAI methodology to address the outcome explanation problem in the context of multi-label black box outcomes. Building on the insights we gained from the experiments carried out in [<a href="#PGM2019">PGM2019</a>], we developed Doctor XAI [<a href="#PPP2020">PPP2020</a>], a model-agnostic technique that is suitable for multi-label black box outcomes and it is also able to deal with ontologically-linked and sequential data. Two key aspects of the presented approach are that it exploited the ontology in creating the synthetic neighborhood and employed a novel encoder/decoder scheme for sequential data that preserves the interpretability of the features. The ontological perturbation allows us to create synthetic instances that consider local features interactions by perturbing the set of neighbors available in the dataset masking semantically similar features. We tested Doctor XAI in two scenarios. First, we tested the ability of Doctor XAI combined with a local-to-global approach to audit a fictional commercial black box. This resulted in a framework for auditing clinical decision support systems called FairLens [<a href="#PPB2021">PPB2021</a>]. FairLens first stratifies the available patient data according to demographic attributes such as age, ethnicity, gender and healthcare insurance; it then assesses the model performance on such groups highlighting the most common misclassifications. Finally, FairLens allows the expert to examine one misclassification of interest by exploiting DoctorXAI to explain which elements of the affected patients' clinical history drive the model error in the problematic group. We validate FairLens' ability to highlight bias in multilabel clinical DSSs introducing a multilabel-appropriate metric of disparity and proving its efficacy against other standard metrics. Finally in [<a href="#PBF2022">PBF2022</a>], we presented the collective effort of our interdisciplinary team of data scientists, human-computer interaction experts and designers to develop a human-centered, explainable AI system for clinical decision support. Using an iterative design approach that involves healthcare providers as end-users, we present the first cycle of the prototyping-testing-redesigning of DoctorXAI and its explanation-user interface. We first present the DoctorXAI concept that stems from patients data and healthcare application requirements. Then we develop the initial prototype of the explanation user interface, and perform a user study to test its perceived trustworthiness and collect healthcare providers' feedback. We finally exploit the users' feedback to co-design a more human-centered XAI user interface taking into account design principles such as progressive disclosure of information.
               
               
-              <h5 class="mt-6">1.4 Local to Global Approaches</h5>Local explanations enjoy several properties: they are relatively fast and easy to extract, precise, and possibly diverse. Conversely, global explanations are more cumbersome to extract, and, having a larger scope, more general. Thus, these two families present complementary properties. The Local to Global explanation paradigm [PGG2018, PGG2019] is a natural extension of the Local and Global paradigms, and aims to exploit the fidelity and ease of extraction of Local explanations to generate faithful, general, and simple Global explanations. In our work, we have focused on explanations in the form of axis-parallel decision rules, and have proposed two algorithms to tackle them, namely Rule Relevance Score (RRS) [SGM2019] and GLocalX [SGM2021a]. Rule Relevance Score (RRS) [SGM2019] is a simple scoring framework in which we try to select, rather than edit, the local explanations. In other words, with RRS we construct global explanations by selecting local ones. RRS uses a multi-faceted scoring formula in which explanations are ranked according to their fidelity, coverage and outlier coverage, which rewards rules explaining seldomly explained records. GLocalX [SGM2021a] relies on three assumptions: (i) logical explainability, that is, explanations are best provided in a logical form that can be reasoned upon; (ii) local explainability, that is, regardless of the complexity of the decision boundary of the black box, locally it can be accurately approximated by an explanation; (iii) composability, that is, we can compose local explanations by leveraging their logical form. Starting from a set of local explanations in the form of decision rules constituting the structure's leaves, GLocalX iteratively merges explanations in a bottom-up fashion to create a hierarchical merge structure that yields global explanations on its top layer. GLocalX shows a unique balance between fidelity and simplicity, having state-of-the-art fidelity and yielding small sets of compact global explanations. When comparing with natively global models, such as Decision Trees and CPAR, who have direct access to the whole training data, rather than the local explanations, GLocalX compares favorably. It’s only slightly less faithful than the most faithful model (~2% less faithful than a Decision Tree) while having a far simpler model (up to 1 order of magnitude smaller set of output rules). When compared with models of similar complexity, such as a Pruned Decision Tree, GLocalX is slightly more faithful and less complex.
+              
+              
+              <h5 class="mt-6">1.4 Local to Global Approaches</h5>Local explanations enjoy several properties: they are relatively fast and easy to extract, precise, and possibly diverse. Conversely, global explanations are more cumbersome to extract, and, having a larger scope, more general. Thus, these two families present complementary properties. The Local to Global explanation paradigm [<a href="#PGG2018">PGG2018</a>, <a href="#PGG2019">PGG2019</a>] is a natural extension of the Local and Global paradigms, and aims to exploit the fidelity and ease of extraction of Local explanations to generate faithful, general, and simple Global explanations. In our work, we have focused on explanations in the form of axis-parallel decision rules, and have proposed two algorithms to tackle them, namely Rule Relevance Score (RRS) [<a href="#SGM2019">SGM2019</a>] and GLocalX [<a href="#SGM2021">SGM2021</a>]. Rule Relevance Score (RRS) [<a href="#SGM2019">SGM2019</a>] is a simple scoring framework in which we try to select, rather than edit, the local explanations. In other words, with RRS we construct global explanations by selecting local ones. RRS uses a multi-faceted scoring formula in which explanations are ranked according to their fidelity, coverage and outlier coverage, which rewards rules explaining seldomly explained records. GLocalX [<a href="#SGM2021">SGM2021</a>] relies on three assumptions: (i) logical explainability, that is, explanations are best provided in a logical form that can be reasoned upon; (ii) local explainability, that is, regardless of the complexity of the decision boundary of the black box, locally it can be accurately approximated by an explanation; (iii) composability, that is, we can compose local explanations by leveraging their logical form. Starting from a set of local explanations in the form of decision rules constituting the structure's leaves, GLocalX iteratively merges explanations in a bottom-up fashion to create a hierarchical merge structure that yields global explanations on its top layer. GLocalX shows a unique balance between fidelity and simplicity, having state-of-the-art fidelity and yielding small sets of compact global explanations. When comparing with natively global models, such as Decision Trees and CPAR, who have direct access to the whole training data, rather than the local explanations, GLocalX compares favorably. It’s only slightly less faithful than the most faithful model (~2% less faithful than a Decision Tree) while having a far simpler model (up to 1 order of magnitude smaller set of output rules). When compared with models of similar complexity, such as a Pruned Decision Tree, GLocalX is slightly more faithful and less complex.
               
               <h5 class="mt-6">1.5 Towards Interpretable-by-design Models</h5>In parallel with the activity of designing local and global post-hoc explainers, in line with [3] we also started to explore directions for designing predictive models which are interpretable-by-design, i.e., they return the prediction and allow us to understand the reasons that lead to that prediction. Indeed, if the machine logic is transparent and accessible, as humans, we tend to trust more a decision process using a logic similar to that of a human being, rather than a reasoning that we can understand but that is outside the human way of thinking [4].
               
-              In [GD2021] we present MAPIC a MAtrix Profile-based Interpretable time series Classifier. MAPIC is an interpretable model for time series classification able to guarantee high levels of accuracy and efficiency while maintaining the classification, and the classification model, interpretable. In the design of MAPIC we followed the line of research based on shapelets. However, we replaced the inefficient approaches adopted in the state of the art for the search of the most discriminative subsequences with the patterns that is possible to extract from a model named Matrix Profile [5]. In short, the Matrix Profile (MP) represents the distances between all subsequences and their nearest neighbors. From a MP it is possible to efficiently extract some patterns characterizing a time series such as motifs and discords. Motifs are subsequences of a time series which are very similar to each other, while discords are subsequences of a time series which are very different from any other subsequence. As a classification model, MAPIC adopts a decision tree classifier due to its intrinsic interpretability. We empirically demonstrate that MAPIC overtakes existing approaches having a similar interpretability in terms of both accuracy and running time.
+              In [<a href="#GD2021">GD2021</a>] we present MAPIC a MAtrix Profile-based Interpretable time series Classifier. MAPIC is an interpretable model for time series classification able to guarantee high levels of accuracy and efficiency while maintaining the classification, and the classification model, interpretable. In the design of MAPIC we followed the line of research based on shapelets. However, we replaced the inefficient approaches adopted in the state of the art for the search of the most discriminative subsequences with the patterns that is possible to extract from a model named Matrix Profile [5]. In short, the Matrix Profile (MP) represents the distances between all subsequences and their nearest neighbors. From a MP it is possible to efficiently extract some patterns characterizing a time series such as motifs and discords. Motifs are subsequences of a time series which are very similar to each other, while discords are subsequences of a time series which are very different from any other subsequence. As a classification model, MAPIC adopts a decision tree classifier due to its intrinsic interpretability. We empirically demonstrate that MAPIC overtakes existing approaches having a similar interpretability in terms of both accuracy and running time.
               
-              For these two last results and from GLocalX it is clear the importance of relying on sound decision tree models. A weak point of traditional decision trees is that they are not very stable and a common procedure to stabilize them is to merge various trees into an unique tree. In a certain sense, this is a form of explanation of a set of decision trees with a single model. Several proposals are present in the literature for traditional decision trees but there is a lack of merging operations for oblique trees and forests of oblique trees. Thus, in [BGM2021] we combine XAI and the merging of decision trees. Given any accurate and complex tree-based classifier, our aim is to approximate it with a single interpretable decision tree that guarantees comparable levels of accuracy and a low complexity that permits us to understand the logic it follows for the classification. We propose a Single-tree Approximation MEthod (SAME) that exploits a procedure for merging decision trees, a post-hoc explanation strategy, and a combination of them to turn any tree-based classifier into a single and interpretable decision tree. Given a certain tree-based classifier, the idea of SAME is to reduce any approximation problem with another one for which a solution is known in a sort of “cascade of approximations” with several available alternatives. This allows SAME to turn Random Forests, Oblique Trees and Oblique Forests into a single decision tree. The implementation of SAME required adapting existing procedures for merging traditional decision trees to oblique trees by moving from an intensional approach to an extensional one for efficiency reasons. An experimentation on eight tabular datasets with different size and dimensionality compares SAME against a baseline approach (PHDT)  that directly approximates any classifier with a decision tree. We show that SAME is efficient and that the retrieved single decision tree is at least as accurate as the original non interpretable tree-based model.
+              For these two last results and from GLocalX it is clear the importance of relying on sound decision tree models. A weak point of traditional decision trees is that they are not very stable and a common procedure to stabilize them is to merge various trees into an unique tree. In a certain sense, this is a form of explanation of a set of decision trees with a single model. Several proposals are present in the literature for traditional decision trees but there is a lack of merging operations for oblique trees and forests of oblique trees. Thus, in [<a href="#BGM2021">BGM2021</a>] we combine XAI and the merging of decision trees. Given any accurate and complex tree-based classifier, our aim is to approximate it with a single interpretable decision tree that guarantees comparable levels of accuracy and a low complexity that permits us to understand the logic it follows for the classification. We propose a Single-tree Approximation MEthod (SAME) that exploits a procedure for merging decision trees, a post-hoc explanation strategy, and a combination of them to turn any tree-based classifier into a single and interpretable decision tree. Given a certain tree-based classifier, the idea of SAME is to reduce any approximation problem with another one for which a solution is known in a sort of “cascade of approximations” with several available alternatives. This allows SAME to turn Random Forests, Oblique Trees and Oblique Forests into a single decision tree. The implementation of SAME required adapting existing procedures for merging traditional decision trees to oblique trees by moving from an intensional approach to an extensional one for efficiency reasons. An experimentation on eight tabular datasets with different size and dimensionality compares SAME against a baseline approach (PHDT)  that directly approximates any classifier with a decision tree. We show that SAME is efficient and that the retrieved single decision tree is at least as accurate as the original non interpretable tree-based model.
               
             </div>
           </div>
@@ -149,9 +149,9 @@
         </div>
         <div class="container mb-6">
           <div class="row">
-            <div class="row mt-5 justify-content-center" id="GMR2018">
+            <div class="row mt-5 justify-content-center">
               <div class="col-lg-1 text-right">
-                <h4>1.</h4><small>[GMR2018]</small>
+                <h4 class="anchor" id="GMR2018">1.</h4><small>[GMR2018]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-zero"></div><strong>A Survey of Methods for Explaining Black Box Models</strong><br><em>Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco, Giannotti Fosca, Pedreschi Dino</em> (2022) - ACM Computing Surveys. In ACM computing surveys (CSUR), 51(5), 1-42.
@@ -168,9 +168,41 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1145/3236009" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪3</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="SGM2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>3.</h4><small>[SGM2021]</small>
+                <h4 class="anchor" id="GMG2019">2.</h4><small>[GMG2019]</small>
+              </div>
+              <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/03_factual_and_counterfactual.jpg " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-one" type="button">
+                <div class="modal fade" id="modal-one" tabindex="-1" role="dialog" aria-labelledby="#modal-one-Title" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="small">Factual and Counterfactual Explanations for Black Box Decision Making</p>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body"><img src="assets/images/publications/03_factual_and_counterfactual.jpg " alt="immagine"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-yellow p-3">
+                <div class="accordion" id="accordion-one"></div><strong>Factual and Counterfactual Explanations for Black Box Decision Making</strong><br><em>Guidotti Riccardo, Monreale Anna, Giannotti Fosca, Pedreschi Dino, Ruggieri Salvatore, Turini Franco</em> (2021) - IEEE Intelligent Systems. In IEEE Intelligent Systems
+                <div class="collapse" id="collapse-one" aria-labelledby="heading-one" data-parent="#accordion-one">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">The rise of sophisticated machine learning models has brought accurate but obscure decision systems, which hide their logic, thus undermining transparency, trust, and the adoption of artificial intelligence (AI) in socially sensitive and safety-critical contexts. We introduce a local rule-based explanation method, providing faithful explanations of the decision made by a black box classifier on a specific instance. The proposed method first learns an interpretable, local classifier on a synthetic neighborhood of the instance under investigation, generated by a genetic algorithm. Then, it derives from the interpretable classifier an explanation consisting of a decision rule, explaining the factual reasons of the decision, and a set of counterfactuals, suggesting the changes in the instance features that would lead to a different outcome. Experimental results show that the proposed method outperforms existing approaches in terms of the quality of the explanations and of the accuracy in mimicking the black box.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-one" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1109/mis.2019.2957223" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="SGM2021">3.</h4><small>[SGM2021]</small>
               </div>
               <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/02_glocalX.jpg " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-two" type="button">
                 <div class="modal fade" id="modal-two" tabindex="-1" role="dialog" aria-labelledby="#modal-two-Title" aria-hidden="true">
@@ -200,9 +232,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1016/j.artint.2021.103457" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMR2018a"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>4.</h4><small>[GMR2018a]</small>
+                <h4 class="anchor" id="GMR2018a">4.</h4><small>[GMR2018a]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-three"></div><strong>Local Rule-Based Explanations of Black Box Decision Systems</strong><br><em>Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore , Pedreschi Dino, Turini Franco , Giannotti Fosca</em> (2018) - Arxive preprint
@@ -219,9 +251,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://arxiv.org/abs/1805.10820" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="G2022"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>5.</h4><small>[G2022]</small>
+                <h4 class="anchor" id="G2022">5.</h4><small>[G2022]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-four"></div><strong>Counterfactual explanations and how to find them: literature review and benchmarking</strong><br><em>Riccardo Guidotti</em> (2022) - Data Mining and Knowledge Discovery. In Data Mining and Knowledge Discovery
@@ -238,9 +270,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://doi.org/10.1007/s10618-022-00831-6" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="MG2022"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>6.</h4><small>[MG2022]</small>
+                <h4 class="anchor" id="MG2022">6.</h4><small>[MG2022]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-five"></div><strong>Investigating Debiasing Effects on Classification and Explainability</strong><br><em>Marta Marchiori Manerba, Guidotti Riccardo</em> (2022) - Conference on AI, Ethics, and Society (AIES 2022). In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (AIES'22)
@@ -256,9 +288,27 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-five" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪5</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="SMM2022"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>10.</h4><small>[SMM2022]</small>
+                <h4 class="anchor" id="PBF2022">8.</h4><small>[PBF2022]</small>
+              </div>
+              <div class="col-lg-8 bg-yellow p-3">
+                <div class="accordion" id="accordion-seven"></div><strong>Co-design of human-centered, explainable AI for clinical decision support</strong><br><em>Panigutti Cecilia, Beretta Andrea, Fadda Daniele , Giannotti Fosca, Pedreschi Dino, Perotti Alan, Rinzivillo Salvatore</em> (2022). In ACM Transactions on Interactive Intelligent Systems
+                <div class="collapse" id="collapse-seven" aria-labelledby="heading-seven" data-parent="#accordion-seven">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models, and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique, and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback, with a two-fold outcome: first, we obtain evidence that explanations increase users' trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so that we can re-design a better, more human-centered explanation interface.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-seven" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪3▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="SMM2022">10.</h4><small>[SMM2022]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-nine"></div><strong>TriplEx: Triple Extraction for Explanation</strong><br><em>Setzu Mattia, Monreale Anna, Minervini Pasquale</em> (2022) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021
@@ -272,11 +322,11 @@
               </div>
               <div class="col-lg-2 pl-3">
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="10.1109/CogMI52975.2021.00015" target="_blank">External Link</a></p>
-                <p class="my-1"><small>Research Line <strong>1</strong></small></p>
+                <p class="my-1"><small>Research Line <strong>1▪2</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="MG2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>14.</h4><small>[MG2021]</small>
+                <h4 class="anchor" id="MG2021">14.</h4><small>[MG2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirteen"></div><strong>FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems</strong><br><em>Marchiori Manerba Marta, Guidotti Riccardo</em> (2021) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021. In 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)
@@ -293,9 +343,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://ieeexplore.ieee.org/document/9750356" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪5</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="BGG2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>15.</h4><small>[BGG2021]</small>
+                <h4 class="anchor" id="BGG2021">15.</h4><small>[BGG2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-fourteen"></div><strong>Benchmarking and survey of explanation methods for black box models</strong><br><em>Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore</em> (2021)
@@ -312,9 +362,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://arxiv.org/abs/2102.13076" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMP2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>16.</h4><small>[GMP2021]</small>
+                <h4 class="anchor" id="GMP2021">16.</h4><small>[GMP2021]</small>
               </div>
               <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/springer_book_explain.jpg " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-fifteen" type="button">
                 <div class="modal fade" id="modal-fifteen" tabindex="-1" role="dialog" aria-labelledby="#modal-fifteen-Title" aria-hidden="true">
@@ -344,9 +394,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://doi.org/10.1007/978-3-030-76409-8" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪5</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GD2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>17.</h4><small>[GD2021]</small>
+                <h4 class="anchor" id="GD2021">17.</h4><small>[GD2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-sixteen"></div><strong>Matrix Profile-Based Interpretable Time Series Classifier</strong><br><em>Guidotti Riccardo, D’Onofrio Matteo</em> (2021) - Frontiers in Artificial Intelligence
@@ -363,9 +413,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.3389/frai.2021.699448" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GM2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>19.</h4><small>[GM2021]</small>
+                <h4 class="anchor" id="GM2021">19.</h4><small>[GM2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-eighteen"></div><strong>Designing Shapelets for Interpretable Data-Agnostic Classification</strong><br><em>Guidotti Riccardo, Monreale Anna</em> (2021) - Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society
@@ -382,9 +432,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://doi.org/10.1145/3461702.3462553" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="MGY2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>20.</h4><small>[MGY2021]</small>
+                <h4 class="anchor" id="MGY2021">20.</h4><small>[MGY2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-nineteen"></div><strong>Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling</strong><br><em>Metta Carlo, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore</em> (2021) - 2021 IEEE Symposium on Computers and Communications (ISCC). In 2021 IEEE Symposium on Computers and Communications (ISCC)
@@ -401,9 +451,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1109/iscc53001.2021.9631485" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GR2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>21.</h4><small>[GR2021]</small>
+                <h4 class="anchor" id="GR2021">21.</h4><small>[GR2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-twenty"></div><strong>Ensemble of Counterfactual Explainers</strong><br><em>Guidotti Riccardo, Ruggieri Salvatore</em> (2021)
@@ -420,9 +470,28 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://pages.di.unipi.it/ruggieri/Papers/ds2021.pdf" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="BGM2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>23.</h4><small>[BGM2021]</small>
+                <h4 class="anchor" id="MBG2021">22.</h4><small>[MBG2021]</small>
+              </div>
+              <div class="col-lg-8 bg-yellow p-3">
+                <div class="accordion" id="accordion-twenty-one"></div><strong>Explainable Deep Image Classifiers for Skin Lesion Diagnosis</strong><br><em>Metta Carlo, Beretta Andrea, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore, Giannotti Fosca</em> (2021) - Arxive preprint. In International Journal of Data Science and Analytics
+                <div class="collapse" id="collapse-twenty-one" aria-labelledby="heading-twenty-one" data-parent="#accordion-twenty-one">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we analyze a case study on skin lesion images where we customize an existing XAI approach for explaining a deep learning model able to recognize different types of skin lesions. The explanation is formed by synthetic exemplar and counter-exemplar images of skin lesion and offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A survey conducted with domain experts, beginners and unskilled people proof that the usage of explanations increases the trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon could derive from the intrinsic characteristics of each class and, hopefully, can provide support in the resolution of the most frequent misclassifications by human experts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-twenty-one" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://arxiv.org/abs/2111.11863" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪3▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="BGM2021">23.</h4><small>[BGM2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-twenty-two"></div><strong>Deriving a Single Interpretable Model by Merging Tree-Based Classifiers</strong><br><em>Bonsignori Valerio, Guidotti Riccardo, Monreale Anna</em> (2021) - Discovery Science
@@ -439,9 +508,41 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-88942-5_27" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪2</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="SGM2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>29.</h4><small>[SGM2019]</small>
+                <h4 class="anchor" id="PPB2021">26.</h4><small>[PPB2021]</small>
+              </div>
+              <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/FairLens.png " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-twenty-five" type="button">
+                <div class="modal fade" id="modal-twenty-five" tabindex="-1" role="dialog" aria-labelledby="#modal-twenty-five-Title" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="small">FairLens: Auditing black-box clinical decision support systems</p>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body"><img src="assets/images/publications/FairLens.png " alt="immagine"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-yellow p-3">
+                <div class="accordion" id="accordion-twenty-five"></div><strong>FairLens: Auditing black-box clinical decision support systems</strong><br><em>Panigutti Cecilia, Perotti Alan, Panisson André, Bajardi Paolo, Pedreschi Dino</em> (2021) - Information Processing & Management. In Journal of Information Processing and Management
+                <div class="collapse" id="collapse-twenty-five" aria-labelledby="heading-twenty-five" data-parent="#accordion-twenty-five">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">Highlights: We present a pipeline to detect and explain potential fairness issues in Clinical DSS. We study and compare different multi-label classification disparity measures. We explore ICD9 bias in MIMIC-IV, an openly available ICU benchmark dataset</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-twenty-five" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1016/j.ipm.2021.102657" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="SGM2019">29.</h4><small>[SGM2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-twenty-eight"></div><strong>Global Explanations with Local Scoring</strong><br><em>Setzu Mattia, Guidotti Riccardo, Monreale Anna, Turini Franco</em> (2021) - Machine Learning and Knowledge Discovery in Databases. In ECML PKDD 2019: Machine Learning and Knowledge Discovery in Databases
@@ -458,9 +559,28 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-43823-4_14" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMM2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>31.</h4><small>[GMM2019]</small>
+                <h4 class="anchor" id="GMM2020">30.</h4><small>[GMM2020]</small>
+              </div>
+              <div class="col-lg-8 bg-yellow p-3">
+                <div class="accordion" id="accordion-twenty-nine"></div><strong>Explaining Image Classifiers Generating Exemplars and Counter-Exemplars from Latent Representations</strong><br><em>Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino</em> (2021) - Proceedings of the AAAI Conference on Artificial Intelligence
+                <div class="collapse" id="collapse-twenty-nine" aria-labelledby="heading-twenty-nine" data-parent="#accordion-twenty-nine">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">We present an approach to explain the decisions of black box image classifiers through synthetic exemplar and counter-exemplar learnt in the latent feature space. Our explanation method exploits the latent representations learned through an adversarial autoencoder for generating a synthetic neighborhood of the image for which an explanation is required. A decision tree is trained on a set of images represented in the latent space, and its decision rules are used to generate exemplar images showing how the original image can be modified to stay within its class. Counterfactual rules are used to generate counter-exemplars showing how the original image can “morph” into another class. The explanation also comprehends a saliency map highlighting the areas that contribute to its classification, and areas that push it into another class. A wide and deep experimental evaluation proves that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability, besides providing the most useful and interpretable explanations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-twenty-nine" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1609/aaai.v34i09.7116" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="GMM2019">31.</h4><small>[GMM2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty"></div><strong>Black Box Explanation by Learning Image Exemplars in the Latent Feature Space</strong><br><em>Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino</em> (2021) - Machine Learning and Knowledge Discovery in Databases. In Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.
@@ -477,9 +597,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-46150-8_12" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="PGG2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>32.</h4><small>[PGG2019]</small>
+                <h4 class="anchor" id="PGG2019">32.</h4><small>[PGG2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-one"></div><strong>Meaningful Explanations of Black Box AI Decision Systems</strong><br><em>Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco</em> (2021) - Proceedings of the AAAI Conference on Artificial Intelligence. In Proceedings of the AAAI Conference on Artificial Intelligence
@@ -496,9 +616,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1609/aaai.v33i01.33019780" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="G2021"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>33.</h4><small>[G2021]</small>
+                <h4 class="anchor" id="G2021">33.</h4><small>[G2021]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-two"></div><strong>Evaluating local explanation methods on ground truth</strong><br><em>Guidotti Riccardo</em> (2021) - Artificial Intelligence. In Artificial Intelligence, 103428
@@ -515,9 +635,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1016/j.artint.2020.103428" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="LGR2020"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>34.</h4><small>[LGR2020]</small>
+                <h4 class="anchor" id="LGR2020">34.</h4><small>[LGR2020]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-three"></div><strong>Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars</strong><br><em>Lampridis Orestis, Guidotti Riccardo, Ruggieri Salvatore</em> (2021) - Discovery Science. In In International Conference on Discovery Science (pp. 357-373). Springer, Cham.
@@ -534,9 +654,41 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-61527-7_24" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMC2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>36.</h4><small>[GMC2019]</small>
+                <h4 class="anchor" id="PGM2019">35.</h4><small>[PGM2019]</small>
+              </div>
+              <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-thirty-four" type="button">
+                <div class="modal fade" id="modal-thirty-four" tabindex="-1" role="dialog" aria-labelledby="#modal-thirty-four-Title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="small">Explaining Multi-label Black-Box Classifiers for Health Applications</p>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body"><img src="assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png " alt="immagine"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-yellow p-3">
+                <div class="accordion" id="accordion-thirty-four"></div><strong>Explaining Multi-label Black-Box Classifiers for Health Applications</strong><br><em>Panigutti Cecilia, Guidotti Riccardo, Monreale Anna, Pedreschi Dino</em> (2021) - Precision Health and Medicine. In International Workshop on Health Intelligence (pp. 97-110). Springer, Cham.
+                <div class="collapse" id="collapse-thirty-four" aria-labelledby="heading-thirty-four" data-parent="#accordion-thirty-four">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">Today the state-of-the-art performance in classification is achieved by the so-called “black boxes”, i.e. decision-making systems whose internal logic is obscure. Such models could revolutionize the health-care system, however their deployment in real-world diagnosis decision support systems is subject to several risks and limitations due to the lack of transparency. The typical classification problem in health-care requires a multi-label approach since the possible labels are not mutually exclusive, e.g. diagnoses. We propose MARLENA, a model-agnostic method which explains multi-label black box decisions. MARLENA explains an individual decision in three steps. First, it generates a synthetic neighborhood around the instance to be explained using a strategy suitable for multi-label decisions. It then learns a decision tree on such neighborhood and finally derives from it a decision rule that explains the black box decision. Our experiments show that MARLENA performs well in terms of mimicking the black box behavior while gaining at the same time a notable amount of interpretability through compact decision rules, i.e. rules with limited length.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-thirty-four" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-24409-5_9" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="GMC2019">36.</h4><small>[GMC2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-five"></div><strong>Investigating Neighborhood Generation Methods for Explanations of Obscure Image Classifiers</strong><br><em>Guidotti Riccardo, Monreale Anna, Cariaggi Leonardo</em> (2021) - Advances in Knowledge Discovery and Data Mining. In In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 55-68). Springer, Cham.
@@ -553,9 +705,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1007/978-3-030-16148-4_5" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMS2020"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>37.</h4><small>[GMS2020]</small>
+                <h4 class="anchor" id="GMS2020">37.</h4><small>[GMS2020]</small>
               </div>
               <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/ex_time_series_calssifier.png " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-thirty-six" type="button">
                 <div class="modal fade" id="modal-thirty-six" tabindex="-1" role="dialog" aria-labelledby="#modal-thirty-six-Title" aria-hidden="true">
@@ -585,9 +737,41 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1109/cogmi50398.2020.00029" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="RGG2020"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>39.</h4><small>[RGG2020]</small>
+                <h4 class="anchor" id="PPP2020">38.</h4><small>[PPP2020]</small>
+              </div>
+              <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/Doctor XAI.jpg " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-thirty-seven" type="button">
+                <div class="modal fade" id="modal-thirty-seven" tabindex="-1" role="dialog" aria-labelledby="#modal-thirty-seven-Title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="small">Doctor XAI: an ontology-based approach to black-box sequential data classification explanations</p>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body"><img src="assets/images/publications/Doctor XAI.jpg " alt="immagine"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-yellow p-3">
+                <div class="accordion" id="accordion-thirty-seven"></div><strong>Doctor XAI: an ontology-based approach to black-box sequential data classification explanations</strong><br><em>Panigutti Cecilia, Perotti Alan, Pedreschi Dino</em> (2020) - FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. In FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency
+                <div class="collapse" id="collapse-thirty-seven" aria-labelledby="heading-thirty-seven" data-parent="#accordion-thirty-seven">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">Several recent advancements in Machine Learning involve blackbox models: algorithms that do not provide human-understandable explanations in support of their decisions. This limitation hampers the fairness, accountability and transparency of these models; the field of eXplainable Artificial Intelligence (XAI) tries to solve this problem providing human-understandable explanations for black-box models. However, healthcare datasets (and the related learning tasks) often present peculiar features, such as sequential data, multi-label predictions, and links to structured background knowledge. In this paper, we introduce Doctor XAI, a model-agnostic explainability technique able to deal with multi-labeled, sequential, ontology-linked data. We focus on explaining Doctor AI, a multilabel classifier which takes as input the clinical history of a patient in order to predict the next visit. Furthermore, we show how exploiting the temporal dimension in the data and the domain knowledge encoded in the medical ontology improves the quality of the mined explanations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-thirty-seven" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://dl.acm.org/doi/10.1145/3351095.3372855" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="RGG2020">39.</h4><small>[RGG2020]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-eight"></div><strong>Opening the black box: a primer for anti-discrimination</strong><br><em>Ruggieri Salvatore, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Turini Franco</em> (2020). In ANNUARIO DI DIRITTO COMPARATO E DI STUDI LEGISLATIVI
@@ -604,9 +788,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://hdl.handle.net/11568/1088440" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GM2020"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>40.</h4><small>[GM2020]</small>
+                <h4 class="anchor" id="GM2020">40.</h4><small>[GM2020]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-thirty-nine"></div><strong>Data-Agnostic Local Neighborhood Generation</strong><br><em>Guidotti Riccardo, Monreale Anna</em> (2020) - 2020 IEEE International Conference on Data Mining (ICDM). In 2020 IEEE International Conference on Data Mining (ICDM)
@@ -623,9 +807,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://ieeexplore.ieee.org/document/9338395" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="BPP2020"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>41.</h4><small>[BPP2020]</small>
+                <h4 class="anchor" id="BPP2020">41.</h4><small>[BPP2020]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-forty"></div><strong>Explainability Methods for Natural Language Processing: Applications to Sentiment Analysis</strong><br><em>Bodria Francesco, Panisson André , Perotti Alan, Piaggesi Simone </em> (2020) - Discussion Paper
@@ -641,9 +825,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://ceur-ws.org/Vol-2646/18-paper.pdf" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMP2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>44.</h4><small>[GMP2019]</small>
+                <h4 class="anchor" id="GMP2019">44.</h4><small>[GMP2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-forty-three"></div><strong>The AI black box explanation problem</strong><br><em>Guidotti Riccardo, Monreale Anna, Pedreschi Dino</em> (2019) - ERCIM News, 116, 12-13. In ERCIM News, 116, 12-13
@@ -659,9 +843,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://ercim-news.ercim.eu/images/stories/EN116/EN116-web.pdf#page=12" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪2▪3</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="PGG2018"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>45.</h4><small>[PGG2018]</small>
+                <h4 class="anchor" id="PGG2018">45.</h4><small>[PGG2018]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-forty-four"></div><strong>Open the Black Box Data-Driven Explanation of Black Box Decision Systems</strong><br><em>Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna , Pappalardo Luca , Ruggieri Salvatore , Turini Franco </em> (2018) - Arxive preprint

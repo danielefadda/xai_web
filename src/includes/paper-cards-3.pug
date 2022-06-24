@@ -23,11 +23,22 @@
     .col-lg-1.text-right
         h4#BRF2022.anchor 7.
         small [BRF2022]
-    .col-lg-8.bg-yellow.p-3
+    .col-lg-2.pl-0
+        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-six' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-six.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-six-Title' aria-hidden='true')
+            .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small Explaining Black Box with visual exploration of Latent Space
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" )
+    .col-lg-6.bg-yellow.p-3
         #accordion-six.accordion
         | #[strong Explaining Black Box with visual exploration of Latent Space]
         br
-        | #[em Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino] (2022) - EUROVIS 2022
+        | #[em Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino] (2022) - EUROVIS 2022. In Proceedings of the 2022 Conference Eurovis 2022
         #collapse-six.collapse(aria-labelledby='heading-six' data-parent='#accordion-six')
             div.bg-yellow
                 hr
@@ -36,7 +47,8 @@
     .col-lg-2.pl-3
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-six' aria-expanded='true' aria-controls='collapseAbs') More information
-        
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://diglib.eg.org/handle/10.2312/evs20221098', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 3]
     .row.mt-5.justify-content-center
@@ -78,6 +90,38 @@
                 a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2111.11863', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3▪4]
+    .row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4#PPP2020.anchor 38.
+        small [PPP2020]
+    .col-lg-2.pl-0
+        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-seven' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-thirty-seven.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-seven-Title' aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        p.small Doctor XAI: an ontology-based approach to black-box sequential data classification explanations
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" )
+    .col-lg-6.bg-yellow.p-3
+        #accordion-thirty-seven.accordion
+        | #[strong Doctor XAI: an ontology-based approach to black-box sequential data classification explanations]
+        br
+        | #[em Panigutti Cecilia, Perotti Alan, Pedreschi Dino] (2020) - FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. In FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency
+        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Several recent advancements in Machine Learning involve blackbox models: algorithms that do not provide human-understandable explanations in support of their decisions. This limitation hampers the fairness, accountability and transparency of these models; the field of eXplainable Artificial Intelligence (XAI) tries to solve this problem providing human-understandable explanations for black-box models. However, healthcare datasets (and the related learning tasks) often present peculiar features, such as sequential data, multi-label predictions, and links to structured background knowledge. In this paper, we introduce Doctor XAI, a model-agnostic explainability technique able to deal with multi-labeled, sequential, ontology-linked data. We focus on explaining Doctor AI, a multilabel classifier which takes as input the clinical history of a patient in order to predict the next visit. Furthermore, we show how exploiting the temporal dimension in the data and the domain knowledge encoded in the medical ontology improves the quality of the mined explanations.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://dl.acm.org/doi/10.1145/3351095.3372855', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪3▪4]
     .row.mt-5.justify-content-center

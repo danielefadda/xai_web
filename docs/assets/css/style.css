@@ -1997,3 +1997,8 @@ body.has-no-comments .comment-respond {
   right: 30px;
   font-size: 0.875rem;
 }
+
+html {
+  scroll-padding-top: 150px;
+  /* height of sticky header */
+}

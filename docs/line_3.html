@@ -101,14 +101,15 @@
               <h5 class="mt-6">XAI-Library</h5>The library has the objective of integrating in a coherent platform explanation algorithms developed within the XAI project or published in the literature. The main architecture of the library distinguishes three data types: tabular data; images data; text data.
               To have a uniform interface for a blackbox to be explained a dedicated wrapper has been designed that will expose all the functionalities required for classify instances from the model. The objective is to define a high-level grammar to setup an explanable analytical pipeline. By design, the library does not make any assumption on the models to be explained, but it relies on a set of interfaces designed around the most diffuse ML libraries (i.e. SciKit Learn, Keras, Tensorflow, Pytorch). For instance, a predict method is shared among the subclasses of the wrapper to adapt to models coming from any of these libraries. The wrapper is also responsible to apply data transformation to the instances to be classified to have a uniform data layer for all the methods.
               Different explanation methods generate different explanation formats. Thus, we defined a software interface to encapsulate the different explanation formats, by focusing on a classification of capabilities for each explanation. The functionalities we identified are: feature importance, exemplars, counterexemplars, rules, counterfactual rules. An explanation method can provide one or more of these capabilities, by implementing the corresponding method. The design of the library promotes the extension of the repertoire of methodologies with new ones. The interface allows to integrate existing methods and existing implementation (i.e. external explanation methods) easily, providing only the wrapper implementation.
-              At the time of writing the library has been extended with methods proposed by our research team (LORE [GMG2019], ABELE [GMM2019], LASTS [GMS2020]) and taken from the literature (LIME [1], SHAP [11], IntGrad [16], GradCam [17], NAM [18], RISE [18]).
+              At the time of writing the library has been extended with methods proposed by our research team (LORE [<a href="resources.html#GMG2019">GMG2019</a>], ABELE [<a href="resources.html#GMM2019">GMM2019</a>], LASTS [<a href="resources.html#GMS2020">GMS2020</a>]) and taken from the literature (LIME, SHAP, IntGrad, GradCam, NAM, RISE).
               The library has been exploited to power a few real-world case studies (detailed in the next section). These analytical cases gave us the possibility to prove the validity of the analytical pipeline of the library and to design suitable visual interfaces to deliver the outcome of the explanation to the final user. At the time of writing, the library has been used to create three interfaces for explanation methods in the healthcare domain.
               <div class="pb-md-2 mt-4"><a class="btn btn-outline-black" href="https://pypi.org/project/XAI-Library/" target="_blank">LINK TO THE REPOSITORY</a></div>
-              <h5 class="mt-6">The Cardiac Risk evaluator</h5>The Cardiac Risk evaluator [] is a model developed by University of Coimbra for evaluating the probability of death for cardiac reasons in patients admitted to the Emergency Room. We developed a visual interface (to be submitted) to provide local explanations for each classified case. The explanation application exploits the LORE method of the library to provide a set of rules and counterfactual rules to give to the practitioner an explanation of the outcome of the model. A web-based visual interface provides the doctor with an interactive module where the specialist may probe the classification model by means of “what-if” queries and explanations. Besides the explanation capabilities, in collaboration with University of Coimbra, the interface introduces a verification-based approach based on model-testing to compute and visualize the confidence for the prediction, so that the user can better ponder the decision of the algorithm. This verification addresses two aspects: (i) a model-checker exploration of the neighborhood of the instance to discover opposite cases; (ii) a theorem prover to check the compliance of the proposed counter rules with a set of prior knowledge constraints of the case. The interface introduces a novel visual-based widget to explore cases related to the instance to be classified as suggested by the rule and counter-rule. A progressive exploration of the space of possibilities is enabled by a visual timeline that summarizes the path of exploration of the doctor, highlighting the progress of the related cases.
+              <h5 class="mt-6">The Cardiac Risk evaluator</h5>The Cardiac Risk evaluator is a model developed by University of Coimbra for evaluating the probability of death for cardiac reasons in patients admitted to the Emergency Room. We developed a visual interface (to be submitted) to provide local explanations for each classified case. The explanation application exploits the LORE method of the library to provide a set of rules and counterfactual rules to give to the practitioner an explanation of the outcome of the model. A web-based visual interface provides the doctor with an interactive module where the specialist may probe the classification model by means of “what-if” queries and explanations. Besides the explanation capabilities, in collaboration with University of Coimbra, the interface introduces a verification-based approach based on model-testing to compute and visualize the confidence for the prediction, so that the user can better ponder the decision of the algorithm. This verification addresses two aspects: (i) a model-checker exploration of the neighborhood of the instance to discover opposite cases; (ii) a theorem prover to check the compliance of the proposed counter rules with a set of prior knowledge constraints of the case. The interface introduces a novel visual-based widget to explore cases related to the instance to be classified as suggested by the rule and counter-rule. A progressive exploration of the space of possibilities is enabled by a visual timeline that summarizes the path of exploration of the doctor, highlighting the progress of the related cases.
               <div class="pb-md-2 mt-4"><a class="btn btn-outline-black" href="https://kdd.isti.cnr.it/cre_vue" target="_blank">LINK TO THE PLATFORM</a></div>
-              <h5 class="mt-6">Doctor XAI</h5>Doctor XAI [PPP2020] provides an explanation for the prediction of the next most probable diagnoses for a patient, given his/her recent clinical history. We developed a visual interface that exploits the progressive disclosure of information related to a local instance to be classified and explained. The explanation method relies on LORE and brigns evidence to the practitioners about relevant diagnoses and their temporal evolution. The complexity of this information is presented and modulated through a progressive disclosure mechanism, where not all the information is shown at once, but it is sequenced, with advanced features shown only in secondary views and only at the request of the user. This approach allows also to create separate interfaces with different levels of concepts, for example stopping at the first stages for the patient and giving the possibility to explore further for the medical specialist. Not all users need the same amount of information, and providing all information at once may be overwhelming.
-              In  [MGY2021] we built a dedicated interface for an explainer, based on ABELE [GMM2019], for a black-box to classify instances of skin lesions images. The interface is developed to help physicians in the diagnosis of skin cancer. Following the principles of using multiple explanation methods, after classifying an instance, users are presented with two different explanation methods. A counterexample that shows an image classified differently, and a set of prototype images with the same classification.
+              <h5 class="mt-6">Doctor XAI</h5>Doctor XAI [<a href="#PPP2020">PPP2020</a>] provides an explanation for the prediction of the next most probable diagnoses for a patient, given his/her recent clinical history. We developed a visual interface that exploits the progressive disclosure of information related to a local instance to be classified and explained. The explanation method relies on LORE and brigns evidence to the practitioners about relevant diagnoses and their temporal evolution. The complexity of this information is presented and modulated through a progressive disclosure mechanism, where not all the information is shown at once, but it is sequenced, with advanced features shown only in secondary views and only at the request of the user. This approach allows also to create separate interfaces with different levels of concepts, for example stopping at the first stages for the patient and giving the possibility to explore further for the medical specialist. Not all users need the same amount of information, and providing all information at once may be overwhelming.
               <div class="pb-md-2 mt-4"><a class="btn btn-outline-black" href="https://kdd.isti.cnr.it/DrXAI-viz" target="_blank">LINK TO THE PLATFORM</a></div>
+              <h5 class="mt-6">ISIC Explanation with ABELE</h5>In  [<a href="#MGY2021">MGY2021</a>] we built a dedicated interface for an explainer, based on ABELE [<a href="#GMM2019">GMM2019</a>], for a black-box to classify instances of skin lesions images. The interface is developed to help physicians in the diagnosis of skin cancer. Following the principles of using multiple explanation methods, after classifying an instance, users are presented with two different explanation methods. A counterexample that shows an image classified differently, and a set of exemplar images with the same classification.
+              <div class="pb-md-2 mt-4"><a class="btn btn-outline-black" href="https://kdd.isti.cnr.it/isic_viz" target="_blank">LINK TO THE PLATFORM</a></div>
             </div>
           </div>
         </div>
@@ -137,9 +138,9 @@
         </div>
         <div class="container mb-6">
           <div class="row">
-            <div class="row mt-5 justify-content-center" id="GMR2018">
+            <div class="row mt-5 justify-content-center">
               <div class="col-lg-1 text-right">
-                <h4>1.</h4><small>[GMR2018]</small>
+                <h4 class="anchor" id="GMR2018">1.</h4><small>[GMR2018]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-zero"></div><strong>A Survey of Methods for Explaining Black Box Models</strong><br><em>Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco, Giannotti Fosca, Pedreschi Dino</em> (2022) - ACM Computing Surveys. In ACM computing surveys (CSUR), 51(5), 1-42.
@@ -156,9 +157,9 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="http://dx.doi.org/10.1145/3236009" target="_blank">External Link</a></p>
                 <p class="my-1"><small>Research Line <strong>1▪3</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="BRF2022"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>7.</h4><small>[BRF2022]</small>
+                <h4 class="anchor" id="BRF2022">7.</h4><small>[BRF2022]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-six"></div><strong>Explaining Black Box with visual exploration of Latent Space</strong><br><em>Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino</em> (2022) - EUROVIS 2022
@@ -174,9 +175,78 @@
                 <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-six" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
                 <p class="my-1"><small>Research Line <strong>3</strong></small></p>
               </div>
-              <div class="row mt-5 justify-content-center" id="GMP2019"></div>
+              <div class="row mt-5 justify-content-center"></div>
               <div class="col-lg-1 text-right">
-                <h4>44.</h4><small>[GMP2019]</small>
+                <h4 class="anchor" id="PBF2022">8.</h4><small>[PBF2022]</small>
+              </div>
+              <div class="col-lg-8 bg-yellow p-3">
+                <div class="accordion" id="accordion-seven"></div><strong>Co-design of human-centered, explainable AI for clinical decision support</strong><br><em>Panigutti Cecilia, Beretta Andrea, Fadda Daniele , Giannotti Fosca, Pedreschi Dino, Perotti Alan, Rinzivillo Salvatore</em> (2022). In ACM Transactions on Interactive Intelligent Systems
+                <div class="collapse" id="collapse-seven" aria-labelledby="heading-seven" data-parent="#accordion-seven">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models, and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique, and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback, with a two-fold outcome: first, we obtain evidence that explanations increase users' trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so that we can re-design a better, more human-centered explanation interface.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-seven" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪3▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="MBG2021">22.</h4><small>[MBG2021]</small>
+              </div>
+              <div class="col-lg-8 bg-yellow p-3">
+                <div class="accordion" id="accordion-twenty-one"></div><strong>Explainable Deep Image Classifiers for Skin Lesion Diagnosis</strong><br><em>Metta Carlo, Beretta Andrea, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore, Giannotti Fosca</em> (2021) - Arxive preprint. In International Journal of Data Science and Analytics
+                <div class="collapse" id="collapse-twenty-one" aria-labelledby="heading-twenty-one" data-parent="#accordion-twenty-one">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we analyze a case study on skin lesion images where we customize an existing XAI approach for explaining a deep learning model able to recognize different types of skin lesions. The explanation is formed by synthetic exemplar and counter-exemplar images of skin lesion and offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A survey conducted with domain experts, beginners and unskilled people proof that the usage of explanations increases the trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon could derive from the intrinsic characteristics of each class and, hopefully, can provide support in the resolution of the most frequent misclassifications by human experts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-twenty-one" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://arxiv.org/abs/2111.11863" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪3▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="PPP2020">38.</h4><small>[PPP2020]</small>
+              </div>
+              <div class="col-lg-2 pl-0"><img class="mr-3 border border-secondary bwc-image" src="assets/images/publications/Doctor XAI.jpg " alt="immagine" style="width:100%;" data-toggle="modal" data-target="#modal-thirty-seven" type="button">
+                <div class="modal fade" id="modal-thirty-seven" tabindex="-1" role="dialog" aria-labelledby="#modal-thirty-seven-Title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="small">Doctor XAI: an ontology-based approach to black-box sequential data classification explanations</p>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body"><img src="assets/images/publications/Doctor XAI.jpg " alt="immagine"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-yellow p-3">
+                <div class="accordion" id="accordion-thirty-seven"></div><strong>Doctor XAI: an ontology-based approach to black-box sequential data classification explanations</strong><br><em>Panigutti Cecilia, Perotti Alan, Pedreschi Dino</em> (2020) - FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. In FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency
+                <div class="collapse" id="collapse-thirty-seven" aria-labelledby="heading-thirty-seven" data-parent="#accordion-thirty-seven">
+                  <div class="bg-yellow">
+                    <hr>
+                    <p class="small"><strong>Abstract</strong></p>
+                    <p class="small">Several recent advancements in Machine Learning involve blackbox models: algorithms that do not provide human-understandable explanations in support of their decisions. This limitation hampers the fairness, accountability and transparency of these models; the field of eXplainable Artificial Intelligence (XAI) tries to solve this problem providing human-understandable explanations for black-box models. However, healthcare datasets (and the related learning tasks) often present peculiar features, such as sequential data, multi-label predictions, and links to structured background knowledge. In this paper, we introduce Doctor XAI, a model-agnostic explainability technique able to deal with multi-labeled, sequential, ontology-linked data. We focus on explaining Doctor AI, a multilabel classifier which takes as input the clinical history of a patient in order to predict the next visit. Furthermore, we show how exploiting the temporal dimension in the data and the domain knowledge encoded in the medical ontology improves the quality of the mined explanations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 pl-3">
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="#" data-toggle="collapse" data-target="#collapse-thirty-seven" aria-expanded="true" aria-controls="collapseAbs">More information</a></p>
+                <p class="my-1"><a class="btn-mini px-2 btn-secondary small" href="https://dl.acm.org/doi/10.1145/3351095.3372855" target="_blank">External Link</a></p>
+                <p class="my-1"><small>Research Line <strong>1▪3▪4</strong></small></p>
+              </div>
+              <div class="row mt-5 justify-content-center"></div>
+              <div class="col-lg-1 text-right">
+                <h4 class="anchor" id="GMP2019">44.</h4><small>[GMP2019]</small>
               </div>
               <div class="col-lg-8 bg-yellow p-3">
                 <div class="accordion" id="accordion-forty-three"></div><strong>The AI black box explanation problem</strong><br><em>Guidotti Riccardo, Monreale Anna, Pedreschi Dino</em> (2019) - ERCIM News, 116, 12-13. In ERCIM News, 116, 12-13

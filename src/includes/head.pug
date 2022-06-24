@@ -18,3 +18,17 @@ link(href="assets/css/fontawesome-all.min.css" rel="stylesheet")
 link(href="assets/css/magnific-popup.css" rel="stylesheet")
 // Google Fonts
 link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap")
+script(type='text/javascript').
+    // Matomo Code
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+    var u="//piwikdd.isti.cnr.it/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '12']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })
+    ();

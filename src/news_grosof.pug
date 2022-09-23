@@ -1,0 +1,44 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-6.font-weight-bold Towards Stronger Hybrid AI:
+                  br
+                  | Combining Extended Logic Programs with Natural Language and Machine Learning
+                  br
+                  h3 Speaker: Benjamin Grosof
+                +metaTop('News', 'Seminar', 'October 4, 2022','1.00 p.m. CET')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/Grosof.jpg' alt='B Grosof')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p.lead We are pleased to bring to your attention this Benjamin Grosof Seminar On Hybrid AI
+            h4 Abstract
+            p.lead A key challenge for AI overall is to improve neuro-symbolic AI and its super-class, hybrid AI. We discuss how and why to combine more tightly the core areas of knowledge representation & reasoning (KRR), including logic, natural language (NL), machine learning (ML), and several flavors of uncertainty. We formulate several goals for such hybrid AI, and focus on strengthening three aspects. One is expressiveness, including for complex knowledge in NL written by humans and in results produced by ML. A second aspect is scalability, including socially across a diverse set of people/organizations. A third aspect is explainability, including for non-programmers. We present our approach based on extended logic programs (ELP). The approach is largely implemented: as the ErgoAI system. The approach addresses the hybrid-AI goals to a substantial degree, but much more remains to be done. We discuss some related work, and sketch several promising future directions for the field.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            a(title="Towards Stronger Hybrid AI: Combining Extended Logic Programs with Natural Language and Machine Learning" href='https://www.google.com/url?q=https://teams.microsoft.com/l/meetup-join/19%253ameeting_MGZkNDlmNTgtZmQ4Yi00M2JmLThmMDEtNWRiMjI4ZjNjOWY3%2540thread.v2/0?context%3D%257b%2522Tid%2522%253a%25222b897507-ee8c-4575-830b-4f8267c3d307%2522%252c%2522Oid%2522%253a%252220acca1b-c0bb-40c6-8476-210f47b15899%2522%257d&sa=D&source=calendar&usd=2&usg=AOvVaw0OqYWEJFhQG6yKsyMB11Ko' target='_blank')
+              .bg-yellow.px-5.py-5
+                i.far.fa-2x.fa-file-video
+                h5.mb-3 Seminar available at this link using Teams platform
+
+          footer.entry-footer.mb-10
+            // Entry Meta Bottom
+            .entry-meta-bottom
+              ul.entry-tags
+                li.tags-icon
+                  i.fas.fa-tags
+                li
+                  a(href='#' rel='tag') Seminar

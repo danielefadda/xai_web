@@ -1,10 +1,31 @@
-#GMS2020.row.mt-5.justify-content-center
+#TSS2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 37.
+        h4 8.
+        small [TSS2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-seven.accordion
+        | #[strong Explainable AI for Time Series Classification: A Review, Taxonomy and Research Directions]
+        br
+        | #[em Andreas Theissler, Francesco Spinnato, Udo Schlegel, Riccardo Guidotti] (2022) - IEEE Access. In IEEE Access ( Volume: 10)
+        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Time series data is increasingly used in a wide range of fields, and it is often relied on in crucial applications and high-stakes decision-making. For instance, sensors generate time series data to recognize different types of anomalies through automatic decision-making systems. Typically, these systems are realized with machine learning models that achieve top-tier performance on time series classification tasks. Unfortunately, the logic behind their prediction is opaque and hard to understand from a human standpoint. Recently, we observed a consistent increase in the development of explanation methods for time series classification justifying the need to structure and review the field. In this work, we (a) present the first extensive literature review on Explainable AI (XAI) for time series classification, (b) categorize the research field through a taxonomy subdividing the methods into time points-based, subsequences-based and instance-based, and (c) identify open research directions regarding the type of explanations and the evaluation of explanations and interpretability.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1109%2Faccess.2022.3207765', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    #GMS2020.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 42.
         small [GMS2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-six' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty-six.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-six-Title' aria-hidden='true')
+        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-one' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-one.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-one-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -14,18 +35,18 @@
                     .modal-body
                         img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty-six.accordion
+        #accordion-forty-one.accordion
         | #[strong Explaining Any Time Series Classifier]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Spinnato Francesco, Pedreschi Dino, Giannotti Fosca] (2020) - 2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
+        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present a method to explain the decisions of black box models for time series classification. The explanation consists of factual and counterfactual shapelet-based rules revealing the reasons for the classification, and of a set of exemplars and counter-exemplars highlighting similarities and differences with the time series under analysis. The proposed method first generates exemplar and counter-exemplar time series in the latent feature space and learns a local latent decision tree classifier. Then, it selects and decodes those respecting the decision rules explaining the decision. Finally, it learns on them a shapelet-tree that reveals the parts of the time series that must, and must not, be contained for getting the returned outcome from the black box. A wide experimentation shows that the proposed method provides faithful, meaningful and interpretable explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/cogmi50398.2020.00029', target="_blank") External Link
         p.my-1

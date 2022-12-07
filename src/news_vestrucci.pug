@@ -1,0 +1,48 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Approaching AI-explainability from interdisciplinary research in symbolic AI
+                +metaTop('Seminar', 'Pisa', 'November 23, 2022')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/p_Vestrucci.jpg' alt='Vestrucci')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            h4 Andrea Vestrucci
+            h6 Research professor at Starr King School, Oakland, California
+            hr
+            p.em Location: Department of Computer Science - University of Pisa - Aula Polifunzionale 14.30
+            br
+            p.lead Research in AI-explainability focuses on a plurality of goals, from trustworthiness to informativeness to fairness. Current research and development of symbolic AI systems might address and foster interactions between combinations of these goals, especially within an interdisciplinary framework. I present explorations and assessments of philosophical and ethical arguments in automated reasoning environments that might improve to the use of symbolic AI systems as trustworthiness-checkers, with specific emphasis on machine compliance with logical and ethical constraints. I also discuss how these applications can enhance the degree of concrete, community-based human-machine interactions, with specific focus on our collaboration in the Bamberg “Smart City” project. I outline ongoing investigations on belief revision that bears the potential increase of human accessibility to complex epistemic representations.
+            br
+            h6 Bio
+            p Andrea Vestrucci is a research professor at Starr King School, Oakland, California, and a visiting scholar at the University of Bamberg, chair of AI System Engineering (AISE). His work at AISE focuses on AI ethics (metaethics of regulations) and AI epistemology (computational philosophy in FOL and HOL). His research expands upon the notions of universal languages and abstract objects. He is a recipient of the Australia Award (Ministry of Tertiary Education, Skills, Science and Research) and a laureate of the Academic Society of Geneva.
+            br
+            hr
+
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Seminar
+                  li
+                    a(href='#' rel='tag') Ethics
+                  li
+                    a(href='#' rel='tag') Fairness

@@ -1,0 +1,107 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+    .entry-content
+      .seventy-five-1-percent-bg-yellow
+        .container.pt-lg-8.pt-md-7.pt-5.pb-lg-10
+          .row.gx-lg-5.gx-md-5.gy-5
+            .col-lg-6.col-md-6
+              h1.my-3 Dissemination toolbox
+              div
+                p In this page you can find the elements that make up the corporate image of the XAI Project.
+      .container.mb-4
+        .row.justify-content-lg-center
+          .col-lg-6
+            h4 Logo
+            p.mb-5 The official logo of the XAI project is composed of two parts: the project mark and the project name. There are also a black and white variant to be used only if the background colour on which the logo is to be placed does not allow for adequate legibility.
+            img(src="assets/images/logo/Xai Logo elements.png" alt="xai logo").mb-2
+            hr
+            .row.justify-content-lg-center.mt-5
+              .col-6
+                p Official Logo
+                img(src="assets/images/logo/xai_logoText_color.png" alt="xai logo ")
+              .col-6
+                p Black and white version
+                img(src="assets/images/logo/xai_logoText_black_mask@2x.png" alt="xai logo black")
+            .row.justify-content-lg-center.my-5
+              .col-6
+                p Official Logo - no text
+                img(src="assets/images/logo/xai_logo_color@2x.png" alt="xai logo ")
+              .col-6
+                p Black and white version - no text
+                img(src="assets/images/logo/xai_logo_black@2x.png" alt="xai logo black")
+        .row.justify-content-lg-center
+          .col-lg-6.bg-yellow.py-3
+            p.pt-2.text-center You can download the complete logo pack at the following link
+            a.btn.btn-block.btn-sm.btn-outline-black(href="assets/images/logo/xai_project_logo_pack.zip" target="_blank") LOGO PACK
+        //-.row.justify-content-lg-center
+          .col-lg-6
+            em For a correct graphical and contextual use of the logo, you should observe following guidelines
+        .row.justify-content-lg-center
+          .col-lg-6.py-3.my-5
+            hr
+            br
+            h4 Typography
+            p The font used is Poppins. Please use preferably total black for the body of the text (#000000).
+            img(src='assets/images/poppins_font.png')
+
+        .row.justify-content-lg-center
+          .col-lg-6.mb-5
+            h4 Colors
+            h6 Primary colors
+            p The official Primary colors of the XAI project are two:
+            .row.justify-content-lg-center.mt-5
+              .col-6
+                p ILLUMINATING YELLOW #[strong #f4dd4d]
+                img(src='assets/images/xai_yellow.png')
+              .col-6
+                p ULTIMATE GREY #[strong #929597]
+                img(src='assets/images/xai_grey.png')
+        .row.justify-content-lg-center
+          .col-lg-6.mb-5
+            h6 Suggested support colors
+            p The Secondary colors are complementary to our official colors, but are not recognizable identifiers for Xai project. Secondary colors should be used sparingly, that is, in less than 10 percent of the palette in one piece. Use them to accent and support the primary  color palette.
+            .row.justify-content-lg-center.mt-5
+              .col-2
+                img(src='assets/images/colors/a6b1cf.png')
+                p.small #a6b1cf
+              .col-2
+                img(src='assets/images/colors/bfe2e0.png')
+                p.small #bfe2e0
+              .col-2
+                img(src='assets/images/colors/d0deaa.png')
+                p.small #d0deaa
+              .col-2
+                img(src='assets/images/colors/e9dec0.png')
+                p.small #e9dec0
+              .col-2
+                img(src='assets/images/colors/fbdad3.png')
+                p.small #fbdad3
+
+        .row.justify-content-lg-center
+          .col-lg-6.mb-5
+            .row.justify-content-lg-center.mt-5
+              .col-6
+                p Light color palette
+                img(src='assets/images/colors/color palette light.png')
+              .col-6
+                p Dark color palette
+                img(src='assets/images/colors/color palette dark.png')
+        .row.justify-content-lg-center
+          .col-lg-6.my-5
+            h4 Template Presentation
+            p Following a Google Slides template to create your presentation. Create a copy from the following link and good work!
+            a.btn.btn-outline-black(href="https://docs.google.com/presentation/d/1hynfXrPd6JBPIvDid5FRCeMZ7KPl2VFJSscFqD4FlBw/edit#slide=id.p1" target='_blank') Download template
+        .row.justify-content-lg-center
+          .col-lg-6.my-5
+            h4 Acknowledgments
+            hr
+            p #[strong XAI] project ack:
+            p This work is supported by the European Community programme under the funding schemes: ERC-2018-ADG G.A. 834756 “XAI: Science and technology for the eXplanation of AI decision making”
+            hr
+            p  #[strong SoBigData++] project ack:
+            p This work is supported by the European Union – Horizon 2020 Program under the scheme “INFRAIA-01-2018-2019 – Integrating Activities for Advanced Communities”, Grant Agreement n.871042. “SoBigData++: European Integrated Infrastructure for Social Mining and Big Data Analytics”.
+            //- em For a correct graphical and contextual use of the logo, you should observe following guidelines

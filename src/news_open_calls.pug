@@ -1,0 +1,74 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Open call for XAI Project collaborations
+                +metaTop('Call', 'Pisa', 'December 4, 2022')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/opencall.png' alt='Open call for XAI Project collaborations')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            h4 Open positions for a research fellow on Explainable Artificial Intelligence in Pisa
+            p.lead.mt-3 The Xai project at Scuola Normale Superiore di Pisa, Italy, has just launched a three calls for research assistant. These 3 positions are meant for young researchers (also those who haven't yet achieved their Ph.D.). Starting date of the appointment will be arranged with the person awarded with the position).
+        .row.justify-content-lg-center
+          .col-lg-6
+            h6.mt-6 POSITION 1:
+            h6 Algorithms and models for Explainable ML: exploring transparent by design approaches
+            p The research activity will have two objectives: 1) the study and design of algorithms and models for so-called 'global' Interpretable Machine Learning. The exploration will concern both approaches that build 'rule-based' models and approaches based on latent spaces to generate explanations in the form of examples and counterexamples. The aim of the research will be to extend these approaches to multi-label classifiers and to deal with complex data such as images. The methods proposed will be validated in some case studies available in the XAI project. 2) The curation and the extension of the XAI_Lib library with new, appropriately validated methods available in the literature.
+            ul
+              li The research activity will be hosted by the team of the Pisa KDD laboratory #[a(href='https://kdd.isti.cnr.it/') #[em https://kdd.isti.cnr.it/]] involved in the XAI project
+              li The research grant shall have a duration of one year and is renewable
+              li The gross amount of the grant is set at €33, 000 and shall be paid to the recipient in deferred monthly installments(approximately €2.000 net each month).
+              li Deadline for applications: #[strong December, 27th 2022 at 04:00 pm(Italian time)]
+              li any questions to: #[em fosca.giannotti@isti.cnr.it] or #[em fosca.giannotti@sns.it]
+            p The call and instructions for submission are available at the following link:
+            a.btn.btn-outline-black(href="https://amministrazionetrasparente.sns.it/bando/algoritmi-e-modelli-machine-learning-interpretabile-studio-e-disegno-di-metodi-trasparenti-design-algorithms-and-models" target='_blank') LINK TO THE CALL
+            h6.mt-6 POSITION 2:
+            h6 E3 for health: data-driven elicitation, explanation, and enhancement of healthcare systems:(a satellite project of  https://xai-project.eu/)
+            p In particular, the activity of the holder of the research grant will aim to test techniques of Explainable Artificial Intelligence combined with domain knowledge to explain Al black-box approaches in healthcare, both for clinical health data of some chronic diseases and for data health system access data collected for health system monitoring and efficiency.
+            ul
+              li The research activity will be hosted by the team of the Pisa KDD laboratory #[a(href='https://kdd.isti.cnr.it/') #[em https://kdd.isti.cnr.it/]] involved in the XAI project
+              li The research grant shall have a duration of one year and is renewable
+              li The gross amount of the grant is set at €33, 000 and shall be paid to the recipient in deferred monthly installments(approximately €2.000 net each month).
+              li Deadline for applications: #[strong December, 30th 2022 at 04:00 pm(Italian time)]
+              li any questions to: #[em fosca.giannotti@isti.cnr.it] or #[em fosca.giannotti@sns.it]
+            p The call and instructions for submission are available at the following link:
+            a.btn.btn-outline-black(href="https://amministrazionetrasparente.sns.it/bando/e3-health-data-driven-elicitation-explanation-and-enhancement-healthcare-systems" target='_blank') LINK TO THE CALL
+            h6.mt-6 POSITION 3:
+              h6 Explainable AI for synergistic human-ai collaboration
+              p The selected candidate will study methods, models and algorithms for hybrid decision making: i)conversational explainable AI, human-AI interfaces supporting interaction and argumentation between humans and AI assistants in complex tasks; ii) engaging users with factual, counterfactual and otherchigh-level explanations (logical, causal, knowledge graph) encoding domain knowledge and user background; iii) Novel self-aware ML models that “know what they don’t know”, that are capable to recognize when and why to defer decisions to humans and to interact with human cognition both at intuitive (system1) and rational (system2) level.
+              ul
+                li The research activity will be hosted by the team of the Pisa KDD laboratory #[a(href='https://kdd.isti.cnr.it/') #[em https://kdd.isti.cnr.it/]] involved in the XAI project
+                li The research grant shall have a duration of one year and is renewable
+                li The gross amount of the grant is set at €33, 000 and shall be paid to the recipient in deferred monthly installments(approximately €2.000 net each month).
+                li Deadline for applications: #[strong December, 30th 2022 at 04:00 pm(Italian time)]
+                li any questions to: #[em fosca.giannotti@isti.cnr.it] or #[em fosca.giannotti@sns.it]
+              p The call and instructions for submission are available at the following link:
+              a.btn.btn-outline-black(href="https://amministrazionetrasparente.sns.it/sites/default/files/bandi/assegniricerca/anno2022/912call.pdf" target='_blank') LINK TO THE CALL
+
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Call
+                  li
+                    a(href='#' rel='tag') Positions
+                  li
+                    a(href='#' rel='tag') Pisa

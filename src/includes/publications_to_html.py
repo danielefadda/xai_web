@@ -150,9 +150,6 @@ for i, row in papers.iterrows():
                 hr
                 p.small #[strong Abstract]
                 p.small {abstract}
-            p.small.pt-2 #[strong BibTex]
-            p.small.
-                {bibtex}
     .col-lg-2.pl-3
         {abstractButton}
         {externalButton}

@@ -106,96 +106,138 @@
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#TSS2022.anchor 8.
-        small [TSS2022]
+        h4#LSG2023.anchor 7.
+        small [LSG2023]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-six.accordion
+        | #[strong Geolet: An Interpretable Model for Trajectory Classification]
+        br
+        | #[em Landi Cristiano,Spinnato Francesco, Guidotti Riccardo, Monreale Anna, Nanni Mirco] (2023) - International Symposium on Intelligent Data Analysis. In Proceedings of the 2023 conference Advances in Intelligent Data Analysis XXI
+        #collapse-six.collapse(aria-labelledby='heading-six' data-parent='#accordion-six')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The large and diverse availability of mobility data enables the development of predictive models capable of recognizing various types of movements. Through a variety of GPS devices, any moving entity, animal, person, or vehicle can generate spatio-temporal trajectories. This data is used to infer migration patterns, manage traffic in large cities, and monitor the spread and impact of diseases, all critical situations that necessitate a thorough understanding of the underlying problem. Researchers, businesses, and governments use mobility data to make decisions that affect people’s lives in many ways, employing accurate but opaque deep learning models that are difficult to interpret from a human standpoint. To address these limitations, we propose Geolet, a human-interpretable machine-learning model for trajectory classification. We use discriminative sub-trajectories extracted from mobility data to turn trajectories into a simplified representation that can be used as input by any machine learning classifier. We test our approach against state-of-the-art competitors on real-world datasets. Geolet outperforms black-box models in terms of accuracy while being orders of magnitude faster than its interpretable competitors.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-six' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-031-30047-9_19', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    .row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4#LCM2023.anchor 8.
+        small [LCM2023]
     .col-lg-8.bg-yellow.p-3
         #accordion-seven.accordion
+        | #[strong Modeling Events and Interactions through Temporal Processes -- A Survey]
+        br
+        | #[em Liguori Angelica, Caroprese Luciano, Minici Marco, Veloso Bruno, Spinnato Francesco, Nanni Mirco, Manco Giuseppe, Gama Joao] (2023) - Arxive preprint
+        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In real-world scenario, many phenomena produce a collection of events that occur in continuous time. Point Processes provide a natural mathematical framework for modeling these sequences of events. In this survey, we investigate probabilistic models for modeling event sequences through temporal processes. We revise the notion of event modeling and provide the mathematical foundations that characterize the literature on the topic. We define an ontology to categorize the existing approaches in terms of three families: simple, marked, and spatio-temporal point processes. For each family, we systematically review the existing approaches based based on deep learning. Finally, we analyze the scenarios where the proposed techniques can be used for addressing prediction and modeling aspects.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.48550/arxiv.2303.06067', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    .row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4#TSS2022.anchor 15.
+        small [TSS2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-fourteen.accordion
         | #[strong Explainable AI for Time Series Classification: A Review, Taxonomy and Research Directions]
         br
         | #[em Andreas Theissler, Francesco Spinnato, Udo Schlegel, Riccardo Guidotti] (2022) - IEEE Access. In IEEE Access ( Volume: 10)
-        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+        #collapse-fourteen.collapse(aria-labelledby='heading-fourteen' data-parent='#accordion-fourteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Time series data is increasingly used in a wide range of fields, and it is often relied on in crucial applications and high-stakes decision-making. For instance, sensors generate time series data to recognize different types of anomalies through automatic decision-making systems. Typically, these systems are realized with machine learning models that achieve top-tier performance on time series classification tasks. Unfortunately, the logic behind their prediction is opaque and hard to understand from a human standpoint. Recently, we observed a consistent increase in the development of explanation methods for time series classification justifying the need to structure and review the field. In this work, we (a) present the first extensive literature review on Explainable AI (XAI) for time series classification, (b) categorize the research field through a taxonomy subdividing the methods into time points-based, subsequences-based and instance-based, and (c) identify open research directions regarding the type of explanations and the evaluation of explanations and interpretability.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fourteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1109%2Faccess.2022.3207765', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#G2022.anchor 9.
+        h4#G2022.anchor 16.
         small [G2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eight.accordion
+        #accordion-fifteen.accordion
         | #[strong Counterfactual explanations and how to find them: literature review and benchmarking]
         br
         | #[em Riccardo Guidotti] (2022) - Data Mining and Knowledge Discovery. In Data Mining and Knowledge Discovery
-        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
+        #collapse-fifteen.collapse(aria-labelledby='heading-fifteen' data-parent='#accordion-fifteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Interpretable machine learning aims at unveiling the reasons behind predictions returned by uninterpretable classifiers. One of the most valuable types of explanation consists of counterfactuals. A counterfactual explanation reveals what should have been different in an instance to observe a diverse outcome. For instance, a bank customer asks for a loan that is rejected. The counterfactual explanation consists of what should have been different for the customer in order to have the loan accepted. Recently, there has been an explosion of proposals for counterfactual explainers. The aim of this work is to survey the most recent explainers returning counterfactual explanations. We categorize explainers based on the approach adopted to return the counterfactuals, and we label them according to characteristics of the method and properties of the counterfactuals returned. In addition, we visually compare the explanations, and we report quantitative benchmarking assessing minimality, actionability, stability, diversity, discriminative power, and running time. The results make evident that the current state of the art does not provide a counterfactual explainer able to guarantee all these properties simultaneously.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/s10618-022-00831-6', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#MG2022.anchor 10.
+        h4#MG2022.anchor 17.
         small [MG2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-nine.accordion
+        #accordion-sixteen.accordion
         | #[strong Investigating Debiasing Effects on Classification and Explainability]
         br
         | #[em Marta Marchiori Manerba, Guidotti Riccardo] (2022) - Conference on AI, Ethics, and Society (AIES 2022). In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (AIES'22)
-        #collapse-nine.collapse(aria-labelledby='heading-nine' data-parent='#accordion-nine')
+        #collapse-sixteen.collapse(aria-labelledby='heading-sixteen' data-parent='#accordion-sixteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small During each stage of a dataset creation and development process, harmful biases can be accidentally introduced, leading to models that perpetuates marginalization and discrimination of minorities, as the role of the data used during the training is critical. We propose an evaluation framework that investigates the impact on classification and explainability of bias mitigation preprocessing techniques used to assess data imbalances concerning minorities' representativeness and mitigate the skewed distributions discovered. Our evaluation focuses on assessing fairness, explainability and performance metrics. We analyze the behavior of local model-agnostic explainers on the original and mitigated datasets to examine whether the proxy models learned by the explainability techniques to mimic the black-boxes disproportionately rely on sensitive attributes, demonstrating biases rooted in the explainers. We conduct several experiments about known biased datasets to demonstrate our proposal’s novelty and effectiveness for evaluation and bias detection purposes.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-sixteen' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                     small Research Line #[strong 1▪5]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PBF2022.anchor 12.
+        h4#PBF2022.anchor 19.
         small [PBF2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eleven.accordion
+        #accordion-eighteen.accordion
         | #[strong Co-design of human-centered, explainable AI for clinical decision support]
         br
         | #[em Panigutti Cecilia, Beretta Andrea, Fadda Daniele , Giannotti Fosca, Pedreschi Dino, Perotti Alan, Rinzivillo Salvatore] (2022). In ACM Transactions on Interactive Intelligent Systems
-        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
+        #collapse-eighteen.collapse(aria-labelledby='heading-eighteen' data-parent='#accordion-eighteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models, and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique, and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback, with a two-fold outcome: first, we obtain evidence that explanations increase users' trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so that we can re-design a better, more human-centered explanation interface.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eleven' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eighteen' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                     small Research Line #[strong 1▪3▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#SMM2022.anchor 14.
+        h4#SMM2022.anchor 21.
         small [SMM2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirteen.accordion
+        #accordion-twenty.accordion
         | #[strong TriplEx: Triple Extraction for Explanation]
         br
         | #[em Setzu Mattia, Monreale Anna, Minervini Pasquale] (2022) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021
-        #collapse-thirteen.collapse(aria-labelledby='heading-thirteen' data-parent='#accordion-thirteen')
+        #collapse-twenty.collapse(aria-labelledby='heading-twenty' data-parent='#accordion-twenty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -208,74 +250,74 @@
                     small Research Line #[strong 1▪2]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#MGY2021.anchor 18.
+        h4#MGY2021.anchor 25.
         small [MGY2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-seventeen.accordion
+        #accordion-twenty-four.accordion
         | #[strong Exemplars and Counterexemplars Explanations for Skin Lesion Classifiers]
         br
         | #[em Carlo Metta, Riccardo Guidotti, Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo] (2021) - IOS Press. In HHAI2022: Augmenting Human Intellect, S. Schlobach et al. (Eds.)
-        #collapse-seventeen.collapse(aria-labelledby='heading-seventeen' data-parent='#accordion-seventeen')
+        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Explainable AI consists in developing models allowing interaction between decision systems and humans by making the decisions understandable. We propose a case study for skin lesion diagnosis showing how it is possible to provide explanations of the decisions of deep neural network trained to label skin lesions.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seventeen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://ebooks.iospress.nl/volumearticle/60877', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#MG2021.anchor 19.
+        h4#MG2021.anchor 26.
         small [MG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eighteen.accordion
+        #accordion-twenty-five.accordion
         | #[strong FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems]
         br
         | #[em Marchiori Manerba Marta, Guidotti Riccardo] (2021) - Third Conference on Cognitive Machine Intelligence (COGMI) 2021. In 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-eighteen.collapse(aria-labelledby='heading-eighteen' data-parent='#accordion-eighteen')
+        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small At every stage of a supervised learning process, harmful biases can arise and be inadvertently introduced, ultimately leading to marginalization, discrimination, and abuse towards minorities. This phenomenon becomes particularly impactful in the sensitive real-world context of abusive language detection systems, where non-discrimination is difficult to assess. In addition, given the opaqueness of their internal behavior, the dynamics leading a model to a certain decision are often not clear nor accountable, and significant problems of trust could emerge. A robust value-oriented evaluation of models' fairness is therefore necessary. In this paper, we present FairShades, a model-agnostic approach for auditing the outcomes of abusive language detection systems.  Combining explainability and fairness evaluation, FairShades can identify unintended biases and sensitive categories towards which models are most discriminative. This objective is pursued through the auditing of meaningful counterfactuals generated within CheckList framework. We conduct several experiments on BERT-based models to demonstrate our proposal's novelty and effectiveness for unmasking biases. 
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eighteen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1109/CogMI52975.2021.00014', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪5]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#BGG2021.anchor 20.
+        h4#BGG2021.anchor 27.
         small [BGG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-nineteen.accordion
+        #accordion-twenty-six.accordion
         | #[strong Benchmarking and survey of explanation methods for black box models]
         br
         | #[em Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore] (2021)
-        #collapse-nineteen.collapse(aria-labelledby='heading-nineteen' data-parent='#accordion-nineteen')
+        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small The widespread adoption of black-box models in Artificial Intelligence has enhanced the need for explanation methods to reveal how these obscure models reach specific decisions. Retrieving explanations is fundamental to unveil possible biases and to resolve practical or ethical issues. Nowadays, the literature is full of methods with different explanations. We provide a categorization of explanation methods based on the type of explanation returned. We present the most recent and widely used explainers, and we show a visual comparison among explanations and a quantitative benchmarking.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nineteen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2102.13076', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMP2021.anchor 21.
+        h4#GMP2021.anchor 28.
         small [GMP2021]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-twenty.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-Title' aria-hidden='true')
+        img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-seven' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twenty-seven.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-seven-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -285,155 +327,155 @@
                     .modal-body
                         img(src='assets/images/publications/springer_book_explain.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-twenty.accordion
+        #accordion-twenty-seven.accordion
         | #[strong Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Giannotti Fosca] (2021) - Explainable AI Within the Digital Transformation and Cyber Physical Systems (pp. 9-31)
-        #collapse-twenty.collapse(aria-labelledby='heading-twenty' data-parent='#accordion-twenty')
+        #collapse-twenty-seven.collapse(aria-labelledby='heading-twenty-seven' data-parent='#accordion-twenty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small This book presents Explainable Artificial Intelligence (XAI), which aims at producing explainable models that enable human users to understand and appropriately trust the obtained results. The authors discuss the challenges involved in making machine learning-based AI explainable. Firstly, that the explanations must be adapted to different stakeholders (end-users, policy makers, industries, utilities etc.) with different levels of technical knowledge (managers, engineers, technicians, etc.) in different application domains. Secondly, that it is important to develop an evaluation framework and standards in order to measure the effectiveness of the provided explanations at the human and the technical levels. This book gathers research contributions aiming at the development and/or the use of XAI techniques in order to address the aforementioned challenges in different applications such as healthcare, finance, cybersecurity, and document summarization. It allows highlighting the benefits and requirements of using explainable models in different application domains in order to provide guidance to readers to select the most adapted models to their specified problem and conditions. Includes recent developments of the use of Explainable Artificial Intelligence (XAI) in order to address the challenges of digital transition and cyber-physical systems; Provides a textual scientific description of the use of XAI in order to address the challenges of digital transition and cyber-physical systems; Presents examples and case studies in order to increase transparency and understanding of the methodological concepts.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-030-76409-8', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪5]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GD2021.anchor 22.
+        h4#GD2021.anchor 29.
         small [GD2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-one.accordion
+        #accordion-twenty-eight.accordion
         | #[strong Matrix Profile-Based Interpretable Time Series Classifier]
         br
         | #[em Guidotti Riccardo, D’Onofrio Matteo] (2021) - Frontiers in Artificial Intelligence
-        #collapse-twenty-one.collapse(aria-labelledby='heading-twenty-one' data-parent='#accordion-twenty-one')
+        #collapse-twenty-eight.collapse(aria-labelledby='heading-twenty-eight' data-parent='#accordion-twenty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Time series classification (TSC) is a pervasive and transversal problem in various fields ranging from disease diagnosis to anomaly detection in finance. Unfortunately, the most effective models used by Artificial Intelligence (AI) systems for TSC are not interpretable and hide the logic of the decision process, making them unusable in sensitive domains. Recent research is focusing on explanation methods to pair with the obscure classifier to recover this weakness. However, a TSC approach that is transparent by design and is simultaneously efficient and effective is even more preferable. To this aim, we propose an interpretable TSC method based on the patterns, which is possible to extract from the Matrix Profile (MP) of the time series in the training set. A smart design of the classification procedure allows obtaining an efficient and effective transparent classifier modeled as a decision tree that expresses the reasons for the classification as the presence of discriminative subsequences. Quantitative and qualitative experimentation shows that the proposed method overcomes the state-of-the-art interpretable approaches.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.3389/frai.2021.699448', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GM2021.anchor 24.
+        h4#GM2021.anchor 31.
         small [GM2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-three.accordion
+        #accordion-thirty.accordion
         | #[strong Designing Shapelets for Interpretable Data-Agnostic Classification]
         br
         | #[em Guidotti Riccardo, Monreale Anna] (2021) - Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society
-        #collapse-twenty-three.collapse(aria-labelledby='heading-twenty-three' data-parent='#accordion-twenty-three')
+        #collapse-thirty.collapse(aria-labelledby='heading-thirty' data-parent='#accordion-thirty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Time series shapelets are discriminatory subsequences which are representative of a class, and their similarity to a time series can be used for successfully tackling the time series classification problem. The literature shows that Artificial Intelligence (AI) systems adopting classification models based on time series shapelets can be interpretable, more accurate, and significantly fast. Thus, in order to design a data-agnostic and interpretable classification approach, in this paper we first extend the notion of shapelets to different types of data, i.e., images, tabular and textual data. Then, based on this extended notion of shapelets we propose an interpretable data-agnostic classification method. Since the shapelets discovery can be time consuming, especially for data types more complex than time series, we exploit a notion of prototypes for finding candidate shapelets, and reducing both the time required to find a solution and the variance of shapelets. A wide experimentation on datasets of different types shows that the data-agnostic prototype-based shapelets returned by the proposed method empower an interpretable classification which is also fast, accurate, and stable. In addition, we show and we prove that shapelets can be at the basis of explainable AI methods.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1145/3461702.3462553', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#MGY2021.anchor 25.
+        h4#MGY2021.anchor 32.
         small [MGY2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-four.accordion
+        #accordion-thirty-one.accordion
         | #[strong Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling]
         br
         | #[em Metta Carlo, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore] (2021) - 2021 IEEE Symposium on Computers and Communications (ISCC). In 2021 IEEE Symposium on Computers and Communications (ISCC)
-        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
+        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Explainable AI consists in developing mechanisms allowing for an interaction between decision systems and humans by making the decisions of the formers understandable. This is particularly important in sensitive contexts like in the medical domain. We propose a use case study, for skin lesion diagnosis, illustrating how it is possible to provide the practitioner with explanations on the decisions of a state of the art deep neural network classifier trained to characterize skin lesions from examples. Our framework consists of a trained classifier onto which an explanation module operates. The latter is able to offer the practitioner exemplars and counterexemplars for the classification diagnosis thus allowing the physician to interact with the automatic diagnosis system. The exemplars are generated via an adversarial autoencoder. We illustrate the behavior of the system on representative examples.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/iscc53001.2021.9631485', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GR2021.anchor 26.
+        h4#GR2021.anchor 33.
         small [GR2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-five.accordion
+        #accordion-thirty-two.accordion
         | #[strong Ensemble of Counterfactual Explainers]
         br
         | #[em Guidotti Riccardo, Ruggieri Salvatore] (2021)
-        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
+        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small In eXplainable Artificial Intelligence (XAI), several counterfactual explainers have been proposed, each focusing on some desirable properties of counterfactual instances: minimality, actionability, stability, diversity, plausibility, discriminative power. We propose an ensemble of counterfactual explainers that boosts weak explainers, which provide only a subset of such properties, to a powerful method covering all of them. The ensemble runs weak explainers on a sample of instances and of features, and it combines their results by exploiting a diversity-driven selection function. The method is model-agnostic and, through a wrapping approach based on autoencoders, it is also data-agnostic
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://pages.di.unipi.it/ruggieri/Papers/ds2021.pdf', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#MBG2021.anchor 27.
+        h4#MBG2021.anchor 34.
         small [MBG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-six.accordion
+        #accordion-thirty-three.accordion
         | #[strong Explainable Deep Image Classifiers for Skin Lesion Diagnosis]
         br
         | #[em Metta Carlo, Beretta Andrea, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore, Giannotti Fosca] (2021) - Arxive preprint. In International Journal of Data Science and Analytics
-        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
+        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we analyze a case study on skin lesion images where we customize an existing XAI approach for explaining a deep learning model able to recognize different types of skin lesions. The explanation is formed by synthetic exemplar and counter-exemplar images of skin lesion and offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A survey conducted with domain experts, beginners and unskilled people proof that the usage of explanations increases the trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon could derive from the intrinsic characteristics of each class and, hopefully, can provide support in the resolution of the most frequent misclassifications by human experts.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2111.11863', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪3▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#BGM2021.anchor 28.
+        h4#BGM2021.anchor 35.
         small [BGM2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-seven.accordion
+        #accordion-thirty-four.accordion
         | #[strong Deriving a Single Interpretable Model by Merging Tree-Based Classifiers]
         br
         | #[em Bonsignori Valerio, Guidotti Riccardo, Monreale Anna] (2021) - Discovery Science
-        #collapse-twenty-seven.collapse(aria-labelledby='heading-twenty-seven' data-parent='#accordion-twenty-seven')
+        #collapse-thirty-four.collapse(aria-labelledby='heading-thirty-four' data-parent='#accordion-thirty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Decision tree classifiers have been proved to be among the most interpretable models due to their intuitive structure that illustrates decision processes in form of logical rules. Unfortunately, more complex tree-based classifiers such as oblique trees and random forests overcome the accuracy of decision trees at the cost of becoming non interpretable. In this paper, we propose a method that takes as input any tree-based classifier and returns a single decision tree able to approximate its behavior. Our proposal merges tree-based classifiers by an intensional and extensional approach and applies a post-hoc explanation strategy. Our experiments shows that the retrieved single decision tree is at least as accurate as the original tree-based model, faithful, and more interpretable.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-88942-5_27', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪2]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PPB2021.anchor 31.
+        h4#PPB2021.anchor 38.
         small [PPB2021]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/FairLens.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-Title' aria-hidden='true')
+        img(src='assets/images/publications/FairLens.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-seven' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-thirty-seven.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-seven-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -443,155 +485,155 @@
                     .modal-body
                         img(src='assets/images/publications/FairLens.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty.accordion
+        #accordion-thirty-seven.accordion
         | #[strong FairLens: Auditing black-box clinical decision support systems]
         br
         | #[em Panigutti Cecilia, Perotti Alan, Panisson André, Bajardi Paolo, Pedreschi Dino] (2021) - Information Processing & Management. In Journal of Information Processing and Management
-        #collapse-thirty.collapse(aria-labelledby='heading-thirty' data-parent='#accordion-thirty')
+        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Highlights: We present a pipeline to detect and explain potential fairness issues in Clinical DSS. We study and compare different multi-label classification disparity measures. We explore ICD9 bias in MIMIC-IV, an openly available ICU benchmark dataset
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.ipm.2021.102657', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#SGM2019.anchor 34.
+        h4#SGM2019.anchor 41.
         small [SGM2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-three.accordion
+        #accordion-forty.accordion
         | #[strong Global Explanations with Local Scoring]
         br
         | #[em Setzu Mattia, Guidotti Riccardo, Monreale Anna, Turini Franco] (2021) - Machine Learning and Knowledge Discovery in Databases. In ECML PKDD 2019: Machine Learning and Knowledge Discovery in Databases
-        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
+        #collapse-forty.collapse(aria-labelledby='heading-forty' data-parent='#accordion-forty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Artificial Intelligence systems often adopt machine learning models encoding complex algorithms with potentially unknown behavior. As the application of these “black box” models grows, it is our responsibility to understand their inner working and formulate them in human-understandable explanations. To this end, we propose a rule-based model-agnostic explanation method that follows a local-to-global schema: it generalizes a global explanation summarizing the decision logic of a black box starting from the local explanations of single predicted instances. We define a scoring system based on a rule relevance score to extract global explanations from a set of local explanations in the form of decision rules. Experiments on several datasets and black boxes show the stability, and low complexity of the global explanations provided by the proposed solution in comparison with baselines and state-of-the-art global explainers.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-43823-4_14', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMM2020.anchor 35.
+        h4#GMM2020.anchor 42.
         small [GMM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-four.accordion
+        #accordion-forty-one.accordion
         | #[strong Explaining Image Classifiers Generating Exemplars and Counter-Exemplars from Latent Representations]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence
-        #collapse-thirty-four.collapse(aria-labelledby='heading-thirty-four' data-parent='#accordion-thirty-four')
+        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present an approach to explain the decisions of black box image classifiers through synthetic exemplar and counter-exemplar learnt in the latent feature space. Our explanation method exploits the latent representations learned through an adversarial autoencoder for generating a synthetic neighborhood of the image for which an explanation is required. A decision tree is trained on a set of images represented in the latent space, and its decision rules are used to generate exemplar images showing how the original image can be modified to stay within its class. Counterfactual rules are used to generate counter-exemplars showing how the original image can “morph” into another class. The explanation also comprehends a saliency map highlighting the areas that contribute to its classification, and areas that push it into another class. A wide and deep experimental evaluation proves that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability, besides providing the most useful and interpretable explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v34i09.7116', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMM2019.anchor 36.
+        h4#GMM2019.anchor 43.
         small [GMM2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-five.accordion
+        #accordion-forty-two.accordion
         | #[strong Black Box Explanation by Learning Image Exemplars in the Latent Feature Space]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Matwin Stan, Pedreschi Dino] (2021) - Machine Learning and Knowledge Discovery in Databases. In Black Box Explanation by Learning Image Exemplars in the Latent Feature Space.
-        #collapse-thirty-five.collapse(aria-labelledby='heading-thirty-five' data-parent='#accordion-thirty-five')
+        #collapse-forty-two.collapse(aria-labelledby='heading-forty-two' data-parent='#accordion-forty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present an approach to explain the decisions of black box models for image classification. While using the black box to label images, our explanation method exploits the latent feature space learned through an adversarial autoencoder. The proposed method first generates exemplar images in the latent feature space and learns a decision tree classifier. Then, it selects and decodes exemplars respecting local decision rules. Finally, it visualizes them in a manner that shows to the user how the exemplars can be modified to either stay within their class, or to become counter-factuals by “morphing” into another class. Since we focus on black box decision systems for image classification, the explanation obtained from the exemplars also provides a saliency map highlighting the areas of the image that contribute to its classification, and areas of the image that push it into another class. We present the results of an experimental evaluation on three datasets and two black box models. Besides providing the most useful and interpretable explanations, we show that the proposed method outperforms existing explainers in terms of fidelity, relevance, coherence, and stability.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-46150-8_12', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PGG2019.anchor 37.
+        h4#PGG2019.anchor 44.
         small [PGG2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-six.accordion
+        #accordion-forty-three.accordion
         | #[strong Meaningful Explanations of Black Box AI Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence. In Proceedings of the AAAI Conference on Artificial Intelligence
-        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
+        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Black box AI systems for automated decision making, often based on machine learning over (big) data, map a user’s features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases inherited by the algorithms from human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We focus on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-toglobal framework for black box explanation, articulated along three lines: (i) the language for expressing explanations in terms of logic rules, with statistical and causal interpretation; (ii) the inference of local explanations for revealing the decision rationale for a specific case, by auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of many local explanations into simple global ones, with algorithms that optimize for quality and comprehensibility. We argue that the local-first approach opens the door to a wide variety of alternative solutions along different dimensions: a variety of data sources (relational, text, images, etc.), a variety of learning problems (multi-label classification, regression, scoring, ranking), a variety of languages for expressing meaningful explanations, a variety of means to audit a black box.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v33i01.33019780', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#G2021.anchor 38.
+        h4#G2021.anchor 45.
         small [G2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-seven.accordion
+        #accordion-forty-four.accordion
         | #[strong Evaluating local explanation methods on ground truth]
         br
         | #[em Guidotti Riccardo] (2021) - Artificial Intelligence. In Artificial Intelligence, 103428
-        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
+        #collapse-forty-four.collapse(aria-labelledby='heading-forty-four' data-parent='#accordion-forty-four')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Evaluating local explanation methods is a difficult task due to the lack of a shared and universally accepted definition of explanation. In the literature, one of the most common ways to assess the performance of an explanation method is to measure the fidelity of the explanation with respect to the classification of a black box model adopted by an Artificial Intelligent system for making a decision. However, this kind of evaluation only measures the degree of adherence of the local explainer in reproducing the behavior of the black box classifier with respect to the final decision. Therefore, the explanation provided by the local explainer could be different in the content even though it leads to the same decision of the AI system. In this paper, we propose an approach that allows to measure to which extent the explanations returned by local explanation methods are correct with respect to a synthetic ground truth explanation. Indeed, the proposed methodology enables the generation of synthetic transparent classifiers for which the reason for the decision taken, i.e., a synthetic ground truth explanation, is available by design. Experimental results show how the proposed approach allows to easily evaluate local explanations on the ground truth and to characterize the quality of local explanation methods.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-four' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1016/j.artint.2020.103428', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#LGR2020.anchor 39.
+        h4#LGR2020.anchor 46.
         small [LGR2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-eight.accordion
+        #accordion-forty-five.accordion
         | #[strong Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars]
         br
         | #[em Lampridis Orestis, Guidotti Riccardo, Ruggieri Salvatore] (2021) - Discovery Science. In In International Conference on Discovery Science (pp. 357-373). Springer, Cham.
-        #collapse-thirty-eight.collapse(aria-labelledby='heading-thirty-eight' data-parent='#accordion-thirty-eight')
+        #collapse-forty-five.collapse(aria-labelledby='heading-forty-five' data-parent='#accordion-forty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present xspells, a model-agnostic local approach for explaining the decisions of a black box model for sentiment classification of short texts. The explanations provided consist of a set of exemplar sentences and a set of counter-exemplar sentences. The former are examples classified by the black box with the same label as the text to explain. The latter are examples classified with a different label (a form of counter-factuals). Both are close in meaning to the text to explain, and both are meaningful sentences – albeit they are synthetically generated. xspells generates neighbors of the text to explain in a latent space using Variational Autoencoders for encoding text and decoding latent instances. A decision tree is learned from randomly generated neighbors, and used to drive the selection of the exemplars and counter-exemplars. We report experiments on two datasets showing that xspells outperforms the well-known lime method in terms of quality of explanations, fidelity, and usefulness, and that is comparable to it in terms of stability.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_24', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PGM2019.anchor 40.
+        h4#PGM2019.anchor 47.
         small [PGM2019]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-thirty-nine' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-thirty-nine.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-thirty-nine-Title' aria-hidden='true')
+        img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-six' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-six.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-six-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -601,50 +643,50 @@
                     .modal-body
                         img(src='assets/images/publications/Explaining Multi-label Black-Box Classifiers for Health Applications.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-thirty-nine.accordion
+        #accordion-forty-six.accordion
         | #[strong Explaining Multi-label Black-Box Classifiers for Health Applications]
         br
         | #[em Panigutti Cecilia, Guidotti Riccardo, Monreale Anna, Pedreschi Dino] (2021) - Precision Health and Medicine. In International Workshop on Health Intelligence (pp. 97-110). Springer, Cham.
-        #collapse-thirty-nine.collapse(aria-labelledby='heading-thirty-nine' data-parent='#accordion-thirty-nine')
+        #collapse-forty-six.collapse(aria-labelledby='heading-forty-six' data-parent='#accordion-forty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Today the state-of-the-art performance in classification is achieved by the so-called “black boxes”, i.e. decision-making systems whose internal logic is obscure. Such models could revolutionize the health-care system, however their deployment in real-world diagnosis decision support systems is subject to several risks and limitations due to the lack of transparency. The typical classification problem in health-care requires a multi-label approach since the possible labels are not mutually exclusive, e.g. diagnoses. We propose MARLENA, a model-agnostic method which explains multi-label black box decisions. MARLENA explains an individual decision in three steps. First, it generates a synthetic neighborhood around the instance to be explained using a strategy suitable for multi-label decisions. It then learns a decision tree on such neighborhood and finally derives from it a decision rule that explains the black box decision. Our experiments show that MARLENA performs well in terms of mimicking the black box behavior while gaining at the same time a notable amount of interpretability through compact decision rules, i.e. rules with limited length.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-24409-5_9', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMC2019.anchor 41.
+        h4#GMC2019.anchor 48.
         small [GMC2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty.accordion
+        #accordion-forty-seven.accordion
         | #[strong Investigating Neighborhood Generation Methods for Explanations of Obscure Image Classifiers]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Cariaggi Leonardo] (2021) - Advances in Knowledge Discovery and Data Mining. In In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 55-68). Springer, Cham.
-        #collapse-forty.collapse(aria-labelledby='heading-forty' data-parent='#accordion-forty')
+        #collapse-forty-seven.collapse(aria-labelledby='heading-forty-seven' data-parent='#accordion-forty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Given the wide use of machine learning approaches based on opaque prediction models, understanding the reasons behind decisions of black box decision systems is nowadays a crucial topic. We address the problem of providing meaningful explanations in the widely-applied image classification tasks. In particular, we explore the impact of changing the neighborhood generation function for a local interpretable model-agnostic explanator by proposing four different variants. All the proposed methods are based on a grid-based segmentation of the images, but each of them proposes a different strategy for generating the neighborhood of the image for which an explanation is required. A deep experimentation shows both improvements and weakness of each proposed approach.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-16148-4_5', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMS2020.anchor 42.
+        h4#GMS2020.anchor 49.
         small [GMS2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-one' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-forty-one.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-one-Title' aria-hidden='true')
+        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-eight' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-eight.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-eight-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -654,29 +696,29 @@
                     .modal-body
                         img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-forty-one.accordion
+        #accordion-forty-eight.accordion
         | #[strong Explaining Any Time Series Classifier]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Spinnato Francesco, Pedreschi Dino, Giannotti Fosca] (2020) - 2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
+        #collapse-forty-eight.collapse(aria-labelledby='heading-forty-eight' data-parent='#accordion-forty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present a method to explain the decisions of black box models for time series classification. The explanation consists of factual and counterfactual shapelet-based rules revealing the reasons for the classification, and of a set of exemplars and counter-exemplars highlighting similarities and differences with the time series under analysis. The proposed method first generates exemplar and counter-exemplar time series in the latent feature space and learns a local latent decision tree classifier. Then, it selects and decodes those respecting the decision rules explaining the decision. Finally, it learns on them a shapelet-tree that reveals the parts of the time series that must, and must not, be contained for getting the returned outcome from the black box. A wide experimentation shows that the proposed method provides faithful, meaningful and interpretable explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/cogmi50398.2020.00029', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PPP2020.anchor 43.
+        h4#PPP2020.anchor 50.
         small [PPP2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-two' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-forty-two.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-two-Title' aria-hidden='true')
+        img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-nine' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-nine.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-nine-Title' aria-hidden='true')
             .modal-dialog.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -686,74 +728,74 @@
                     .modal-body
                         img(src='assets/images/publications/Doctor XAI.jpg ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-forty-two.accordion
+        #accordion-forty-nine.accordion
         | #[strong Doctor XAI: an ontology-based approach to black-box sequential data classification explanations]
         br
         | #[em Panigutti Cecilia, Perotti Alan, Pedreschi Dino] (2020) - FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. In FAT* '20: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency
-        #collapse-forty-two.collapse(aria-labelledby='heading-forty-two' data-parent='#accordion-forty-two')
+        #collapse-forty-nine.collapse(aria-labelledby='heading-forty-nine' data-parent='#accordion-forty-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Several recent advancements in Machine Learning involve blackbox models: algorithms that do not provide human-understandable explanations in support of their decisions. This limitation hampers the fairness, accountability and transparency of these models; the field of eXplainable Artificial Intelligence (XAI) tries to solve this problem providing human-understandable explanations for black-box models. However, healthcare datasets (and the related learning tasks) often present peculiar features, such as sequential data, multi-label predictions, and links to structured background knowledge. In this paper, we introduce Doctor XAI, a model-agnostic explainability technique able to deal with multi-labeled, sequential, ontology-linked data. We focus on explaining Doctor AI, a multilabel classifier which takes as input the clinical history of a patient in order to predict the next visit. Furthermore, we show how exploiting the temporal dimension in the data and the domain knowledge encoded in the medical ontology improves the quality of the mined explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-two' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://dl.acm.org/doi/10.1145/3351095.3372855', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1▪3▪4]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#RGG2020.anchor 44.
+        h4#RGG2020.anchor 51.
         small [RGG2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-three.accordion
+        #accordion-fifty.accordion
         | #[strong Opening the black box: a primer for anti-discrimination]
         br
         | #[em Ruggieri Salvatore, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Turini Franco] (2020). In ANNUARIO DI DIRITTO COMPARATO E DI STUDI LEGISLATIVI
-        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
+        #collapse-fifty.collapse(aria-labelledby='heading-fifty' data-parent='#accordion-fifty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small The pervasive adoption of Artificial Intelligence (AI) models in the modern information society, requires counterbalancing the growing decision power demanded to AI models with risk assessment methodologies. In this paper, we consider the risk of discriminatory decisions and review approaches for discovering discrimination and for designing fair AI models. We highlight the tight relations between discrimination discovery and explainable AI, with the latter being a more general approach for understanding the behavior of black boxes.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://hdl.handle.net/11568/1088440', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GM2020.anchor 45.
+        h4#GM2020.anchor 52.
         small [GM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-four.accordion
+        #accordion-fifty-one.accordion
         | #[strong Data-Agnostic Local Neighborhood Generation]
         br
         | #[em Guidotti Riccardo, Monreale Anna] (2020) - 2020 IEEE International Conference on Data Mining (ICDM). In 2020 IEEE International Conference on Data Mining (ICDM)
-        #collapse-forty-four.collapse(aria-labelledby='heading-forty-four' data-parent='#accordion-forty-four')
+        #collapse-fifty-one.collapse(aria-labelledby='heading-fifty-one' data-parent='#accordion-fifty-one')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Synthetic data generation has been widely adopted in software testing, data privacy, imbalanced learning, machine learning explanation, etc. In such contexts, it is important to generate data samples located within “local” areas surrounding specific instances. Local synthetic data can help the learning phase of predictive models, and it is fundamental for methods explaining the local behavior of obscure classifiers. The contribution of this paper is twofold. First, we introduce a method based on generative operators allowing the synthetic neighborhood generation by applying specific perturbations on a given input instance. The key factor consists in performing a data transformation that makes applicable to any type of data, i.e., data-agnostic. Second, we design a framework for evaluating the goodness of local synthetic neighborhoods exploiting both supervised and unsupervised methodologies. A deep experimentation shows the effectiveness of the proposed method.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifty-one' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/9338395', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#BPP2020.anchor 46.
+        h4#BPP2020.anchor 53.
         small [BPP2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-five.accordion
+        #accordion-fifty-two.accordion
         | #[strong Explainability Methods for Natural Language Processing: Applications to Sentiment Analysis]
         br
         | #[em Bodria Francesco, Panisson André , Perotti Alan, Piaggesi Simone ] (2020) - Discussion Paper
-        #collapse-forty-five.collapse(aria-labelledby='heading-forty-five' data-parent='#accordion-forty-five')
+        #collapse-fifty-two.collapse(aria-labelledby='heading-fifty-two' data-parent='#accordion-fifty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -766,14 +808,14 @@
                     small Research Line #[strong 1]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#GMP2019.anchor 49.
+        h4#GMP2019.anchor 56.
         small [GMP2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-eight.accordion
+        #accordion-fifty-five.accordion
         | #[strong The AI black box explanation problem]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Pedreschi Dino] (2019) - ERCIM News, 116, 12-13. In ERCIM News, 116, 12-13
-        #collapse-forty-eight.collapse(aria-labelledby='heading-forty-eight' data-parent='#accordion-forty-eight')
+        #collapse-fifty-five.collapse(aria-labelledby='heading-fifty-five' data-parent='#accordion-fifty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -786,21 +828,21 @@
                     small Research Line #[strong 1▪2▪3]
     .row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4#PGG2018.anchor 50.
+        h4#PGG2018.anchor 57.
         small [PGG2018]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-nine.accordion
+        #accordion-fifty-six.accordion
         | #[strong Open the Black Box Data-Driven Explanation of Black Box Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna , Pappalardo Luca , Ruggieri Salvatore , Turini Franco ] (2018) - Arxive preprint
-        #collapse-forty-nine.collapse(aria-labelledby='heading-forty-nine' data-parent='#accordion-forty-nine')
+        #collapse-fifty-six.collapse(aria-labelledby='heading-fifty-six' data-parent='#accordion-fifty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Black box systems for automated decision making, often based on machine learning over (big) data, map a user's features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases hidden in the algorithms, due to human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We introduce the local-to-global framework for black box explanation, a novel approach with promising early results, which paves the road for a wide spectrum of future developments along three dimensions: (i) the language for expressing explanations in terms of highly expressive logic-based rules, with a statistical and causal interpretation; (ii) the inference of local explanations aimed at revealing the logic of the decision adopted for a specific instance by querying and auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of the many local explanations into simple global ones, with algorithms that optimize the quality and comprehensibility of explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1806.09936', target="_blank") External Link
         p.my-1

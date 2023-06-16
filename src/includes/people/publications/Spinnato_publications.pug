@@ -1,31 +1,94 @@
-#TSS2022.row.mt-5.justify-content-center
+#LSG2023.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 7.
+        small [LSG2023]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-six.accordion
+        | #[strong Geolet: An Interpretable Model for Trajectory Classification]
+        br
+        | #[em Landi Cristiano,Spinnato Francesco, Guidotti Riccardo, Monreale Anna, Nanni Mirco] (2023) - International Symposium on Intelligent Data Analysis. In Proceedings of the 2023 conference Advances in Intelligent Data Analysis XXI
+        #collapse-six.collapse(aria-labelledby='heading-six' data-parent='#accordion-six')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The large and diverse availability of mobility data enables the development of predictive models capable of recognizing various types of movements. Through a variety of GPS devices, any moving entity, animal, person, or vehicle can generate spatio-temporal trajectories. This data is used to infer migration patterns, manage traffic in large cities, and monitor the spread and impact of diseases, all critical situations that necessitate a thorough understanding of the underlying problem. Researchers, businesses, and governments use mobility data to make decisions that affect people’s lives in many ways, employing accurate but opaque deep learning models that are difficult to interpret from a human standpoint. To address these limitations, we propose Geolet, a human-interpretable machine-learning model for trajectory classification. We use discriminative sub-trajectories extracted from mobility data to turn trajectories into a simplified representation that can be used as input by any machine learning classifier. We test our approach against state-of-the-art competitors on real-world datasets. Geolet outperforms black-box models in terms of accuracy while being orders of magnitude faster than its interpretable competitors.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-six' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-031-30047-9_19', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    #LCM2023.row.mt-5.justify-content-center
     .col-lg-1.text-right
         h4 8.
-        small [TSS2022]
+        small [LCM2023]
     .col-lg-8.bg-yellow.p-3
         #accordion-seven.accordion
+        | #[strong Modeling Events and Interactions through Temporal Processes -- A Survey]
+        br
+        | #[em Liguori Angelica, Caroprese Luciano, Minici Marco, Veloso Bruno, Spinnato Francesco, Nanni Mirco, Manco Giuseppe, Gama Joao] (2023) - Arxive preprint
+        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In real-world scenario, many phenomena produce a collection of events that occur in continuous time. Point Processes provide a natural mathematical framework for modeling these sequences of events. In this survey, we investigate probabilistic models for modeling event sequences through temporal processes. We revise the notion of event modeling and provide the mathematical foundations that characterize the literature on the topic. We define an ontology to categorize the existing approaches in terms of three families: simple, marked, and spatio-temporal point processes. For each family, we systematically review the existing approaches based based on deep learning. Finally, we analyze the scenarios where the proposed techniques can be used for addressing prediction and modeling aspects.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.48550/arxiv.2303.06067', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    #SGN2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 11.
+        small [SGN2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-ten.accordion
+        | #[strong Explaining Crash Predictions on~Multivariate Time Series Data]
+        br
+        | #[em Spinnato Francesco, Guidotti Riccardo, Nanni Mirco, Maccagnola Daniele, Paciello Giulia, Bencini Farina Antonio] (2022) - International Conference on Discovery Science. In Discovery Science
+        #collapse-ten.collapse(aria-labelledby='heading-ten' data-parent='#accordion-ten')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In Assicurazioni Generali, an automatic decision-making model is used to check real-time multivariate time series and alert if a car crash happened. In such a way, a Generali operator can call the customer to provide first assistance. The high sensitivity of the model used, combined with the fact that the model is not interpretable, might cause the operator to call customers even though a car crash did not happen but only due to a harsh deviation or the fact that the road is bumpy. Our goal is to tackle the problem of interpretability for car crash prediction and propose an eXplainable Artificial Intelligence (XAI) workflow that allows gaining insights regarding the logic behind the deep learning predictive model adopted by Generali. We reach our goal by building an interpretable alternative to the current obscure model that also reduces the training data usage and the prediction time.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-ten' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007%2F978-3-031-18840-4_39', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 4]
+    #TSS2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 15.
+        small [TSS2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-fourteen.accordion
         | #[strong Explainable AI for Time Series Classification: A Review, Taxonomy and Research Directions]
         br
         | #[em Andreas Theissler, Francesco Spinnato, Udo Schlegel, Riccardo Guidotti] (2022) - IEEE Access. In IEEE Access ( Volume: 10)
-        #collapse-seven.collapse(aria-labelledby='heading-seven' data-parent='#accordion-seven')
+        #collapse-fourteen.collapse(aria-labelledby='heading-fourteen' data-parent='#accordion-fourteen')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Time series data is increasingly used in a wide range of fields, and it is often relied on in crucial applications and high-stakes decision-making. For instance, sensors generate time series data to recognize different types of anomalies through automatic decision-making systems. Typically, these systems are realized with machine learning models that achieve top-tier performance on time series classification tasks. Unfortunately, the logic behind their prediction is opaque and hard to understand from a human standpoint. Recently, we observed a consistent increase in the development of explanation methods for time series classification justifying the need to structure and review the field. In this work, we (a) present the first extensive literature review on Explainable AI (XAI) for time series classification, (b) categorize the research field through a taxonomy subdividing the methods into time points-based, subsequences-based and instance-based, and (c) identify open research directions regarding the type of explanations and the evaluation of explanations and interpretability.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seven' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fourteen' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1109%2Faccess.2022.3207765', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #GMS2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 42.
+        h4 49.
         small [GMS2020]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-one' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-forty-one.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-one-Title' aria-hidden='true')
+        img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-forty-eight' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-forty-eight.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-forty-eight-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -35,18 +98,18 @@
                     .modal-body
                         img(src='assets/images/publications/ex_time_series_calssifier.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-forty-one.accordion
+        #accordion-forty-eight.accordion
         | #[strong Explaining Any Time Series Classifier]
         br
         | #[em Guidotti Riccardo, Monreale Anna, Spinnato Francesco, Pedreschi Dino, Giannotti Fosca] (2020) - 2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI)
-        #collapse-forty-one.collapse(aria-labelledby='heading-forty-one' data-parent='#accordion-forty-one')
+        #collapse-forty-eight.collapse(aria-labelledby='heading-forty-eight' data-parent='#accordion-forty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present a method to explain the decisions of black box models for time series classification. The explanation consists of factual and counterfactual shapelet-based rules revealing the reasons for the classification, and of a set of exemplars and counter-exemplars highlighting similarities and differences with the time series under analysis. The proposed method first generates exemplar and counter-exemplar time series in the latent feature space and learns a local latent decision tree classifier. Then, it selects and decodes those respecting the decision rules explaining the decision. Finally, it learns on them a shapelet-tree that reveals the parts of the time series that must, and must not, be contained for getting the returned outcome from the black box. A wide experimentation shows that the proposed method provides faithful, meaningful and interpretable explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/cogmi50398.2020.00029', target="_blank") External Link
         p.my-1

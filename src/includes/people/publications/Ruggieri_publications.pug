@@ -72,128 +72,149 @@
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1805.10820', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
-    #NPR2022.row.mt-5.justify-content-center
+    #PR2023.row.mt-5.justify-content-center
     .col-lg-1.text-right
         h4 6.
-        small [NPR2022]
+        small [PR2023]
     .col-lg-8.bg-yellow.p-3
         #accordion-five.accordion
+        | #[strong AUC-based Selective Classification]
+        br
+        | #[em Pugnana Andrea, Ruggieri Salvatore] (2023) - Proceedings of Machine Learning Research. In Proceedings of The 26th International Conference on Artificial Intelligence and Statistics
+        #collapse-five.collapse(aria-labelledby='heading-five' data-parent='#accordion-five')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Selective classification (or classification with a reject option) pairs a classifier with a selection function to determine whether or not a prediction should be accepted. This framework trades off coverage (probability of accepting a prediction) with predictive performance, typically measured by distributive loss functions. In many application scenarios, such as credit scoring, performance is instead measured by ranking metrics, such as the Area Under the ROC Curve (AUC). We propose a model-agnostic approach to associate a selection function to a given probabilistic binary classifier. The approach is specifically targeted at optimizing the AUC. We provide both theoretical justifications and a novel algorithm, called AUCROSS, to achieve such a goal. Experiments show that our method succeeds in trading-off coverage for AUC, improving over existing selective classification methods targeted at optimizing accuracy.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-five' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://proceedings.mlr.press/v206/pugnana23a.html', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 2]
+    #NPR2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 13.
+        small [NPR2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twelve.accordion
         | #[strong Methods and tools for causal discovery and causal inference]
         br
         | #[em Ana Rita Nogueira, Andrea Pugnana, Salvatore Ruggieri, Dino Pedreschi, João Gama] (2022) - Wires Data Mining and Knowledge Discovery. In Wires Data Mining and Knowledge Discovery
-        #collapse-five.collapse(aria-labelledby='heading-five' data-parent='#accordion-five')
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Causality is a complex concept, which roots its developments across several fields, such as statistics, economics, epidemiology, computer science, and philosophy. In recent years, the study of causal relationships has become a crucial part of the Artificial Intelligence community, as causality can be a key tool for overcoming some limitations of correlation-based Machine Learning systems. Causality research can generally be divided into two main branches, that is, causal discovery and causal inference. The former focuses on obtaining causal knowledge directly from observational data. The latter aims to estimate the impact deriving from a change of a certain variable over an outcome of interest. This article aims at covering several methodologies that have been developed for both tasks. This survey does not only focus on theoretical aspects. But also provides a practical toolkit for interested researchers and practitioners, including software, datasets, and running examples.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-five' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href=' https://doi.org/10.1002/widm.1449', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 2]
     #GR2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 26.
+        h4 33.
         small [GR2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-five.accordion
+        #accordion-thirty-two.accordion
         | #[strong Ensemble of Counterfactual Explainers]
         br
         | #[em Guidotti Riccardo, Ruggieri Salvatore] (2021)
-        #collapse-twenty-five.collapse(aria-labelledby='heading-twenty-five' data-parent='#accordion-twenty-five')
+        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small In eXplainable Artificial Intelligence (XAI), several counterfactual explainers have been proposed, each focusing on some desirable properties of counterfactual instances: minimality, actionability, stability, diversity, plausibility, discriminative power. We propose an ensemble of counterfactual explainers that boosts weak explainers, which provide only a subset of such properties, to a powerful method covering all of them. The ensemble runs weak explainers on a sample of instances and of features, and it combines their results by exploiting a diversity-driven selection function. The method is model-agnostic and, through a wrapping approach based on autoencoders, it is also data-agnostic
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-five' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://pages.di.unipi.it/ruggieri/Papers/ds2021.pdf', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #PGG2019.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 37.
+        h4 44.
         small [PGG2019]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-six.accordion
+        #accordion-forty-three.accordion
         | #[strong Meaningful Explanations of Black Box AI Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Ruggieri Salvatore, Turini Franco] (2021) - Proceedings of the AAAI Conference on Artificial Intelligence. In Proceedings of the AAAI Conference on Artificial Intelligence
-        #collapse-thirty-six.collapse(aria-labelledby='heading-thirty-six' data-parent='#accordion-thirty-six')
+        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Black box AI systems for automated decision making, often based on machine learning over (big) data, map a user’s features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases inherited by the algorithms from human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We focus on the urgent open challenge of how to construct meaningful explanations of opaque AI/ML systems, introducing the local-toglobal framework for black box explanation, articulated along three lines: (i) the language for expressing explanations in terms of logic rules, with statistical and causal interpretation; (ii) the inference of local explanations for revealing the decision rationale for a specific case, by auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of many local explanations into simple global ones, with algorithms that optimize for quality and comprehensibility. We argue that the local-first approach opens the door to a wide variety of alternative solutions along different dimensions: a variety of data sources (relational, text, images, etc.), a variety of learning problems (multi-label classification, regression, scoring, ranking), a variety of languages for expressing meaningful explanations, a variety of means to audit a black box.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-six' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1609/aaai.v33i01.33019780', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #LGR2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 39.
+        h4 46.
         small [LGR2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-eight.accordion
+        #accordion-forty-five.accordion
         | #[strong Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars]
         br
         | #[em Lampridis Orestis, Guidotti Riccardo, Ruggieri Salvatore] (2021) - Discovery Science. In In International Conference on Discovery Science (pp. 357-373). Springer, Cham.
-        #collapse-thirty-eight.collapse(aria-labelledby='heading-thirty-eight' data-parent='#accordion-thirty-eight')
+        #collapse-forty-five.collapse(aria-labelledby='heading-forty-five' data-parent='#accordion-forty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small We present xspells, a model-agnostic local approach for explaining the decisions of a black box model for sentiment classification of short texts. The explanations provided consist of a set of exemplar sentences and a set of counter-exemplar sentences. The former are examples classified by the black box with the same label as the text to explain. The latter are examples classified with a different label (a form of counter-factuals). Both are close in meaning to the text to explain, and both are meaningful sentences – albeit they are synthetically generated. xspells generates neighbors of the text to explain in a latent space using Variational Autoencoders for encoding text and decoding latent instances. A decision tree is learned from randomly generated neighbors, and used to drive the selection of the exemplars and counter-exemplars. We report experiments on two datasets showing that xspells outperforms the well-known lime method in terms of quality of explanations, fidelity, and usefulness, and that is comparable to it in terms of stability.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_24', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #RGG2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 44.
+        h4 51.
         small [RGG2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-three.accordion
+        #accordion-fifty.accordion
         | #[strong Opening the black box: a primer for anti-discrimination]
         br
         | #[em Ruggieri Salvatore, Giannotti Fosca, Guidotti Riccardo, Monreale Anna, Pedreschi Dino, Turini Franco] (2020). In ANNUARIO DI DIRITTO COMPARATO E DI STUDI LEGISLATIVI
-        #collapse-forty-three.collapse(aria-labelledby='heading-forty-three' data-parent='#accordion-forty-three')
+        #collapse-fifty.collapse(aria-labelledby='heading-fifty' data-parent='#accordion-fifty')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small The pervasive adoption of Artificial Intelligence (AI) models in the modern information society, requires counterbalancing the growing decision power demanded to AI models with risk assessment methodologies. In this paper, we consider the risk of discriminatory decisions and review approaches for discovering discrimination and for designing fair AI models. We highlight the tight relations between discrimination discovery and explainable AI, with the latter being a more general approach for understanding the behavior of black boxes.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifty' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://hdl.handle.net/11568/1088440', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #PGG2018.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 50.
+        h4 57.
         small [PGG2018]
     .col-lg-8.bg-yellow.p-3
-        #accordion-forty-nine.accordion
+        #accordion-fifty-six.accordion
         | #[strong Open the Black Box Data-Driven Explanation of Black Box Decision Systems]
         br
         | #[em Pedreschi Dino, Giannotti Fosca, Guidotti Riccardo, Monreale Anna , Pappalardo Luca , Ruggieri Salvatore , Turini Franco ] (2018) - Arxive preprint
-        #collapse-forty-nine.collapse(aria-labelledby='heading-forty-nine' data-parent='#accordion-forty-nine')
+        #collapse-fifty-six.collapse(aria-labelledby='heading-fifty-six' data-parent='#accordion-fifty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Black box systems for automated decision making, often based on machine learning over (big) data, map a user's features into a class or a score without exposing the reasons why. This is problematic not only for lack of transparency, but also for possible biases hidden in the algorithms, due to human prejudices and collection artifacts hidden in the training data, which may lead to unfair or wrong decisions. We introduce the local-to-global framework for black box explanation, a novel approach with promising early results, which paves the road for a wide spectrum of future developments along three dimensions: (i) the language for expressing explanations in terms of highly expressive logic-based rules, with a statistical and causal interpretation; (ii) the inference of local explanations aimed at revealing the logic of the decision adopted for a specific instance by querying and auditing the black box in the vicinity of the target instance; (iii), the bottom-up generalization of the many local explanations into simple global ones, with algorithms that optimize the quality and comprehensibility of explanations.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-forty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-fifty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/1806.09936', target="_blank") External Link
         p.my-1

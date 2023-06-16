@@ -1,13 +1,34 @@
 #NMG2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 5.
+        h4 9.
         small [NMG2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-four.accordion
+        #accordion-eight.accordion
+        | #[strong Evaluating the Privacy Exposure of Interpretable Global Explainers]
+        br
+        | #[em Naretto Francesca, Monreale Anna, Giannotti Fosca] (2022) - 2022 IEEE 4th International Conference on Cognitive Machine Intelligence (CogMI). In IEEE International Conference on Cognitive Machine Intelligence (CogMI)
+        #collapse-eight.collapse(aria-labelledby='heading-eight' data-parent='#accordion-eight')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small In recent years we are witnessing the diffusion of AI systems based on powerful Machine Learning models which find application in many critical contexts such as medicine, financial market and credit scoring. In such a context it is particularly important to design Trustworthy AI systems while guaranteeing transparency, with respect to their decision reasoning and privacy protection. Although many works in the literature addressed the lack of transparency and the risk of privacy exposure of Machine Learning models, the privacy risks of explainers have not been appropriately studied. This paper presents a methodology for evaluating the privacy exposure raised by interpretable global explainers able to imitate the original black-box classifier. Our methodology exploits the well-known Membership Inference Attack. The experimental results highlight that global explainers based on interpretable trees lead to an increase in privacy exposure.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eight' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1109%2Fcogmi56440.2022.00012', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 5]
+    #NMG2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 12.
+        small [NMG2022]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-eleven.accordion
         | #[strong Privacy Risk of Global Explainers]
         br
         | #[em Francesca Naretto, Anna Monreale, Fosca Giannotti] (2022) - Proceedings of the First International Conference on Hybrid Human-Artificial Intelligence. In Frontiers in Artificial Intelligence and Applications
-        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
@@ -20,63 +41,63 @@
                     small Research Line #[strong 5]
     #BGG2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 20.
+        h4 27.
         small [BGG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-nineteen.accordion
+        #accordion-twenty-six.accordion
         | #[strong Benchmarking and survey of explanation methods for black box models]
         br
         | #[em Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore] (2021)
-        #collapse-nineteen.collapse(aria-labelledby='heading-nineteen' data-parent='#accordion-nineteen')
+        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small The widespread adoption of black-box models in Artificial Intelligence has enhanced the need for explanation methods to reveal how these obscure models reach specific decisions. Retrieving explanations is fundamental to unveil possible biases and to resolve practical or ethical issues. Nowadays, the literature is full of methods with different explanations. We provide a categorization of explanation methods based on the type of explanation returned. We present the most recent and widely used explainers, and we show a visual comparison among explanations and a quantitative benchmarking.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-nineteen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2102.13076', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #NPN2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 32.
+        h4 39.
         small [NPN2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-one.accordion
+        #accordion-thirty-eight.accordion
         | #[strong Prediction and Explanation of Privacy Risk on Mobility Data with Neural Networks]
         br
         | #[em Naretto Francesca, Pellungrini Roberto, Nardini Franco Maria, Giannotti Fosca] (2021) - ECML PKDD 2020 Workshops. In ECML PKDD 2020 Workshops
-        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
+        #collapse-thirty-eight.collapse(aria-labelledby='heading-thirty-eight' data-parent='#accordion-thirty-eight')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small The analysis of privacy risk for mobility data is a fundamental part of any privacy-aware process based on such data. Mobility data are highly sensitive. Therefore, the correct identification of the privacy risk before releasing the data to the public is of utmost importance. However, existing privacy risk assessment frameworks have high computational complexity. To tackle these issues, some recent work proposed a solution based on classification approaches to predict privacy risk using mobility features extracted from the data. In this paper, we propose an improvement of this approach by applying long short-term memory (LSTM) neural networks to predict the privacy risk directly from original mobility data. We empirically evaluate privacy risk on real data by applying our LSTM-based approach. Results show that our proposed method based on a LSTM network is effective in predicting the privacy risk with results in terms of F1 of up to 0.91. Moreover, to explain the predictions of our model, we employ a state-of-the-art explanation algorithm, Shap. We explore the resulting explanation, showing how it is possible to provide effective predictions while explaining them to the end-user.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-eight' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-65965-3_34', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 4▪5]
     #NPM2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 33.
+        h4 40.
         small [NPM2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-two.accordion
+        #accordion-thirty-nine.accordion
         | #[strong Predicting and Explaining Privacy Risk Exposure in Mobility Data]
         br
         | #[em Naretto Francesca, Pellungrini Roberto, Monreale Anna, Nardini Franco Maria, Musolesi Mirco] (2021) - Discovery Science. In Discovery Science Conference
-        #collapse-thirty-two.collapse(aria-labelledby='heading-thirty-two' data-parent='#accordion-thirty-two')
+        #collapse-thirty-nine.collapse(aria-labelledby='heading-thirty-nine' data-parent='#accordion-thirty-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Mobility data is a proxy of different social dynamics and its analysis enables a wide range of user services. Unfortunately, mobility data are very sensitive because the sharing of people’s whereabouts may arise serious privacy concerns. Existing frameworks for privacy risk assessment provide tools to identify and measure privacy risks, but they often (i) have high computational complexity; and (ii) are not able to provide users with a justification of the reported risks. In this paper, we propose expert, a new framework for the prediction and explanation of privacy risk on mobility data. We empirically evaluate privacy risk on real data, simulating a privacy attack with a state-of-the-art privacy risk assessment framework. We then extract individual mobility profiles from the data for predicting their risk. We compare the performance of several machine learning algorithms in order to identify the best approach for our task. Finally, we show how it is possible to explain privacy risk prediction on real data, using two algorithms: Shap, a feature importance-based method and Lore, a rule-based method. Overall, expert is able to provide a user with the privacy risk and an explanation of the risk itself. The experiments show excellent performance for the prediction task.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-two' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1007/978-3-030-61527-7_27', target="_blank") External Link
         p.my-1

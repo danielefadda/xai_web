@@ -1,0 +1,52 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-5.font-weight-bold Recruitment of 2 fixed terms researcher
+                +metaTop('Call', 'Pisa', 'March 10, 2023')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/opencall.png' alt='recruitment of 2 fixed terms researcher')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            h4 Public selection procedure for the recruitment of 2 fixed-term researcher, to join the XAI team in Pisa, Italy
+            p.lead.mt-3 Deadline for online applications: #[em Monday, 27 March 2023 at 16:00 CEST]
+            p Public selection procedure for the recruitment of 2 fixed-term researcher, in accordance with art. 24, par. 3, lett. a), of Italian Law 240/2010, in the Faculty of Sciences  of the Scuola Normale Superiore, for the Academic field  01/B1 – Computer Science,  Academic discipline INF/01 – Computer Science (PNRR) – extended Partnership of the Research and Innovation Plan titled “Future Artificial Intelligence Research (FAIR)”
+            br
+        .row.justify-content-lg-center
+          .col-lg-8
+            p The research to be carried out will cover foundational Artificial Intelligence on algorithms and methods  of explainable AI aimed at supporting synergistic human-machine collaboration and methods and methodologies of trustworthy AI aimed at designing and auditing accountable and transparent AI systems"
+            p QUALIFICATIONS AND SKILLS: Candidates Applicants must hold a Ph.D. or equivalent qualification obtained in Italy or abroad, in disciplines related to  Computer Science, Physics, Mathematics, Computer Engineering, Data Science, and Artificial Intelligence.
+            p DURATION: The position will last up to three years.
+            p APPLICATION DEADLINE: 27 March 2023 at 04:00 PM  (Italian time)
+            p At the following link, the call (Italian and English) is available as well as a template for the CV, and all other requested forms. Applications have to be submitted electronically at: https://pica.cineca.it/sns
+            p NOTE: Previously submitted applications to participate in the selection under the revoked notice are no longer valid; interested parties must submit a new application.
+            p For these positions, the tax incentive to return to Italy is applicable. The SNS AI team aims to achieve an appropriate gender balance and applications from female researchers are highly appreciated.
+            br
+            a.btn.btn-outline-black(href="https://amministrazionetrasparente.sns.it/bando/selezione-di-n-2-ricercatoriricercatrici-tempo-determinato-di-tipo-sc-01b1-ssdinf01-recruitment-2-fixed-terms-researcher-0/" target='_blank') LINK TO THE CALL
+      .container.mt-6
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          .col-md-4
+            footer.entry-footer.mb-10
+              // Entry Meta Bottom
+              .entry-meta-bottom
+                ul.entry-tags
+                  li.tags-icon
+                    i.fas.fa-tags
+                  li
+                    a(href='#' rel='tag') Call
+                  li
+                    a(href='#' rel='tag') Positions
+                  li
+                    a(href='#' rel='tag') Pisa

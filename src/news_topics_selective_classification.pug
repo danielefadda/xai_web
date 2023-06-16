@@ -1,0 +1,55 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      .bg-yellow.pt-6.pt-lg-8.pb-4.pb-lg-5
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              header.entry-header.text-center
+                h2.entry-title.display-6.font-weight-bold Topics in Selective Classification
+                  br
+                  | AAAI 2023: Doctoral Consortium Track
+                  br
+                  h3 Author: Andrea Pugnana
+                  h5 Edited by: Francesco Spinnato
+                +metaTop('Phd Thesis', 'October 4, 2022','1.00 p.m. CET')
+      // image
+      .bg-half
+        .container
+          .row.justify-content-lg-center
+            .col-lg-8.text-center
+              img(src='assets/images/blog/topics-selective-classification.jpg' alt='Pugnana')
+      .container.mt-6
+        .row.justify-content-lg-center
+          .col-lg-8
+            p The predictive performance of classifiers is typically not homogeneous over the data distribution. This is a common issue in Machine Learning. In fact, identifying sub-populations with low performance could be helpful, e.g., for debugging and monitoring purposes, especially in high-risk scenarios.
+
+            p A direction towards improving robustness and accuracy in this context is to lift from the canonical framework of binary classification to **selective classification**. Selective classification (also known as classification with a reject option or learning to defer) extends a classifier with a selection function (reject option/strategy) to determine whether or not a prediction should be accepted [1]. This mechanism allows the AI system to abstain in those instances where the classifier is more uncertain about the class to predict, introducing a tradeoff between performance and coverage (the percentage of cases where the classifier does not abstain). The reject option has been extensively studied from a theoretical standpoint [2]. However, state-of-the-art practical approaches and tools are model-specific, e.g., they are tailored to Deep Neural Networks (DNNs), as, e.g., in the case of SelectiveNet [3] and Self-Adapting Training (SAT) [4], and focused/experimented mainly on image datasets
+
+            p My PhD research aims to tackle some of the limitations in the current literature. As a first contribution, I developed a model-agnostic heuristic able to lift any (probabilistic) classifier into a selective classifier. The approach exploits both a cross-fitting strategy and results from quantile estimation to build the selective function [5]. The algorithm is tested on several real-world datasets, showing improvements compared to existing methodologies.
+
+            p Another open issue in the selective classification scenario regards performance metrics. The canonical choice is to use distributive loss functions, where the loss is defined for every prediction in isolation, such as accuracy over accepted instances (selective accuracy). However, there are cases where other measures are more informative, e.g., whenever the classes to predict are imbalanced. A popular choice in this context is the Area Under the ROC Curve (AUC). AUC is a metric about the ranking induced by a classifier, for which the loss is determined on pairs of instances. I provided the theoretical and empirical evaluation to ensure the tradeoff between AUC improvements and coverage [6].
+
+            p For the remaining part of my PhD, I plan to tackle some remaining open issues: first, I plan to benchmark existing methods, as no extensive study has been carried out so far. Second, I will investigate the intersection between eXplainable AI (XAI) [7] and selective classification: understanding and characterizing the areas where the classifier is not confident enough is highly sought after, as it can help build better classifiers. Third, Selective classification might exacerbate the fairness concerns [8] over classifiers. Finding possible solutions to this problem is a work for a future venue.
+            br
+            p References:
+            p [1] Chow, C. K. 1970. On optimum recognition error and reject tradeoff. IEEE Trans. Inf. Theory, 16(1): 41–46.
+            p [2] Franc, V.; and Průša, D. 2019. On discriminative learning of prediction uncertainty. In ICML, volume 97 of Proceedings of Mach. Learn. Research, 1963–1971. PMLR.
+            p [3] Geifman, Y.; and El-Yaniv, R. 2019. SelectiveNet: A Deep Neural Network with an Integrated Reject Option. In ICML, volume 97 of Proceedings of Mach. Learn. Research, 2151– 2159. PMLR.
+            p [4] Huang, L.; Zhang, C.; and Zhang, H. 2020. Self-Adaptive Training: beyond Empirical Risk Minimization. In NeurIPS.
+            p [5] Pugnana, A.; and Ruggieri, S. 2023. A Model-Agnostic Heuristics for Selective Classification. In AAAI.
+            p [6] Pugnana, A.; and Ruggieri, S. 2023 AUC-based Selective Classification. Forthcoming AISTATS 2023.
+            p [7] Guidotti, R.; Monreale, A.; Ruggieri, S.; Turini, F.; Giannotti, F.; and Pedreschi, D. 2019. A Survey of Methods for Explaining Black Box Models. ACM Comput. Surv., 51(5): 93:1–93:42.
+            p [8] Jones, E.; Sagawa, S.; Koh, P. W.; Kumar, A.; and Liang, P. 2021. Selective Classification Can Magnify Disparities Across Groups. In ICLR.
+        .row.text-center.gx-lg-5.mt-5.justify-content-center
+          footer.entry-footer.mb-10
+            // Entry Meta Bottom
+            .entry-meta-bottom
+              ul.entry-tags
+                li.tags-icon
+                  i.fas.fa-tags
+                li
+                  a(href='#' rel='tag') PHD Thesis

@@ -171,7 +171,7 @@ url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sh
 masterThesis = pd.read_csv(url)
 masterThesis.columns
 
-masterThesis=masterThesis.sort_values(['Thesis ','Status [Ongoing] / [completed]'],ascending=[False,True]).reset_index(drop=True)
+masterThesis=masterThesis.sort_values(['Year','Status [Ongoing] / [completed]'],ascending=[True,True]).reset_index(drop=True)
 
 bulletsThesis=''
 for i, row in masterThesis.iterrows():
@@ -194,32 +194,32 @@ for i, row in masterThesis.iterrows():
 write_html(bulletsThesis, filename='thesis-list')
 
 
-# ### Algorithms made by XAI group
-#
-# sheet_name= sheet_names[2]
-# url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
-#
-#
-# algo = pd.read_csv(url)
-# algo.columns
-#
-# bulletsAlgo='<ul>'
-#
-# for i, row in algo.iterrows():
-#     author= row['Authors']
-#     title= row['Title']
-#     title = '' if title!=title else title
-#
-#     description= row['Brief Description']
-#     description = '' if description!=description else ' - '+description.strip('.')+', '
-#
-#     githubLink=row['github link']
-#
-#     bullet=f"<li><strong>{title}</strong> {description} [ {author} ] </li>"
-#     bulletsAlgo+=bullet
-# bulletsAlgo+='</ul>'
+### Algorithms made by XAI group
+
+sheet_name= sheet_names[2]
+url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
+
+
+algo = pd.read_csv(url)
+algo.columns
+
+bulletsAlgo='<ul>'
+
+for i, row in algo.iterrows():
+    author= row['Authors']
+    title= row['Title']
+    title = '' if title!=title else title
+
+    description= row['Brief Description']
+    description = '' if description!=description else ' - '+description.strip('.')+', '
+
+    githubLink=row['github link']
+
+    bullet=f"<li><strong>{title}</strong> <a href='{githubLink}' terget='_blank'>{description}</a> [ {author} ] </li>"
+    bulletsAlgo+=bullet
+bulletsAlgo+='</ul>'
 # display(HTML(bulletsAlgo))
 
-
+write_html(bulletsAlgo, filename='algorithms-list')
 
 

@@ -12,7 +12,7 @@ block content
                 .col-lg-6.col-md-6
                     h1.my-3 Resources
                     div
-                      p All the #[a(href="#publications") #[strong publications]] and the #[a(href="#thesis") #[strong thesis]] of the XAI Project
+                      p All the #[a(href="#publications") #[strong publications]], #[a(href="#thesis") #[strong thesis]] and the #[a(href="#algo") #[strong Algorithms]] of the XAI Project
     .entry-content.mt-0
       //- Publications title
       .container
@@ -28,7 +28,7 @@ block content
         .row
           include includes/paper-cards
     .entry-content.mt-6.mb-7
-      //- Publications title
+      //- Thesis title
       .container.mb-4
         .row
           .col-lg-4
@@ -41,3 +41,18 @@ block content
           .col-lg-10
             ol
               include includes/thesis-list
+
+    .entry-content.mt-6.mb-7
+      //- Algo title
+      .container.mb-4
+        .row
+          .col-lg-4
+            .bg-grayphite
+              .py-lg-5.px-lg-6.py-md-5.px-md-5.py-5.px-4
+                .text-black.pr-lg-4.text-center
+                  h1.mb-1.font-weight-bolder#algo Algorithms
+      .container
+        .row.justify-content-lg-center
+          .col-lg-10
+            include includes/algorithms-list.pug
+

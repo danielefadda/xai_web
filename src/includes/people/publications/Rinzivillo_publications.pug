@@ -1,10 +1,52 @@
-#BRF2022.row.mt-5.justify-content-center
+#BGG2023.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 18.
+        h4 5.
+        small [BGG2023]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-four.accordion
+        | #[strong Benchmarking and survey of explanation methods for black box models]
+        br
+        | #[em Francesco Bodria, Fosca Giannotti, Riccardo Guidotti, Francesca Naretto, Dino Pedreschi, Salvatore Rinzivillo] (2023) - Springer Science+Business Media, LLC, part of Springer Nature. In Data Mining and Knowledge Discovery
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The rise of sophisticated black-box machine learning models in Artificial Intelligence systems has prompted the need for explanation methods that reveal how these models work in an understandable way to users and decision makers. Unsurprisingly, the state-of-the-art exhibits currently a plethora of explainers providing many different types of explanations. With the aim of providing a compass for researchers and practitioners, this paper proposes a categorization of explanation methods from the perspective of the type of explanation they return, also considering the different input data formats. The paper accounts for the most representative explainers to date, also discussing similarities and discrepancies of returned explanations through their visual appearance. A companion website to the paper is provided as a continuous update to new explainers as they appear. Moreover, a subset of the most robust and widely adopted explainers, are benchmarked with respect to a repertoire of quantitative metrics.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/s10618-023-00933-9', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3]
+    #MBG2023.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 6.
+        small [MBG2023]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-five.accordion
+        | #[strong Improving trust and confidence in medical skin lesion diagnosis through explainable deep learning]
+        br
+        | #[em Carlo Metta, Andrea Beretta, Riccardo Guidotti, Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo, Fosca Giannotti ] (2023) - Springer Nature. In International Journal of Data Science and Analytics
+        #collapse-five.collapse(aria-labelledby='heading-five' data-parent='#accordion-five')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we aim at improving the trust and confidence of users towards automatic AI decision systems in the field of medical skin lesion diagnosis by customizing an existing XAI approach for explaining an AI model able to recognize different types of skin lesions. The explanation is generated through the use of synthetic exemplar and counter-exemplar images of skin lesions and our contribution offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A validation survey with domain experts, beginners, and unskilled people shows that the use of explanations improves trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon may stem from the intrinsic characteristics of each class and may help resolve common misclassifications made by human experts.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-five' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/s41060-023-00401-z', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3]
+    #BRF2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 23.
         small [BRF2022]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-seventeen' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-seventeen.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-seventeen-Title' aria-hidden='true')
+        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-two' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twenty-two.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-two-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -14,122 +56,101 @@
                     .modal-body
                         img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-seventeen.accordion
+        #accordion-twenty-two.accordion
         | #[strong Explaining Black Box with visual exploration of Latent Space]
         br
         | #[em Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino] (2022) - EUROVIS 2022. In Proceedings of the 2022 Conference Eurovis 2022
-        #collapse-seventeen.collapse(aria-labelledby='heading-seventeen' data-parent='#accordion-seventeen')
+        #collapse-twenty-two.collapse(aria-labelledby='heading-twenty-two' data-parent='#accordion-twenty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Autoencoders are a powerful yet opaque feature reduction technique, on top of which we propose a novel way for the joint visual exploration of both latent and real space. By interactively exploiting the mapping between latent and real features, it is possible to unveil the meaning of latent features while providing deeper insight into the original variables. To achieve this goal, we exploit and re-adapt existing approaches from eXplainable Artificial Intelligence (XAI) to understand the relationships between the input and latent features. The uncovered relationships between input features and latent ones allow the user to understand the data structure concerning external variables such as the predictions of a classification model. We developed an interactive framework that visually explores the latent space and allows the user to understand the relationships of the input features with model prediction.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seventeen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://diglib.eg.org/handle/10.2312/evs20221098', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 3]
     #PBF2022.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 19.
+        h4 24.
         small [PBF2022]
     .col-lg-8.bg-yellow.p-3
-        #accordion-eighteen.accordion
+        #accordion-twenty-three.accordion
         | #[strong Co-design of human-centered, explainable AI for clinical decision support]
         br
         | #[em Panigutti Cecilia, Beretta Andrea, Fadda Daniele , Giannotti Fosca, Pedreschi Dino, Perotti Alan, Rinzivillo Salvatore] (2022). In ACM Transactions on Interactive Intelligent Systems
-        #collapse-eighteen.collapse(aria-labelledby='heading-eighteen' data-parent='#accordion-eighteen')
+        #collapse-twenty-three.collapse(aria-labelledby='heading-twenty-three' data-parent='#accordion-twenty-three')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models, and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique, and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback, with a two-fold outcome: first, we obtain evidence that explanations increase users' trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so that we can re-design a better, more human-centered explanation interface.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eighteen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-three' aria-expanded='true' aria-controls='collapseAbs') More information
         
         p.my-1
                     small Research Line #[strong 1▪3▪4]
     #MGY2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 25.
+        h4 30.
         small [MGY2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-four.accordion
+        #accordion-twenty-nine.accordion
         | #[strong Exemplars and Counterexemplars Explanations for Skin Lesion Classifiers]
         br
         | #[em Carlo Metta, Riccardo Guidotti, Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo] (2021) - IOS Press. In HHAI2022: Augmenting Human Intellect, S. Schlobach et al. (Eds.)
-        #collapse-twenty-four.collapse(aria-labelledby='heading-twenty-four' data-parent='#accordion-twenty-four')
+        #collapse-twenty-nine.collapse(aria-labelledby='heading-twenty-nine' data-parent='#accordion-twenty-nine')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Explainable AI consists in developing models allowing interaction between decision systems and humans by making the decisions understandable. We propose a case study for skin lesion diagnosis showing how it is possible to provide explanations of the decisions of deep neural network trained to label skin lesions.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-four' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-nine' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://ebooks.iospress.nl/volumearticle/60877', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
-    #BGG2021.row.mt-5.justify-content-center
-    .col-lg-1.text-right
-        h4 27.
-        small [BGG2021]
-    .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-six.accordion
-        | #[strong Benchmarking and survey of explanation methods for black box models]
-        br
-        | #[em Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore] (2021)
-        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
-            div.bg-yellow
-                hr
-                p.small #[strong Abstract]
-                p.small The widespread adoption of black-box models in Artificial Intelligence has enhanced the need for explanation methods to reveal how these obscure models reach specific decisions. Retrieving explanations is fundamental to unveil possible biases and to resolve practical or ethical issues. Nowadays, the literature is full of methods with different explanations. We provide a categorization of explanation methods based on the type of explanation returned. We present the most recent and widely used explainers, and we show a visual comparison among explanations and a quantitative benchmarking.
-    .col-lg-2.pl-3
-        p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
-        p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2102.13076', target="_blank") External Link
-        p.my-1
-                    small Research Line #[strong 1]
     #MGY2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 32.
+        h4 36.
         small [MGY2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-one.accordion
+        #accordion-thirty-five.accordion
         | #[strong Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling]
         br
         | #[em Metta Carlo, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore] (2021) - 2021 IEEE Symposium on Computers and Communications (ISCC). In 2021 IEEE Symposium on Computers and Communications (ISCC)
-        #collapse-thirty-one.collapse(aria-labelledby='heading-thirty-one' data-parent='#accordion-thirty-one')
+        #collapse-thirty-five.collapse(aria-labelledby='heading-thirty-five' data-parent='#accordion-thirty-five')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Explainable AI consists in developing mechanisms allowing for an interaction between decision systems and humans by making the decisions of the formers understandable. This is particularly important in sensitive contexts like in the medical domain. We propose a use case study, for skin lesion diagnosis, illustrating how it is possible to provide the practitioner with explanations on the decisions of a state of the art deep neural network classifier trained to characterize skin lesions from examples. Our framework consists of a trained classifier onto which an explanation module operates. The latter is able to offer the practitioner exemplars and counterexemplars for the classification diagnosis thus allowing the physician to interact with the automatic diagnosis system. The exemplars are generated via an adversarial autoencoder. We illustrate the behavior of the system on representative examples.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-one' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-five' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='http://dx.doi.org/10.1109/iscc53001.2021.9631485', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 1]
     #MBG2021.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 34.
+        h4 38.
         small [MBG2021]
     .col-lg-8.bg-yellow.p-3
-        #accordion-thirty-three.accordion
+        #accordion-thirty-seven.accordion
         | #[strong Explainable Deep Image Classifiers for Skin Lesion Diagnosis]
         br
         | #[em Metta Carlo, Beretta Andrea, Guidotti Riccardo, Yin Yuan, Gallinari Patrick, Rinzivillo Salvatore, Giannotti Fosca] (2021) - Arxive preprint. In International Journal of Data Science and Analytics
-        #collapse-thirty-three.collapse(aria-labelledby='heading-thirty-three' data-parent='#accordion-thirty-three')
+        #collapse-thirty-seven.collapse(aria-labelledby='heading-thirty-seven' data-parent='#accordion-thirty-seven')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small A key issue in critical contexts such as medical diagnosis is the interpretability of the deep learning models adopted in decision-making systems. Research in eXplainable Artificial Intelligence (XAI) is trying to solve this issue. However, often XAI approaches are only tested on generalist classifier and do not represent realistic problems such as those of medical diagnosis. In this paper, we analyze a case study on skin lesion images where we customize an existing XAI approach for explaining a deep learning model able to recognize different types of skin lesions. The explanation is formed by synthetic exemplar and counter-exemplar images of skin lesion and offers the practitioner a way to highlight the crucial traits responsible for the classification decision. A survey conducted with domain experts, beginners and unskilled people proof that the usage of explanations increases the trust and confidence in the automatic decision system. Also, an analysis of the latent space adopted by the explainer unveils that some of the most frequent skin lesion classes are distinctly separated. This phenomenon could derive from the intrinsic characteristics of each class and, hopefully, can provide support in the resolution of the most frequent misclassifications by human experts.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-three' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-thirty-seven' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2111.11863', target="_blank") External Link
         p.my-1

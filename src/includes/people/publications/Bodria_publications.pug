@@ -1,10 +1,73 @@
-#BRF2022.row.mt-5.justify-content-center
+#BGG2023.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 18.
+        h4 5.
+        small [BGG2023]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-four.accordion
+        | #[strong Benchmarking and survey of explanation methods for black box models]
+        br
+        | #[em Francesco Bodria, Fosca Giannotti, Riccardo Guidotti, Francesca Naretto, Dino Pedreschi, Salvatore Rinzivillo] (2023) - Springer Science+Business Media, LLC, part of Springer Nature. In Data Mining and Knowledge Discovery
+        #collapse-four.collapse(aria-labelledby='heading-four' data-parent='#accordion-four')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small The rise of sophisticated black-box machine learning models in Artificial Intelligence systems has prompted the need for explanation methods that reveal how these models work in an understandable way to users and decision makers. Unsurprisingly, the state-of-the-art exhibits currently a plethora of explainers providing many different types of explanations. With the aim of providing a compass for researchers and practitioners, this paper proposes a categorization of explanation methods from the perspective of the type of explanation they return, also considering the different input data formats. The paper accounts for the most representative explainers to date, also discussing similarities and discrepancies of returned explanations through their visual appearance. A companion website to the paper is provided as a continuous update to new explainers as they appear. Moreover, a subset of the most robust and widely adopted explainers, are benchmarked with respect to a repertoire of quantitative metrics.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-four' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/s10618-023-00933-9', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1▪3]
+    #BGG2023c.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 12.
+        small [BGG2023c]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-eleven.accordion
+        | #[strong Interpretable Latent Space to Enable Counterfactual Explanations]
+        br
+        | #[em Francesco Bodria, Riccardo Guidotti, Fosca Giannotti & Dino Pedreschi ] (2022) - Proceedings of the 25th international conference on Discovery Science (DS), 2022, Montpellier. In Lecture Notes in Computer Science()
+        #collapse-eleven.collapse(aria-labelledby='heading-eleven' data-parent='#accordion-eleven')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Many dimensionality reduction methods have been introduced to map a data space into one with fewer features and enhance machine learning models’ capabilities. This reduced space, called latent space, holds properties that allow researchers to understand the data better and produce better models. This work proposes an interpretable latent space that preserves the similarity of data points and supports a new way of learning a classification model that allows prediction and explanation through counterfactual examples. We demonstrate with extensive experiments the effectiveness of the latent space with respect to different metrics in comparison with several competitors, as well as the quality of the achieved counterfactual explanations.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-eleven' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://doi.org/10.1007/978-3-031-18840-4_37', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    #BGG2023b.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 13.
+        small [BGG2023b]
+    .col-lg-8.bg-yellow.p-3
+        #accordion-twelve.accordion
+        | #[strong Transparent Latent Space Counterfactual Explanations for Tabular Data]
+        br
+        | #[em Bodria Francesco, Riccardo Guidotti, Fosca Giannotti, Dino Pedreschi] (2022) - Proceedings of Data Science and Advanced Analytics (DSAA), 2022 IEEE 9th International Conference. In Proceedings of the 9th IEEE International Conference on Data Science and Advanced, Analytics (DSAA)
+        #collapse-twelve.collapse(aria-labelledby='heading-twelve' data-parent='#accordion-twelve')
+            div.bg-yellow
+                hr
+                p.small #[strong Abstract]
+                p.small Artificial Intelligence decision-making systems have dramatically increased their predictive performance in recent years, beating humans in many different specific tasks. However, with increased performance has come an increase in the complexity of the black-box models adopted by the AI systems, making them entirely obscure for the decision process adopted. Explainable AI is a field that seeks to make AI decisions more transparent by producing explanations. In this paper, we propose T-LACE, an approach able to retrieve post-hoc counterfactual explanations for a given pre-trained black-box model. T-LACE exploits the similarity and linearity proprieties of a custom-created transparent latent space to build reliable counterfactual explanations. We tested T-LACE on several tabular datasets and provided qualitative evaluations of the generated explanations in terms of similarity, robustness, and diversity. Comparative analysis against various state-of-the-art counterfactual explanation methods shows the higher effectiveness of our approach.
+    .col-lg-2.pl-3
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twelve' aria-expanded='true' aria-controls='collapseAbs') More information
+        p.my-1
+                a.btn-mini.px-2.btn-secondary.small(href='https://ieeexplore.ieee.org/document/10032407', target="_blank") External Link
+        p.my-1
+                    small Research Line #[strong 1]
+    #BRF2022.row.mt-5.justify-content-center
+    .col-lg-1.text-right
+        h4 23.
         small [BRF2022]
     .col-lg-2.pl-0
-        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-seventeen' type='button').mr-3.border.border-secondary.bwc-image
-        #modal-seventeen.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-seventeen-Title' aria-hidden='true')
+        img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" style='width:100%;' data-toggle='modal' data-target='#modal-twenty-two' type='button').mr-3.border.border-secondary.bwc-image
+        #modal-twenty-two.modal.fade(tabindex='-1' role='dialog' aria-labelledby='#modal-twenty-two-Title' aria-hidden='true')
             .modal-dialog.modal-lg.modal-dialog-centered(role='document')
                 .modal-content
                     .modal-header
@@ -14,53 +77,32 @@
                     .modal-body
                         img(src='assets/images/publications/latent-space-exploration.png ' alt="immagine" )
     .col-lg-6.bg-yellow.p-3
-        #accordion-seventeen.accordion
+        #accordion-twenty-two.accordion
         | #[strong Explaining Black Box with visual exploration of Latent Space]
         br
         | #[em Bodria Francesco, Rinzivillo Salvatore, Fadda Daniele, Guidotti Riccardo, Fosca Giannotti, Pedreschi Dino] (2022) - EUROVIS 2022. In Proceedings of the 2022 Conference Eurovis 2022
-        #collapse-seventeen.collapse(aria-labelledby='heading-seventeen' data-parent='#accordion-seventeen')
+        #collapse-twenty-two.collapse(aria-labelledby='heading-twenty-two' data-parent='#accordion-twenty-two')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]
                 p.small Autoencoders are a powerful yet opaque feature reduction technique, on top of which we propose a novel way for the joint visual exploration of both latent and real space. By interactively exploiting the mapping between latent and real features, it is possible to unveil the meaning of latent features while providing deeper insight into the original variables. To achieve this goal, we exploit and re-adapt existing approaches from eXplainable Artificial Intelligence (XAI) to understand the relationships between the input and latent features. The uncovered relationships between input features and latent ones allow the user to understand the data structure concerning external variables such as the predictions of a classification model. We developed an interactive framework that visually explores the latent space and allows the user to understand the relationships of the input features with model prediction.
     .col-lg-2.pl-3
         p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-seventeen' aria-expanded='true' aria-controls='collapseAbs') More information
+                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-two' aria-expanded='true' aria-controls='collapseAbs') More information
         p.my-1
                 a.btn-mini.px-2.btn-secondary.small(href='https://diglib.eg.org/handle/10.2312/evs20221098', target="_blank") External Link
         p.my-1
                     small Research Line #[strong 3]
-    #BGG2021.row.mt-5.justify-content-center
-    .col-lg-1.text-right
-        h4 27.
-        small [BGG2021]
-    .col-lg-8.bg-yellow.p-3
-        #accordion-twenty-six.accordion
-        | #[strong Benchmarking and survey of explanation methods for black box models]
-        br
-        | #[em Bodria Francesco, Giannotti Fosca, Guidotti Riccardo, Naretto Francesca, Pedreschi Dino, Rinzivillo Salvatore] (2021)
-        #collapse-twenty-six.collapse(aria-labelledby='heading-twenty-six' data-parent='#accordion-twenty-six')
-            div.bg-yellow
-                hr
-                p.small #[strong Abstract]
-                p.small The widespread adoption of black-box models in Artificial Intelligence has enhanced the need for explanation methods to reveal how these obscure models reach specific decisions. Retrieving explanations is fundamental to unveil possible biases and to resolve practical or ethical issues. Nowadays, the literature is full of methods with different explanations. We provide a categorization of explanation methods based on the type of explanation returned. We present the most recent and widely used explainers, and we show a visual comparison among explanations and a quantitative benchmarking.
-    .col-lg-2.pl-3
-        p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='#' data-toggle='collapse' data-target='#collapse-twenty-six' aria-expanded='true' aria-controls='collapseAbs') More information
-        p.my-1
-                a.btn-mini.px-2.btn-secondary.small(href='https://arxiv.org/abs/2102.13076', target="_blank") External Link
-        p.my-1
-                    small Research Line #[strong 1]
     #BPP2020.row.mt-5.justify-content-center
     .col-lg-1.text-right
-        h4 53.
+        h4 57.
         small [BPP2020]
     .col-lg-8.bg-yellow.p-3
-        #accordion-fifty-two.accordion
+        #accordion-fifty-six.accordion
         | #[strong Explainability Methods for Natural Language Processing: Applications to Sentiment Analysis]
         br
         | #[em Bodria Francesco, Panisson André , Perotti Alan, Piaggesi Simone ] (2020) - Discussion Paper
-        #collapse-fifty-two.collapse(aria-labelledby='heading-fifty-two' data-parent='#accordion-fifty-two')
+        #collapse-fifty-six.collapse(aria-labelledby='heading-fifty-six' data-parent='#accordion-fifty-six')
             div.bg-yellow
                 hr
                 p.small #[strong Abstract]

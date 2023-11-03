@@ -1,5 +1,6 @@
 .idea/
 appunti/
+src/includes/.credentials/credentials.json
 
 # Logs
 logs
